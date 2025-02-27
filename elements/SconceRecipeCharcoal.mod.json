@@ -3,7 +3,7 @@
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
-    "recipeRetstackSize": 2,
+    "recipeRetstackSize": 1,
     "group": "",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -15,7 +15,7 @@
         "value": ""
       },
       {
-        "value": "Items.COAL#0"
+        "value": "Items.COAL#1"
       },
       {
         "value": ""
@@ -42,7 +42,7 @@
     "recipeReturnStack": {
       "value": "CUSTOM:Sconce"
     },
-    "name": "sconce_recipe",
+    "name": "sconce_recipe_charcoal",
     "namespace": "mod"
   }
 }

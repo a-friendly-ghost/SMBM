@@ -48,7 +48,6 @@ public class ExtraBuildingBlocksModTabs {
 				tabData.accept(ExtraBuildingBlocksModBlocks.QUARTZ_BRICK_STAIRS.get().asItem());
 				tabData.accept(ExtraBuildingBlocksModBlocks.QUARTZ_BRICK_SLAB.get().asItem());
 				tabData.accept(ExtraBuildingBlocksModBlocks.BRACKET.get().asItem());
-				tabData.accept(ExtraBuildingBlocksModItems.SCONCE.get());
 				tabData.accept(ExtraBuildingBlocksModBlocks.POLISHED_DRIPSTONE.get().asItem());
 				tabData.accept(ExtraBuildingBlocksModBlocks.POLISHED_DRIPSTONE_STAIRS.get().asItem());
 				tabData.accept(ExtraBuildingBlocksModBlocks.POLISHED_DRIPSTONE_SLAB.get().asItem());
@@ -130,7 +129,7 @@ public class ExtraBuildingBlocksModTabs {
 			tabData.accept(ExtraBuildingBlocksModBlocks.CHISELED_RED_NETHER_BRICK.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.CRACKED_RED_NETHER_BRICK.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.BRACKET.get().asItem());
-			tabData.accept(ExtraBuildingBlocksModItems.SCONCE.get());
+			tabData.accept(ExtraBuildingBlocksModBlocks.SCONCE.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.POLISHED_DRIPSTONE.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.POLISHED_DRIPSTONE_STAIRS.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.POLISHED_DRIPSTONE_SLAB.get().asItem());

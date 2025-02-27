@@ -41,6 +41,7 @@ import net.mcreator.extrabuildingblocks.block.SoulGlassPaneBlock;
 import net.mcreator.extrabuildingblocks.block.SoulGlassBlock;
 import net.mcreator.extrabuildingblocks.block.SmoothStoneWallBlock;
 import net.mcreator.extrabuildingblocks.block.SmoothStoneStairsBlock;
+import net.mcreator.extrabuildingblocks.block.SconceBlock;
 import net.mcreator.extrabuildingblocks.block.SandstoneBricksBlock;
 import net.mcreator.extrabuildingblocks.block.SandstoneBrickWallBlock;
 import net.mcreator.extrabuildingblocks.block.SandstoneBrickStairsBlock;

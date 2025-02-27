@@ -397,9 +397,26 @@
       "path": "~/CutStones/CutGranite"
     },
     {
+      "name": "Swampvine",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "swampvine",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/extra_building_blocks/blockstates/swampvine.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/swampvine.json",
+          "src/main/resources/assets/extra_building_blocks/models/item/swampvine.json",
+          "src/main/java/net/mcreator/extrabuildingblocks/block/SwampvineBlock.java",
+          "src/main/resources/data/extra_building_blocks/loot_tables/blocks/swampvine.json"
+        ]
+      },
+      "path": "~/Swampvine"
+    },
+    {
       "name": "SwampvineBlockDestroyedByPlayer",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "swampvine_block_destroyed_by_player",
       "metadata": {
@@ -434,7 +451,7 @@
     {
       "name": "SwampvineUpdate",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "swampvine_update",
       "metadata": {
@@ -465,7 +482,7 @@
     {
       "name": "SwampvineUpdateTick",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "swampvine_update_tick",
       "metadata": {
@@ -1259,6 +1276,23 @@
       "path": "~/CalciteAndDripstone/Calcite/Bricks"
     },
     {
+      "name": "CutDiorite",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cut_diorite",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/extra_building_blocks/loot_tables/blocks/cut_diorite.json",
+          "src/main/resources/assets/extra_building_blocks/blockstates/cut_diorite.json",
+          "src/main/resources/assets/extra_building_blocks/models/item/cut_diorite.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/cut_diorite.json",
+          "src/main/java/net/mcreator/extrabuildingblocks/block/CutDioriteBlock.java"
+        ]
+      },
+      "path": "~/CutStones/CutDiorite"
+    },
+    {
       "name": "CutDioriteStairs",
       "type": "block",
       "compiles": true,
@@ -1568,6 +1602,26 @@
       "path": "~/BlockFamilyExtensions/QuartzBrickFamily"
     },
     {
+      "name": "QuartzBrickWall",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quartz_brick_wall",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/extra_building_blocks/models/item/quartz_brick_wall.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/quartz_brick_wall_inventory.json",
+          "src/main/resources/data/extra_building_blocks/loot_tables/blocks/quartz_brick_wall.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/quartz_brick_wall_post.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/quartz_brick_wall.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/quartz_brick_wall_side_tall.json",
+          "src/main/java/net/mcreator/extrabuildingblocks/block/QuartzBrickWallBlock.java",
+          "src/main/resources/assets/extra_building_blocks/blockstates/quartz_brick_wall.json"
+        ]
+      },
+      "path": "~/BlockFamilyExtensions/QuartzBrickFamily"
+    },
+    {
       "name": "QuartzBrickStairsRecipe",
       "type": "recipe",
       "compiles": true,
@@ -1683,6 +1737,25 @@
         ]
       },
       "path": "~/BlockFamilyExtensions/QuartzBrickFamily"
+    },
+    {
+      "name": "SmoothStoneStairs",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smooth_stone_stairs",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/extra_building_blocks/blockstates/smooth_stone_stairs.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/smooth_stone_stairs.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/smooth_stone_stairs_outer.json",
+          "src/main/resources/data/extra_building_blocks/loot_tables/blocks/smooth_stone_stairs.json",
+          "src/main/java/net/mcreator/extrabuildingblocks/block/SmoothStoneStairsBlock.java",
+          "src/main/resources/assets/extra_building_blocks/models/block/smooth_stone_stairs_inner.json",
+          "src/main/resources/assets/extra_building_blocks/models/item/smooth_stone_stairs.json"
+        ]
+      },
+      "path": "~/BlockFamilyExtensions/SmoothStoneFamily"
     },
     {
       "name": "SmoothStoneStairsRecipe",
@@ -1861,6 +1934,23 @@
         ]
       },
       "path": "~/Sconce"
+    },
+    {
+      "name": "Sconce",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sconce",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/extra_building_blocks/loot_tables/blocks/sconce.json",
+          "src/main/java/net/mcreator/extrabuildingblocks/block/SconceBlock.java",
+          "src/main/resources/assets/extra_building_blocks/models/item/sconce.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/sconce.json",
+          "src/main/resources/assets/extra_building_blocks/blockstates/sconce.json"
+        ]
+      },
+      "path": "~/Sconce/Plain"
     },
     {
       "name": "PolishedDripstone",
@@ -2326,6 +2416,19 @@
       "metadata": {
         "files": [
           "src/main/resources/data/extra_building_blocks/recipes/dripstone_brick_slab_recipe.json"
+        ]
+      },
+      "path": "~/CalciteAndDripstone/Dripstone/Bricks"
+    },
+    {
+      "name": "DripstoneBrickWallRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dripstone_brick_wall_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/extra_building_blocks/recipes/dripstone_brick_wall_recipe.json"
         ]
       },
       "path": "~/CalciteAndDripstone/Dripstone/Bricks"
@@ -3576,6 +3679,19 @@
       "path": "~/ChorusWood"
     },
     {
+      "name": "ChorusPlanksLogRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorus_planks_log_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/extra_building_blocks/recipes/chorus_planks_log_recipe.json"
+        ]
+      },
+      "path": "~/ChorusWood"
+    },
+    {
       "name": "ChorusStairsRecipe",
       "type": "recipe",
       "compiles": true,
@@ -4350,6 +4466,19 @@
       "path": "~/SoulGlass"
     },
     {
+      "name": "SoulGlassPaneRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul_glass_pane_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/extra_building_blocks/recipes/soul_glass_pane_recipe.json"
+        ]
+      },
+      "path": "~/SoulGlass"
+    },
+    {
       "name": "EndStoneStairsRecipe",
       "type": "recipe",
       "compiles": true,
@@ -4694,6 +4823,23 @@
       "path": "~/SoulGlass"
     },
     {
+      "name": "GreenStainedSoulGlass",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_stained_soul_glass",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/extra_building_blocks/models/item/green_stained_soul_glass.json",
+          "src/main/resources/assets/extra_building_blocks/blockstates/green_stained_soul_glass.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/green_stained_soul_glass.json",
+          "src/main/resources/data/extra_building_blocks/loot_tables/blocks/green_stained_soul_glass.json",
+          "src/main/java/net/mcreator/extrabuildingblocks/block/GreenStainedSoulGlassBlock.java"
+        ]
+      },
+      "path": "~/SoulGlass"
+    },
+    {
       "name": "GreenStainedSoulGlassPane",
       "type": "block",
       "compiles": true,
@@ -4862,6 +5008,23 @@
           "src/main/java/net/mcreator/extrabuildingblocks/block/PurpleStainedSoulGlassPaneBlock.java",
           "src/main/resources/data/extra_building_blocks/loot_tables/blocks/purple_stained_soul_glass_pane.json",
           "src/main/resources/assets/extra_building_blocks/models/block/purple_stained_soul_glass_pane_side.json"
+        ]
+      },
+      "path": "~/SoulGlass"
+    },
+    {
+      "name": "MagentaStainedSoulGlass",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magenta_stained_soul_glass",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/extra_building_blocks/models/block/magenta_stained_soul_glass.json",
+          "src/main/resources/assets/extra_building_blocks/models/item/magenta_stained_soul_glass.json",
+          "src/main/resources/assets/extra_building_blocks/blockstates/magenta_stained_soul_glass.json",
+          "src/main/resources/data/extra_building_blocks/loot_tables/blocks/magenta_stained_soul_glass.json",
+          "src/main/java/net/mcreator/extrabuildingblocks/block/MagentaStainedSoulGlassBlock.java"
         ]
       },
       "path": "~/SoulGlass"
@@ -5183,6 +5346,32 @@
       "metadata": {
         "files": [
           "src/main/resources/data/extra_building_blocks/recipes/red_stained_soul_glass_recipe.json"
+        ]
+      },
+      "path": "~/SoulGlass"
+    },
+    {
+      "name": "RedStainedSoulGlassPaneRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_stained_soul_glass_pane_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/extra_building_blocks/recipes/red_stained_soul_glass_pane_recipe.json"
+        ]
+      },
+      "path": "~/SoulGlass"
+    },
+    {
+      "name": "RedStainedSoulGlassPaneRecipeRaw",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_stained_soul_glass_pane_recipe_raw",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/extra_building_blocks/recipes/red_stained_soul_glass_pane_recipe_raw.json"
         ]
       },
       "path": "~/SoulGlass"
@@ -5560,6 +5749,19 @@
       "metadata": {
         "files": [
           "src/main/resources/data/extra_building_blocks/recipes/brown_stained_soul_glass_pane_recipe.json"
+        ]
+      },
+      "path": "~/SoulGlass"
+    },
+    {
+      "name": "BrownStainedSoulGlassPaneRecipeRaw",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brown_stained_soul_glass_pane_recipe_raw",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/extra_building_blocks/recipes/brown_stained_soul_glass_pane_recipe_raw.json"
         ]
       },
       "path": "~/SoulGlass"
@@ -5979,6 +6181,19 @@
       "metadata": {
         "files": [
           "src/main/resources/data/extra_building_blocks/recipes/red_sandstone_brick_stairs_stonecutter_raw.json"
+        ]
+      },
+      "path": "~/SandstoneBricks/RedSand"
+    },
+    {
+      "name": "RedSandstoneBrickSlabRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_sandstone_brick_slab_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/extra_building_blocks/recipes/red_sandstone_brick_slab_recipe.json"
         ]
       },
       "path": "~/SandstoneBricks/RedSand"
@@ -6836,6 +7051,23 @@
         ]
       },
       "path": "~/SaltBlocks"
+    },
+    {
+      "name": "WroughtIron",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wrought_iron",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/extra_building_blocks/loot_tables/blocks/wrought_iron.json",
+          "src/main/resources/assets/extra_building_blocks/blockstates/wrought_iron.json",
+          "src/main/resources/assets/extra_building_blocks/models/item/wrought_iron.json",
+          "src/main/java/net/mcreator/extrabuildingblocks/block/WroughtIronBlock.java",
+          "src/main/resources/assets/extra_building_blocks/models/block/wrought_iron.json"
+        ]
+      },
+      "path": "~/WroughtIron/Plain"
     },
     {
       "name": "WroughtIronRecipe",
@@ -8668,6 +8900,21 @@
       "path": "~/SaltBlocks"
     },
     {
+      "name": "CactusHouse",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cactus_house",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/extra_building_blocks/worldgen/structure/cactus_house.json",
+          "src/main/resources/data/extra_building_blocks/worldgen/template_pool/cactus_house.json",
+          "src/main/resources/data/extra_building_blocks/worldgen/structure_set/cactus_house.json"
+        ]
+      },
+      "path": "~/WorldGen"
+    },
+    {
       "name": "SaltGrowthNeighbourBlockChanges",
       "type": "procedure",
       "compiles": true,
@@ -9610,6 +9857,21 @@
         ]
       },
       "path": "~/DuckWeed"
+    },
+    {
+      "name": "DuckweedFeature",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "duckweed_feature",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/extra_building_blocks/worldgen/configured_feature/duckweed_feature.json",
+          "src/main/resources/data/extra_building_blocks/forge/biome_modifier/duckweed_feature_biome_modifier.json",
+          "src/main/resources/data/extra_building_blocks/worldgen/placed_feature/duckweed_feature.json"
+        ]
+      },
+      "path": "~/WorldGen"
     },
     {
       "name": "DuckWeedPlacing",
@@ -10692,17 +10954,8 @@
     "BLOCKS:minecraft:replaceable": [
       "~CUSTOM:DuckWeed"
     ],
-    "BLOCKS:minecraft:infiniburn_overworld": [
-      "CUSTOM:SoulMagma"
-    ],
-    "BIOMES:minecraft:has_structure/village_desert": [
-      "~CUSTOM:SparseDesert"
-    ],
     "BLOCKS:minecraft:infiniburn_nether": [
       "CUSTOM:SoulMagma"
-    ],
-    "BIOMES:minecraft:has_structure/desert_pyramid": [
-      "~CUSTOM:SparseDesert"
     ],
     "BLOCKS:minecraft:soul_fire_base_blocks": [
       "CUSTOM:SoulSlate",
@@ -10720,6 +10973,217 @@
       "~CUSTOM:SaltBasin",
       "~CUSTOM:SaltOutcrops",
       "~CUSTOM:SaltFlats"
+    ],
+    "BLOCKS:minecraft:slabs": [
+      "~CUSTOM:CactusWSlab",
+      "~CUSTOM:SoulSlateBrickSlab",
+      "~CUSTOM:RedSandstoneBrickSlab",
+      "~CUSTOM:SandstoneBrickSlab",
+      "~CUSTOM:EndStoneSlab",
+      "~CUSTOM:ChorusSlab",
+      "~CUSTOM:CutSmoothStoneSlab",
+      "~CUSTOM:IceBrickSlab",
+      "~CUSTOM:DripstoneSlab",
+      "~CUSTOM:DripstoneBrickSlab",
+      "~CUSTOM:PolishedDripstoneSlab",
+      "~CUSTOM:QuartzBrickSlab",
+      "~CUSTOM:CutDioriteSlab",
+      "~CUSTOM:CalciteBrickSlab",
+      "~CUSTOM:CalciteSlab",
+      "~CUSTOM:PolishedCalciteSlab",
+      "~CUSTOM:CutGraniteSlab",
+      "~CUSTOM:CutAndesiteSlab"
+    ],
+    "BIOMES:minecraft:has_structure/ruined_portal_desert": [
+      "~CUSTOM:SaltBasin",
+      "~CUSTOM:SparseDesert",
+      "~CUSTOM:SaltOutcrops",
+      "~CUSTOM:SaltFlats"
+    ],
+    "BLOCKS:minecraft:needs_stone_tool": [
+      "~CUSTOM:ExposedWroughtIron",
+      "~CUSTOM:RustedWroughtIron",
+      "~CUSTOM:WeatheredWroughtIron",
+      "~CUSTOM:IronGate",
+      "~CUSTOM:Brace",
+      "~CUSTOM:ChiseledBlackstoneBricks",
+      "~CUSTOM:ChiseledDeepslateBricks",
+      "~CUSTOM:ChiseledStone",
+      "~CUSTOM:SoulMagma",
+      "~CUSTOM:ChiseledPrismarine",
+      "~CUSTOM:DarkPrismarinePillar",
+      "~CUSTOM:PrismarinePillar",
+      "~CUSTOM:DarkPrismarineWall",
+      "~CUSTOM:PrismarineBrickWall",
+      "~CUSTOM:MossyBricks",
+      "~CUSTOM:DestroyedBricks",
+      "~CUSTOM:VeryCrackedBricks",
+      "~CUSTOM:CrackedBricks",
+      "~CUSTOM:ChiseledRedNetherBrick",
+      "~CUSTOM:StonePillar",
+      "~CUSTOM:EchoCrystal",
+      "~CUSTOM:PurpurWall",
+      "~CUSTOM:SoulSlateBrickWall",
+      "~CUSTOM:SoulSlateBrickSlab",
+      "~CUSTOM:SoulSlateBrickStairs",
+      "~CUSTOM:ChiseledSoulSlate",
+      "~CUSTOM:SoulSlateBricks",
+      "~CUSTOM:SoulSlate",
+      "~CUSTOM:RedSandstoneBrickWall",
+      "~CUSTOM:RedSandstoneBrickSlab",
+      "~CUSTOM:RedSandstoneBrickStairs",
+      "~CUSTOM:RedSandstoneBricks",
+      "~CUSTOM:SandstoneBrickWall",
+      "~CUSTOM:SandstoneBrickSlab",
+      "~CUSTOM:SandstoneBrickStairs",
+      "~CUSTOM:SandstoneBricks",
+      "~CUSTOM:BrownStainedSoulGlassPane",
+      "~CUSTOM:BrownStainedSoulGlass",
+      "~CUSTOM:DarkGreyStainedSoulGlassPane",
+      "~CUSTOM:DarkGreyStainedSoulGlass",
+      "~CUSTOM:PinkStainedSoulGlassPane",
+      "~CUSTOM:PinkStainedSoulGlass",
+      "~CUSTOM:MagentaStainedSoulGlassPane",
+      "~CUSTOM:MagentaStainedSoulGlass",
+      "~CUSTOM:PurpleStainedSoulGlassPane",
+      "~CUSTOM:PurpleStainedSoulGlass",
+      "~CUSTOM:BlueStainedSoulGlassPane",
+      "~CUSTOM:BlueStainedSoulGlass",
+      "~CUSTOM:LightBlueStainedSoulGlassPane",
+      "~CUSTOM:LightBlueStainedSoulGlass",
+      "~CUSTOM:CyanStainedSoulGlassPane",
+      "~CUSTOM:CyanStainedSoulGlass",
+      "~CUSTOM:GreenStainedSoulGlassPane",
+      "~CUSTOM:GreenStainedSoulGlass",
+      "~CUSTOM:LimeStainedSoulGlassPane",
+      "~CUSTOM:LimeStainedSoulGlass",
+      "~CUSTOM:YellowStainedSoulGlassPane",
+      "~CUSTOM:YellowStainedSoulGlass",
+      "~CUSTOM:OrangeStainedSoulGlassPane",
+      "~CUSTOM:OrangeStainedSoulGlass",
+      "~CUSTOM:RedStainedSoulGlassPane",
+      "~CUSTOM:RedStainedSoulGlass",
+      "~CUSTOM:BlackStainedSoulGlassPane",
+      "~CUSTOM:BlackStainedSoulGlass",
+      "~CUSTOM:GreyStainedSoulGlassPane",
+      "~CUSTOM:GreyStainedSoulGlass",
+      "~CUSTOM:WhiteStainedSoulGlassPane",
+      "~CUSTOM:WhiteStainedSoulGlass",
+      "~CUSTOM:SoulGlassPane",
+      "~CUSTOM:SoulGlass",
+      "~CUSTOM:EndStoneWall",
+      "~CUSTOM:EndStoneSlab",
+      "~CUSTOM:EndStoneStairs",
+      "~CUSTOM:CutAmethyst",
+      "~CUSTOM:SmoothStoneWall",
+      "~CUSTOM:CutSmoothStoneSlab",
+      "~CUSTOM:CutSmoothStoneStairs",
+      "~CUSTOM:CutSmoothStone",
+      "~CUSTOM:IceBrickWall",
+      "~CUSTOM:IceBrickSlab",
+      "~CUSTOM:IceBrickStairs",
+      "~CUSTOM:ChainConnected",
+      "~CUSTOM:CrackedCalciteBricks",
+      "~CUSTOM:CrackedDripstoneBricks",
+      "~CUSTOM:DripstoneWall",
+      "~CUSTOM:DripstoneSlab",
+      "~CUSTOM:DripstoneStairs",
+      "~CUSTOM:DripstoneBrickWall",
+      "~CUSTOM:DripstoneBrickSlab",
+      "~CUSTOM:DripstoneBricks",
+      "~CUSTOM:PolishedDripstoneWall",
+      "~CUSTOM:PolishedDripstoneSlab",
+      "~CUSTOM:PolishedDripstoneStairs",
+      "~CUSTOM:PolishedDripstone",
+      "~CUSTOM:Bracket",
+      "~CUSTOM:CrackedRedNetherBrick",
+      "~CUSTOM:SmoothStoneStairs",
+      "~CUSTOM:QuartzBrickWall",
+      "~CUSTOM:QuartzBrickSlab",
+      "~CUSTOM:CrackedQuartzBricks",
+      "~CUSTOM:CrackedEndBricks",
+      "~CUSTOM:CrackedMudBricks",
+      "~CUSTOM:CutDioriteSlab",
+      "~CUSTOM:CutDioriteStairs",
+      "~CUSTOM:CutDiorite",
+      "~CUSTOM:CalciteBrickWall",
+      "~CUSTOM:CalciteBrickSlab",
+      "~CUSTOM:CalciteBrickStairs",
+      "~CUSTOM:CalciteWall",
+      "~CUSTOM:CalciteBricks",
+      "~CUSTOM:PolishedCalciteWall",
+      "~CUSTOM:PolishedCalciteStairs",
+      "~CUSTOM:PolishedCalcite",
+      "~CUSTOM:Swampvine",
+      "~CUSTOM:CutGraniteSlab",
+      "~CUSTOM:CutGraniteStairs",
+      "~CUSTOM:CutGranite",
+      "~CUSTOM:CutAndesiteSlab",
+      "~CUSTOM:CutAndesiteStairs",
+      "~CUSTOM:CutAndesite"
+    ],
+    "BLOCKS:minecraft:stairs": [
+      "~CUSTOM:CactusWStairs",
+      "~CUSTOM:SoulSlateBrickStairs",
+      "~CUSTOM:RedSandstoneBrickStairs",
+      "~CUSTOM:SandstoneBrickStairs",
+      "~CUSTOM:EndStoneStairs",
+      "~CUSTOM:ChorusStairs",
+      "~CUSTOM:CutSmoothStoneStairs",
+      "~CUSTOM:IceBrickStairs",
+      "~CUSTOM:DripstoneStairs",
+      "~CUSTOM:DripstoneBrickStairs",
+      "~CUSTOM:PolishedDripstoneStairs",
+      "~CUSTOM:SmoothStoneStairs",
+      "~CUSTOM:QuartzBrickStairs",
+      "~CUSTOM:CutDioriteStairs",
+      "~CUSTOM:CalciteBrickStairs",
+      "~CUSTOM:CalciteStairs",
+      "~CUSTOM:PolishedCalciteStairs",
+      "~CUSTOM:CutGraniteStairs",
+      "~CUSTOM:CutAndesiteStairs"
+    ],
+    "BLOCKS:custom:light_source": [
+      "Blocks.TORCH",
+      "Blocks.WALL_TORCH",
+      "Blocks.SOUL_TORCH",
+      "Blocks.SOUL_WALL_TORCH",
+      "Blocks.REDSTONE_TORCH",
+      "Blocks.REDSTONE_WALL_TORCH",
+      "Blocks.GLOWSTONE",
+      "Blocks.SEA_LANTERN",
+      "CUSTOM:Lamp",
+      "CUSTOM:LampChain",
+      "CUSTOM:SoulLamp",
+      "CUSTOM:LampChainSoul",
+      "Blocks.LIT_REDSTONE_LAMP",
+      "Blocks.LANTERN",
+      "Blocks.SOUL_LANTERN",
+      "Blocks.OCHRE_FROGLIGHT",
+      "Blocks.VERDANT_FROGLIGHT",
+      "Blocks.PEARLESCENT_FROGLIGHT",
+      "Blocks.LIT_PUMPKIN",
+      "Blocks.CAMPFIRE",
+      "Blocks.SOUL_CAMPFIRE",
+      "Blocks.FIRE",
+      "Blocks.SOUL_FIRE",
+      "CUSTOM:SaltCrystalEmissive"
+    ],
+    "ITEMS:minecraft:planks": [
+      "CUSTOM:ChorusPlanks",
+      "CUSTOM:CactusWPlanks"
+    ],
+    "BLOCKS:minecraft:needs_iron_tool": [
+      "~CUSTOM:WroughtIron"
+    ],
+    "BLOCKS:minecraft:infiniburn_overworld": [
+      "CUSTOM:SoulMagma"
+    ],
+    "BIOMES:minecraft:has_structure/village_desert": [
+      "~CUSTOM:SparseDesert"
+    ],
+    "BIOMES:minecraft:has_structure/desert_pyramid": [
+      "~CUSTOM:SparseDesert"
     ],
     "BLOCKS:minecraft:infiniburn_end": [
       "CUSTOM:SoulMagma"
@@ -10749,6 +11213,7 @@
       "~CUSTOM:PottedChorus",
       "~CUSTOM:ChiseledRedNetherBrick",
       "~CUSTOM:StonePillar",
+      "~CUSTOM:WroughtIron",
       "~CUSTOM:SaltCrystal",
       "~CUSTOM:EchoCrystal",
       "~CUSTOM:PurpurWall",
@@ -10773,6 +11238,7 @@
       "~CUSTOM:PinkStainedSoulGlassPane",
       "~CUSTOM:PinkStainedSoulGlass",
       "~CUSTOM:MagentaStainedSoulGlassPane",
+      "~CUSTOM:MagentaStainedSoulGlass",
       "~CUSTOM:PurpleStainedSoulGlassPane",
       "~CUSTOM:PurpleStainedSoulGlass",
       "~CUSTOM:BlueStainedSoulGlassPane",
@@ -10782,6 +11248,7 @@
       "~CUSTOM:CyanStainedSoulGlassPane",
       "~CUSTOM:CyanStainedSoulGlass",
       "~CUSTOM:GreenStainedSoulGlassPane",
+      "~CUSTOM:GreenStainedSoulGlass",
       "~CUSTOM:LimeStainedSoulGlassPane",
       "~CUSTOM:LimeStainedSoulGlass",
       "~CUSTOM:YellowStainedSoulGlassPane",
@@ -10828,6 +11295,8 @@
       "~CUSTOM:PolishedDripstone",
       "~CUSTOM:Bracket",
       "~CUSTOM:CrackedRedNetherBrick",
+      "~CUSTOM:SmoothStoneStairs",
+      "~CUSTOM:QuartzBrickWall",
       "~CUSTOM:QuartzBrickSlab",
       "~CUSTOM:QuartzBrickStairs",
       "~CUSTOM:CrackedQuartzBricks",
@@ -10835,6 +11304,7 @@
       "~CUSTOM:CrackedMudBricks",
       "~CUSTOM:CutDioriteSlab",
       "~CUSTOM:CutDioriteStairs",
+      "~CUSTOM:CutDiorite",
       "~CUSTOM:CalciteBrickWall",
       "~CUSTOM:CalciteBrickSlab",
       "~CUSTOM:CalciteBrickStairs",
@@ -10849,26 +11319,6 @@
       "~CUSTOM:CutAndesiteSlab",
       "~CUSTOM:CutAndesiteStairs",
       "~CUSTOM:CutAndesite"
-    ],
-    "BLOCKS:minecraft:slabs": [
-      "~CUSTOM:CactusWSlab",
-      "~CUSTOM:SoulSlateBrickSlab",
-      "~CUSTOM:RedSandstoneBrickSlab",
-      "~CUSTOM:SandstoneBrickSlab",
-      "~CUSTOM:EndStoneSlab",
-      "~CUSTOM:ChorusSlab",
-      "~CUSTOM:CutSmoothStoneSlab",
-      "~CUSTOM:IceBrickSlab",
-      "~CUSTOM:DripstoneSlab",
-      "~CUSTOM:DripstoneBrickSlab",
-      "~CUSTOM:PolishedDripstoneSlab",
-      "~CUSTOM:QuartzBrickSlab",
-      "~CUSTOM:CutDioriteSlab",
-      "~CUSTOM:CalciteBrickSlab",
-      "~CUSTOM:CalciteSlab",
-      "~CUSTOM:PolishedCalciteSlab",
-      "~CUSTOM:CutGraniteSlab",
-      "~CUSTOM:CutAndesiteSlab"
     ],
     "BLOCKS:minecraft:mineable/axe": [
       "~CUSTOM:CactusWoodTrapdoor",
@@ -10877,131 +11327,9 @@
       "~CUSTOM:CactusWood",
       "~CUSTOM:ChorusPlanks"
     ],
-    "BIOMES:minecraft:has_structure/ruined_portal_desert": [
-      "~CUSTOM:SaltBasin",
-      "~CUSTOM:SparseDesert",
-      "~CUSTOM:SaltOutcrops",
-      "~CUSTOM:SaltFlats"
-    ],
     "BLOCKS:minecraft:fences": [
       "CUSTOM:ChorusFence",
       "CUSTOM:CactusWFence"
-    ],
-    "BLOCKS:minecraft:needs_stone_tool": [
-      "~CUSTOM:ExposedWroughtIron",
-      "~CUSTOM:RustedWroughtIron",
-      "~CUSTOM:WeatheredWroughtIron",
-      "~CUSTOM:IronGate",
-      "~CUSTOM:Brace",
-      "~CUSTOM:ChiseledBlackstoneBricks",
-      "~CUSTOM:ChiseledDeepslateBricks",
-      "~CUSTOM:ChiseledStone",
-      "~CUSTOM:SoulMagma",
-      "~CUSTOM:ChiseledPrismarine",
-      "~CUSTOM:DarkPrismarinePillar",
-      "~CUSTOM:PrismarinePillar",
-      "~CUSTOM:DarkPrismarineWall",
-      "~CUSTOM:PrismarineBrickWall",
-      "~CUSTOM:MossyBricks",
-      "~CUSTOM:DestroyedBricks",
-      "~CUSTOM:VeryCrackedBricks",
-      "~CUSTOM:CrackedBricks",
-      "~CUSTOM:ChiseledRedNetherBrick",
-      "~CUSTOM:StonePillar",
-      "~CUSTOM:EchoCrystal",
-      "~CUSTOM:PurpurWall",
-      "~CUSTOM:SoulSlateBrickWall",
-      "~CUSTOM:SoulSlateBrickSlab",
-      "~CUSTOM:SoulSlateBrickStairs",
-      "~CUSTOM:ChiseledSoulSlate",
-      "~CUSTOM:SoulSlateBricks",
-      "~CUSTOM:SoulSlate",
-      "~CUSTOM:RedSandstoneBrickWall",
-      "~CUSTOM:RedSandstoneBrickSlab",
-      "~CUSTOM:RedSandstoneBrickStairs",
-      "~CUSTOM:RedSandstoneBricks",
-      "~CUSTOM:SandstoneBrickWall",
-      "~CUSTOM:SandstoneBrickSlab",
-      "~CUSTOM:SandstoneBrickStairs",
-      "~CUSTOM:SandstoneBricks",
-      "~CUSTOM:BrownStainedSoulGlassPane",
-      "~CUSTOM:BrownStainedSoulGlass",
-      "~CUSTOM:DarkGreyStainedSoulGlassPane",
-      "~CUSTOM:DarkGreyStainedSoulGlass",
-      "~CUSTOM:PinkStainedSoulGlassPane",
-      "~CUSTOM:PinkStainedSoulGlass",
-      "~CUSTOM:MagentaStainedSoulGlassPane",
-      "~CUSTOM:PurpleStainedSoulGlassPane",
-      "~CUSTOM:PurpleStainedSoulGlass",
-      "~CUSTOM:BlueStainedSoulGlassPane",
-      "~CUSTOM:BlueStainedSoulGlass",
-      "~CUSTOM:LightBlueStainedSoulGlassPane",
-      "~CUSTOM:LightBlueStainedSoulGlass",
-      "~CUSTOM:CyanStainedSoulGlassPane",
-      "~CUSTOM:CyanStainedSoulGlass",
-      "~CUSTOM:GreenStainedSoulGlassPane",
-      "~CUSTOM:LimeStainedSoulGlassPane",
-      "~CUSTOM:LimeStainedSoulGlass",
-      "~CUSTOM:YellowStainedSoulGlassPane",
-      "~CUSTOM:YellowStainedSoulGlass",
-      "~CUSTOM:OrangeStainedSoulGlassPane",
-      "~CUSTOM:OrangeStainedSoulGlass",
-      "~CUSTOM:RedStainedSoulGlassPane",
-      "~CUSTOM:RedStainedSoulGlass",
-      "~CUSTOM:BlackStainedSoulGlassPane",
-      "~CUSTOM:BlackStainedSoulGlass",
-      "~CUSTOM:GreyStainedSoulGlassPane",
-      "~CUSTOM:GreyStainedSoulGlass",
-      "~CUSTOM:WhiteStainedSoulGlassPane",
-      "~CUSTOM:WhiteStainedSoulGlass",
-      "~CUSTOM:SoulGlassPane",
-      "~CUSTOM:SoulGlass",
-      "~CUSTOM:EndStoneWall",
-      "~CUSTOM:EndStoneSlab",
-      "~CUSTOM:EndStoneStairs",
-      "~CUSTOM:CutAmethyst",
-      "~CUSTOM:SmoothStoneWall",
-      "~CUSTOM:CutSmoothStoneSlab",
-      "~CUSTOM:CutSmoothStoneStairs",
-      "~CUSTOM:CutSmoothStone",
-      "~CUSTOM:IceBrickWall",
-      "~CUSTOM:IceBrickSlab",
-      "~CUSTOM:IceBrickStairs",
-      "~CUSTOM:ChainConnected",
-      "~CUSTOM:CrackedCalciteBricks",
-      "~CUSTOM:CrackedDripstoneBricks",
-      "~CUSTOM:DripstoneWall",
-      "~CUSTOM:DripstoneSlab",
-      "~CUSTOM:DripstoneStairs",
-      "~CUSTOM:DripstoneBrickWall",
-      "~CUSTOM:DripstoneBrickSlab",
-      "~CUSTOM:DripstoneBricks",
-      "~CUSTOM:PolishedDripstoneWall",
-      "~CUSTOM:PolishedDripstoneSlab",
-      "~CUSTOM:PolishedDripstoneStairs",
-      "~CUSTOM:PolishedDripstone",
-      "~CUSTOM:Bracket",
-      "~CUSTOM:CrackedRedNetherBrick",
-      "~CUSTOM:QuartzBrickSlab",
-      "~CUSTOM:CrackedQuartzBricks",
-      "~CUSTOM:CrackedEndBricks",
-      "~CUSTOM:CrackedMudBricks",
-      "~CUSTOM:CutDioriteSlab",
-      "~CUSTOM:CutDioriteStairs",
-      "~CUSTOM:CalciteBrickWall",
-      "~CUSTOM:CalciteBrickSlab",
-      "~CUSTOM:CalciteBrickStairs",
-      "~CUSTOM:CalciteWall",
-      "~CUSTOM:CalciteBricks",
-      "~CUSTOM:PolishedCalciteWall",
-      "~CUSTOM:PolishedCalciteStairs",
-      "~CUSTOM:PolishedCalcite",
-      "~CUSTOM:CutGraniteSlab",
-      "~CUSTOM:CutGraniteStairs",
-      "~CUSTOM:CutGranite",
-      "~CUSTOM:CutAndesiteSlab",
-      "~CUSTOM:CutAndesiteStairs",
-      "~CUSTOM:CutAndesite"
     ],
     "BLOCKS:minecraft:walls": [
       "~CUSTOM:DarkPrismarineWall",
@@ -11024,60 +11352,10 @@
     "BLOCKS:minecraft:mineable/shovel": [
       "~CUSTOM:RawSalt"
     ],
-    "BLOCKS:minecraft:stairs": [
-      "~CUSTOM:CactusWStairs",
-      "~CUSTOM:SoulSlateBrickStairs",
-      "~CUSTOM:RedSandstoneBrickStairs",
-      "~CUSTOM:SandstoneBrickStairs",
-      "~CUSTOM:EndStoneStairs",
-      "~CUSTOM:ChorusStairs",
-      "~CUSTOM:CutSmoothStoneStairs",
-      "~CUSTOM:IceBrickStairs",
-      "~CUSTOM:DripstoneStairs",
-      "~CUSTOM:DripstoneBrickStairs",
-      "~CUSTOM:PolishedDripstoneStairs",
-      "~CUSTOM:QuartzBrickStairs",
-      "~CUSTOM:CutDioriteStairs",
-      "~CUSTOM:CalciteBrickStairs",
-      "~CUSTOM:CalciteStairs",
-      "~CUSTOM:PolishedCalciteStairs",
-      "~CUSTOM:CutGraniteStairs",
-      "~CUSTOM:CutAndesiteStairs"
-    ],
-    "BLOCKS:custom:light_source": [
-      "Blocks.TORCH",
-      "Blocks.WALL_TORCH",
-      "Blocks.SOUL_TORCH",
-      "Blocks.SOUL_WALL_TORCH",
-      "Blocks.REDSTONE_TORCH",
-      "Blocks.REDSTONE_WALL_TORCH",
-      "Blocks.GLOWSTONE",
-      "Blocks.SEA_LANTERN",
-      "CUSTOM:Lamp",
-      "CUSTOM:LampChain",
-      "CUSTOM:SoulLamp",
-      "CUSTOM:LampChainSoul",
-      "Blocks.LIT_REDSTONE_LAMP",
-      "Blocks.LANTERN",
-      "Blocks.SOUL_LANTERN",
-      "Blocks.OCHRE_FROGLIGHT",
-      "Blocks.VERDANT_FROGLIGHT",
-      "Blocks.PEARLESCENT_FROGLIGHT",
-      "Blocks.LIT_PUMPKIN",
-      "Blocks.CAMPFIRE",
-      "Blocks.SOUL_CAMPFIRE",
-      "Blocks.FIRE",
-      "Blocks.SOUL_FIRE",
-      "CUSTOM:SaltCrystalEmissive"
-    ],
     "BLOCKS:minecraft:fence_gates": [
       "CUSTOM:CactusWFenceGate",
       "CUSTOM:ChorusFenceGate",
       "CUSTOM:IronGate"
-    ],
-    "ITEMS:minecraft:planks": [
-      "CUSTOM:ChorusPlanks",
-      "CUSTOM:CactusWPlanks"
     ],
     "BLOCKS:mod:bars": [
       "CUSTOM:CopperBars",
@@ -11242,7 +11520,6 @@
       "CalciteBrickStairs",
       "CalciteBrickSlab",
       "CalciteBrickWall",
-      "CutDiorite",
       "CutDioriteStairs",
       "CutDioriteSlab",
       "CrackedMudBricks",
@@ -11250,9 +11527,7 @@
       "CrackedQuartzBricks",
       "QuartzBrickStairs",
       "QuartzBrickSlab",
-      "QuartzBrickWall",
       "Bracket",
-      "Sconce",
       "PolishedDripstone",
       "PolishedDripstoneStairs",
       "PolishedDripstoneSlab",
@@ -11360,9 +11635,9 @@
     "en_us": {
       "block.extra_building_blocks.smooth_stone_stairs": "Smooth Stone Stairs",
       "block.extra_building_blocks.very_cracked_bricks": "Very Cracked Bricks",
-      "block.extra_building_blocks.cyan_stained_soul_glass_pane": "Cyan Stained Soul Glass Pane",
-      "block.extra_building_blocks.chain_left": "Chain Left",
       "biome.extra_building_blocks.salt_basin": "Salt Basin",
+      "block.extra_building_blocks.chain_left": "Chain Left",
+      "block.extra_building_blocks.cyan_stained_soul_glass_pane": "Cyan Stained Soul Glass Pane",
       "block.extra_building_blocks.red_lace_banner": "Red Lace Banner",
       "block.extra_building_blocks.yellow_lace_carpet": "Yellow Lace Carpet",
       "gui.extra_building_blocks.emitter_gui.label_particle_emitter": "Particle Emitter",
@@ -11370,8 +11645,8 @@
       "block.extra_building_blocks.hanging_torchflower": "Hanging Torchflower",
       "block.extra_building_blocks.light_blue_lace_banner": "Light Blue Lace Banner",
       "block.extra_building_blocks.cactus_w_stairs": "Cactus Wood Stairs",
-      "block.extra_building_blocks.cut_granite_stairs": "Cut Granite Stairs",
       "block.extra_building_blocks.weathered_copper_bars": "Weathered Copper Bars",
+      "block.extra_building_blocks.cut_granite_stairs": "Cut Granite Stairs",
       "block.extra_building_blocks.calcite_bricks": "Calcite Bricks",
       "block.extra_building_blocks.warped_beam": "Warped Beam",
       "block.extra_building_blocks.ice_brick_wall": "Ice Brick Wall",
@@ -11388,14 +11663,14 @@
       "block.extra_building_blocks.jungle_beam": "Jungle Beam",
       "block.extra_building_blocks.exposed_wrought_iron": "Exposed Wrought Iron",
       "block.extra_building_blocks.dark_prismarine_pillar.description_0": "texture inspired by _Fungus on planet minecraft ^-^",
-      "block.extra_building_blocks.polished_dripstone": "Polished Dripstone",
       "block.extra_building_blocks.lime_lace_carpet": "Lime Lace Carpet",
+      "block.extra_building_blocks.polished_dripstone": "Polished Dripstone",
       "block.extra_building_blocks.acacia_beam": "Acacia Beam",
       "block.extra_building_blocks.black_stained_soul_glass": "Black Stained Soul Glass",
-      "block.extra_building_blocks.orange_stained_soul_glass_pane": "Orange Stained Soul Glass Pane",
       "block.extra_building_blocks.cactus_w_fence_gate": "Cactus Wood Fence Gate",
-      "block.extra_building_blocks.chorus_fence": "Chorus Wood Fence",
+      "block.extra_building_blocks.orange_stained_soul_glass_pane": "Orange Stained Soul Glass Pane",
       "block.extra_building_blocks.soul_glass_pane": "Soul Glass Pane",
+      "block.extra_building_blocks.chorus_fence": "Chorus Wood Fence",
       "block.extra_building_blocks.prismarine_pillar": "Prismarine Pillar",
       "block.extra_building_blocks.yellow_stained_soul_glass_pane": "Yellow Stained Soul Glass Pane",
       "block.extra_building_blocks.duck_weed": "Duck Weed",
@@ -11414,8 +11689,8 @@
       "block.extra_building_blocks.soul_magma": "Soul Magma",
       "block.extra_building_blocks.polished_calcite": "Polished Calcite",
       "block.extra_building_blocks.cut_smooth_stone_slab": "Cut Smooth Stone Slab",
-      "block.extra_building_blocks.ice_bricks": "Ice Bricks",
       "block.extra_building_blocks.purple_lace_banner": "Purple Lace Banner",
+      "block.extra_building_blocks.ice_bricks": "Ice Bricks",
       "block.extra_building_blocks.very_cracked_stone_bricks": "Very Cracked Stone Bricks",
       "block.extra_building_blocks.soul_slate_brick_stairs": "Soul Slate Brick Stairs",
       "advancements.bus_carpet_advancement.title": "Mind The Gap!",
@@ -11432,8 +11707,8 @@
       "block.extra_building_blocks.chiseled_soul_slate": "Chiseled Soul Slate",
       "advancements.ice_bricks_funny_advancement.descr": "Try to create Cracked Ice Bricks",
       "block.extra_building_blocks.bracket": "Bracket",
-      "block.extra_building_blocks.smooth_stone_wall": "Smooth Stone Wall",
       "block.extra_building_blocks.quartz_brick_slab": "Quartz Brick Slab",
+      "block.extra_building_blocks.smooth_stone_wall": "Smooth Stone Wall",
       "block.extra_building_blocks.brown_lace_banner": "Brown Lace Banner",
       "block.extra_building_blocks.salt_crystal": "Salt Crystal",
       "block.extra_building_blocks.orange_lace_carpet": "Orange Lace Carpet",
@@ -11463,7 +11738,7 @@
       "block.extra_building_blocks.ice_brick_slab": "Ice Brick Slab",
       "block.extra_building_blocks.soul_lamp": "Soul Storm Lantern",
       "block.extra_building_blocks.cactus_w_slab": "Cactus Wood Slab",
-      "block.extra_building_blocks.swampvine.description_0": "hi ! just letting u know this block is gonna have its texture redone soon and ",
+      "block.extra_building_blocks.swampvine.description_0": "hi ! just letting u know this block is gonna have its texture redone soon and its intended to be hangable like the chains but i havent coded that yet cool thanks !",
       "block.extra_building_blocks.lace_banner": "Lace Banner",
       "block.extra_building_blocks.lamp": "Storm Lantern",
       "block.extra_building_blocks.chiseled_prismarine": "Chiseled Prismarine",
@@ -11611,9 +11886,9 @@
     "fr_fr": {
       "block.extra_building_blocks.smooth_stone_stairs": "Escaliers en roche lisse",
       "block.extra_building_blocks.very_cracked_bricks": "Briques très craquelées",
-      "biome.extra_building_blocks.salt_basin": "Salt Basin",
-      "block.extra_building_blocks.chain_left": "Chain Left",
       "block.extra_building_blocks.cyan_stained_soul_glass_pane": "Vitre cyan des âmes",
+      "block.extra_building_blocks.chain_left": "Chain Left",
+      "biome.extra_building_blocks.salt_basin": "Salt Basin",
       "block.extra_building_blocks.red_lace_banner": "Bannière de dentelle rouge",
       "block.extra_building_blocks.yellow_lace_carpet": "Orange Lace Carpet",
       "gui.extra_building_blocks.emitter_gui.label_particle_emitter": "Particle Emitter",
@@ -11621,8 +11896,8 @@
       "block.extra_building_blocks.test": "INGAMENAME",
       "block.extra_building_blocks.light_blue_lace_banner": "Bannière de dentelle bleu clair",
       "block.extra_building_blocks.cactus_w_stairs": "Escaliers en bois de cactus",
-      "block.extra_building_blocks.weathered_copper_bars": "Barreaux de cuivre érodé",
       "block.extra_building_blocks.cut_granite_stairs": "Escaliers en granite taillé",
+      "block.extra_building_blocks.weathered_copper_bars": "Barreaux de cuivre érodé",
       "block.extra_building_blocks.calcite_bricks": "Briques de calcite",
       "block.extra_building_blocks.warped_beam": "Poutre biscornue",
       "block.extra_building_blocks.ice_brick_wall": "Muret de briques de glace",
@@ -11639,14 +11914,14 @@
       "block.extra_building_blocks.jungle_beam": "Poutre en acajou",
       "block.extra_building_blocks.exposed_wrought_iron": "Fer forgé exposé",
       "block.extra_building_blocks.dark_prismarine_pillar.description_0": "texture inspirée par _Fungus sur planet minecraft ^-^",
-      "block.extra_building_blocks.polished_dripstone": "Spéléothème poli",
       "block.extra_building_blocks.lime_lace_carpet": "Tapis de dentelle vert clair",
+      "block.extra_building_blocks.polished_dripstone": "Spéléothème poli",
       "block.extra_building_blocks.acacia_beam": "Poutre en acacia",
       "block.extra_building_blocks.black_stained_soul_glass": "Verre noir des âmes",
-      "block.extra_building_blocks.orange_stained_soul_glass_pane": "Vitre orange des âmes",
       "block.extra_building_blocks.cactus_w_fence_gate": "Portillon en bois de cactus",
-      "block.extra_building_blocks.soul_glass_pane": "Vitre des âmes",
+      "block.extra_building_blocks.orange_stained_soul_glass_pane": "Vitre orange des âmes",
       "block.extra_building_blocks.chorus_fence": "Barrière en chorus",
+      "block.extra_building_blocks.soul_glass_pane": "Vitre des âmes",
       "block.extra_building_blocks.prismarine_pillar": "Pilier de prismarine",
       "block.extra_building_blocks.yellow_stained_soul_glass_pane": "Vitre jaune des âmes",
       "block.extra_building_blocks.duck_weed": "Lentille d\u0027eau",
@@ -11665,8 +11940,8 @@
       "block.extra_building_blocks.soul_magma": "Bloc de magma des âmes",
       "block.extra_building_blocks.polished_calcite": "Calcite polie",
       "block.extra_building_blocks.cut_smooth_stone_slab": "Dalle de roche lisse taillée",
-      "block.extra_building_blocks.ice_bricks": "Briques de glace",
       "block.extra_building_blocks.purple_lace_banner": "Bannière de dentelle violette",
+      "block.extra_building_blocks.ice_bricks": "Briques de glace",
       "block.extra_building_blocks.very_cracked_stone_bricks": "Pierre taillée très craquelée",
       "block.extra_building_blocks.soul_slate_brick_stairs": "Escaliers en briques d\u0027ardoise des âmes",
       "advancements.bus_carpet_advancement.title": "Mind The Gap!",
@@ -11683,8 +11958,8 @@
       "block.extra_building_blocks.chiseled_soul_slate": "Ardoise sculptée des âmes",
       "advancements.ice_bricks_funny_advancement.descr": "Try to create Cracked Ice Bricks",
       "block.extra_building_blocks.bracket": "Support",
-      "block.extra_building_blocks.smooth_stone_wall": "Muret de roche lisse",
       "block.extra_building_blocks.quartz_brick_slab": "Dalle de briques de quartz",
+      "block.extra_building_blocks.smooth_stone_wall": "Muret de roche lisse",
       "block.extra_building_blocks.brown_lace_banner": "Bannière de dentelle marron",
       "block.extra_building_blocks.salt_crystal": "Cristal de sel",
       "block.extra_building_blocks.brace": "Contrefiche",
@@ -11862,9 +12137,9 @@
     "ja_jp": {
       "block.extra_building_blocks.smooth_stone_stairs": "滑らかな石の階段",
       "block.extra_building_blocks.very_cracked_bricks": "Very Cracked Bricks",
-      "biome.extra_building_blocks.salt_basin": "Salt Basin",
-      "block.extra_building_blocks.chain_left": "Chain Left",
       "block.extra_building_blocks.cyan_stained_soul_glass_pane": "Cyan Stained Soul Glass Pane",
+      "block.extra_building_blocks.chain_left": "Chain Left",
+      "biome.extra_building_blocks.salt_basin": "Salt Basin",
       "block.extra_building_blocks.red_lace_banner": "Red Lace Banner",
       "block.extra_building_blocks.yellow_lace_carpet": "Yellow Lace Carpet",
       "gui.extra_building_blocks.emitter_gui.label_particle_emitter": "Particle Emitter",
@@ -11872,8 +12147,8 @@
       "block.extra_building_blocks.hanging_torchflower": "Hanging Torchflower",
       "block.extra_building_blocks.light_blue_lace_banner": "Light Blue Lace Banner",
       "block.extra_building_blocks.cactus_w_stairs": "Cactus Wood Stairs",
-      "block.extra_building_blocks.weathered_copper_bars": "Weathered Copper Bars",
       "block.extra_building_blocks.cut_granite_stairs": "研がれた花崗岩の階段",
+      "block.extra_building_blocks.weathered_copper_bars": "Weathered Copper Bars",
       "block.extra_building_blocks.calcite_bricks": "方解石レンガ",
       "block.extra_building_blocks.warped_beam": "Warped Beam",
       "block.extra_building_blocks.ice_brick_wall": "Ice Brick Wall",
@@ -11890,14 +12165,14 @@
       "block.extra_building_blocks.jungle_beam": "Jungle Beam",
       "block.extra_building_blocks.exposed_wrought_iron": "Exposed Wrought Iron",
       "block.extra_building_blocks.dark_prismarine_pillar.description_0": "texture inspired by _Fungus on planet minecraft ^-^",
-      "block.extra_building_blocks.lime_lace_carpet": "Lime Lace Carpet",
       "block.extra_building_blocks.polished_dripstone": "磨かれた鍾乳石",
+      "block.extra_building_blocks.lime_lace_carpet": "Lime Lace Carpet",
       "block.extra_building_blocks.acacia_beam": "Acacia Beam",
       "block.extra_building_blocks.black_stained_soul_glass": "Black Stained Soul Glass",
-      "block.extra_building_blocks.cactus_w_fence_gate": "Cactus Wood Fence Gate",
       "block.extra_building_blocks.orange_stained_soul_glass_pane": "Orange Stained Soul Glass Pane",
-      "block.extra_building_blocks.soul_glass_pane": "Soul Glass Pane",
+      "block.extra_building_blocks.cactus_w_fence_gate": "Cactus Wood Fence Gate",
       "block.extra_building_blocks.chorus_fence": "Chorus Wood Fence",
+      "block.extra_building_blocks.soul_glass_pane": "Soul Glass Pane",
       "block.extra_building_blocks.prismarine_pillar": "プリズマリンの柱",
       "block.extra_building_blocks.yellow_stained_soul_glass_pane": "Yellow Stained Soul Glass Pane",
       "block.extra_building_blocks.duck_weed": "Duck Weed",
@@ -11916,8 +12191,8 @@
       "block.extra_building_blocks.soul_magma": "Soul Magma Block",
       "block.extra_building_blocks.polished_calcite": "磨かれた方解石",
       "block.extra_building_blocks.cut_smooth_stone_slab": "研がれた滑らかな石のハーフブロック",
-      "block.extra_building_blocks.purple_lace_banner": "Purple Lace Banner",
       "block.extra_building_blocks.ice_bricks": "Ice Bricks",
+      "block.extra_building_blocks.purple_lace_banner": "Purple Lace Banner",
       "block.extra_building_blocks.very_cracked_stone_bricks": "Very Cracked Stone Bricks",
       "block.extra_building_blocks.soul_slate_brick_stairs": "Soul Slate Brick Stairs",
       "advancements.bus_carpet_advancement.title": "Mind The Gap!",
@@ -11934,8 +12209,8 @@
       "block.extra_building_blocks.chiseled_soul_slate": "模様入りの[...]",
       "advancements.ice_bricks_funny_advancement.descr": "Try to create Cracked Ice Bricks",
       "block.extra_building_blocks.bracket": "Bracket",
-      "block.extra_building_blocks.quartz_brick_slab": "クォーツレンガのハーフブロック",
       "block.extra_building_blocks.smooth_stone_wall": "滑らかな石の塀",
+      "block.extra_building_blocks.quartz_brick_slab": "クォーツレンガのハーフブロック",
       "block.extra_building_blocks.brown_lace_banner": "Brown Lace Banner",
       "block.extra_building_blocks.salt_crystal": "Salt Crystal",
       "block.extra_building_blocks.orange_lace_carpet": "Orange Lace Carpet",

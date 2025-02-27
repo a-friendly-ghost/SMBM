@@ -8,7 +8,7 @@
   ],
   "key": {
     "a": {
-      "item": "minecraft:coal"
+      "item": "minecraft:charcoal"
     },
     "b": {
       "item": "minecraft:iron_ingot"
@@ -19,6 +19,6 @@
   },
   "result": {
     "item": "extra_building_blocks:sconce",
-    "count": 2
+    "count": 1
   }
 }
