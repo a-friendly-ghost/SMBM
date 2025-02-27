@@ -57,6 +57,7 @@ import net.mcreator.extrabuildingblocks.block.RedSandstoneBrickSlabBlock;
 import net.mcreator.extrabuildingblocks.block.RedLaceCarpetBlock;
 import net.mcreator.extrabuildingblocks.block.RedLaceBannerBlock;
 import net.mcreator.extrabuildingblocks.block.RawSaltBlock;
+import net.mcreator.extrabuildingblocks.block.QuartzBrickWallBlock;
 import net.mcreator.extrabuildingblocks.block.QuartzBrickStairsBlock;
 import net.mcreator.extrabuildingblocks.block.QuartzBrickSlabBlock;
 import net.mcreator.extrabuildingblocks.block.PurpurWallBlock;
@@ -261,6 +262,7 @@ public class ExtraBuildingBlocksModBlocks {
 	public static final RegistryObject<Block> CRACKED_QUARTZ_BRICKS = REGISTRY.register("cracked_quartz_bricks", () -> new CrackedQuartzBricksBlock());
 	public static final RegistryObject<Block> QUARTZ_BRICK_STAIRS = REGISTRY.register("quartz_brick_stairs", () -> new QuartzBrickStairsBlock());
 	public static final RegistryObject<Block> QUARTZ_BRICK_SLAB = REGISTRY.register("quartz_brick_slab", () -> new QuartzBrickSlabBlock());
+	public static final RegistryObject<Block> QUARTZ_BRICK_WALL = REGISTRY.register("quartz_brick_wall", () -> new QuartzBrickWallBlock());
 	public static final RegistryObject<Block> CRACKED_RED_NETHER_BRICK = REGISTRY.register("cracked_red_nether_brick", () -> new CrackedRedNetherBrickBlock());
 	public static final RegistryObject<Block> BRACKET = REGISTRY.register("bracket", () -> new BracketBlock());
 	public static final RegistryObject<Block> POLISHED_DRIPSTONE = REGISTRY.register("polished_dripstone", () -> new PolishedDripstoneBlock());
