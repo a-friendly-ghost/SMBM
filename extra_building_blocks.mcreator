@@ -10881,7 +10881,8 @@
         "files": [
           "src/main/resources/assets/extra_building_blocks/models/block/lamp_blockstate_blockstate_0.json"
         ]
-      }
+      },
+      "path": "~/Lamps/Regular"
     },
     {
       "name": "SoulLampBlockstate",
@@ -10893,7 +10894,8 @@
         "files": [
           "src/main/resources/assets/extra_building_blocks/models/block/soul_lamp_blockstate_blockstate_0.json"
         ]
-      }
+      },
+      "path": "~/Lamps/Soul"
     },
     {
       "name": "IceBricksFunny",
