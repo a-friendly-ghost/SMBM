@@ -7498,7 +7498,7 @@
           "src/main/resources/data/extra_building_blocks/loot_tables/blocks/potted_chorus.json"
         ]
       },
-      "path": "~/PottedChorus"
+      "path": "~/VanillaBlockPlacementChanges/PottedChorus"
     },
     {
       "name": "PottedChorusBlockValidPlacementCondition",
@@ -7530,7 +7530,7 @@
           }
         ]
       },
-      "path": "~/PottedChorus"
+      "path": "~/VanillaBlockPlacementChanges/PottedChorus"
     },
     {
       "name": "PottedChorusOnBlockRightClicked",
@@ -7565,7 +7565,7 @@
           }
         ]
       },
-      "path": "~/PottedChorus"
+      "path": "~/VanillaBlockPlacementChanges/PottedChorus"
     },
     {
       "name": "ChorusPotting",
@@ -7600,7 +7600,7 @@
           }
         ]
       },
-      "path": "~/PottedChorus"
+      "path": "~/VanillaBlockPlacementChanges/PottedChorus"
     },
     {
       "name": "VeryCrackedStoneBricks",
@@ -12602,10 +12602,6 @@
         "children": []
       },
       {
-        "name": "PottedChorus",
-        "children": []
-      },
-      {
         "name": "StonePillar",
         "children": []
       },
@@ -12731,6 +12727,10 @@
           },
           {
             "name": "HangingLadder",
+            "children": []
+          },
+          {
+            "name": "PottedChorus",
             "children": []
           }
         ]

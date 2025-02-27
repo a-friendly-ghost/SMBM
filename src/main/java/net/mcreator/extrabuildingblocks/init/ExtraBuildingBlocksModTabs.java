@@ -194,6 +194,7 @@ public class ExtraBuildingBlocksModTabs {
 			tabData.accept(ExtraBuildingBlocksModBlocks.PURPUR_WALL.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.ECHO_CRYSTAL.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.CHISELED_END_STONE_BRICKS.get().asItem());
+			tabData.accept(ExtraBuildingBlocksModBlocks.WROUGHT_IRON.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.EXPOSED_WROUGHT_IRON.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.WEATHERED_WROUGHT_IRON.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.RUSTED_WROUGHT_IRON.get().asItem());

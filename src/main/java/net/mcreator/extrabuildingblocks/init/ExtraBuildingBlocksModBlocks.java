@@ -14,6 +14,7 @@ import net.mcreator.extrabuildingblocks.block.YellowStainedSoulGlassPaneBlock;
 import net.mcreator.extrabuildingblocks.block.YellowStainedSoulGlassBlock;
 import net.mcreator.extrabuildingblocks.block.YellowLaceCarpetBlock;
 import net.mcreator.extrabuildingblocks.block.YellowLaceBannerBlock;
+import net.mcreator.extrabuildingblocks.block.WroughtIronBlock;
 import net.mcreator.extrabuildingblocks.block.WroughtIronBarsBlock;
 import net.mcreator.extrabuildingblocks.block.WhiteStainedSoulGlassPaneBlock;
 import net.mcreator.extrabuildingblocks.block.WhiteStainedSoulGlassBlock;
@@ -380,6 +381,7 @@ public class ExtraBuildingBlocksModBlocks {
 	public static final RegistryObject<Block> RAW_SALT = REGISTRY.register("raw_salt", () -> new RawSaltBlock());
 	public static final RegistryObject<Block> SALT_CRYSTAL = REGISTRY.register("salt_crystal", () -> new SaltCrystalBlock());
 	public static final RegistryObject<Block> SALT_GROWTH = REGISTRY.register("salt_growth", () -> new SaltGrowthBlock());
+	public static final RegistryObject<Block> WROUGHT_IRON = REGISTRY.register("wrought_iron", () -> new WroughtIronBlock());
 	public static final RegistryObject<Block> STONE_PILLAR = REGISTRY.register("stone_pillar", () -> new StonePillarBlock());
 	public static final RegistryObject<Block> CHISELED_RED_NETHER_BRICK = REGISTRY.register("chiseled_red_nether_brick", () -> new ChiseledRedNetherBrickBlock());
 	public static final RegistryObject<Block> CACTUS_WOOD = REGISTRY.register("cactus_wood", () -> new CactusWoodBlock());

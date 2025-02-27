@@ -160,6 +160,7 @@ public class ExtraBuildingBlocksModItems {
 	public static final RegistryObject<Item> RAW_SALT = block(ExtraBuildingBlocksModBlocks.RAW_SALT);
 	public static final RegistryObject<Item> SALT_CRYSTAL = block(ExtraBuildingBlocksModBlocks.SALT_CRYSTAL);
 	public static final RegistryObject<Item> SALT_GROWTH = block(ExtraBuildingBlocksModBlocks.SALT_GROWTH);
+	public static final RegistryObject<Item> WROUGHT_IRON = block(ExtraBuildingBlocksModBlocks.WROUGHT_IRON);
 	public static final RegistryObject<Item> STONE_PILLAR = block(ExtraBuildingBlocksModBlocks.STONE_PILLAR);
 	public static final RegistryObject<Item> CHISELED_RED_NETHER_BRICK = block(ExtraBuildingBlocksModBlocks.CHISELED_RED_NETHER_BRICK);
 	public static final RegistryObject<Item> CACTUS_WOOD = block(ExtraBuildingBlocksModBlocks.CACTUS_WOOD);
