@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "extra_building_blocks:cut_smooth_stone"
+  },
+  "result": "extra_building_blocks:cut_smooth_stone_stairs"
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "extra_building_blocks:block/new_piskel_70",
+    "up": "extra_building_blocks:block/new_piskel_69",
+    "north": "extra_building_blocks:block/soul_sand_texture_je2_be2_1_6",
+    "east": "extra_building_blocks:block/soul_sand_texture_je2_be2_1_6",
+    "south": "extra_building_blocks:block/soul_sand_texture_je2_be2_1_6",
+    "west": "extra_building_blocks:block/soul_sand_texture_je2_be2_1_6",
+    "particle": "extra_building_blocks:block/new_piskel_70"
+  },
+  "render_type": "solid"
+}

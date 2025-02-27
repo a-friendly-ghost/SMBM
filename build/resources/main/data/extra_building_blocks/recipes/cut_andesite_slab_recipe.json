@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "extra_building_blocks:cut_andesite"
+    }
+  },
+  "result": {
+    "item": "extra_building_blocks:cut_andesite_slab",
+    "count": 6
+  }
+}

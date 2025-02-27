@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "extra_building_blocks:block/polished_dripstone_slab"
+    },
+    "type=top": {
+      "model": "extra_building_blocks:block/polished_dripstone_slab_top"
+    },
+    "type=double": {
+      "model": "extra_building_blocks:block/polished_dripstone_slab_full"
+    }
+  }
+}

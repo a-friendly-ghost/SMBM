@@ -1,0 +1,10 @@
+{
+  "parent": "extra_building_blocks:custom/lacecarpet1",
+  "textures": {
+    "all": "extra_building_blocks:block/pixil-frame-0_15",
+    "particle": "extra_building_blocks:block/pixil-frame-0_15",
+    "1": "extra_building_blocks:block/pixil-frame-0_15",
+    "missing": "extra_building_blocks:block/pixil-frame-0_15"
+  },
+  "render_type": "translucent"
+}

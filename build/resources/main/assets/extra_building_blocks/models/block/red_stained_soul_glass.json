@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "extra_building_blocks:block/redstained",
+    "up": "extra_building_blocks:block/redstained",
+    "north": "extra_building_blocks:block/redstained",
+    "east": "extra_building_blocks:block/redstained",
+    "south": "extra_building_blocks:block/redstained",
+    "west": "extra_building_blocks:block/redstained",
+    "particle": "extra_building_blocks:block/redstained"
+  },
+  "render_type": "translucent"
+}

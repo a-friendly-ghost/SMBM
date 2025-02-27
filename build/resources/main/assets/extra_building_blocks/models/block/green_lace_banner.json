@@ -1,0 +1,10 @@
+{
+  "parent": "extra_building_blocks:custom/lacebanner",
+  "textures": {
+    "all": "extra_building_blocks:block/greenlace",
+    "particle": "extra_building_blocks:block/greenlace",
+    "1": "extra_building_blocks:block/texture_29",
+    "2": "extra_building_blocks:block/greenlace"
+  },
+  "render_type": "translucent"
+}

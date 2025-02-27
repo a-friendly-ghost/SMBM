@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:echo_shard"
+    }
+  },
+  "result": {
+    "item": "extra_building_blocks:echo_crystal",
+    "count": 1
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "parent": "extra_building_blocks:custom/bracketsmall",
+  "textures": {
+    "all": "extra_building_blocks:block/texture_2",
+    "particle": "extra_building_blocks:block/texture_2",
+    "0": "extra_building_blocks:block/texture_2",
+    "1": "extra_building_blocks:block/texture_7"
+  },
+  "render_type": "solid"
+}

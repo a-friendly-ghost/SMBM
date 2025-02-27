@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "extra_building_blocks:block/greystained"
+  },
+  "render_type": "translucent"
+}

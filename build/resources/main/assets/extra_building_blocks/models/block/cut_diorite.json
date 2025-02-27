@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "extra_building_blocks:block/polished_andesite_texture_je2_be2_8",
+    "up": "extra_building_blocks:block/polished_andesite_texture_je2_be2_8",
+    "north": "extra_building_blocks:block/polished_andesite_texture_je2_be2_8",
+    "east": "extra_building_blocks:block/polished_andesite_texture_je2_be2_8",
+    "south": "extra_building_blocks:block/polished_andesite_texture_je2_be2_8",
+    "west": "extra_building_blocks:block/polished_andesite_texture_je2_be2_8",
+    "particle": "extra_building_blocks:block/polished_andesite_texture_je2_be2_8"
+  },
+  "render_type": "solid"
+}

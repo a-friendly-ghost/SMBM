@@ -1,0 +1,9 @@
+{
+  "parent": "extra_building_blocks:custom/frosted_side_alt",
+  "textures": {
+    "particle": "extra_building_blocks:block/frostedglass",
+    "edge": "extra_building_blocks:block/frostedglassedge",
+    "pane": "extra_building_blocks:block/frostedglass"
+  },
+  "render_type": "translucent"
+}

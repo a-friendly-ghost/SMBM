@@ -1,0 +1,9 @@
+{
+  "parent": "extra_building_blocks:custom/brace",
+  "textures": {
+    "all": "extra_building_blocks:block/texture_31",
+    "particle": "extra_building_blocks:block/texture_31",
+    "0": "extra_building_blocks:block/texture_31"
+  },
+  "render_type": "solid"
+}

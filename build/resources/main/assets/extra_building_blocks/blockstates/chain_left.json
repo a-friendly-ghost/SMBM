@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "extra_building_blocks:block/chain_left"
+    },
+    "facing=east": {
+      "model": "extra_building_blocks:block/chain_left",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "extra_building_blocks:block/chain_left",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "extra_building_blocks:block/chain_left",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "extra_building_blocks:block/dirt_cobble",
+    "up": "extra_building_blocks:block/dirt_cobble",
+    "north": "extra_building_blocks:block/dirt_cobble",
+    "east": "extra_building_blocks:block/dirt_cobble",
+    "south": "extra_building_blocks:block/dirt_cobble",
+    "west": "extra_building_blocks:block/dirt_cobble",
+    "particle": "extra_building_blocks:block/dirt_cobble"
+  },
+  "render_type": "solid"
+}

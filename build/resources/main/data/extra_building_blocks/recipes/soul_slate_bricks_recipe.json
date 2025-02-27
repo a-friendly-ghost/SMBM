@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "extra_building_blocks:soul_slate"
+    }
+  },
+  "result": {
+    "item": "extra_building_blocks:soul_slate_bricks",
+    "count": 4
+  }
+}

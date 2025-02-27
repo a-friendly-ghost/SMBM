@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "extra_building_blocks:block/chiseledsotne_1",
+    "up": "extra_building_blocks:block/chiseledsotne_1",
+    "north": "extra_building_blocks:block/chiseledsotne",
+    "east": "extra_building_blocks:block/chiseledsotne",
+    "south": "extra_building_blocks:block/chiseledsotne",
+    "west": "extra_building_blocks:block/chiseledsotne",
+    "particle": "extra_building_blocks:block/chiseledsotne_1"
+  },
+  "render_type": "solid"
+}

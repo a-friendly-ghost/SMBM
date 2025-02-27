@@ -1,0 +1,9 @@
+{
+  "parent": "block/iron_bars_side_alt",
+  "textures": {
+    "edge": "extra_building_blocks:block/copper_bars_edge",
+    "bars": "extra_building_blocks:block/new_piskel_-_2024-05-26t015750.076",
+    "particle": "extra_building_blocks:block/new_piskel_-_2024-05-26t015750.076"
+  },
+  "render_type": "cutout_mipped"
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "extra_building_blocks:red_sandstone_bricks"
+  },
+  "result": "extra_building_blocks:red_sandstone_brick_stairs"
+}

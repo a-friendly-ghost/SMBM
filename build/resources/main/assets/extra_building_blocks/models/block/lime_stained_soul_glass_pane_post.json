@@ -1,0 +1,9 @@
+{
+  "parent": "block/template_glass_pane_post",
+  "textures": {
+    "particle": "extra_building_blocks:block/limestained",
+    "edge": "extra_building_blocks:block/limestained",
+    "pane": "extra_building_blocks:block/limestained"
+  },
+  "render_type": "translucent"
+}

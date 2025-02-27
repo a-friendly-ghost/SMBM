@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:smooth_stone"
+    }
+  },
+  "result": {
+    "item": "extra_building_blocks:cut_smooth_stone",
+    "count": 4
+  }
+}

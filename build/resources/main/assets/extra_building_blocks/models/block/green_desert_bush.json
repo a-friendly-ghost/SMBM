@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "extra_building_blocks:block/desertbush",
+    "up": "extra_building_blocks:block/desertbush",
+    "north": "extra_building_blocks:block/desertbush",
+    "east": "extra_building_blocks:block/desertbush",
+    "south": "extra_building_blocks:block/desertbush",
+    "west": "extra_building_blocks:block/desertbush",
+    "particle": "extra_building_blocks:block/desertbush"
+  },
+  "render_type": "cutout"
+}

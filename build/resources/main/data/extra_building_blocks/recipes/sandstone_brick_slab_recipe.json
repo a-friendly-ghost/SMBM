@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "extra_building_blocks:sandstone_bricks"
+    }
+  },
+  "result": {
+    "item": "extra_building_blocks:sandstone_brick_slab",
+    "count": 6
+  }
+}

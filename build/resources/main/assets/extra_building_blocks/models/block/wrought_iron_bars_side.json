@@ -1,0 +1,9 @@
+{
+  "parent": "extra_building_blocks:custom/wrought_iron_bars_side",
+  "textures": {
+    "edge": "extra_building_blocks:block/wroughtironedge",
+    "bars": "extra_building_blocks:block/wroughtironbars",
+    "particle": "extra_building_blocks:block/wroughtironbars"
+  },
+  "render_type": "cutout_mipped"
+}

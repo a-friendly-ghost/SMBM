@@ -1,0 +1,9 @@
+{
+  "parent": "block/iron_bars_cap_alt",
+  "textures": {
+    "bars": "extra_building_blocks:block/weathered_edge",
+    "edge": "extra_building_blocks:block/weathered_edge",
+    "particle": "extra_building_blocks:block/new_piskel_-_2024-05-29t200158.769"
+  },
+  "render_type": "cutout_mipped"
+}

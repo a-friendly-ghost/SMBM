@@ -1,0 +1,8 @@
+{
+  "parent": "block/fence_post",
+  "textures": {
+    "texture": "extra_building_blocks:block/image_6",
+    "particle": "extra_building_blocks:block/image_6"
+  },
+  "render_type": "solid"
+}

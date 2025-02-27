@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "a",
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:stone_slab"
+    }
+  },
+  "result": {
+    "item": "extra_building_blocks:chiseled_stone",
+    "count": 1
+  }
+}

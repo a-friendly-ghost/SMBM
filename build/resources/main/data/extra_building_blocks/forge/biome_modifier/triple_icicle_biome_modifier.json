@@ -1,0 +1,12 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "snowy_taiga",
+    "ice_spikes",
+    "frozen_peaks",
+    "snowy_plains",
+    "grove"
+  ],
+  "features": "extra_building_blocks:triple_icicle",
+  "step": "top_layer_modification"
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_glass_pane_noside_alt",
+  "textures": {
+    "particle": "extra_building_blocks:block/greenstained",
+    "pane": "extra_building_blocks:block/greenstained"
+  },
+  "render_type": "translucent"
+}

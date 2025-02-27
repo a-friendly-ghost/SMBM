@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "extra_building_blocks:salt_flats",
+  "features": "extra_building_blocks:salt_ground_patch",
+  "step": "surface_structures"
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "a",
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:stripped_acacia_log"
+    }
+  },
+  "result": {
+    "item": "extra_building_blocks:acacia_beam",
+    "count": 4
+  }
+}

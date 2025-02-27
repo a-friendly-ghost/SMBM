@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "extra_building_blocks:block/cactus_w_slab"
+    },
+    "type=top": {
+      "model": "extra_building_blocks:block/cactus_w_slab_top"
+    },
+    "type=double": {
+      "model": "extra_building_blocks:block/cactus_w_slab_full"
+    }
+  }
+}

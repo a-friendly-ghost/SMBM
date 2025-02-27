@@ -1,0 +1,10 @@
+{
+  "parent": "extra_building_blocks:custom/midplane",
+  "textures": {
+    "all": "extra_building_blocks:block/chain_middle",
+    "particle": "extra_building_blocks:block/chain_middle",
+    "2": "extra_building_blocks:block/chain_middle",
+    "missing": "extra_building_blocks:block/stone_bricks_texture_je3_be2_4"
+  },
+  "render_type": "cutout"
+}

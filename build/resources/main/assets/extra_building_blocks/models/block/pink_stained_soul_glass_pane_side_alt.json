@@ -1,0 +1,9 @@
+{
+  "parent": "block/template_glass_pane_side_alt",
+  "textures": {
+    "particle": "extra_building_blocks:block/pinkstained",
+    "edge": "extra_building_blocks:block/pinkstained",
+    "pane": "extra_building_blocks:block/pinkstained"
+  },
+  "render_type": "translucent"
+}

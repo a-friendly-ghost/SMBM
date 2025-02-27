@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "extra_building_blocks:blocks/light_blue_stained_soul_glass_pane",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "extra_building_blocks:light_blue_stained_soul_glass_pane"
+        }
+      ]
+    }
+  ]
+}

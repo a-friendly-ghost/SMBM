@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "extra_building_blocks:block/new_piskel_68"
+  },
+  "render_type": "translucent"
+}

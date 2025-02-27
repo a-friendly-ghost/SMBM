@@ -1,0 +1,10 @@
+{
+  "parent": "extra_building_blocks:custom/swampgrass1",
+  "textures": {
+    "all": "extra_building_blocks:block/new_piskel_1",
+    "particle": "extra_building_blocks:block/new_piskel_1",
+    "0": "extra_building_blocks:block/new_piskel_1",
+    "missing": "extra_building_blocks:block/new_piskel_1"
+  },
+  "render_type": "cutout"
+}

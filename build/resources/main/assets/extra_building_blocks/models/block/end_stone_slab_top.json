@@ -1,0 +1,10 @@
+{
+  "parent": "block/slab_top",
+  "textures": {
+    "particle": "extra_building_blocks:block/end_stone_texture_je3_be2_1",
+    "bottom": "extra_building_blocks:block/end_stone_texture_je3_be2_1",
+    "top": "extra_building_blocks:block/end_stone_texture_je3_be2_1",
+    "side": "extra_building_blocks:block/end_stone_texture_je3_be2_1"
+  },
+  "render_type": "solid"
+}

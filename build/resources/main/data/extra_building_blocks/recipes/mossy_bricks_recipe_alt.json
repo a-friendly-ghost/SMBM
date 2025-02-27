@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "minecraft:moss_block"
+    },
+    {
+      "item": "minecraft:bricks"
+    }
+  ],
+  "result": {
+    "item": "extra_building_blocks:mossy_bricks",
+    "count": 1
+  }
+}

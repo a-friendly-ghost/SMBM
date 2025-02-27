@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "a",
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:stone"
+    }
+  },
+  "result": {
+    "item": "extra_building_blocks:stone_pillar",
+    "count": 2
+  }
+}

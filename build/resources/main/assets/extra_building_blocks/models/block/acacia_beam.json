@@ -1,0 +1,9 @@
+{
+  "parent": "extra_building_blocks:custom/beammodel",
+  "textures": {
+    "all": "extra_building_blocks:block/acacia_beam",
+    "particle": "minecraft:block/stripped_acacia_log",
+    "0": "extra_building_blocks:block/acacia_beam"
+  },
+  "render_type": "solid"
+}

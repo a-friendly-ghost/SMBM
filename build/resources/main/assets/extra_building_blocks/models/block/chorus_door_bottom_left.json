@@ -1,0 +1,9 @@
+{
+  "parent": "block/door_bottom_left",
+  "textures": {
+    "particle": "extra_building_blocks:block/new_piskel_36_2",
+    "bottom": "extra_building_blocks:block/new_piskel_36_2",
+    "top": "extra_building_blocks:block/new_piskel_36_1"
+  },
+  "render_type": "cutout"
+}

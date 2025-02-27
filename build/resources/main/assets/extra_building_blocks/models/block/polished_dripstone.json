@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "extra_building_blocks:block/smoothdripstone",
+    "up": "extra_building_blocks:block/smoothdripstone",
+    "north": "extra_building_blocks:block/smoothdripstone",
+    "east": "extra_building_blocks:block/smoothdripstone",
+    "south": "extra_building_blocks:block/smoothdripstone",
+    "west": "extra_building_blocks:block/smoothdripstone",
+    "particle": "extra_building_blocks:block/smoothdripstone"
+  },
+  "render_type": "solid"
+}

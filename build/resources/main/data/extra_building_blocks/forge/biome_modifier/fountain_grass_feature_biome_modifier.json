@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "extra_building_blocks:sparse_desert",
+  "features": "extra_building_blocks:fountain_grass_feature",
+  "step": "surface_structures"
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/button",
+  "textures": {
+    "particle": "extra_building_blocks:block/cactusw_planks",
+    "texture": "extra_building_blocks:block/cactusw_planks"
+  },
+  "render_type": "solid"
+}

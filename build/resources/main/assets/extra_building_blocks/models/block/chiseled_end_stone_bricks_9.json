@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "extra_building_blocks:block/chiseled_endstone_9",
+    "up": "extra_building_blocks:block/chiseled_endstone_9",
+    "north": "extra_building_blocks:block/chiseled_endstone_9",
+    "east": "extra_building_blocks:block/chiseled_endstone_9",
+    "south": "extra_building_blocks:block/chiseled_endstone_9",
+    "west": "extra_building_blocks:block/chiseled_endstone_9",
+    "particle": "extra_building_blocks:block/chiseled_endstone_9"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "extra_building_blocks:block/new_piskel_-_2024-03-23t220810.085",
+    "up": "extra_building_blocks:block/new_piskel_-_2024-03-23t220810.085",
+    "north": "extra_building_blocks:block/new_piskel_-_2024-03-23t220810.085",
+    "east": "extra_building_blocks:block/new_piskel_-_2024-03-23t220810.085",
+    "south": "extra_building_blocks:block/new_piskel_-_2024-03-23t220810.085",
+    "west": "extra_building_blocks:block/new_piskel_-_2024-03-23t220810.085",
+    "particle": "extra_building_blocks:block/new_piskel_-_2024-03-23t220810.085"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "extra_building_blocks:block/calcite_texture_je2_1",
+    "up": "extra_building_blocks:block/calcite_texture_je2_1",
+    "north": "extra_building_blocks:block/calcite_texture_je2_1",
+    "east": "extra_building_blocks:block/calcite_texture_je2_1",
+    "south": "extra_building_blocks:block/calcite_texture_je2_1",
+    "west": "extra_building_blocks:block/calcite_texture_je2_1",
+    "particle": "extra_building_blocks:block/calcite_texture_je2_1"
+  },
+  "render_type": "solid"
+}

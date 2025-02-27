@@ -1,0 +1,11 @@
+{
+  "parent": "extra_building_blocks:custom/potted_chorus",
+  "textures": {
+    "all": "extra_building_blocks:block/flower_pot",
+    "particle": "extra_building_blocks:block/flower_pot",
+    "flowerpot": "extra_building_blocks:block/flower_pot",
+    "plant": "extra_building_blocks:block/chorus_flower_texture_je2_be2_1",
+    "dirt": "extra_building_blocks:block/end_stone_texture_je3_be2_1"
+  },
+  "render_type": "cutout"
+}

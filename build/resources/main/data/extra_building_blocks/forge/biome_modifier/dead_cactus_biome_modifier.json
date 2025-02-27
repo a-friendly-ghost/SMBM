@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "desert",
+  "features": "extra_building_blocks:dead_cactus",
+  "step": "surface_structures"
+}

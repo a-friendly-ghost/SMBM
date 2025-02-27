@@ -1,0 +1,9 @@
+{
+  "parent": "block/template_glass_pane_side",
+  "textures": {
+    "particle": "extra_building_blocks:block/cyanstained",
+    "edge": "extra_building_blocks:block/cyanstained",
+    "pane": "extra_building_blocks:block/cyanstained"
+  },
+  "render_type": "translucent"
+}

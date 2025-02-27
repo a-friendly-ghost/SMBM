@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "extra_building_blocks:block/new_piskel_-_2024-05-02t122930.104",
+    "up": "extra_building_blocks:block/new_piskel_-_2024-05-02t122930.104",
+    "north": "extra_building_blocks:block/prismarinepillarside",
+    "east": "extra_building_blocks:block/prismarinepillarside",
+    "south": "extra_building_blocks:block/prismarinepillarside",
+    "west": "extra_building_blocks:block/prismarinepillarside",
+    "particle": "extra_building_blocks:block/new_piskel_-_2024-05-02t122930.104"
+  },
+  "render_type": "solid"
+}

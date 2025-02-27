@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "extra_building_blocks:block/dripstone_block_texture_je1_6",
+    "up": "extra_building_blocks:block/dripstone_block_texture_je1_6",
+    "north": "extra_building_blocks:block/dripstone_block_texture_je1_6",
+    "east": "extra_building_blocks:block/dripstone_block_texture_je1_6",
+    "south": "extra_building_blocks:block/dripstone_block_texture_je1_6",
+    "west": "extra_building_blocks:block/dripstone_block_texture_je1_6",
+    "particle": "extra_building_blocks:block/dripstone_block_texture_je1_6"
+  },
+  "render_type": "solid"
+}

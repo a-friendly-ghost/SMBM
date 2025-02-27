@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "extra_building_blocks:block/cactus_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "extra_building_blocks:block/cactus_wood"
+    },
+    "axis=z": {
+      "model": "extra_building_blocks:block/cactus_wood",
+      "x": 90
+    }
+  }
+}
