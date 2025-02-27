@@ -6869,7 +6869,7 @@
           }
         ]
       },
-      "path": "~/PottedChorus/VanillaBlockPlacementChanges/HangingTorchflower"
+      "path": "~/VanillaBlockPlacementChanges/HangingTorchflower"
     },
     {
       "name": "HangingTorchflower",
@@ -6886,7 +6886,7 @@
           "src/main/resources/assets/extra_building_blocks/models/item/hanging_torchflower.json"
         ]
       },
-      "path": "~/PottedChorus/VanillaBlockPlacementChanges/HangingTorchflower"
+      "path": "~/VanillaBlockPlacementChanges/HangingTorchflower"
     },
     {
       "name": "HangingTorchFlowerPlacing",
@@ -6925,7 +6925,7 @@
           }
         ]
       },
-      "path": "~/PottedChorus/VanillaBlockPlacementChanges/HangingTorchflower"
+      "path": "~/VanillaBlockPlacementChanges/HangingTorchflower"
     },
     {
       "name": "EmitterGUI",
@@ -7033,7 +7033,7 @@
           }
         ]
       },
-      "path": "~/PottedChorus/VanillaBlockPlacementChanges/HangingLadder"
+      "path": "~/VanillaBlockPlacementChanges/HangingLadder"
     },
     {
       "name": "SaltGrowth",
@@ -12603,21 +12603,7 @@
       },
       {
         "name": "PottedChorus",
-        "children": [
-          {
-            "name": "VanillaBlockPlacementChanges",
-            "children": [
-              {
-                "name": "HangingTorchflower",
-                "children": []
-              },
-              {
-                "name": "HangingLadder",
-                "children": []
-              }
-            ]
-          }
-        ]
+        "children": []
       },
       {
         "name": "StonePillar",
@@ -12735,6 +12721,19 @@
       {
         "name": "FrostedGlass",
         "children": []
+      },
+      {
+        "name": "VanillaBlockPlacementChanges",
+        "children": [
+          {
+            "name": "HangingTorchflower",
+            "children": []
+          },
+          {
+            "name": "HangingLadder",
+            "children": []
+          }
+        ]
       }
     ]
   },
