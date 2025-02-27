@@ -38,6 +38,7 @@ public class ExtraBuildingBlocksModItems {
 	public static final RegistryObject<Item> CALCITE_BRICK_STAIRS = block(ExtraBuildingBlocksModBlocks.CALCITE_BRICK_STAIRS);
 	public static final RegistryObject<Item> CALCITE_BRICK_SLAB = block(ExtraBuildingBlocksModBlocks.CALCITE_BRICK_SLAB);
 	public static final RegistryObject<Item> CALCITE_BRICK_WALL = block(ExtraBuildingBlocksModBlocks.CALCITE_BRICK_WALL);
+	public static final RegistryObject<Item> CUT_DIORITE = block(ExtraBuildingBlocksModBlocks.CUT_DIORITE);
 	public static final RegistryObject<Item> CUT_DIORITE_STAIRS = block(ExtraBuildingBlocksModBlocks.CUT_DIORITE_STAIRS);
 	public static final RegistryObject<Item> CUT_DIORITE_SLAB = block(ExtraBuildingBlocksModBlocks.CUT_DIORITE_SLAB);
 	public static final RegistryObject<Item> CRACKED_MUD_BRICKS = block(ExtraBuildingBlocksModBlocks.CRACKED_MUD_BRICKS);

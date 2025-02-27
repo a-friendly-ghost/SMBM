@@ -4,5 +4,5 @@
   "ingredient": {
     "item": "minecraft:diorite"
   },
-  "result": "extra_building_blocks:deleted_mod_element"
+  "result": "extra_building_blocks:cut_diorite"
 }

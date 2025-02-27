@@ -116,6 +116,7 @@ public class ExtraBuildingBlocksModTabs {
 			tabData.accept(ExtraBuildingBlocksModBlocks.CALCITE_BRICK_STAIRS.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.CALCITE_BRICK_SLAB.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.CALCITE_BRICK_WALL.get().asItem());
+			tabData.accept(ExtraBuildingBlocksModBlocks.CUT_DIORITE.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.CUT_DIORITE_STAIRS.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.CUT_DIORITE_SLAB.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.CRACKED_MUD_BRICKS.get().asItem());

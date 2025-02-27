@@ -160,6 +160,7 @@ import net.mcreator.extrabuildingblocks.block.CutGraniteSlabBlock;
 import net.mcreator.extrabuildingblocks.block.CutGraniteBlock;
 import net.mcreator.extrabuildingblocks.block.CutDioriteStairsBlock;
 import net.mcreator.extrabuildingblocks.block.CutDioriteSlabBlock;
+import net.mcreator.extrabuildingblocks.block.CutDioriteBlock;
 import net.mcreator.extrabuildingblocks.block.CutAndesiteStairsBlock;
 import net.mcreator.extrabuildingblocks.block.CutAndesiteSlabBlock;
 import net.mcreator.extrabuildingblocks.block.CutAndesiteBlock;
@@ -252,6 +253,7 @@ public class ExtraBuildingBlocksModBlocks {
 	public static final RegistryObject<Block> CALCITE_BRICK_STAIRS = REGISTRY.register("calcite_brick_stairs", () -> new CalciteBrickStairsBlock());
 	public static final RegistryObject<Block> CALCITE_BRICK_SLAB = REGISTRY.register("calcite_brick_slab", () -> new CalciteBrickSlabBlock());
 	public static final RegistryObject<Block> CALCITE_BRICK_WALL = REGISTRY.register("calcite_brick_wall", () -> new CalciteBrickWallBlock());
+	public static final RegistryObject<Block> CUT_DIORITE = REGISTRY.register("cut_diorite", () -> new CutDioriteBlock());
 	public static final RegistryObject<Block> CUT_DIORITE_STAIRS = REGISTRY.register("cut_diorite_stairs", () -> new CutDioriteStairsBlock());
 	public static final RegistryObject<Block> CUT_DIORITE_SLAB = REGISTRY.register("cut_diorite_slab", () -> new CutDioriteSlabBlock());
 	public static final RegistryObject<Block> CRACKED_MUD_BRICKS = REGISTRY.register("cracked_mud_bricks", () -> new CrackedMudBricksBlock());
