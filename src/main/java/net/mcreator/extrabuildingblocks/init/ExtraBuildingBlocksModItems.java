@@ -121,6 +121,7 @@ public class ExtraBuildingBlocksModItems {
 	public static final RegistryObject<Item> YELLOW_STAINED_SOUL_GLASS_PANE = block(ExtraBuildingBlocksModBlocks.YELLOW_STAINED_SOUL_GLASS_PANE);
 	public static final RegistryObject<Item> LIME_STAINED_SOUL_GLASS = block(ExtraBuildingBlocksModBlocks.LIME_STAINED_SOUL_GLASS);
 	public static final RegistryObject<Item> LIME_STAINED_SOUL_GLASS_PANE = block(ExtraBuildingBlocksModBlocks.LIME_STAINED_SOUL_GLASS_PANE);
+	public static final RegistryObject<Item> GREEN_STAINED_SOUL_GLASS = block(ExtraBuildingBlocksModBlocks.GREEN_STAINED_SOUL_GLASS);
 	public static final RegistryObject<Item> GREEN_STAINED_SOUL_GLASS_PANE = block(ExtraBuildingBlocksModBlocks.GREEN_STAINED_SOUL_GLASS_PANE);
 	public static final RegistryObject<Item> CYAN_STAINED_SOUL_GLASS = block(ExtraBuildingBlocksModBlocks.CYAN_STAINED_SOUL_GLASS);
 	public static final RegistryObject<Item> CYAN_STAINED_SOUL_GLASS_PANE = block(ExtraBuildingBlocksModBlocks.CYAN_STAINED_SOUL_GLASS_PANE);
@@ -130,6 +131,7 @@ public class ExtraBuildingBlocksModItems {
 	public static final RegistryObject<Item> BLUE_STAINED_SOUL_GLASS_PANE = block(ExtraBuildingBlocksModBlocks.BLUE_STAINED_SOUL_GLASS_PANE);
 	public static final RegistryObject<Item> PURPLE_STAINED_SOUL_GLASS = block(ExtraBuildingBlocksModBlocks.PURPLE_STAINED_SOUL_GLASS);
 	public static final RegistryObject<Item> PURPLE_STAINED_SOUL_GLASS_PANE = block(ExtraBuildingBlocksModBlocks.PURPLE_STAINED_SOUL_GLASS_PANE);
+	public static final RegistryObject<Item> MAGENTA_STAINED_SOUL_GLASS = block(ExtraBuildingBlocksModBlocks.MAGENTA_STAINED_SOUL_GLASS);
 	public static final RegistryObject<Item> MAGENTA_STAINED_SOUL_GLASS_PANE = block(ExtraBuildingBlocksModBlocks.MAGENTA_STAINED_SOUL_GLASS_PANE);
 	public static final RegistryObject<Item> PINK_STAINED_SOUL_GLASS = block(ExtraBuildingBlocksModBlocks.PINK_STAINED_SOUL_GLASS);
 	public static final RegistryObject<Item> PINK_STAINED_SOUL_GLASS_PANE = block(ExtraBuildingBlocksModBlocks.PINK_STAINED_SOUL_GLASS_PANE);

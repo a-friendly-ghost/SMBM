@@ -10943,6 +10943,19 @@
         ]
       },
       "path": "~/IceBricks"
+    },
+    {
+      "name": "SconceRecipeCharcoal",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sconce_recipe_charcoal",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/extra_building_blocks/recipes/sconce_recipe_charcoal.json"
+        ]
+      },
+      "path": "~/Sconce/Plain"
     }
   ],
   "variable_elements": [],
@@ -11520,7 +11533,6 @@
       "CalciteBrickStairs",
       "CalciteBrickSlab",
       "CalciteBrickWall",
-      "CutDiorite",
       "CutDioriteStairs",
       "CutDioriteSlab",
       "CrackedMudBricks",
@@ -11528,9 +11540,7 @@
       "CrackedQuartzBricks",
       "QuartzBrickStairs",
       "QuartzBrickSlab",
-      "QuartzBrickWall",
       "Bracket",
-      "Sconce",
       "PolishedDripstone",
       "PolishedDripstoneStairs",
       "PolishedDripstoneSlab",
