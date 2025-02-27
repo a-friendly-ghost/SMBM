@@ -1,0 +1,10 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "particle": "extra_building_blocks:block/polishedcalcite",
+    "bottom": "extra_building_blocks:block/polishedcalcite",
+    "top": "extra_building_blocks:block/polishedcalcite",
+    "side": "extra_building_blocks:block/polishedcalcite"
+  },
+  "render_type": "solid"
+}

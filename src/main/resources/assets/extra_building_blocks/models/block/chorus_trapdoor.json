@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_orientable_trapdoor_bottom",
+  "textures": {
+    "texture": "extra_building_blocks:block/new_piskel_33",
+    "particle": "extra_building_blocks:block/new_piskel_33"
+  },
+  "render_type": "cutout"
+}

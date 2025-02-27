@@ -1,0 +1,17 @@
+{
+  "_fv": 73,
+  "_type": "feature",
+  "definition": {
+    "skipPlacement": false,
+    "generationStep": "SURFACE_STRUCTURES",
+    "restrictionBiomes": [
+      {
+        "value": "swamp"
+      },
+      {
+        "value": "mangrove_swamp"
+      }
+    ],
+    "featurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"feature_container\" deletable=\"false\" x=\"40\" y=\"40\"><value name=\"feature\"><block type=\"feature_random_patch_simple\" inline=\"false\"><field name=\"tries\">50</field><field name=\"xzSpread\">3</field><field name=\"ySpread\">0</field><value name=\"block\"><block type=\"blockstate_selector\"><mutation inputs=\"0\"/><field name=\"block\">CUSTOM:SwampGrass</field></block></value><value name=\"condition\"><block type=\"block_predicate_all_of\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"2\"></mutation><value name=\"condition0\"><block type=\"block_predicate_is_air\"></block></value><value name=\"condition1\"><block type=\"block_predicate_would_survive\"><field name=\"x\">0</field><field name=\"y\">0</field><field name=\"z\">0</field><value name=\"block\"><block type=\"blockstate_selector\"><mutation inputs=\"0\"/><field name=\"block\">CUSTOM:SwampGrass</field></block></value></block></value></block></value></block></value><next><block type=\"placement_rarity\"><field name=\"rarity\">2</field><next><block type=\"placement_surface_water_depth\"><field name=\"depth\">2</field><next><block type=\"placement_in_square\"><next><block type=\"placement_heightmap\"><field name=\"heightmap\">MOTION_BLOCKING</field><next><block type=\"placement_biome_filter\"></block></next></block></next></block></next></block></next></block></next></block></xml>"
+  }
+}

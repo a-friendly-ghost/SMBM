@@ -1,0 +1,9 @@
+{
+  "parent": "extra_building_blocks:custom/beammodel",
+  "textures": {
+    "all": "extra_building_blocks:block/crimson_beam",
+    "particle": "minecraft:block/stripped_crimson_stem",
+    "0": "extra_building_blocks:block/crimson_beam"
+  },
+  "render_type": "solid"
+}

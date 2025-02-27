@@ -1,0 +1,9 @@
+JVM:         C:\Users\Asus\.mcreator\gradle\jdks\eclipse_adoptium-17-amd64-windows\jdk-17.0.12+7\bin\java.exe
+JVM Args:    
+Run Args:    "--strip", "--input", "C:\Users\Asus\MCreatorWorkspaces\extra_building_blocks\build\fg_cache\mcp\1.20.1-20230612.114412\joined\b052e4df21b601fdd3359a6cce0145dde5e71365\AccessTransformer\output.jar", "--output", "C:\Users\Asus\MCreatorWorkspaces\extra_building_blocks\build\fg_cache\mcp\1.20.1-20230612.114412\joined\b052e4df21b601fdd3359a6cce0145dde5e71365\SideStripper\output.jar", "--data", "C:\Users\Asus\MCreatorWorkspaces\extra_building_blocks\build\fg_cache\mcp\1.20.1-20230612.114412\joined\b052e4df21b601fdd3359a6cce0145dde5e71365\SideStripper\string_data.sas"
+Classpath:   C:\Users\Asus\.mcreator\gradle\caches\forge_gradle\maven_downloader\net\minecraftforge\mergetool\1.1.7\mergetool-1.1.7-fatjar.jar
+Working Dir: C:\Users\Asus\MCreatorWorkspaces\extra_building_blocks\build\fg_cache\mcp\1.20.1-20230612.114412\joined\b052e4df21b601fdd3359a6cce0145dde5e71365\SideStripper
+Main Class:  net.minecraftforge.mergetool.ConsoleMerger
+Input:  C:\Users\Asus\MCreatorWorkspaces\extra_building_blocks\build\fg_cache\mcp\1.20.1-20230612.114412\joined\b052e4df21b601fdd3359a6cce0145dde5e71365\AccessTransformer\output.jar
+Output: C:\Users\Asus\MCreatorWorkspaces\extra_building_blocks\build\fg_cache\mcp\1.20.1-20230612.114412\joined\b052e4df21b601fdd3359a6cce0145dde5e71365\SideStripper\output.jar
+Data:   C:\Users\Asus\MCreatorWorkspaces\extra_building_blocks\build\fg_cache\mcp\1.20.1-20230612.114412\joined\b052e4df21b601fdd3359a6cce0145dde5e71365\SideStripper\string_data.sas

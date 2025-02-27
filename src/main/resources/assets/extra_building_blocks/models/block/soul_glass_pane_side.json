@@ -1,0 +1,9 @@
+{
+  "parent": "block/template_glass_pane_side",
+  "textures": {
+    "particle": "extra_building_blocks:block/new_piskel_61",
+    "edge": "extra_building_blocks:block/new_piskel_61",
+    "pane": "extra_building_blocks:block/new_piskel_61"
+  },
+  "render_type": "translucent"
+}

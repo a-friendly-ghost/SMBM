@@ -1,0 +1,116 @@
+{
+  "type": "minecraft:simple_random_selector",
+  "config": {
+    "features": [
+      {
+        "feature": {
+          "type": "extra_building_blocks:structure_feature",
+          "config": {
+            "structure": "extra_building_blocks:small_salt_outcrop",
+            "random_rotation": true,
+            "random_mirror": true,
+            "ignored_blocks": [
+              "minecraft:structure_void",
+              "minecraft:structure_block",
+              "minecraft:structure_block"
+            ]
+          }
+        },
+        "placement": []
+      },
+      {
+        "feature": {
+          "type": "extra_building_blocks:structure_feature",
+          "config": {
+            "structure": "extra_building_blocks:medium_salt_outcrop",
+            "random_rotation": true,
+            "random_mirror": true,
+            "ignored_blocks": [
+              "minecraft:structure_void",
+              "minecraft:structure_block",
+              "minecraft:structure_block"
+            ]
+          }
+        },
+        "placement": []
+      },
+      {
+        "feature": {
+          "type": "extra_building_blocks:structure_feature",
+          "config": {
+            "structure": "extra_building_blocks:large_salt_outcrop",
+            "random_rotation": true,
+            "random_mirror": true,
+            "ignored_blocks": [
+              "minecraft:structure_void",
+              "minecraft:structure_block",
+              "minecraft:structure_block"
+            ],
+            "offset": [
+              0,
+              -1,
+              0
+            ]
+          }
+        },
+        "placement": []
+      },
+      {
+        "feature": {
+          "type": "minecraft:random_patch",
+          "config": {
+            "tries": 20,
+            "feature": {
+              "feature": {
+                "type": "minecraft:block_column",
+                "config": {
+                  "allowed_placement": {
+                    "type": "minecraft:matching_blocks",
+                    "blocks": "minecraft:air"
+                  },
+                  "direction": "up",
+                  "layers": [
+                    {
+                      "height": {
+                        "type": "biased_to_bottom",
+                        "value": {
+                          "min_inclusive": 2,
+                          "max_inclusive": 4
+                        }
+                      },
+                      "provider": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                          "Name": "extra_building_blocks:salt_crystal"
+                        }
+                      }
+                    }
+                  ],
+                  "prioritize_tip": false
+                }
+              },
+              "placement": [
+                {
+                  "type": "minecraft:block_predicate_filter",
+                  "predicate": {
+                    "type": "minecraft:matching_blocks",
+                    "blocks": [
+                      "minecraft:sand",
+                      "extra_building_blocks:raw_salt"
+                    ],
+                    "offset": [
+                      0,
+                      -1,
+                      0
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "placement": []
+      }
+    ]
+  }
+}

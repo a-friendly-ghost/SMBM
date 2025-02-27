@@ -1,0 +1,62 @@
+{
+  "variants": {
+    "facing=north": [
+    	{
+      "model": "extra_building_blocks:block/salt_growth"
+    },
+    {
+      "model": "extra_building_blocks:block/salt_growth_var"
+    }
+    ],
+    "facing=east": [
+    	{
+      "model": "extra_building_blocks:block/salt_growth",
+      "y": 90
+    },
+    {
+      "model": "extra_building_blocks:block/salt_growth_var",
+      "y":90
+    }
+    ],
+    "facing=south": [
+    	{
+      "model": "extra_building_blocks:block/salt_growth",
+      "y":180
+    },
+    {
+      "model": "extra_building_blocks:block/salt_growth_var",
+      "y":180
+    }
+    ],
+    "facing=west": [
+    	{
+      "model": "extra_building_blocks:block/salt_growth",
+      "y": 270
+    },
+    {
+      "model": "extra_building_blocks:block/salt_growth_var",
+      "y": 270
+    }
+    ],
+    "facing=up": [
+    	{
+      "model": "extra_building_blocks:block/salt_growth",
+      "x":270
+    },
+    {
+      "model": "extra_building_blocks:block/salt_growth_var",
+      "x":270
+    }
+    ],
+    "facing=down": [
+    	{
+      "model": "extra_building_blocks:block/salt_growth",
+      "x":90
+    },
+    {
+      "model": "extra_building_blocks:block/salt_growth_var",
+      "x":90
+    }
+    ]
+  }
+}

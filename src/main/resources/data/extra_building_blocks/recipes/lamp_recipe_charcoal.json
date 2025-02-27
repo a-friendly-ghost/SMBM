@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    " a ",
+    "bcb",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:polished_deepslate"
+    },
+    "b": {
+      "item": "minecraft:chain"
+    },
+    "c": {
+      "item": "minecraft:charcoal"
+    }
+  },
+  "result": {
+    "item": "extra_building_blocks:lamp",
+    "count": 1
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "_fv": 73,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 16,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:GreyStainedSoulGlass"
+      },
+      {
+        "value": "CUSTOM:GreyStainedSoulGlass"
+      },
+      {
+        "value": "CUSTOM:GreyStainedSoulGlass"
+      },
+      {
+        "value": "CUSTOM:GreyStainedSoulGlass"
+      },
+      {
+        "value": "CUSTOM:GreyStainedSoulGlass"
+      },
+      {
+        "value": "CUSTOM:GreyStainedSoulGlass"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:GreyStainedSoulGlassPane"
+    },
+    "name": "light_grey_stained_soul_glass_pane_recipe",
+    "namespace": "mod"
+  }
+}

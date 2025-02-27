@@ -1,0 +1,24 @@
+{
+  "replace": false,
+  "values": [
+    "extra_building_blocks:cactus_w_stairs",
+    "extra_building_blocks:soul_slate_brick_stairs",
+    "extra_building_blocks:red_sandstone_brick_stairs",
+    "extra_building_blocks:sandstone_brick_stairs",
+    "extra_building_blocks:end_stone_stairs",
+    "extra_building_blocks:chorus_stairs",
+    "extra_building_blocks:cut_smooth_stone_stairs",
+    "extra_building_blocks:ice_brick_stairs",
+    "extra_building_blocks:dripstone_stairs",
+    "extra_building_blocks:dripstone_brick_stairs",
+    "extra_building_blocks:polished_dripstone_stairs",
+    "extra_building_blocks:smooth_stone_stairs",
+    "extra_building_blocks:quartz_brick_stairs",
+    "extra_building_blocks:cut_diorite_stairs",
+    "extra_building_blocks:calcite_brick_stairs",
+    "extra_building_blocks:calcite_stairs",
+    "extra_building_blocks:polished_calcite_stairs",
+    "extra_building_blocks:cut_granite_stairs",
+    "extra_building_blocks:cut_andesite_stairs"
+  ]
+}

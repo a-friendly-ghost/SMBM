@@ -1,0 +1,8 @@
+{
+  "parent": "block/fence_side",
+  "textures": {
+    "texture": "extra_building_blocks:block/cactusw_planks",
+    "particle": "extra_building_blocks:block/cactusw_planks"
+  },
+  "render_type": "solid"
+}

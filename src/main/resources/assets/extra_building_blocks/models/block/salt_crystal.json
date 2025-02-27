@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "extra_building_blocks:block/cropped_2",
+    "up": "extra_building_blocks:block/cropped_2",
+    "north": "extra_building_blocks:block/cropped_2",
+    "east": "extra_building_blocks:block/cropped_2",
+    "south": "extra_building_blocks:block/cropped_2",
+    "west": "extra_building_blocks:block/cropped_2",
+    "particle": "extra_building_blocks:block/cropped_2"
+  },
+  "render_type": "solid"
+}

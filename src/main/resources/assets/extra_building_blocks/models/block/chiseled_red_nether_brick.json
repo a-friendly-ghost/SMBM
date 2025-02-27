@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "extra_building_blocks:block/new_piskel_98",
+    "up": "extra_building_blocks:block/new_piskel_98",
+    "north": "extra_building_blocks:block/new_piskel_98",
+    "east": "extra_building_blocks:block/new_piskel_98",
+    "south": "extra_building_blocks:block/new_piskel_98",
+    "west": "extra_building_blocks:block/new_piskel_98",
+    "particle": "extra_building_blocks:block/new_piskel_98"
+  },
+  "render_type": "solid"
+}

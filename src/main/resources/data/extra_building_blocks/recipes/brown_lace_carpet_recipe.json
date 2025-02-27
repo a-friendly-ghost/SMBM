@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "minecraft:brown_dye"
+    },
+    {
+      "item": "extra_building_blocks:lace_carpet"
+    }
+  ],
+  "result": {
+    "item": "extra_building_blocks:brown_lace_carpet",
+    "count": 1
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "extra_building_blocks:block/sconce"
+    },
+    "facing=east": {
+      "model": "extra_building_blocks:block/sconce",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "extra_building_blocks:block/sconce",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "extra_building_blocks:block/sconce",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "chain_connected",
+        "missing": "stone_bricks_texture_je3_be2_4"
+      },
+      "name": "default"
+    }
+  }
+}

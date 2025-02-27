@@ -1,0 +1,22 @@
+{
+  "_fv": 73,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "BLOCKS",
+    "xpReward": 1.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "CUSTOM:CrackedBricks"
+    },
+    "smeltingReturnStack": {
+      "value": "CUSTOM:VeryCrackedBricks"
+    },
+    "name": "very_cracked_bricks_recipe",
+    "namespace": "mod"
+  }
+}

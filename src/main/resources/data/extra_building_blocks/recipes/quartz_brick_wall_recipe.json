@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:quartz_bricks"
+    }
+  },
+  "result": {
+    "item": "extra_building_blocks:deleted_mod_element",
+    "count": 6
+  }
+}

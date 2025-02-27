@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "chain_left",
+        "1": "chain_right",
+        "missing": "dripstone_block_texture_je1_5"
+      },
+      "name": "default"
+    }
+  }
+}

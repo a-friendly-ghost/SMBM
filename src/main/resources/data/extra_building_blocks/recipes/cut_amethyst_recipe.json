@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:amethyst_block"
+    }
+  },
+  "result": {
+    "item": "extra_building_blocks:cut_amethyst",
+    "count": 4
+  }
+}

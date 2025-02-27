@@ -1,0 +1,13 @@
+{
+  "parent": "extra_building_blocks:custom/oil_lamp_hanging",
+  "textures": {
+    "all": "extra_building_blocks:block/lampbase_3",
+    "particle": "minecraft:block/polished_deepslate",
+    "0": "extra_building_blocks:block/lampbase_3",
+    "3": "extra_building_blocks:block/lanternanim",
+    "4": "extra_building_blocks:block/lamptophandle_2",
+    "5": "extra_building_blocks:block/lamphandles_3",
+    "6": "extra_building_blocks:block/chaintop"
+  },
+  "render_type": "cutout"
+}

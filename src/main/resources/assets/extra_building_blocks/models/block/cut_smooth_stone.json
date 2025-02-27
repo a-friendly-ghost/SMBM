@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "extra_building_blocks:block/packed_ice_texture_je2_be3_4",
+    "up": "extra_building_blocks:block/packed_ice_texture_je2_be3_4",
+    "north": "extra_building_blocks:block/packed_ice_texture_je2_be3_4",
+    "east": "extra_building_blocks:block/packed_ice_texture_je2_be3_4",
+    "south": "extra_building_blocks:block/packed_ice_texture_je2_be3_4",
+    "west": "extra_building_blocks:block/packed_ice_texture_je2_be3_4",
+    "particle": "extra_building_blocks:block/packed_ice_texture_je2_be3_4"
+  },
+  "render_type": "solid"
+}

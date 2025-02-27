@@ -1,0 +1,10 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "particle": "extra_building_blocks:block/cactusw_planks",
+    "bottom": "extra_building_blocks:block/cactusw_planks",
+    "top": "extra_building_blocks:block/cactusw_planks",
+    "side": "extra_building_blocks:block/cactusw_planks"
+  },
+  "render_type": "solid"
+}

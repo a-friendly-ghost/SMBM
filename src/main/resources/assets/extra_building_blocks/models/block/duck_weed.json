@@ -1,0 +1,10 @@
+{
+  "parent": "extra_building_blocks:custom/duckweed",
+  "textures": {
+    "all": "extra_building_blocks:block/duck",
+    "particle": "extra_building_blocks:block/duck",
+    "0": "extra_building_blocks:block/duck",
+    "missing": "extra_building_blocks:block/duck"
+  },
+  "render_type": "cutout"
+}

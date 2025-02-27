@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "flowerpot": "flower_pot",
+        "plant": "chorus_flower_texture_je2_be2_1",
+        "dirt": "end_stone_texture_je3_be2_1"
+      },
+      "name": "default"
+    }
+  }
+}

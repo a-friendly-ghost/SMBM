@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "extra_building_blocks:block/soulmagma",
+    "up": "extra_building_blocks:block/soulmagma",
+    "north": "extra_building_blocks:block/soulmagma",
+    "east": "extra_building_blocks:block/soulmagma",
+    "south": "extra_building_blocks:block/soulmagma",
+    "west": "extra_building_blocks:block/soulmagma",
+    "particle": "extra_building_blocks:block/soulmagma"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,48 @@
+{
+  "_fv": 73,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 4,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:SoulSlateBricks"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:SoulSlateBricks"
+      },
+      {
+        "value": "CUSTOM:SoulSlateBricks"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:SoulSlateBricks"
+      },
+      {
+        "value": "CUSTOM:SoulSlateBricks"
+      },
+      {
+        "value": "CUSTOM:SoulSlateBricks"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:SoulSlateBrickStairs"
+    },
+    "name": "soul_slate_brick_stairs_recipe",
+    "namespace": "mod"
+  }
+}

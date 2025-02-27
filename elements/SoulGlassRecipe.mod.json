@@ -1,0 +1,22 @@
+{
+  "_fv": 73,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "BLOCKS",
+    "xpReward": 1.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "Blocks.SOUL_SAND"
+    },
+    "smeltingReturnStack": {
+      "value": "CUSTOM:SoulGlass"
+    },
+    "name": "soul_glass_recipe",
+    "namespace": "mod"
+  }
+}

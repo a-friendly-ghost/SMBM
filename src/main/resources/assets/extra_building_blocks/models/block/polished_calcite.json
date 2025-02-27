@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "extra_building_blocks:block/polishedcalcite",
+    "up": "extra_building_blocks:block/polishedcalcite",
+    "north": "extra_building_blocks:block/polishedcalcite",
+    "east": "extra_building_blocks:block/polishedcalcite",
+    "south": "extra_building_blocks:block/polishedcalcite",
+    "west": "extra_building_blocks:block/polishedcalcite",
+    "particle": "extra_building_blocks:block/polishedcalcite"
+  },
+  "render_type": "solid"
+}

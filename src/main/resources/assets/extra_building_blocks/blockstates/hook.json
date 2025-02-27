@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "extra_building_blocks:block/hook"
+    },
+    "facing=east": {
+      "model": "extra_building_blocks:block/hook",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "extra_building_blocks:block/hook",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "extra_building_blocks:block/hook",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "extra_building_blocks:block/hook",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "extra_building_blocks:block/hook",
+      "x": 90
+    }
+  }
+}

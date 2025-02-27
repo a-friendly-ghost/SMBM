@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "cropped_4",
+        "missing": "cropped_4"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "chain_left",
+        "1": "chain_right",
+        "missing": "calcite_texture_je2_1"
+      },
+      "name": "default"
+    }
+  }
+}

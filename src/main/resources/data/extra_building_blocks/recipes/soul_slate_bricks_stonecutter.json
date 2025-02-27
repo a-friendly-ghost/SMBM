@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "extra_building_blocks:soul_slate"
+  },
+  "result": "extra_building_blocks:soul_slate_bricks"
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "extra_building_blocks:block/darkgreystained",
+    "up": "extra_building_blocks:block/darkgreystained",
+    "north": "extra_building_blocks:block/darkgreystained",
+    "east": "extra_building_blocks:block/darkgreystained",
+    "south": "extra_building_blocks:block/darkgreystained",
+    "west": "extra_building_blocks:block/darkgreystained",
+    "particle": "extra_building_blocks:block/darkgreystained"
+  },
+  "render_type": "translucent"
+}

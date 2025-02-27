@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "extra_building_blocks:block/veryrusted",
+    "up": "extra_building_blocks:block/veryrusted",
+    "north": "extra_building_blocks:block/veryrusted",
+    "east": "extra_building_blocks:block/veryrusted",
+    "south": "extra_building_blocks:block/veryrusted",
+    "west": "extra_building_blocks:block/veryrusted",
+    "particle": "extra_building_blocks:block/veryrusted"
+  },
+  "render_type": "solid"
+}

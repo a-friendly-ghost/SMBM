@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "2": "chain_middle",
+        "missing": "stone_bricks_texture_je3_be2_4"
+      },
+      "name": "default"
+    }
+  }
+}

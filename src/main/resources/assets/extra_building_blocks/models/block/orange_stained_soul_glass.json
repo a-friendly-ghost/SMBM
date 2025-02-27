@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "extra_building_blocks:block/orangestained",
+    "up": "extra_building_blocks:block/orangestained",
+    "north": "extra_building_blocks:block/orangestained",
+    "east": "extra_building_blocks:block/orangestained",
+    "south": "extra_building_blocks:block/orangestained",
+    "west": "extra_building_blocks:block/orangestained",
+    "particle": "extra_building_blocks:block/orangestained"
+  },
+  "render_type": "translucent"
+}

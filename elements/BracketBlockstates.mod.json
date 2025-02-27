@@ -1,0 +1,55 @@
+{
+  "_fv": 73,
+  "_type": "blockstates",
+  "definition": {
+    "block": "Bracket",
+    "blockstateList": [
+      {
+        "texture": "texture_2",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "bracketsmall:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 5.0,
+            "my": 5.0,
+            "mz": 5.0,
+            "Mx": 11.0,
+            "My": 16.0,
+            "Mz": 16.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "texture_2",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "bracketmodel:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 5.0,
+            "my": 0.0,
+            "mz": 5.0,
+            "Mx": 11.0,
+            "My": 16.0,
+            "Mz": 16.0,
+            "subtract": false
+          }
+        ]
+      }
+    ]
+  }
+}

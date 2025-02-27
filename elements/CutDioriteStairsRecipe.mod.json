@@ -1,0 +1,48 @@
+{
+  "_fv": 73,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 4,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:CutDiorite"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:CutDiorite"
+      },
+      {
+        "value": "CUSTOM:CutDiorite"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:CutDiorite"
+      },
+      {
+        "value": "CUSTOM:CutDiorite"
+      },
+      {
+        "value": "CUSTOM:CutDiorite"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:CutDioriteStairs"
+    },
+    "name": "cut_diorite_stairs_recipe",
+    "namespace": "mod"
+  }
+}

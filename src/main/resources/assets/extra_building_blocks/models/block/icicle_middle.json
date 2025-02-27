@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "extra_building_blocks:block/iciclemiddle",
+    "particle": "extra_building_blocks:block/iciclemiddle"
+  },
+  "render_type": "translucent"
+}

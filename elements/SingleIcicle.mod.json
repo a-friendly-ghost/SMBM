@@ -1,0 +1,29 @@
+{
+  "_fv": 73,
+  "_type": "feature",
+  "definition": {
+    "skipPlacement": false,
+    "generationStep": "TOP_LAYER_MODIFICATION",
+    "restrictionBiomes": [
+      {
+        "value": "taiga_cold"
+      },
+      {
+        "value": "mutated_ice_flats"
+      },
+      {
+        "value": "snowy_slopes"
+      },
+      {
+        "value": "snowy_tundra"
+      },
+      {
+        "value": "frozen_peaks"
+      },
+      {
+        "value": "grove"
+      }
+    ],
+    "featurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"feature_container\" deletable=\"false\" x=\"-32\" y=\"-84\"><value name=\"feature\"><block type=\"feature_simple_block\"><value name=\"block\"><block type=\"blockstate_selector\"><mutation inputs=\"0\"/><field name=\"block\">CUSTOM:IcicleTip</field></block></value></block></value><next><block type=\"placement_count\"><comment pinned=\"false\" h=\"80\" w=\"160\">Each chunk has 0 to 5 patches of fire</comment><value name=\"count\"><block type=\"int_provider_constant\"><field name=\"value\">250</field></block></value><next><block type=\"placement_in_square\"><comment pinned=\"false\" h=\"83\" w=\"182\">We then move each patch horizontally. This way they don't generate only in the corner of the chunk</comment><next><block type=\"placement_height_uniform\"><value name=\"min\"><block type=\"vertical_anchor_absolute\"><field name=\"value\">50</field></block></value><value name=\"max\"><block type=\"vertical_anchor_below_top\"><field name=\"value\">5</field></block></value><next><block type=\"placement_block_predicate_filter\"><value name=\"condition\"><block type=\"block_predicate_is_air\"></block></value><next><block type=\"placement_block_predicate_filter\"><value name=\"condition\"><block type=\"block_predicate_not\"><value name=\"condition\"><block type=\"block_predicate_replaceable\"><field name=\"x\">0</field><field name=\"y\">1</field><field name=\"z\">0</field></block></value></block></value><next><block type=\"placement_biome_filter\"></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>"
+  }
+}

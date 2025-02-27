@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:polished_granite"
+    }
+  },
+  "result": {
+    "item": "extra_building_blocks:cut_granite",
+    "count": 4
+  }
+}

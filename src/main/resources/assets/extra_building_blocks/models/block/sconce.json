@@ -1,0 +1,9 @@
+{
+  "parent": "extra_building_blocks:custom/sconcewall",
+  "textures": {
+    "all": "extra_building_blocks:block/texture_8",
+    "particle": "extra_building_blocks:block/texture_8",
+    "0": "extra_building_blocks:block/texture_8"
+  },
+  "render_type": "solid"
+}

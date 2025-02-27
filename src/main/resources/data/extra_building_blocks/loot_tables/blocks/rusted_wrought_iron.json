@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "extra_building_blocks:blocks/rusted_wrought_iron",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "extra_building_blocks:rusted_wrought_iron"
+        }
+      ]
+    }
+  ]
+}

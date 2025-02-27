@@ -1,0 +1,48 @@
+{
+  "_fv": 73,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 4,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.AMETHYST_BLOCK"
+      },
+      {
+        "value": "Blocks.AMETHYST_BLOCK"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.AMETHYST_BLOCK"
+      },
+      {
+        "value": "Blocks.AMETHYST_BLOCK"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:CutAmethyst"
+    },
+    "name": "cut_amethyst_recipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "minecraft:yellow_dye"
+    },
+    {
+      "item": "extra_building_blocks:lace_banner"
+    }
+  ],
+  "result": {
+    "item": "extra_building_blocks:yellow_lace_banner",
+    "count": 1
+  }
+}

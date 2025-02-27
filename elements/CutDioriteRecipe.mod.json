@@ -1,0 +1,48 @@
+{
+  "_fv": 73,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 4,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.STONE#4"
+      },
+      {
+        "value": "Blocks.STONE#4"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.STONE#4"
+      },
+      {
+        "value": "Blocks.STONE#4"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:CutDiorite"
+    },
+    "name": "cut_diorite_recipe",
+    "namespace": "mod"
+  }
+}

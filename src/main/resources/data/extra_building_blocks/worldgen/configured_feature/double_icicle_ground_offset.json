@@ -1,0 +1,11 @@
+{
+  "type": "extra_building_blocks:double_icicle_ground_offset",
+  "config": {
+    "to_place": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "extra_building_blocks:icicle_frustum"
+      }
+    }
+  }
+}

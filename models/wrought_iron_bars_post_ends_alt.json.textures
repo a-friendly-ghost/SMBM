@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "edge": "wroughtironedge"
+      },
+      "name": "default"
+    }
+  }
+}

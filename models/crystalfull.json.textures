@@ -1,0 +1,13 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "crystalouter",
+        "2": "echoglintanim",
+        "3": "crystalouter_2",
+        "missing": "smooth_stone_texture_je2_be2"
+      },
+      "name": "default"
+    }
+  }
+}

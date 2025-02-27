@@ -1,0 +1,22 @@
+{
+  "_fv": 73,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Stone cutting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "stoneCuttingInputStack": {
+      "value": "Blocks.POLISHED_BLACKSTONE"
+    },
+    "stoneCuttingReturnStack": {
+      "value": "CUSTOM:ChiseledBlackstoneBricks"
+    },
+    "name": "chiseled_blackstone_bricks_stonecutter_polished",
+    "namespace": "mod"
+  }
+}

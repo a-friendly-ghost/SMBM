@@ -1,0 +1,22 @@
+{
+  "_fv": 73,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Stone cutting",
+    "recipeRetstackSize": 2,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "stoneCuttingInputStack": {
+      "value": "CUSTOM:CutGranite"
+    },
+    "stoneCuttingReturnStack": {
+      "value": "CUSTOM:CutGraniteSlab"
+    },
+    "name": "cut_granite_slab_stonecutter",
+    "namespace": "mod"
+  }
+}

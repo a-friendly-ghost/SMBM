@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:lime_dye"
+    },
+    "b": {
+      "item": "extra_building_blocks:lace_banner"
+    }
+  },
+  "result": {
+    "item": "extra_building_blocks:lime_lace_banner",
+    "count": 1
+  }
+}

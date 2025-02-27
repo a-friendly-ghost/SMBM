@@ -1,0 +1,10 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "particle": "extra_building_blocks:block/dripstone_block_texture_je1",
+    "bottom": "extra_building_blocks:block/dripstone_block_texture_je1",
+    "top": "extra_building_blocks:block/dripstone_block_texture_je1",
+    "side": "extra_building_blocks:block/dripstone_block_texture_je1"
+  },
+  "render_type": "solid"
+}

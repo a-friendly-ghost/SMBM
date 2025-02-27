@@ -1,0 +1,48 @@
+{
+  "_fv": 73,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.POLISHED_DEEPSLATE"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.CHAIN"
+      },
+      {
+        "value": "Items.COAL#0"
+      },
+      {
+        "value": "Blocks.CHAIN"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.POLISHED_DEEPSLATE"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Lamp"
+    },
+    "name": "lamp_recipe",
+    "namespace": "mod"
+  }
+}

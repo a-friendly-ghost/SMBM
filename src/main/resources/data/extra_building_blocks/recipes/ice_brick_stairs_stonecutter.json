@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "minecraft:packed_ice"
+  },
+  "result": "extra_building_blocks:ice_brick_stairs"
+}

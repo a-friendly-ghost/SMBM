@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "extra_building_blocks:item/duck"
+  },
+  "render_type": "translucent"
+}

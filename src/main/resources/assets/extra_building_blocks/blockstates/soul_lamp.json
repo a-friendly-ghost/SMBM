@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=north,blockstate=0": {
+      "model": "extra_building_blocks:block/soul_lamp"
+    },
+    "facing=east,blockstate=0": {
+      "model": "extra_building_blocks:block/soul_lamp",
+      "y": 90
+    },
+    "facing=south,blockstate=0": {
+      "model": "extra_building_blocks:block/soul_lamp",
+      "y": 180
+    },
+    "facing=west,blockstate=0": {
+      "model": "extra_building_blocks:block/soul_lamp",
+      "y": 270
+    },
+    "facing=north,blockstate=1": {
+      "model": "extra_building_blocks:block/soul_lamp_blockstate_blockstate_0"
+    },
+    "facing=east,blockstate=1": {
+      "model": "extra_building_blocks:block/soul_lamp_chain_alt",
+      "y": 90
+    },
+    "facing=south,blockstate=1": {
+      "model": "extra_building_blocks:block/soul_lamp_blockstate_blockstate_0",
+      "y": 180
+    },
+    "facing=west,blockstate=1": {
+      "model": "extra_building_blocks:block/soul_lamp_chain_alt",
+      "y": 270
+    }
+  }
+}

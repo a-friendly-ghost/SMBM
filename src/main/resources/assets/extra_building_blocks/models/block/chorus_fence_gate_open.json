@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_fence_gate_open",
+  "textures": {
+    "particle": "extra_building_blocks:block/image_6",
+    "texture": "extra_building_blocks:block/image_6"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "extra_building_blocks:soul_glass"
+    },
+    "b": {
+      "item": "minecraft:yellow_dye"
+    }
+  },
+  "result": {
+    "item": "extra_building_blocks:yellow_stained_soul_glass",
+    "count": 8
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "_fv": 73,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 4,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Blocks.END_STONE"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.END_STONE"
+      },
+      {
+        "value": "Blocks.END_STONE"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.END_STONE"
+      },
+      {
+        "value": "Blocks.END_STONE"
+      },
+      {
+        "value": "Blocks.END_STONE"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:EndStoneStairs"
+    },
+    "name": "end_stone_stairs_recipe",
+    "namespace": "mod"
+  }
+}

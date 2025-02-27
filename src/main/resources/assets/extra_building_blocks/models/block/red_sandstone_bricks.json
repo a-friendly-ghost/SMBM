@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "extra_building_blocks:block/red_sandstone_top_texture_je4_be2",
+    "up": "extra_building_blocks:block/cut_sandstone_side_texture_je3_be2_5",
+    "north": "extra_building_blocks:block/cut_sandstone_side_texture_je3_be2_6",
+    "east": "extra_building_blocks:block/cut_sandstone_side_texture_je3_be2_6",
+    "south": "extra_building_blocks:block/cut_sandstone_side_texture_je3_be2_6",
+    "west": "extra_building_blocks:block/cut_sandstone_side_texture_je3_be2_6",
+    "particle": "extra_building_blocks:block/red_sandstone_top_texture_je4_be2"
+  },
+  "render_type": "solid"
+}

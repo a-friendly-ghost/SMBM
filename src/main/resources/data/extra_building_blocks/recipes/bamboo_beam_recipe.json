@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "a",
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:stripped_bamboo_block"
+    }
+  },
+  "result": {
+    "item": "extra_building_blocks:bamboo_beam",
+    "count": 4
+  }
+}

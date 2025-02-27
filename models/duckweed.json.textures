@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "duck",
+        "missing": "duck"
+      },
+      "name": "default"
+    }
+  }
+}

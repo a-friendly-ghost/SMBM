@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "extra_building_blocks:item/new_piskel_-_2024-04-06t183436.311"
+  },
+  "render_type": "translucent"
+}

@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "extra_building_blocks:cactus_w_slab",
+    "extra_building_blocks:soul_slate_brick_slab",
+    "extra_building_blocks:red_sandstone_brick_slab",
+    "extra_building_blocks:sandstone_brick_slab",
+    "extra_building_blocks:end_stone_slab",
+    "extra_building_blocks:chorus_slab",
+    "extra_building_blocks:cut_smooth_stone_slab",
+    "extra_building_blocks:ice_brick_slab",
+    "extra_building_blocks:dripstone_slab",
+    "extra_building_blocks:dripstone_brick_slab",
+    "extra_building_blocks:polished_dripstone_slab",
+    "extra_building_blocks:quartz_brick_slab",
+    "extra_building_blocks:cut_diorite_slab",
+    "extra_building_blocks:calcite_brick_slab",
+    "extra_building_blocks:calcite_slab",
+    "extra_building_blocks:polished_calcite_slab",
+    "extra_building_blocks:cut_granite_slab",
+    "extra_building_blocks:cut_andesite_slab"
+  ]
+}

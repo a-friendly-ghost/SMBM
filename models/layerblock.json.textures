@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "texture_20",
+        "1": "new_piskel_81"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "parent": "extra_building_blocks:custom/rotateablecross_model_unshaded",
+  "textures": {
+    "all": "extra_building_blocks:block/cropped_4",
+    "particle": "extra_building_blocks:block/cropped_4",
+    "0": "extra_building_blocks:block/cropped_4",
+    "missing": "extra_building_blocks:block/cropped_5"
+  },
+  "render_type": "cutout"
+}

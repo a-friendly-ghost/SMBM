@@ -1,0 +1,9 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "extra_building_blocks:salt_flats",
+    "extra_building_blocks:salt_outcrops"
+  ],
+  "features": "extra_building_blocks:salt_growth_cluster",
+  "step": "surface_structures"
+}

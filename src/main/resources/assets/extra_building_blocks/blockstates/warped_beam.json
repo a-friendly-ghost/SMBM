@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "extra_building_blocks:block/warped_beam",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "extra_building_blocks:block/warped_beam"
+    },
+    "axis=z": {
+      "model": "extra_building_blocks:block/warped_beam",
+      "x": 90
+    }
+  }
+}

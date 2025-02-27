@@ -1,0 +1,48 @@
+{
+  "_fv": 73,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 2,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:CactusWPlanks"
+      },
+      {
+        "value": "CUSTOM:CactusWPlanks"
+      },
+      {
+        "value": "CUSTOM:CactusWPlanks"
+      },
+      {
+        "value": "CUSTOM:CactusWPlanks"
+      },
+      {
+        "value": "CUSTOM:CactusWPlanks"
+      },
+      {
+        "value": "CUSTOM:CactusWPlanks"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:CactusWoodTrapdoor"
+    },
+    "name": "cactus_wood_trapdoor_recipe",
+    "namespace": "mod"
+  }
+}

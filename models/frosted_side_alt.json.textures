@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "edge": "frostedglassedge",
+        "pane": "frostedglass"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:dripstone_block"
+    }
+  },
+  "result": {
+    "item": "extra_building_blocks:polished_dripstone",
+    "count": 4
+  }
+}

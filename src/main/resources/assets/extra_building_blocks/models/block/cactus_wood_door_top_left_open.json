@@ -1,0 +1,9 @@
+{
+  "parent": "block/door_top_left_open",
+  "textures": {
+    "particle": "extra_building_blocks:block/doords_1",
+    "bottom": "extra_building_blocks:block/doords_1",
+    "top": "extra_building_blocks:block/doords"
+  },
+  "render_type": "cutout"
+}

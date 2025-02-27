@@ -1,0 +1,10 @@
+{
+  "parent": "extra_building_blocks:custom/hookz",
+  "textures": {
+    "all": "extra_building_blocks:block/hooktexture",
+    "particle": "extra_building_blocks:block/hooktexture",
+    "0": "extra_building_blocks:block/hooktexture",
+    "missing": "extra_building_blocks:block/hooktexture"
+  },
+  "render_type": "cutout"
+}

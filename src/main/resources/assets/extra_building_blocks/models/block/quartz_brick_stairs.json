@@ -1,0 +1,10 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "particle": "extra_building_blocks:block/quartz_bricks_texture_je2_be2",
+    "bottom": "extra_building_blocks:block/quartz_bricks_texture_je2_be2",
+    "top": "extra_building_blocks:block/quartz_bricks_texture_je2_be2",
+    "side": "extra_building_blocks:block/quartz_bricks_texture_je2_be2"
+  },
+  "render_type": "solid"
+}

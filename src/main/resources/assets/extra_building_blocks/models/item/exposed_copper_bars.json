@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "extra_building_blocks:block/new_piskel_-_2024-05-27t110000.646"
+  },
+  "render_type": "cutout_mipped"
+}

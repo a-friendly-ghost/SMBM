@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "new_piskel_1",
+        "missing": "new_piskel_1"
+      },
+      "name": "default"
+    }
+  }
+}

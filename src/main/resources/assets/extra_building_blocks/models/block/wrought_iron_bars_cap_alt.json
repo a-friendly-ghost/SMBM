@@ -1,0 +1,9 @@
+{
+  "parent": "block/iron_bars_cap_alt",
+  "textures": {
+    "bars": "extra_building_blocks:block/wroughtironedge",
+    "edge": "extra_building_blocks:block/wroughtironedge",
+    "particle": "extra_building_blocks:block/wroughtironbars"
+  },
+  "render_type": "cutout_mipped"
+}

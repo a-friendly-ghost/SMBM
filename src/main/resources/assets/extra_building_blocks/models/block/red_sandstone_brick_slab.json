@@ -1,0 +1,10 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "particle": "extra_building_blocks:block/cut_sandstone_side_texture_je3_be2_6",
+    "bottom": "extra_building_blocks:block/cut_sandstone_side_texture_je3_be2_6",
+    "top": "extra_building_blocks:block/cut_sandstone_side_texture_je3_be2_6",
+    "side": "extra_building_blocks:block/cut_sandstone_side_texture_je3_be2_6"
+  },
+  "render_type": "solid"
+}

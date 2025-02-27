@@ -1,0 +1,13 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "lampbase_3",
+        "3": "lanternanim",
+        "4": "lamptophandle_2",
+        "5": "lamphandles_3"
+      },
+      "name": "default"
+    }
+  }
+}

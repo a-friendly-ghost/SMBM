@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "extra_building_blocks:block/magentastained",
+    "up": "extra_building_blocks:block/magentastained",
+    "north": "extra_building_blocks:block/magentastained",
+    "east": "extra_building_blocks:block/magentastained",
+    "south": "extra_building_blocks:block/magentastained",
+    "west": "extra_building_blocks:block/magentastained",
+    "particle": "extra_building_blocks:block/magentastained"
+  },
+  "render_type": "translucent"
+}

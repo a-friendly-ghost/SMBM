@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:dripstone_block"
+    }
+  },
+  "result": {
+    "item": "extra_building_blocks:dripstone_wall",
+    "count": 6
+  }
+}

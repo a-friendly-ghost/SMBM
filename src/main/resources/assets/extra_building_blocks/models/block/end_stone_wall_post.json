@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_wall_post",
+  "textures": {
+    "wall": "extra_building_blocks:block/end_stone_texture_je3_be2_1",
+    "particle": "extra_building_blocks:block/end_stone_texture_je3_be2_1"
+  },
+  "render_type": "solid"
+}
