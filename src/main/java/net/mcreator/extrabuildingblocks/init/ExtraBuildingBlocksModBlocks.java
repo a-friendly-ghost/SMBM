@@ -267,6 +267,7 @@ public class ExtraBuildingBlocksModBlocks {
 	public static final RegistryObject<Block> SMOOTH_STONE_STAIRS = REGISTRY.register("smooth_stone_stairs", () -> new SmoothStoneStairsBlock());
 	public static final RegistryObject<Block> CRACKED_RED_NETHER_BRICK = REGISTRY.register("cracked_red_nether_brick", () -> new CrackedRedNetherBrickBlock());
 	public static final RegistryObject<Block> BRACKET = REGISTRY.register("bracket", () -> new BracketBlock());
+	public static final RegistryObject<Block> SCONCE = REGISTRY.register("sconce", () -> new SconceBlock());
 	public static final RegistryObject<Block> POLISHED_DRIPSTONE = REGISTRY.register("polished_dripstone", () -> new PolishedDripstoneBlock());
 	public static final RegistryObject<Block> POLISHED_DRIPSTONE_STAIRS = REGISTRY.register("polished_dripstone_stairs", () -> new PolishedDripstoneStairsBlock());
 	public static final RegistryObject<Block> POLISHED_DRIPSTONE_SLAB = REGISTRY.register("polished_dripstone_slab", () -> new PolishedDripstoneSlabBlock());
