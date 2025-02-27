@@ -125,6 +125,7 @@ public class ExtraBuildingBlocksModTabs {
 			tabData.accept(ExtraBuildingBlocksModBlocks.QUARTZ_BRICK_STAIRS.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.QUARTZ_BRICK_SLAB.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.QUARTZ_BRICK_WALL.get().asItem());
+			tabData.accept(ExtraBuildingBlocksModBlocks.SMOOTH_STONE_STAIRS.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.CHISELED_RED_NETHER_BRICK.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.CRACKED_RED_NETHER_BRICK.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.BRACKET.get().asItem());

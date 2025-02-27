@@ -47,6 +47,7 @@ public class ExtraBuildingBlocksModItems {
 	public static final RegistryObject<Item> QUARTZ_BRICK_STAIRS = block(ExtraBuildingBlocksModBlocks.QUARTZ_BRICK_STAIRS);
 	public static final RegistryObject<Item> QUARTZ_BRICK_SLAB = block(ExtraBuildingBlocksModBlocks.QUARTZ_BRICK_SLAB);
 	public static final RegistryObject<Item> QUARTZ_BRICK_WALL = block(ExtraBuildingBlocksModBlocks.QUARTZ_BRICK_WALL);
+	public static final RegistryObject<Item> SMOOTH_STONE_STAIRS = block(ExtraBuildingBlocksModBlocks.SMOOTH_STONE_STAIRS);
 	public static final RegistryObject<Item> CRACKED_RED_NETHER_BRICK = block(ExtraBuildingBlocksModBlocks.CRACKED_RED_NETHER_BRICK);
 	public static final RegistryObject<Item> BRACKET = block(ExtraBuildingBlocksModBlocks.BRACKET);
 	public static final RegistryObject<Item> POLISHED_DRIPSTONE = block(ExtraBuildingBlocksModBlocks.POLISHED_DRIPSTONE);
