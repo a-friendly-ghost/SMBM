@@ -1,9 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": [
-    "swamp",
-    "mangrove_swamp"
-  ],
-  "features": "extra_building_blocks:duckweed_feature",
-  "step": "surface_structures"
-}
