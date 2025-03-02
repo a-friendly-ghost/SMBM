@@ -30,7 +30,6 @@ import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.extrabuildingblocks.procedures.BracketNeighbourBlockChangesProcedure;
 import net.mcreator.extrabuildingblocks.procedures.BracketBlockValidPlacementConditionProcedure;
 import net.mcreator.extrabuildingblocks.procedures.BracketBlockAddedProcedure;
 
@@ -148,6 +147,6 @@ public class BracketBlock extends Block implements SimpleWaterloggedBlock {
 	@Override
 	public void neighborChanged(BlockState blockstate, Level world, BlockPos pos, Block neighborBlock, BlockPos fromPos, boolean moving) {
 		super.neighborChanged(blockstate, world, pos, neighborBlock, fromPos, moving);
-		BracketNeighbourBlockChangesProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+		BracketBlockAddedProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 }

@@ -131,7 +131,7 @@
       "name": "BracketBlockAdded"
     },
     "onNeighbourBlockChanges": {
-      "name": "BracketNeighbourBlockChanges"
+      "name": "BracketBlockAdded"
     },
     "generateFeature": false,
     "restrictionBiomes": [],
