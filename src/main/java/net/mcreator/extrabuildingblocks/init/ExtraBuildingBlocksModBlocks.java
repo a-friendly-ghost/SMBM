@@ -28,6 +28,7 @@ import net.mcreator.extrabuildingblocks.block.VeryCrackedBricksBlock;
 import net.mcreator.extrabuildingblocks.block.TESTBlock;
 import net.mcreator.extrabuildingblocks.block.SwampvineBlock;
 import net.mcreator.extrabuildingblocks.block.SwampGrassBlock;
+import net.mcreator.extrabuildingblocks.block.StoneWallBlock;
 import net.mcreator.extrabuildingblocks.block.StonePillarBlock;
 import net.mcreator.extrabuildingblocks.block.SpruceBeamBlock;
 import net.mcreator.extrabuildingblocks.block.SoulSlateBricksBlock;
@@ -464,6 +465,7 @@ public class ExtraBuildingBlocksModBlocks {
 	public static final RegistryObject<Block> FROSTED_GLASS = REGISTRY.register("frosted_glass", () -> new FrostedGlassBlock());
 	public static final RegistryObject<Block> RUSTED_WROUGHT_IRON = REGISTRY.register("rusted_wrought_iron", () -> new RustedWroughtIronBlock());
 	public static final RegistryObject<Block> EXPOSED_WROUGHT_IRON = REGISTRY.register("exposed_wrought_iron", () -> new ExposedWroughtIronBlock());
+	public static final RegistryObject<Block> STONE_WALL = REGISTRY.register("stone_wall", () -> new StoneWallBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

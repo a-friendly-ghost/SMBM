@@ -231,6 +231,7 @@ public class ExtraBuildingBlocksModTabs {
 			tabData.accept(ExtraBuildingBlocksModBlocks.IRON_GATE.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.WROUGHT_IRON_BARS.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.FROSTED_GLASS.get().asItem());
+			tabData.accept(ExtraBuildingBlocksModBlocks.STONE_WALL.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.COLORED_BLOCKS) {
 			tabData.accept(ExtraBuildingBlocksModBlocks.SOUL_GLASS.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.SOUL_GLASS_PANE.get().asItem());

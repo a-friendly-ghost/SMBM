@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "extra_building_blocks:stone_wall",
     "extra_building_blocks:dark_prismarine_wall",
     "extra_building_blocks:prismarine_brick_wall",
     "extra_building_blocks:soul_slate_brick_wall",
