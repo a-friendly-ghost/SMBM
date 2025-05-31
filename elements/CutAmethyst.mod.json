@@ -45,6 +45,9 @@
     "creativeTabs": [
       {
         "value": "BUILDING_BLOCKS"
+      },
+      {
+        "value": "CUSTOM:Mishmash"
       }
     ],
     "destroyTool": "pickaxe",
@@ -59,7 +62,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 15,
     "material": {
-      "value": "AMETHYST"
+      "value": "NONE"
     },
     "tickRate": 0,
     "tickRandomly": false,

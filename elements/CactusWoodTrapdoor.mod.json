@@ -46,6 +46,9 @@
     "creativeTabs": [
       {
         "value": "BUILDING_BLOCKS"
+      },
+      {
+        "value": "CUSTOM:Mishmash"
       }
     ],
     "destroyTool": "axe",

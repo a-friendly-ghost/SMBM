@@ -78,7 +78,11 @@
     "resistance": 0.0,
     "hasGravity": false,
     "isWaterloggable": false,
-    "creativeTabs": [],
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Mishmash"
+      }
+    ],
     "destroyTool": "pickaxe",
     "customDrop": {
       "value": "Blocks.FLOWER_POT"
