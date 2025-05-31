@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "extra_building_blocks:block/darksealantern",
+    "up": "extra_building_blocks:block/darksealantern",
+    "north": "extra_building_blocks:block/darksealantern",
+    "east": "extra_building_blocks:block/darksealantern",
+    "south": "extra_building_blocks:block/darksealantern",
+    "west": "extra_building_blocks:block/darksealantern",
+    "particle": "extra_building_blocks:block/darksealantern"
+  },
+  "render_type": "solid"
+}

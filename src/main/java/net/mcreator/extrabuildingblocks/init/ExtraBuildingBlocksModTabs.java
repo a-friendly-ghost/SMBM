@@ -79,6 +79,7 @@ public class ExtraBuildingBlocksModTabs {
 				tabData.accept(ExtraBuildingBlocksModBlocks.CHORUS_FENCE_GATE.get().asItem());
 				tabData.accept(ExtraBuildingBlocksModBlocks.CHORUS_DOOR.get().asItem());
 				tabData.accept(ExtraBuildingBlocksModBlocks.CHORUS_TRAPDOOR.get().asItem());
+				tabData.accept(ExtraBuildingBlocksModBlocks.DARK_SEA_LANTERN.get().asItem());
 			}).withSearchBar().build());
 
 	@SubscribeEvent
@@ -232,6 +233,7 @@ public class ExtraBuildingBlocksModTabs {
 			tabData.accept(ExtraBuildingBlocksModBlocks.WROUGHT_IRON_BARS.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.FROSTED_GLASS.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.STONE_WALL.get().asItem());
+			tabData.accept(ExtraBuildingBlocksModBlocks.DARK_SEA_LANTERN.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.COLORED_BLOCKS) {
 			tabData.accept(ExtraBuildingBlocksModBlocks.SOUL_GLASS.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.SOUL_GLASS_PANE.get().asItem());

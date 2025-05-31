@@ -150,6 +150,7 @@ import net.mcreator.extrabuildingblocks.block.DripstoneBrickStairsBlock;
 import net.mcreator.extrabuildingblocks.block.DripstoneBrickSlabBlock;
 import net.mcreator.extrabuildingblocks.block.DestroyedStoneBricksBlock;
 import net.mcreator.extrabuildingblocks.block.DestroyedBricksBlock;
+import net.mcreator.extrabuildingblocks.block.DarkSeaLanternBlock;
 import net.mcreator.extrabuildingblocks.block.DarkPrismarineWallBlock;
 import net.mcreator.extrabuildingblocks.block.DarkPrismarinePillarBlock;
 import net.mcreator.extrabuildingblocks.block.DarkOakBeamBlock;
@@ -466,6 +467,7 @@ public class ExtraBuildingBlocksModBlocks {
 	public static final RegistryObject<Block> RUSTED_WROUGHT_IRON = REGISTRY.register("rusted_wrought_iron", () -> new RustedWroughtIronBlock());
 	public static final RegistryObject<Block> EXPOSED_WROUGHT_IRON = REGISTRY.register("exposed_wrought_iron", () -> new ExposedWroughtIronBlock());
 	public static final RegistryObject<Block> STONE_WALL = REGISTRY.register("stone_wall", () -> new StoneWallBlock());
+	public static final RegistryObject<Block> DARK_SEA_LANTERN = REGISTRY.register("dark_sea_lantern", () -> new DarkSeaLanternBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }
