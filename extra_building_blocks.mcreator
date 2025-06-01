@@ -11006,6 +11006,19 @@
         ]
       },
       "path": "~/PrismarineFamily"
+    },
+    {
+      "name": "DarkSeaLanternRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_sea_lantern_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/extra_building_blocks/recipes/dark_sea_lantern_recipe.json"
+        ]
+      },
+      "path": "~/PrismarineFamily"
     }
   ],
   "variable_elements": [],
