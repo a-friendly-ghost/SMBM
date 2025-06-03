@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "wroughtgateside",
+        "1": "wroughtgate",
+        "missing": "wroughtgate"
+      },
+      "name": "default"
+    }
+  }
+}

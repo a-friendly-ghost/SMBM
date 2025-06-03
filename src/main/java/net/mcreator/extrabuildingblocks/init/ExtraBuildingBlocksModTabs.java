@@ -177,6 +177,7 @@ public class ExtraBuildingBlocksModTabs {
 				tabData.accept(ExtraBuildingBlocksModBlocks.END_STONE_STAIRS.get().asItem());
 				tabData.accept(ExtraBuildingBlocksModBlocks.CUT_AMETHYST.get().asItem());
 				tabData.accept(ExtraBuildingBlocksModItems.LACE.get());
+				tabData.accept(ExtraBuildingBlocksModBlocks.WROUGHT_IRON_GATE.get().asItem());
 			}).withSearchBar().build());
 
 	@SubscribeEvent
@@ -319,6 +320,7 @@ public class ExtraBuildingBlocksModTabs {
 			tabData.accept(ExtraBuildingBlocksModBlocks.STONE_WALL.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.SMOOTH_STONE_WALL.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.PURPUR_WALL.get().asItem());
+			tabData.accept(ExtraBuildingBlocksModBlocks.WROUGHT_IRON_GATE.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.COLORED_BLOCKS) {
 			tabData.accept(ExtraBuildingBlocksModBlocks.SOUL_GLASS.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.WHITE_STAINED_SOUL_GLASS.get().asItem());

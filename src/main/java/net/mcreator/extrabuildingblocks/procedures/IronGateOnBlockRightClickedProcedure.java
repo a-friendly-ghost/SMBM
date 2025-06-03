@@ -11,12 +11,11 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
-
-import net.mcreator.extrabuildingblocks.init.ExtraBuildingBlocksModBlocks;
 
 public class IronGateOnBlockRightClickedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -27,7 +26,7 @@ public class IronGateOnBlockRightClickedProcedure {
 		checkY = y;
 		aboveCount = -1;
 		for (int index0 = 0; index0 < 15; index0++) {
-			if (!((world.getBlockState(BlockPos.containing(x, checkY, z))).getBlock() == ExtraBuildingBlocksModBlocks.IRON_GATE.get())) {
+			if (!(world.getBlockState(BlockPos.containing(x, checkY, z))).is(BlockTags.create(new ResourceLocation("extra_building_blocks:metal_gates")))) {
 				break;
 			}
 			if (((world.getBlockState(BlockPos.containing(x, checkY, z))).getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip3
@@ -148,7 +147,7 @@ public class IronGateOnBlockRightClickedProcedure {
 		}
 		checkY = y - 1;
 		for (int index1 = 0; index1 < (int) (16 - aboveCount); index1++) {
-			if (!((world.getBlockState(BlockPos.containing(x, checkY, z))).getBlock() == ExtraBuildingBlocksModBlocks.IRON_GATE.get())) {
+			if (!(world.getBlockState(BlockPos.containing(x, checkY, z))).is(BlockTags.create(new ResourceLocation("extra_building_blocks:metal_gates")))) {
 				break;
 			}
 			if (((world.getBlockState(BlockPos.containing(x, checkY, z))).getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip20

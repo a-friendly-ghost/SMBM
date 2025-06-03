@@ -246,6 +246,7 @@ public class ExtraBuildingBlocksModItems {
 	public static final RegistryObject<Item> EXPOSED_WROUGHT_IRON = block(ExtraBuildingBlocksModBlocks.EXPOSED_WROUGHT_IRON);
 	public static final RegistryObject<Item> STONE_WALL = block(ExtraBuildingBlocksModBlocks.STONE_WALL);
 	public static final RegistryObject<Item> DARK_SEA_LANTERN = block(ExtraBuildingBlocksModBlocks.DARK_SEA_LANTERN);
+	public static final RegistryObject<Item> WROUGHT_IRON_GATE = block(ExtraBuildingBlocksModBlocks.WROUGHT_IRON_GATE);
 
 	// Start of user code block custom items
 	// End of user code block custom items

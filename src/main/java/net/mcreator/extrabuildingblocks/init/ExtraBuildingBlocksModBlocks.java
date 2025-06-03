@@ -14,6 +14,7 @@ import net.mcreator.extrabuildingblocks.block.YellowStainedSoulGlassPaneBlock;
 import net.mcreator.extrabuildingblocks.block.YellowStainedSoulGlassBlock;
 import net.mcreator.extrabuildingblocks.block.YellowLaceCarpetBlock;
 import net.mcreator.extrabuildingblocks.block.YellowLaceBannerBlock;
+import net.mcreator.extrabuildingblocks.block.WroughtIronGateBlock;
 import net.mcreator.extrabuildingblocks.block.WroughtIronBlock;
 import net.mcreator.extrabuildingblocks.block.WroughtIronBarsBlock;
 import net.mcreator.extrabuildingblocks.block.WhiteStainedSoulGlassPaneBlock;
@@ -468,6 +469,7 @@ public class ExtraBuildingBlocksModBlocks {
 	public static final RegistryObject<Block> EXPOSED_WROUGHT_IRON = REGISTRY.register("exposed_wrought_iron", () -> new ExposedWroughtIronBlock());
 	public static final RegistryObject<Block> STONE_WALL = REGISTRY.register("stone_wall", () -> new StoneWallBlock());
 	public static final RegistryObject<Block> DARK_SEA_LANTERN = REGISTRY.register("dark_sea_lantern", () -> new DarkSeaLanternBlock());
+	public static final RegistryObject<Block> WROUGHT_IRON_GATE = REGISTRY.register("wrought_iron_gate", () -> new WroughtIronGateBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }
