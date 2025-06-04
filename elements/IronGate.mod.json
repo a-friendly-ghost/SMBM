@@ -36,7 +36,9 @@
     "customProperties": [],
     "name": "Iron Gate",
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "only a *little* bit buggy :3"
+      ]
     },
     "hardness": 5.0,
     "resistance": 6.0,

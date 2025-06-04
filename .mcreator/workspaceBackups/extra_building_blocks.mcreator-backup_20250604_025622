@@ -11019,6 +11019,49 @@
         ]
       },
       "path": "~/PrismarineFamily"
+    },
+    {
+      "name": "WroughtIronGate",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wrought_iron_gate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/extra_building_blocks/blockstates/wrought_iron_gate.json",
+          "src/main/resources/assets/extra_building_blocks/models/item/wrought_iron_gate.json",
+          "src/main/java/net/mcreator/extrabuildingblocks/block/WroughtIronGateBlock.java",
+          "src/main/resources/data/extra_building_blocks/loot_tables/blocks/wrought_iron_gate.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/wrought_iron_gate.json"
+        ]
+      },
+      "path": "~/MetalGates"
+    },
+    {
+      "name": "WroughtIronGateBlockstates",
+      "type": "blockstates",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wrought_iron_gate_blockstates",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/extra_building_blocks/models/block/wrought_iron_gate_blockstates_blockstate_0.json"
+        ]
+      },
+      "path": "~/MetalGates"
+    },
+    {
+      "name": "WroughtIronGateRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wrought_iron_gate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/extra_building_blocks/recipes/wrought_iron_gate_recipe.json"
+        ]
+      },
+      "path": "~/MetalGates"
     }
   ],
   "variable_elements": [],
@@ -11077,10 +11120,10 @@
       "~CUSTOM:SaltFlats"
     ],
     "BLOCKS:minecraft:needs_stone_tool": [
+      "~CUSTOM:WroughtIronGate",
       "~CUSTOM:ExposedWroughtIron",
       "~CUSTOM:RustedWroughtIron",
       "~CUSTOM:WeatheredWroughtIron",
-      "~CUSTOM:IronGate",
       "~CUSTOM:Brace",
       "~CUSTOM:ChiseledBlackstoneBricks",
       "~CUSTOM:ChiseledDeepslateBricks",
@@ -11259,10 +11302,15 @@
     "BIOMES:minecraft:has_structure/desert_pyramid": [
       "~CUSTOM:SparseDesert"
     ],
+    "BLOCKS:mod:metal_gates": [
+      "CUSTOM:IronGate",
+      "CUSTOM:WroughtIronGate"
+    ],
     "BLOCKS:minecraft:infiniburn_end": [
       "CUSTOM:SoulMagma"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:WroughtIronGate",
       "~CUSTOM:DarkSeaLantern",
       "~CUSTOM:StoneWall",
       "~CUSTOM:ExposedWroughtIron",
@@ -11524,11 +11572,11 @@
       "OakBeam",
       "SpruceBeam",
       "BirchBeam",
-      "DarkOakBeam",
+      "JungleBeam",
       "AcaciaBeam",
+      "DarkOakBeam",
       "MangroveBeam",
       "CherryBeam",
-      "JungleBeam",
       "BambooBeam",
       "CrimsonBeam",
       "WarpedBeam",
@@ -11579,7 +11627,8 @@
       "DarkPrismarineWall",
       "StoneWall",
       "SmoothStoneWall",
-      "PurpurWall"
+      "PurpurWall",
+      "WroughtIronGate"
     ],
     "CUSTOM:Mishmash": [
       "CutAndesite",
@@ -11735,7 +11784,8 @@
       "EndStoneSlab",
       "EndStoneStairs",
       "CutAmethyst",
-      "Lace"
+      "Lace",
+      "WroughtIronGate"
     ],
     "BREWING": [
       "SoulGlass",
@@ -11841,6 +11891,7 @@
       "block.extra_building_blocks.weathered_copper_bars": "Weathered Copper Bars",
       "block.extra_building_blocks.calcite_bricks": "Calcite Bricks",
       "block.extra_building_blocks.warped_beam": "Warped Beam",
+      "block.extra_building_blocks.wrought_iron_gate": "Wrought Iron Gate",
       "block.extra_building_blocks.ice_brick_wall": "Ice Brick Wall",
       "block.extra_building_blocks.calcite_wall": "Calcite Wall",
       "block.extra_building_blocks.light_blue_lace_carpet": "Light Blue Lace Carpet",
@@ -12003,6 +12054,7 @@
       "block.extra_building_blocks.cracked_calcite_bricks": "Cracked Calcite Bricks",
       "block.extra_building_blocks.crimson_beam": "Crimson Beam",
       "block.extra_building_blocks.green_desert_bush": "Green Desert Bush",
+      "block.extra_building_blocks.iron_gate.description_0": "only a *little* bit buggy :3",
       "block.extra_building_blocks.weathered_wrought_iron": "Weathered Wrought Iron",
       "block.extra_building_blocks.cyan_lace_carpet": "Cyan Lace Carpet",
       "block.extra_building_blocks.dripstone_brick_stairs": "Dripstone Brick Stairs",
@@ -12094,6 +12146,7 @@
       "block.extra_building_blocks.weathered_copper_bars": "Barreaux de cuivre érodé",
       "block.extra_building_blocks.calcite_bricks": "Briques de calcite",
       "block.extra_building_blocks.warped_beam": "Poutre biscornue",
+      "block.extra_building_blocks.wrought_iron_gate": "Wrought Iron Gate",
       "block.extra_building_blocks.ice_brick_wall": "Muret de briques de glace",
       "block.extra_building_blocks.calcite_wall": "Muret de calcite",
       "block.extra_building_blocks.light_blue_lace_carpet": "Tapis de dentelle cyan",
@@ -12256,6 +12309,7 @@
       "block.extra_building_blocks.cracked_calcite_bricks": "Calcite taillée craquelée",
       "block.extra_building_blocks.crimson_beam": "Poutre carmin",
       "block.extra_building_blocks.green_desert_bush": "Green Desert Bush",
+      "block.extra_building_blocks.iron_gate.description_0": "only a *little* bit buggy :3",
       "block.extra_building_blocks.weathered_wrought_iron": "Fer forgé érodé",
       "block.extra_building_blocks.cyan_lace_carpet": "Green Lace Carpet",
       "block.extra_building_blocks.dripstone_brick_stairs": "Escaliers en spéléothème taillé",
@@ -12347,6 +12401,7 @@
       "block.extra_building_blocks.cut_granite_stairs": "研がれた花崗岩の階段",
       "block.extra_building_blocks.calcite_bricks": "方解石レンガ",
       "block.extra_building_blocks.warped_beam": "歪んだ梁",
+      "block.extra_building_blocks.wrought_iron_gate": "Wrought Iron Gate",
       "block.extra_building_blocks.ice_brick_wall": "Ice Brick Wall",
       "block.extra_building_blocks.calcite_wall": "方解石の塀",
       "block.extra_building_blocks.light_blue_lace_carpet": "Light Blue Lace Carpet",
@@ -12509,6 +12564,7 @@
       "block.extra_building_blocks.cracked_calcite_bricks": "ひび割れた方解石レンガ",
       "block.extra_building_blocks.crimson_beam": "真紅の梁",
       "block.extra_building_blocks.green_desert_bush": "Green Desert Bush",
+      "block.extra_building_blocks.iron_gate.description_0": "only a *little* bit buggy :3",
       "block.extra_building_blocks.weathered_wrought_iron": "錆びた錬鉄",
       "block.extra_building_blocks.cyan_lace_carpet": "Cyan Lace Carpet",
       "block.extra_building_blocks.dripstone_brick_stairs": "鍾乳石レンガの階段",

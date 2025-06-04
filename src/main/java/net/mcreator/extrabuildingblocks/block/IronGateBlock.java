@@ -21,15 +21,20 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.extrabuildingblocks.procedures.IronGatePlacedProcedure;
 import net.mcreator.extrabuildingblocks.procedures.IronGateOnBlockRightClickedProcedure;
 import net.mcreator.extrabuildingblocks.procedures.IronGateBlockAddedProcedure;
+
+import java.util.List;
 
 public class IronGateBlock extends Block {
 	public static final IntegerProperty BLOCKSTATE = IntegerProperty.create("blockstate", 0, 1);
@@ -44,6 +49,12 @@ public class IronGateBlock extends Block {
 			}
 		}.getLightLevel())).requiresCorrectToolForDrops().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
+	}
+
+	@Override
+	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
+		list.add(Component.translatable("block.extra_building_blocks.iron_gate.description_0"));
 	}
 
 	@Override
