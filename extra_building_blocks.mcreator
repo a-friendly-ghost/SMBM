@@ -10544,7 +10544,7 @@
           "src/main/resources/data/extra_building_blocks/loot_tables/blocks/weathered_wrought_iron.json"
         ]
       },
-      "path": "~/WroughtIron"
+      "path": "~/WroughtIron/Plain"
     },
     {
       "name": "IronGateBlockAdded",
@@ -10831,7 +10831,7 @@
           "src/main/resources/assets/extra_building_blocks/models/block/rusted_wrought_iron.json"
         ]
       },
-      "path": "~/WroughtIron"
+      "path": "~/WroughtIron/Plain"
     },
     {
       "name": "ExposedWroughtIron",
@@ -10848,7 +10848,7 @@
           "src/main/java/net/mcreator/extrabuildingblocks/block/ExposedWroughtIronBlock.java"
         ]
       },
-      "path": "~/WroughtIron"
+      "path": "~/WroughtIron/Plain"
     },
     {
       "name": "Mishmash",
@@ -11136,7 +11136,7 @@
           }
         ]
       },
-      "path": "~/WroughtIron"
+      "path": "~/WroughtIron/Plain"
     },
     {
       "name": "ExposedWroughtIronOnTickUpdate",
@@ -11170,7 +11170,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/WroughtIron/Plain"
     },
     {
       "name": "WeatheredWroughtIronOnTickUpdate",
@@ -11186,6 +11187,192 @@
           {
             "name": "blockstate",
             "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WroughtIron/Plain"
+    },
+    {
+      "name": "WaxedWroughtIron",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "waxed_wrought_iron",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/extrabuildingblocks/block/WaxedWroughtIronBlock.java",
+          "src/main/resources/assets/extra_building_blocks/blockstates/waxed_wrought_iron.json",
+          "src/main/resources/assets/extra_building_blocks/models/item/waxed_wrought_iron.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/waxed_wrought_iron.json",
+          "src/main/resources/data/extra_building_blocks/loot_tables/blocks/waxed_wrought_iron.json"
+        ]
+      },
+      "path": "~/WroughtIron/Waxed"
+    },
+    {
+      "name": "WaxedWeatheredWroughtIron",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "waxed_weathered_wrought_iron",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/extrabuildingblocks/block/WaxedWeatheredWroughtIronBlock.java",
+          "src/main/resources/data/extra_building_blocks/loot_tables/blocks/waxed_weathered_wrought_iron.json",
+          "src/main/resources/assets/extra_building_blocks/blockstates/waxed_weathered_wrought_iron.json",
+          "src/main/resources/assets/extra_building_blocks/models/item/waxed_weathered_wrought_iron.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/waxed_weathered_wrought_iron.json"
+        ]
+      },
+      "path": "~/WroughtIron/Waxed"
+    },
+    {
+      "name": "WaxedExposedWroughtIron",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "waxed_exposed_wrought_iron",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/extrabuildingblocks/block/WaxedExposedWroughtIronBlock.java",
+          "src/main/resources/assets/extra_building_blocks/blockstates/waxed_exposed_wrought_iron.json",
+          "src/main/resources/assets/extra_building_blocks/models/item/waxed_exposed_wrought_iron.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/waxed_exposed_wrought_iron.json",
+          "src/main/resources/data/extra_building_blocks/loot_tables/blocks/waxed_exposed_wrought_iron.json"
+        ]
+      },
+      "path": "~/WroughtIron/Waxed"
+    },
+    {
+      "name": "WaxedRustedWroughtIron",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "waxed_rusted_wrought_iron",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/extra_building_blocks/blockstates/waxed_rusted_wrought_iron.json",
+          "src/main/resources/assets/extra_building_blocks/models/item/waxed_rusted_wrought_iron.json",
+          "src/main/java/net/mcreator/extrabuildingblocks/block/WaxedRustedWroughtIronBlock.java",
+          "src/main/resources/data/extra_building_blocks/loot_tables/blocks/waxed_rusted_wrought_iron.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/waxed_rusted_wrought_iron.json"
+        ]
+      },
+      "path": "~/WroughtIron/Waxed"
+    },
+    {
+      "name": "WaxingProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "waxing_procedure",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/extrabuildingblocks/procedures/WaxingProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WaxStrippingProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wax_stripping_procedure",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/extrabuildingblocks/procedures/WaxStrippingProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OxidationStrippingProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oxidation_stripping_procedure",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/extrabuildingblocks/procedures/OxidationStrippingProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
           },
           {
             "name": "x",
@@ -11271,6 +11458,9 @@
       "~CUSTOM:SaltFlats"
     ],
     "BLOCKS:minecraft:needs_stone_tool": [
+      "~CUSTOM:WaxedRustedWroughtIron",
+      "~CUSTOM:WaxedExposedWroughtIron",
+      "~CUSTOM:WaxedWeatheredWroughtIron",
       "~CUSTOM:WroughtIronGate",
       "~CUSTOM:ExposedWroughtIron",
       "~CUSTOM:RustedWroughtIron",
@@ -11458,6 +11648,7 @@
       "CUSTOM:CactusWPlanks"
     ],
     "BLOCKS:minecraft:needs_iron_tool": [
+      "~CUSTOM:WaxedWroughtIron",
       "~CUSTOM:WroughtIron"
     ],
     "BLOCKS:minecraft:infiniburn_overworld": [
@@ -11487,6 +11678,10 @@
       "CUSTOM:SoulMagma"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:WaxedRustedWroughtIron",
+      "~CUSTOM:WaxedExposedWroughtIron",
+      "~CUSTOM:WaxedWeatheredWroughtIron",
+      "~CUSTOM:WaxedWroughtIron",
       "~CUSTOM:WroughtIronGate",
       "~CUSTOM:DarkSeaLantern",
       "~CUSTOM:StoneWall",
@@ -11805,7 +12000,11 @@
       "StoneWall",
       "SmoothStoneWall",
       "PurpurWall",
-      "WroughtIronGate"
+      "WroughtIronGate",
+      "WaxedWroughtIron",
+      "WaxedWeatheredWroughtIron",
+      "WaxedExposedWroughtIron",
+      "WaxedRustedWroughtIron"
     ],
     "CUSTOM:Mishmash": [
       "CutAndesite",
@@ -11962,7 +12161,11 @@
       "EndStoneStairs",
       "CutAmethyst",
       "Lace",
-      "WroughtIronGate"
+      "WroughtIronGate",
+      "WaxedWroughtIron",
+      "WaxedWeatheredWroughtIron",
+      "WaxedExposedWroughtIron",
+      "WaxedRustedWroughtIron"
     ],
     "BREWING": [
       "SoulGlass",
@@ -12176,6 +12379,7 @@
       "block.extra_building_blocks.dark_oak_beam": "Dark Oak Beam",
       "block.extra_building_blocks.cactus_w_button": "Cactus Wood Button",
       "block.extra_building_blocks.red_stained_soul_glass_pane": "Red Stained Soul Glass Pane",
+      "block.extra_building_blocks.waxed_exposed_wrought_iron": "Exposed Wrought Iron",
       "block.extra_building_blocks.destroyed_bricks": "Destroyed Bricks",
       "block.extra_building_blocks.stone_pillar": "Stone Pillar",
       "block.extra_building_blocks.iron_gate": "Iron Gate",
@@ -12230,12 +12434,14 @@
       "block.extra_building_blocks.calcite_brick_slab": "Calcite Brick Slab",
       "block.extra_building_blocks.cracked_calcite_bricks": "Cracked Calcite Bricks",
       "block.extra_building_blocks.crimson_beam": "Crimson Beam",
+      "block.extra_building_blocks.waxed_weathered_wrought_iron": "Weathered Wrought Iron",
       "block.extra_building_blocks.green_desert_bush": "Green Desert Bush",
       "block.extra_building_blocks.iron_gate.description_0": "only a *little* bit buggy :3",
       "block.extra_building_blocks.weathered_wrought_iron": "Weathered Wrought Iron",
       "block.extra_building_blocks.cyan_lace_carpet": "Cyan Lace Carpet",
       "block.extra_building_blocks.dripstone_brick_stairs": "Dripstone Brick Stairs",
       "block.extra_building_blocks.chorus_planks": "Chorus Wood Planks",
+      "block.extra_building_blocks.waxed_wrought_iron": "Wrought Iron",
       "block.extra_building_blocks.chiseled_end_stone_bricks": "Chiseled End Stone Bricks",
       "block.extra_building_blocks.chiseled_red_nether_brick": "Chiseled Red Nether Bricks",
       "item.extra_building_blocks.lace": "Lace",
@@ -12295,6 +12501,7 @@
       "block.extra_building_blocks.grey_lace_banner": "Grey Lace Banner",
       "block.extra_building_blocks.soul_slate_brick_slab": "Soul Slate Brick Slab",
       "block.extra_building_blocks.chiseled_stone.description_0": "texture inspired by @Other_Goblin on twitter !!",
+      "block.extra_building_blocks.waxed_rusted_wrought_iron": "Rusted Wrought Iron",
       "block.extra_building_blocks.hook": "Hook",
       "block.extra_building_blocks.chiseled_blackstone_bricks.description_0": "texture inspired by @Other_Goblin on twitter !!",
       "block.extra_building_blocks.dripstone_stairs": "Dripstone Stairs",
@@ -12431,6 +12638,7 @@
       "block.extra_building_blocks.dark_oak_beam": "Poutre en chêne noir",
       "block.extra_building_blocks.cactus_w_button": "Bouton en bois de cactus",
       "block.extra_building_blocks.red_stained_soul_glass_pane": "Vitre rouge des âmes",
+      "block.extra_building_blocks.waxed_exposed_wrought_iron": "Exposed Wrought Iron",
       "block.extra_building_blocks.destroyed_bricks": "Destroyed Bricks",
       "block.extra_building_blocks.stone_pillar": "Pilier de pierre",
       "block.extra_building_blocks.iron_gate": "Portillon en fer",
@@ -12485,12 +12693,14 @@
       "block.extra_building_blocks.calcite_brick_slab": "Dalle de briques de calcite",
       "block.extra_building_blocks.cracked_calcite_bricks": "Calcite taillée craquelée",
       "block.extra_building_blocks.crimson_beam": "Poutre carmin",
+      "block.extra_building_blocks.waxed_weathered_wrought_iron": "Weathered Wrought Iron",
       "block.extra_building_blocks.green_desert_bush": "Buisson de désert vert",
       "block.extra_building_blocks.iron_gate.description_0": "seulement un *peu* bogué :3",
       "block.extra_building_blocks.weathered_wrought_iron": "Fer forgé érodé",
       "block.extra_building_blocks.cyan_lace_carpet": "Tapis de dentelle cyan",
       "block.extra_building_blocks.dripstone_brick_stairs": "Escaliers en spéléothème taillé",
       "block.extra_building_blocks.chorus_planks": "Planches de chorus",
+      "block.extra_building_blocks.waxed_wrought_iron": "Wrought Iron",
       "block.extra_building_blocks.chiseled_end_stone_bricks": "Pierre sculptée de l\u0027End",
       "block.extra_building_blocks.chiseled_red_nether_brick": "Briques rouges du Nether craquelées",
       "item.extra_building_blocks.lace": "Dentelle",
@@ -12550,6 +12760,7 @@
       "block.extra_building_blocks.grey_lace_banner": "Bannière de dentelle grise",
       "block.extra_building_blocks.soul_slate_brick_slab": "Dalle de briques d\u0027ardoise des âmes",
       "block.extra_building_blocks.chiseled_stone.description_0": "texture inspirée par @Other_Goblin sur twitter !!",
+      "block.extra_building_blocks.waxed_rusted_wrought_iron": "Rusted Wrought Iron",
       "block.extra_building_blocks.hook": "Crochet",
       "block.extra_building_blocks.chiseled_blackstone_bricks.description_0": "texture inspirée par @Other_Goblin sur twitter !!",
       "block.extra_building_blocks.dripstone_stairs": "Escaliers en spéléothème",
@@ -12686,6 +12897,7 @@
       "block.extra_building_blocks.dark_oak_beam": "ダークオークの梁",
       "block.extra_building_blocks.cactus_w_button": "Cactus Wood Button",
       "block.extra_building_blocks.red_stained_soul_glass_pane": "Red Stained Soul Glass Pane",
+      "block.extra_building_blocks.waxed_exposed_wrought_iron": "Exposed Wrought Iron",
       "block.extra_building_blocks.destroyed_bricks": "Destroyed Bricks",
       "block.extra_building_blocks.stone_pillar": "石の柱",
       "block.extra_building_blocks.iron_gate": "Iron Gate",
@@ -12740,12 +12952,14 @@
       "block.extra_building_blocks.calcite_brick_slab": "方解石レンガのハーフブロック",
       "block.extra_building_blocks.cracked_calcite_bricks": "ひび割れた方解石レンガ",
       "block.extra_building_blocks.crimson_beam": "真紅の梁",
+      "block.extra_building_blocks.waxed_weathered_wrought_iron": "Weathered Wrought Iron",
       "block.extra_building_blocks.green_desert_bush": "Green Desert Bush",
       "block.extra_building_blocks.iron_gate.description_0": "only a *little* bit buggy :3",
       "block.extra_building_blocks.weathered_wrought_iron": "錆びた錬鉄",
       "block.extra_building_blocks.cyan_lace_carpet": "Cyan Lace Carpet",
       "block.extra_building_blocks.dripstone_brick_stairs": "鍾乳石レンガの階段",
       "block.extra_building_blocks.chorus_planks": "コーラスの板材",
+      "block.extra_building_blocks.waxed_wrought_iron": "Wrought Iron",
       "block.extra_building_blocks.chiseled_end_stone_bricks": "模様入りのエンドストーンレンガ",
       "block.extra_building_blocks.chiseled_red_nether_brick": "模様入りの赤いネザーレンガ",
       "item.extra_building_blocks.lace": "Lace",
@@ -12805,6 +13019,7 @@
       "block.extra_building_blocks.grey_lace_banner": "Grey Lace Banner",
       "block.extra_building_blocks.soul_slate_brick_slab": "Soul Slate Brick Slab",
       "block.extra_building_blocks.chiseled_stone.description_0": "texture inspired by @Other_Goblin on twitter !!",
+      "block.extra_building_blocks.waxed_rusted_wrought_iron": "Rusted Wrought Iron",
       "block.extra_building_blocks.hook": "Hook",
       "block.extra_building_blocks.chiseled_blackstone_bricks.description_0": "texture inspired by @Other_Goblin on twitter !!",
       "block.extra_building_blocks.dripstone_stairs": "鍾乳石の階段",
@@ -13036,6 +13251,10 @@
         "children": [
           {
             "name": "Plain",
+            "children": []
+          },
+          {
+            "name": "Waxed",
             "children": []
           }
         ]

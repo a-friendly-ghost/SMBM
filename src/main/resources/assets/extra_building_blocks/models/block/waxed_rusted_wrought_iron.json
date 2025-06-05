@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "extra_building_blocks:block/ironrust",
+    "up": "extra_building_blocks:block/ironrust",
+    "north": "extra_building_blocks:block/ironrust",
+    "east": "extra_building_blocks:block/ironrust",
+    "south": "extra_building_blocks:block/ironrust",
+    "west": "extra_building_blocks:block/ironrust",
+    "particle": "extra_building_blocks:block/ironrust"
+  },
+  "render_type": "solid"
+}

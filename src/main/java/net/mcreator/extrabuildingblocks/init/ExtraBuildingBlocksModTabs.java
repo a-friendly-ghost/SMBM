@@ -178,6 +178,10 @@ public class ExtraBuildingBlocksModTabs {
 				tabData.accept(ExtraBuildingBlocksModBlocks.CUT_AMETHYST.get().asItem());
 				tabData.accept(ExtraBuildingBlocksModItems.LACE.get());
 				tabData.accept(ExtraBuildingBlocksModBlocks.WROUGHT_IRON_GATE.get().asItem());
+				tabData.accept(ExtraBuildingBlocksModBlocks.WAXED_WROUGHT_IRON.get().asItem());
+				tabData.accept(ExtraBuildingBlocksModBlocks.WAXED_WEATHERED_WROUGHT_IRON.get().asItem());
+				tabData.accept(ExtraBuildingBlocksModBlocks.WAXED_EXPOSED_WROUGHT_IRON.get().asItem());
+				tabData.accept(ExtraBuildingBlocksModBlocks.WAXED_RUSTED_WROUGHT_IRON.get().asItem());
 			}).withSearchBar().build());
 
 	@SubscribeEvent
@@ -321,6 +325,10 @@ public class ExtraBuildingBlocksModTabs {
 			tabData.accept(ExtraBuildingBlocksModBlocks.SMOOTH_STONE_WALL.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.PURPUR_WALL.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.WROUGHT_IRON_GATE.get().asItem());
+			tabData.accept(ExtraBuildingBlocksModBlocks.WAXED_WROUGHT_IRON.get().asItem());
+			tabData.accept(ExtraBuildingBlocksModBlocks.WAXED_WEATHERED_WROUGHT_IRON.get().asItem());
+			tabData.accept(ExtraBuildingBlocksModBlocks.WAXED_EXPOSED_WROUGHT_IRON.get().asItem());
+			tabData.accept(ExtraBuildingBlocksModBlocks.WAXED_RUSTED_WROUGHT_IRON.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.COLORED_BLOCKS) {
 			tabData.accept(ExtraBuildingBlocksModBlocks.SOUL_GLASS.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.WHITE_STAINED_SOUL_GLASS.get().asItem());

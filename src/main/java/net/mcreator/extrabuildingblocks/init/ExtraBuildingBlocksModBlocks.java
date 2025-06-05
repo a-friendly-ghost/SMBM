@@ -23,6 +23,10 @@ import net.mcreator.extrabuildingblocks.block.WhiteLaceCarpetBlock;
 import net.mcreator.extrabuildingblocks.block.WhiteLaceBannerBlock;
 import net.mcreator.extrabuildingblocks.block.WeatheredWroughtIronBlock;
 import net.mcreator.extrabuildingblocks.block.WeatheredCopperBarsBlock;
+import net.mcreator.extrabuildingblocks.block.WaxedWroughtIronBlock;
+import net.mcreator.extrabuildingblocks.block.WaxedWeatheredWroughtIronBlock;
+import net.mcreator.extrabuildingblocks.block.WaxedRustedWroughtIronBlock;
+import net.mcreator.extrabuildingblocks.block.WaxedExposedWroughtIronBlock;
 import net.mcreator.extrabuildingblocks.block.WarpedBeamBlock;
 import net.mcreator.extrabuildingblocks.block.VeryCrackedStoneBricksBlock;
 import net.mcreator.extrabuildingblocks.block.VeryCrackedBricksBlock;
@@ -470,6 +474,10 @@ public class ExtraBuildingBlocksModBlocks {
 	public static final RegistryObject<Block> STONE_WALL = REGISTRY.register("stone_wall", () -> new StoneWallBlock());
 	public static final RegistryObject<Block> DARK_SEA_LANTERN = REGISTRY.register("dark_sea_lantern", () -> new DarkSeaLanternBlock());
 	public static final RegistryObject<Block> WROUGHT_IRON_GATE = REGISTRY.register("wrought_iron_gate", () -> new WroughtIronGateBlock());
+	public static final RegistryObject<Block> WAXED_WROUGHT_IRON = REGISTRY.register("waxed_wrought_iron", () -> new WaxedWroughtIronBlock());
+	public static final RegistryObject<Block> WAXED_WEATHERED_WROUGHT_IRON = REGISTRY.register("waxed_weathered_wrought_iron", () -> new WaxedWeatheredWroughtIronBlock());
+	public static final RegistryObject<Block> WAXED_EXPOSED_WROUGHT_IRON = REGISTRY.register("waxed_exposed_wrought_iron", () -> new WaxedExposedWroughtIronBlock());
+	public static final RegistryObject<Block> WAXED_RUSTED_WROUGHT_IRON = REGISTRY.register("waxed_rusted_wrought_iron", () -> new WaxedRustedWroughtIronBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }
