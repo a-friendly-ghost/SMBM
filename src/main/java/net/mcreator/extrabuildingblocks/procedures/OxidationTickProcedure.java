@@ -7,6 +7,7 @@ import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 public class OxidationTickProcedure {
@@ -34,6 +35,14 @@ public class OxidationTickProcedure {
 				modifyingFactor = 1;
 			} else {
 				return false;
+			}
+			if (blockstate.is(BlockTags.create(new ResourceLocation("extra_building_blocks:all_wrought_iron")))) {
+				for (Direction directioniterator : Direction.values()) {
+					if ((world.getBlockState(BlockPos.containing(x + directioniterator.getStepX(), y + directioniterator.getStepY(), z + directioniterator.getStepZ()))).is(BlockTags.create(new ResourceLocation("extra_building_blocks:all_copper")))) {
+						modifyingFactor = modifyingFactor + 0.5;
+						break;
+					}
+				}
 			}
 			checkDistance = 4;
 			xOffset = checkDistance * (-1);
@@ -89,7 +98,7 @@ public class OxidationTickProcedure {
 			}
 			c = (higherNearby + 1) / (totalNearby + 1);
 			probability = modifyingFactor * c * c;
-			if (probability <= Math.random()) {
+			if (Math.random() <= probability) {
 				return true;
 			}
 		}

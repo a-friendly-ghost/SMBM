@@ -11620,6 +11620,28 @@
       "~CUSTOM:SaltOutcrops",
       "~CUSTOM:SaltFlats"
     ],
+    "BLOCKS:mod:all_copper": [
+      "CUSTOM:CopperBars",
+      "CUSTOM:ExposedCopperBars",
+      "CUSTOM:WeatheredCopperBars",
+      "CUSTOM:OxidisedCopperBars",
+      "Blocks.COPPER_BLOCK",
+      "Blocks.EXPOSED_COPPER",
+      "Blocks.WEATHERED_COPPER",
+      "Blocks.OXIDIZED_COPPER",
+      "Blocks.CUT_COPPER",
+      "Blocks.EXPOSED_CUT_COPPER",
+      "Blocks.WEATHERED_CUT_COPPER",
+      "Blocks.OXIDIZED_CUT_COPPER",
+      "Blocks.CUT_COPPER_STAIRS",
+      "Blocks.EXPOSED_CUT_COPPER_STAIRS",
+      "Blocks.WEATHERED_CUT_COPPER_STAIRS",
+      "Blocks.OXIDIZED_CUT_COPPER_STAIRS",
+      "Blocks.CUT_COPPER_SLAB",
+      "Blocks.EXPOSED_CUT_COPPER_SLAB",
+      "Blocks.WEATHERED_CUT_COPPER_SLAB",
+      "Blocks.OXIDIZED_CUT_COPPER_SLAB"
+    ],
     "BLOCKS:minecraft:slabs": [
       "~CUSTOM:CactusWSlab",
       "~CUSTOM:SoulSlateBrickSlab",
@@ -11774,6 +11796,14 @@
       "~CUSTOM:CutAndesiteSlab",
       "~CUSTOM:CutAndesiteStairs",
       "~CUSTOM:CutAndesite"
+    ],
+    "BLOCKS:mod:all_wrought_iron": [
+      "CUSTOM:WroughtIron",
+      "CUSTOM:WeatheredWroughtIron",
+      "CUSTOM:WroughtIronBars",
+      "CUSTOM:RustedWroughtIron",
+      "CUSTOM:ExposedWroughtIron",
+      "CUSTOM:WroughtIronGate"
     ],
     "BLOCKS:minecraft:stairs": [
       "~CUSTOM:CactusWStairs",
