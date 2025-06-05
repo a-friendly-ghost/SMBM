@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "extra_building_blocks:exposed_copper_bars",
+    "extra_building_blocks:exposed_wrought_iron",
+    "minecraft:exposed_copper",
+    "minecraft:exposed_cut_copper",
+    "minecraft:exposed_cut_copper_stairs",
+    "minecraft:exposed_cut_copper_slab"
+  ]
+}
