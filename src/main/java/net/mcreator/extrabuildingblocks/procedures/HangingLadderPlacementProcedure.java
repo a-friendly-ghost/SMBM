@@ -18,6 +18,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.Direction;
@@ -77,6 +78,8 @@ public class HangingLadderPlacementProcedure {
 							_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.ladder.place")), SoundSource.NEUTRAL, 1, (float) 0.8, false);
 						}
 					}
+					if (entity instanceof LivingEntity _entity)
+						_entity.swing(InteractionHand.MAIN_HAND, true);
 					if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
 						if (entity instanceof Player _player) {
 							ItemStack _stktoremove = new ItemStack(Blocks.LADDER);
