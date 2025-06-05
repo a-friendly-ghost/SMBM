@@ -158,6 +158,117 @@ public class OxidationStrippingProcedureProcedure {
 				}
 				return true;
 			}
+			if (blockstate.getBlock() == ExtraBuildingBlocksModBlocks.OXIDISED_COPPER_BARS.get()) {
+				if (entity instanceof LivingEntity _entity)
+					_entity.swing(InteractionHand.MAIN_HAND, true);
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.axe.scrape")), SoundSource.NEUTRAL, 1, (float) ((9 + Mth.nextInt(RandomSource.create(), 0, 2)) / 10));
+					} else {
+						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.axe.scrape")), SoundSource.NEUTRAL, 1, (float) ((9 + Mth.nextInt(RandomSource.create(), 0, 2)) / 10), false);
+					}
+				}
+				if (world instanceof ServerLevel _level)
+					_level.sendParticles(ParticleTypes.SCRAPE, (x + 0.5), (y + 0.5), (z + 0.5), 20, 0.5, 0.5, 0.5, 1);
+				{
+					BlockPos _bp = BlockPos.containing(x, y, z);
+					BlockState _bs = ExtraBuildingBlocksModBlocks.WEATHERED_COPPER_BARS.get().defaultBlockState();
+					BlockState _bso = world.getBlockState(_bp);
+					for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+						Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
+						if (_property != null && _bs.getValue(_property) != null)
+							try {
+								_bs = _bs.setValue(_property, (Comparable) entry.getValue());
+							} catch (Exception e) {
+							}
+					}
+					world.setBlock(_bp, _bs, 3);
+				}
+				if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
+					{
+						ItemStack _ist = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+						if (_ist.hurt(1, RandomSource.create(), null)) {
+							_ist.shrink(1);
+							_ist.setDamageValue(0);
+						}
+					}
+				}
+				return true;
+			}
+			if (blockstate.getBlock() == ExtraBuildingBlocksModBlocks.WEATHERED_COPPER_BARS.get()) {
+				if (entity instanceof LivingEntity _entity)
+					_entity.swing(InteractionHand.MAIN_HAND, true);
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.axe.scrape")), SoundSource.NEUTRAL, 1, (float) ((9 + Mth.nextInt(RandomSource.create(), 0, 2)) / 10));
+					} else {
+						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.axe.scrape")), SoundSource.NEUTRAL, 1, (float) ((9 + Mth.nextInt(RandomSource.create(), 0, 2)) / 10), false);
+					}
+				}
+				if (world instanceof ServerLevel _level)
+					_level.sendParticles(ParticleTypes.SCRAPE, (x + 0.5), (y + 0.5), (z + 0.5), 20, 0.5, 0.5, 0.5, 1);
+				{
+					BlockPos _bp = BlockPos.containing(x, y, z);
+					BlockState _bs = ExtraBuildingBlocksModBlocks.EXPOSED_COPPER_BARS.get().defaultBlockState();
+					BlockState _bso = world.getBlockState(_bp);
+					for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+						Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
+						if (_property != null && _bs.getValue(_property) != null)
+							try {
+								_bs = _bs.setValue(_property, (Comparable) entry.getValue());
+							} catch (Exception e) {
+							}
+					}
+					world.setBlock(_bp, _bs, 3);
+				}
+				if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
+					{
+						ItemStack _ist = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+						if (_ist.hurt(1, RandomSource.create(), null)) {
+							_ist.shrink(1);
+							_ist.setDamageValue(0);
+						}
+					}
+				}
+				return true;
+			}
+			if (blockstate.getBlock() == ExtraBuildingBlocksModBlocks.EXPOSED_COPPER_BARS.get()) {
+				if (entity instanceof LivingEntity _entity)
+					_entity.swing(InteractionHand.MAIN_HAND, true);
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.axe.scrape")), SoundSource.NEUTRAL, 1, (float) ((9 + Mth.nextInt(RandomSource.create(), 0, 2)) / 10));
+					} else {
+						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.axe.scrape")), SoundSource.NEUTRAL, 1, (float) ((9 + Mth.nextInt(RandomSource.create(), 0, 2)) / 10), false);
+					}
+				}
+				if (world instanceof ServerLevel _level)
+					_level.sendParticles(ParticleTypes.SCRAPE, (x + 0.5), (y + 0.5), (z + 0.5), 20, 0.5, 0.5, 0.5, 1);
+				{
+					BlockPos _bp = BlockPos.containing(x, y, z);
+					BlockState _bs = ExtraBuildingBlocksModBlocks.COPPER_BARS.get().defaultBlockState();
+					BlockState _bso = world.getBlockState(_bp);
+					for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+						Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
+						if (_property != null && _bs.getValue(_property) != null)
+							try {
+								_bs = _bs.setValue(_property, (Comparable) entry.getValue());
+							} catch (Exception e) {
+							}
+					}
+					world.setBlock(_bp, _bs, 3);
+				}
+				if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
+					{
+						ItemStack _ist = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+						if (_ist.hurt(1, RandomSource.create(), null)) {
+							_ist.shrink(1);
+							_ist.setDamageValue(0);
+						}
+					}
+				}
+				return true;
+			}
 		}
 		return true;
 	}

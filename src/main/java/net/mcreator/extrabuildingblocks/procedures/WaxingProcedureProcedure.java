@@ -218,6 +218,174 @@ public class WaxingProcedureProcedure {
 				}
 				return true;
 			}
+			if (blockstate.getBlock() == ExtraBuildingBlocksModBlocks.COPPER_BARS.get()) {
+				if (entity instanceof LivingEntity _entity)
+					_entity.swing(InteractionHand.MAIN_HAND, true);
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.honeycomb.wax_on")), SoundSource.NEUTRAL, 1, (float) ((9 + Mth.nextInt(RandomSource.create(), 0, 2)) / 10));
+					} else {
+						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.honeycomb.wax_on")), SoundSource.NEUTRAL, 1, (float) ((9 + Mth.nextInt(RandomSource.create(), 0, 2)) / 10), false);
+					}
+				}
+				if (world instanceof ServerLevel _level)
+					_level.sendParticles(ParticleTypes.WAX_ON, (x + 0.5), (y + 0.5), (z + 0.5), 20, 0.5, 0.5, 0.5, 1);
+				if (entity instanceof ServerPlayer _player) {
+					Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("minecraft:husbandry/wax_on"));
+					AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+					if (!_ap.isDone()) {
+						for (String criteria : _ap.getRemainingCriteria())
+							_player.getAdvancements().award(_adv, criteria);
+					}
+				}
+				{
+					BlockPos _bp = BlockPos.containing(x, y, z);
+					BlockState _bs = ExtraBuildingBlocksModBlocks.WAXED_COPPER_BARS.get().defaultBlockState();
+					BlockState _bso = world.getBlockState(_bp);
+					for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+						Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
+						if (_property != null && _bs.getValue(_property) != null)
+							try {
+								_bs = _bs.setValue(_property, (Comparable) entry.getValue());
+							} catch (Exception e) {
+							}
+					}
+					world.setBlock(_bp, _bs, 3);
+				}
+				if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
+					if (entity instanceof Player _player) {
+						ItemStack _stktoremove = new ItemStack(Items.HONEYCOMB);
+						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+					}
+				}
+				return true;
+			}
+			if (blockstate.getBlock() == ExtraBuildingBlocksModBlocks.EXPOSED_COPPER_BARS.get()) {
+				if (entity instanceof LivingEntity _entity)
+					_entity.swing(InteractionHand.MAIN_HAND, true);
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.honeycomb.wax_on")), SoundSource.NEUTRAL, 1, (float) ((9 + Mth.nextInt(RandomSource.create(), 0, 2)) / 10));
+					} else {
+						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.honeycomb.wax_on")), SoundSource.NEUTRAL, 1, (float) ((9 + Mth.nextInt(RandomSource.create(), 0, 2)) / 10), false);
+					}
+				}
+				if (world instanceof ServerLevel _level)
+					_level.sendParticles(ParticleTypes.WAX_ON, (x + 0.5), (y + 0.5), (z + 0.5), 20, 0.5, 0.5, 0.5, 1);
+				if (entity instanceof ServerPlayer _player) {
+					Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("minecraft:husbandry/wax_on"));
+					AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+					if (!_ap.isDone()) {
+						for (String criteria : _ap.getRemainingCriteria())
+							_player.getAdvancements().award(_adv, criteria);
+					}
+				}
+				{
+					BlockPos _bp = BlockPos.containing(x, y, z);
+					BlockState _bs = ExtraBuildingBlocksModBlocks.WAXED_EXPOSED_COPPER_BARS.get().defaultBlockState();
+					BlockState _bso = world.getBlockState(_bp);
+					for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+						Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
+						if (_property != null && _bs.getValue(_property) != null)
+							try {
+								_bs = _bs.setValue(_property, (Comparable) entry.getValue());
+							} catch (Exception e) {
+							}
+					}
+					world.setBlock(_bp, _bs, 3);
+				}
+				if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
+					if (entity instanceof Player _player) {
+						ItemStack _stktoremove = new ItemStack(Items.HONEYCOMB);
+						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+					}
+				}
+				return true;
+			}
+			if (blockstate.getBlock() == ExtraBuildingBlocksModBlocks.WEATHERED_COPPER_BARS.get()) {
+				if (entity instanceof LivingEntity _entity)
+					_entity.swing(InteractionHand.MAIN_HAND, true);
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.honeycomb.wax_on")), SoundSource.NEUTRAL, 1, (float) ((9 + Mth.nextInt(RandomSource.create(), 0, 2)) / 10));
+					} else {
+						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.honeycomb.wax_on")), SoundSource.NEUTRAL, 1, (float) ((9 + Mth.nextInt(RandomSource.create(), 0, 2)) / 10), false);
+					}
+				}
+				if (world instanceof ServerLevel _level)
+					_level.sendParticles(ParticleTypes.WAX_ON, (x + 0.5), (y + 0.5), (z + 0.5), 20, 0.5, 0.5, 0.5, 1);
+				if (entity instanceof ServerPlayer _player) {
+					Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("minecraft:husbandry/wax_on"));
+					AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+					if (!_ap.isDone()) {
+						for (String criteria : _ap.getRemainingCriteria())
+							_player.getAdvancements().award(_adv, criteria);
+					}
+				}
+				{
+					BlockPos _bp = BlockPos.containing(x, y, z);
+					BlockState _bs = ExtraBuildingBlocksModBlocks.WAXED_WEATHERED_COPPER_BARS.get().defaultBlockState();
+					BlockState _bso = world.getBlockState(_bp);
+					for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+						Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
+						if (_property != null && _bs.getValue(_property) != null)
+							try {
+								_bs = _bs.setValue(_property, (Comparable) entry.getValue());
+							} catch (Exception e) {
+							}
+					}
+					world.setBlock(_bp, _bs, 3);
+				}
+				if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
+					if (entity instanceof Player _player) {
+						ItemStack _stktoremove = new ItemStack(Items.HONEYCOMB);
+						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+					}
+				}
+				return true;
+			}
+			if (blockstate.getBlock() == ExtraBuildingBlocksModBlocks.OXIDISED_COPPER_BARS.get()) {
+				if (entity instanceof LivingEntity _entity)
+					_entity.swing(InteractionHand.MAIN_HAND, true);
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.honeycomb.wax_on")), SoundSource.NEUTRAL, 1, (float) ((9 + Mth.nextInt(RandomSource.create(), 0, 2)) / 10));
+					} else {
+						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.honeycomb.wax_on")), SoundSource.NEUTRAL, 1, (float) ((9 + Mth.nextInt(RandomSource.create(), 0, 2)) / 10), false);
+					}
+				}
+				if (world instanceof ServerLevel _level)
+					_level.sendParticles(ParticleTypes.WAX_ON, (x + 0.5), (y + 0.5), (z + 0.5), 20, 0.5, 0.5, 0.5, 1);
+				if (entity instanceof ServerPlayer _player) {
+					Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("minecraft:husbandry/wax_on"));
+					AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+					if (!_ap.isDone()) {
+						for (String criteria : _ap.getRemainingCriteria())
+							_player.getAdvancements().award(_adv, criteria);
+					}
+				}
+				{
+					BlockPos _bp = BlockPos.containing(x, y, z);
+					BlockState _bs = ExtraBuildingBlocksModBlocks.WAXED_OXIDISED_COPPER_BARS.get().defaultBlockState();
+					BlockState _bso = world.getBlockState(_bp);
+					for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+						Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
+						if (_property != null && _bs.getValue(_property) != null)
+							try {
+								_bs = _bs.setValue(_property, (Comparable) entry.getValue());
+							} catch (Exception e) {
+							}
+					}
+					world.setBlock(_bp, _bs, 3);
+				}
+				if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
+					if (entity instanceof Player _player) {
+						ItemStack _stktoremove = new ItemStack(Items.HONEYCOMB);
+						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+					}
+				}
+				return true;
+			}
 		}
 		return true;
 	}

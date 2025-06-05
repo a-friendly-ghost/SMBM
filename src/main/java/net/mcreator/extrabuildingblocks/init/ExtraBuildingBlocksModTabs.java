@@ -293,6 +293,10 @@ public class ExtraBuildingBlocksModTabs {
 			tabData.accept(ExtraBuildingBlocksModBlocks.EXPOSED_COPPER_BARS.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.WEATHERED_COPPER_BARS.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.OXIDISED_COPPER_BARS.get().asItem());
+			tabData.accept(ExtraBuildingBlocksModBlocks.WAXED_COPPER_BARS.get().asItem());
+			tabData.accept(ExtraBuildingBlocksModBlocks.WAXED_EXPOSED_COPPER_BARS.get().asItem());
+			tabData.accept(ExtraBuildingBlocksModBlocks.WAXED_WEATHERED_COPPER_BARS.get().asItem());
+			tabData.accept(ExtraBuildingBlocksModBlocks.WAXED_OXIDISED_COPPER_BARS.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.FROSTED_GLASS.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.STONE_PILLAR.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.PRISMARINE_PILLAR.get().asItem());

@@ -1,0 +1,8 @@
+{
+  "parent": "block/iron_bars_post",
+  "textures": {
+    "bars": "extra_building_blocks:block/oxidised_edge",
+    "particle": "extra_building_blocks:block/new_piskel_-_2024-05-29t202705.933"
+  },
+  "render_type": "cutout_mipped"
+}

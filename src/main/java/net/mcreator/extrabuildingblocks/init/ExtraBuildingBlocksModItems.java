@@ -251,6 +251,10 @@ public class ExtraBuildingBlocksModItems {
 	public static final RegistryObject<Item> WAXED_WEATHERED_WROUGHT_IRON = block(ExtraBuildingBlocksModBlocks.WAXED_WEATHERED_WROUGHT_IRON);
 	public static final RegistryObject<Item> WAXED_EXPOSED_WROUGHT_IRON = block(ExtraBuildingBlocksModBlocks.WAXED_EXPOSED_WROUGHT_IRON);
 	public static final RegistryObject<Item> WAXED_RUSTED_WROUGHT_IRON = block(ExtraBuildingBlocksModBlocks.WAXED_RUSTED_WROUGHT_IRON);
+	public static final RegistryObject<Item> WAXED_COPPER_BARS = block(ExtraBuildingBlocksModBlocks.WAXED_COPPER_BARS);
+	public static final RegistryObject<Item> WAXED_EXPOSED_COPPER_BARS = block(ExtraBuildingBlocksModBlocks.WAXED_EXPOSED_COPPER_BARS);
+	public static final RegistryObject<Item> WAXED_WEATHERED_COPPER_BARS = block(ExtraBuildingBlocksModBlocks.WAXED_WEATHERED_COPPER_BARS);
+	public static final RegistryObject<Item> WAXED_OXIDISED_COPPER_BARS = block(ExtraBuildingBlocksModBlocks.WAXED_OXIDISED_COPPER_BARS);
 
 	// Start of user code block custom items
 	// End of user code block custom items

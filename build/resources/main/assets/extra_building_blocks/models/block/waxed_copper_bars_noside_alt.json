@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_glass_pane_noside_alt",
+  "textures": {
+    "particle": "extra_building_blocks:block/new_piskel_-_2024-05-26t015750.076",
+    "pane": "extra_building_blocks:block/new_piskel_-_2024-05-26t015750.076"
+  },
+  "render_type": "cutout_mipped"
+}
