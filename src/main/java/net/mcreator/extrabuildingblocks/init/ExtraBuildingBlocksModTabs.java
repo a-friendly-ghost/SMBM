@@ -279,10 +279,15 @@ public class ExtraBuildingBlocksModTabs {
 			tabData.accept(ExtraBuildingBlocksModBlocks.ECHO_CRYSTAL.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.CUT_AMETHYST.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.WROUGHT_IRON.get().asItem());
+			tabData.accept(ExtraBuildingBlocksModBlocks.WROUGHT_IRON_BARS.get().asItem());
+			tabData.accept(ExtraBuildingBlocksModBlocks.WROUGHT_IRON_GATE.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.EXPOSED_WROUGHT_IRON.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.WEATHERED_WROUGHT_IRON.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.RUSTED_WROUGHT_IRON.get().asItem());
-			tabData.accept(ExtraBuildingBlocksModBlocks.WROUGHT_IRON_BARS.get().asItem());
+			tabData.accept(ExtraBuildingBlocksModBlocks.WAXED_WROUGHT_IRON.get().asItem());
+			tabData.accept(ExtraBuildingBlocksModBlocks.WAXED_WEATHERED_WROUGHT_IRON.get().asItem());
+			tabData.accept(ExtraBuildingBlocksModBlocks.WAXED_EXPOSED_WROUGHT_IRON.get().asItem());
+			tabData.accept(ExtraBuildingBlocksModBlocks.WAXED_RUSTED_WROUGHT_IRON.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.IRON_GATE.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.COPPER_BARS.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.EXPOSED_COPPER_BARS.get().asItem());
@@ -324,11 +329,6 @@ public class ExtraBuildingBlocksModTabs {
 			tabData.accept(ExtraBuildingBlocksModBlocks.STONE_WALL.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.SMOOTH_STONE_WALL.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.PURPUR_WALL.get().asItem());
-			tabData.accept(ExtraBuildingBlocksModBlocks.WROUGHT_IRON_GATE.get().asItem());
-			tabData.accept(ExtraBuildingBlocksModBlocks.WAXED_WROUGHT_IRON.get().asItem());
-			tabData.accept(ExtraBuildingBlocksModBlocks.WAXED_WEATHERED_WROUGHT_IRON.get().asItem());
-			tabData.accept(ExtraBuildingBlocksModBlocks.WAXED_EXPOSED_WROUGHT_IRON.get().asItem());
-			tabData.accept(ExtraBuildingBlocksModBlocks.WAXED_RUSTED_WROUGHT_IRON.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.COLORED_BLOCKS) {
 			tabData.accept(ExtraBuildingBlocksModBlocks.SOUL_GLASS.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.WHITE_STAINED_SOUL_GLASS.get().asItem());
