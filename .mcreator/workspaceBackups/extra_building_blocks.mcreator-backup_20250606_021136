@@ -7071,7 +7071,7 @@
           "src/main/resources/assets/extra_building_blocks/models/block/wrought_iron.json"
         ]
       },
-      "path": "~/WroughtIron/Plain"
+      "path": "~/WroughtIron/Block/Plain"
     },
     {
       "name": "WroughtIronRecipe",
@@ -7084,7 +7084,7 @@
           "src/main/resources/data/extra_building_blocks/recipes/wrought_iron_recipe.json"
         ]
       },
-      "path": "~/WroughtIron/Plain"
+      "path": "~/WroughtIron/Block/Plain"
     },
     {
       "name": "StonePillar",
@@ -10544,7 +10544,7 @@
           "src/main/resources/data/extra_building_blocks/loot_tables/blocks/weathered_wrought_iron.json"
         ]
       },
-      "path": "~/WroughtIron/Plain"
+      "path": "~/WroughtIron/Block/Plain"
     },
     {
       "name": "IronGateBlockAdded",
@@ -10596,7 +10596,7 @@
           "src/main/resources/assets/extra_building_blocks/models/block/wrought_iron_bars_noside_alt.json"
         ]
       },
-      "path": "~/WroughtIron"
+      "path": "~/WroughtIron/Bars/Plain"
     },
     {
       "name": "IronGatePlaced",
@@ -10831,7 +10831,7 @@
           "src/main/resources/assets/extra_building_blocks/models/block/rusted_wrought_iron.json"
         ]
       },
-      "path": "~/WroughtIron/Plain"
+      "path": "~/WroughtIron/Block/Plain"
     },
     {
       "name": "ExposedWroughtIron",
@@ -10848,7 +10848,7 @@
           "src/main/java/net/mcreator/extrabuildingblocks/block/ExposedWroughtIronBlock.java"
         ]
       },
-      "path": "~/WroughtIron/Plain"
+      "path": "~/WroughtIron/Block/Plain"
     },
     {
       "name": "Mishmash",
@@ -11100,8 +11100,7 @@
             "type": "world"
           }
         ]
-      },
-      "path": "~/WroughtIron/Plain"
+      }
     },
     {
       "name": "WroughtIronOnTickUpdate",
@@ -11136,7 +11135,7 @@
           }
         ]
       },
-      "path": "~/WroughtIron/Plain"
+      "path": "~/WroughtIron/Block/Plain"
     },
     {
       "name": "ExposedWroughtIronOnTickUpdate",
@@ -11171,7 +11170,7 @@
           }
         ]
       },
-      "path": "~/WroughtIron/Plain"
+      "path": "~/WroughtIron/Block/Plain"
     },
     {
       "name": "WeatheredWroughtIronOnTickUpdate",
@@ -11206,7 +11205,7 @@
           }
         ]
       },
-      "path": "~/WroughtIron/Plain"
+      "path": "~/WroughtIron/Block/Plain"
     },
     {
       "name": "WaxedWroughtIron",
@@ -11223,7 +11222,7 @@
           "src/main/resources/data/extra_building_blocks/loot_tables/blocks/waxed_wrought_iron.json"
         ]
       },
-      "path": "~/WroughtIron/Waxed"
+      "path": "~/WroughtIron/Block/Waxed"
     },
     {
       "name": "WaxedWeatheredWroughtIron",
@@ -11240,7 +11239,7 @@
           "src/main/resources/assets/extra_building_blocks/models/block/waxed_weathered_wrought_iron.json"
         ]
       },
-      "path": "~/WroughtIron/Waxed"
+      "path": "~/WroughtIron/Block/Waxed"
     },
     {
       "name": "WaxedExposedWroughtIron",
@@ -11257,7 +11256,7 @@
           "src/main/resources/data/extra_building_blocks/loot_tables/blocks/waxed_exposed_wrought_iron.json"
         ]
       },
-      "path": "~/WroughtIron/Waxed"
+      "path": "~/WroughtIron/Block/Waxed"
     },
     {
       "name": "WaxedRustedWroughtIron",
@@ -11274,7 +11273,7 @@
           "src/main/resources/assets/extra_building_blocks/models/block/waxed_rusted_wrought_iron.json"
         ]
       },
-      "path": "~/WroughtIron/Waxed"
+      "path": "~/WroughtIron/Block/Waxed"
     },
     {
       "name": "WaxingProcedure",
@@ -11581,6 +11580,69 @@
         ]
       },
       "path": "~/CopperBars"
+    },
+    {
+      "name": "ExposedWroughtIronBars",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "exposed_wrought_iron_bars",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/extra_building_blocks/models/block/exposed_wrought_iron_bars_noside.json",
+          "src/main/resources/assets/extra_building_blocks/models/item/exposed_wrought_iron_bars.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/exposed_wrought_iron_bars_post.json",
+          "src/main/resources/assets/extra_building_blocks/blockstates/exposed_wrought_iron_bars.json",
+          "src/main/java/net/mcreator/extrabuildingblocks/block/ExposedWroughtIronBarsBlock.java",
+          "src/main/resources/assets/extra_building_blocks/models/block/exposed_wrought_iron_bars_side_alt.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/exposed_wrought_iron_bars_noside_alt.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/exposed_wrought_iron_bars_side.json",
+          "src/main/resources/data/extra_building_blocks/loot_tables/blocks/exposed_wrought_iron_bars.json"
+        ]
+      },
+      "path": "~/WroughtIron/Bars/Plain"
+    },
+    {
+      "name": "WeatheredWroughtIronBars",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "weathered_wrought_iron_bars",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/extra_building_blocks/models/block/weathered_wrought_iron_bars_side_alt.json",
+          "src/main/resources/assets/extra_building_blocks/models/item/weathered_wrought_iron_bars.json",
+          "src/main/resources/data/extra_building_blocks/loot_tables/blocks/weathered_wrought_iron_bars.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/weathered_wrought_iron_bars_noside_alt.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/weathered_wrought_iron_bars_post.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/weathered_wrought_iron_bars_side.json",
+          "src/main/java/net/mcreator/extrabuildingblocks/block/WeatheredWroughtIronBarsBlock.java",
+          "src/main/resources/assets/extra_building_blocks/blockstates/weathered_wrought_iron_bars.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/weathered_wrought_iron_bars_noside.json"
+        ]
+      },
+      "path": "~/WroughtIron/Bars/Plain"
+    },
+    {
+      "name": "RustedWroughtIronBars",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "rusted_wrought_iron_bars",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/extra_building_blocks/loot_tables/blocks/rusted_wrought_iron_bars.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/rusted_wrought_iron_bars_noside_alt.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/rusted_wrought_iron_bars_noside.json",
+          "src/main/resources/assets/extra_building_blocks/models/item/rusted_wrought_iron_bars.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/rusted_wrought_iron_bars_side.json",
+          "src/main/java/net/mcreator/extrabuildingblocks/block/RustedWroughtIronBarsBlock.java",
+          "src/main/resources/assets/extra_building_blocks/blockstates/rusted_wrought_iron_bars.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/rusted_wrought_iron_bars_post.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/rusted_wrought_iron_bars_side_alt.json"
+        ]
+      },
+      "path": "~/WroughtIron/Bars/Plain"
     }
   ],
   "variable_elements": [],
@@ -11673,13 +11735,6 @@
       "~CUSTOM:WaxedWeatheredCopperBars",
       "~CUSTOM:WaxedExposedCopperBars",
       "~CUSTOM:WaxedCopperBars",
-      "~CUSTOM:WaxedRustedWroughtIron",
-      "~CUSTOM:WaxedExposedWroughtIron",
-      "~CUSTOM:WaxedWeatheredWroughtIron",
-      "~CUSTOM:WroughtIronGate",
-      "~CUSTOM:ExposedWroughtIron",
-      "~CUSTOM:RustedWroughtIron",
-      "~CUSTOM:WeatheredWroughtIron",
       "~CUSTOM:Brace",
       "~CUSTOM:ChiseledBlackstoneBricks",
       "~CUSTOM:ChiseledDeepslateBricks",
@@ -11795,7 +11850,11 @@
       "~CUSTOM:CutGranite",
       "~CUSTOM:CutAndesiteSlab",
       "~CUSTOM:CutAndesiteStairs",
-      "~CUSTOM:CutAndesite"
+      "~CUSTOM:CutAndesite",
+      "CUSTOM:CopperBars",
+      "CUSTOM:ExposedCopperBars",
+      "CUSTOM:WeatheredCopperBars",
+      "CUSTOM:OxidisedCopperBars"
     ],
     "BLOCKS:mod:all_wrought_iron": [
       "CUSTOM:WroughtIron",
@@ -11871,8 +11930,19 @@
       "CUSTOM:CactusWPlanks"
     ],
     "BLOCKS:minecraft:needs_iron_tool": [
+      "~CUSTOM:RustedWroughtIronBars",
+      "~CUSTOM:WeatheredWroughtIronBars",
+      "~CUSTOM:ExposedWroughtIronBars",
       "~CUSTOM:WaxedWroughtIron",
-      "~CUSTOM:WroughtIron"
+      "~CUSTOM:WroughtIron",
+      "CUSTOM:WeatheredWroughtIron",
+      "CUSTOM:WroughtIronBars",
+      "CUSTOM:RustedWroughtIron",
+      "CUSTOM:ExposedWroughtIron",
+      "CUSTOM:WroughtIronGate",
+      "CUSTOM:WaxedWeatheredWroughtIron",
+      "CUSTOM:WaxedExposedWroughtIron",
+      "CUSTOM:WaxedRustedWroughtIron"
     ],
     "BLOCKS:minecraft:infiniburn_overworld": [
       "CUSTOM:SoulMagma"
@@ -11901,6 +11971,9 @@
       "CUSTOM:SoulMagma"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:RustedWroughtIronBars",
+      "~CUSTOM:WeatheredWroughtIronBars",
+      "~CUSTOM:ExposedWroughtIronBars",
       "~CUSTOM:WaxedOxidisedCopperBars",
       "~CUSTOM:WaxedWeatheredCopperBars",
       "~CUSTOM:WaxedExposedCopperBars",
@@ -12041,7 +12114,13 @@
       "~CUSTOM:CutGranite",
       "~CUSTOM:CutAndesiteSlab",
       "~CUSTOM:CutAndesiteStairs",
-      "~CUSTOM:CutAndesite"
+      "~CUSTOM:CutAndesite",
+      "CUSTOM:CopperBars",
+      "CUSTOM:ExposedCopperBars",
+      "CUSTOM:WeatheredCopperBars",
+      "CUSTOM:OxidisedCopperBars",
+      "CUSTOM:WroughtIronBars",
+      "Blocks.IRON_BARS"
     ],
     "BLOCKS:minecraft:mineable/axe": [
       "~CUSTOM:CactusWoodTrapdoor",
@@ -12185,8 +12264,11 @@
       "WroughtIronBars",
       "WroughtIronGate",
       "ExposedWroughtIron",
+      "ExposedWroughtIronBars",
       "WeatheredWroughtIron",
+      "WeatheredWroughtIronBars",
       "RustedWroughtIron",
+      "RustedWroughtIronBars",
       "WaxedWroughtIron",
       "WaxedWeatheredWroughtIron",
       "WaxedExposedWroughtIron",
@@ -12544,6 +12626,7 @@
       "block.extra_building_blocks.polished_calcite": "Polished Calcite",
       "block.extra_building_blocks.waxed_copper_bars": "Waxed Copper Bars",
       "block.extra_building_blocks.cut_smooth_stone_slab": "Cut Smooth Stone Slab",
+      "block.extra_building_blocks.rusted_wrought_iron_bars": "Wrought Iron Bars",
       "block.extra_building_blocks.ice_bricks": "Ice Bricks",
       "block.extra_building_blocks.purple_lace_banner": "Purple Lace Banner",
       "block.extra_building_blocks.very_cracked_stone_bricks": "Very Cracked Stone Bricks",
@@ -12658,6 +12741,7 @@
       "block.extra_building_blocks.icicle_frustum": "Icicle Frustum",
       "block.extra_building_blocks.pink_lace_banner": "Pink Lace Banner",
       "block.extra_building_blocks.copper_bars": "Copper Bars",
+      "block.extra_building_blocks.weathered_wrought_iron_bars": "Wrought Iron Bars",
       "block.extra_building_blocks.cut_diorite_slab": "Cut Diorite Slab",
       "block.extra_building_blocks.icicle_middle": "Icicle Middle",
       "block.extra_building_blocks.dark_grey_stained_soul_glass": "Dark Grey Stained Soul Glass",
@@ -12740,6 +12824,7 @@
       "block.extra_building_blocks.hook": "Hook",
       "block.extra_building_blocks.chiseled_blackstone_bricks.description_0": "texture inspired by @Other_Goblin on twitter !!",
       "block.extra_building_blocks.dripstone_stairs": "Dripstone Stairs",
+      "block.extra_building_blocks.exposed_wrought_iron_bars": "Wrought Iron Bars",
       "block.extra_building_blocks.soul_slate_bricks": "Soul Slate Bricks",
       "block.extra_building_blocks.chorus_fence_gate": "Chorus Wood Fence Gate",
       "block.extra_building_blocks.black_lace_banner": "Black Lace Banner",
@@ -12807,6 +12892,7 @@
       "block.extra_building_blocks.polished_calcite": "Calcite polie",
       "block.extra_building_blocks.waxed_copper_bars": "Barreaux de cuivre ciré",
       "block.extra_building_blocks.cut_smooth_stone_slab": "Dalle de roche lisse taillée",
+      "block.extra_building_blocks.rusted_wrought_iron_bars": "Wrought Iron Bars",
       "block.extra_building_blocks.purple_lace_banner": "Bannière de dentelle violette",
       "block.extra_building_blocks.ice_bricks": "Briques de glace",
       "block.extra_building_blocks.very_cracked_stone_bricks": "Pierre taillée très craquelée",
@@ -12921,6 +13007,7 @@
       "block.extra_building_blocks.icicle_frustum": "Icicle Frustum",
       "block.extra_building_blocks.pink_lace_banner": "Bannière de dentelle rose",
       "block.extra_building_blocks.copper_bars": "Barreaux de cuivre",
+      "block.extra_building_blocks.weathered_wrought_iron_bars": "Wrought Iron Bars",
       "block.extra_building_blocks.cut_diorite_slab": "Dalle de diorite taillée",
       "block.extra_building_blocks.icicle_middle": "Icicle Middle",
       "block.extra_building_blocks.dark_grey_stained_soul_glass": "Verre gris des âmes",
@@ -13003,6 +13090,7 @@
       "block.extra_building_blocks.hook": "Crochet",
       "block.extra_building_blocks.chiseled_blackstone_bricks.description_0": "texture inspirée par @Other_Goblin sur twitter !!",
       "block.extra_building_blocks.dripstone_stairs": "Escaliers en spéléothème",
+      "block.extra_building_blocks.exposed_wrought_iron_bars": "Wrought Iron Bars",
       "block.extra_building_blocks.soul_slate_bricks": "Briques d\u0027ardoise des âmes",
       "block.extra_building_blocks.chorus_fence_gate": "Portillon en chorus",
       "block.extra_building_blocks.black_lace_banner": "Bannière de dentelle noire",
@@ -13070,6 +13158,7 @@
       "block.extra_building_blocks.polished_calcite": "磨かれた方解石",
       "block.extra_building_blocks.waxed_copper_bars": "錆止めされた銅格子",
       "block.extra_building_blocks.cut_smooth_stone_slab": "研がれた滑らかな石のハーフブロック",
+      "block.extra_building_blocks.rusted_wrought_iron_bars": "Wrought Iron Bars",
       "block.extra_building_blocks.purple_lace_banner": "Purple Lace Banner",
       "block.extra_building_blocks.ice_bricks": "Ice Bricks",
       "block.extra_building_blocks.very_cracked_stone_bricks": "Very Cracked Stone Bricks",
@@ -13184,6 +13273,7 @@
       "block.extra_building_blocks.icicle_frustum": "Icicle Frustum",
       "block.extra_building_blocks.pink_lace_banner": "Pink Lace Banner",
       "block.extra_building_blocks.copper_bars": "銅格子",
+      "block.extra_building_blocks.weathered_wrought_iron_bars": "Wrought Iron Bars",
       "block.extra_building_blocks.cut_diorite_slab": "研がれた閃緑岩のハーフブロック",
       "block.extra_building_blocks.icicle_middle": "Icicle Middle",
       "block.extra_building_blocks.dark_grey_stained_soul_glass": "Dark Grey Stained Soul Glass",
@@ -13266,6 +13356,7 @@
       "block.extra_building_blocks.hook": "Hook",
       "block.extra_building_blocks.chiseled_blackstone_bricks.description_0": "texture inspired by @Other_Goblin on twitter !!",
       "block.extra_building_blocks.dripstone_stairs": "鍾乳石の階段",
+      "block.extra_building_blocks.exposed_wrought_iron_bars": "Wrought Iron Bars",
       "block.extra_building_blocks.soul_slate_bricks": "Soul Slate Bricks",
       "block.extra_building_blocks.chorus_fence_gate": "コーラスのフェンスゲート",
       "block.extra_building_blocks.black_lace_banner": "Black Lace Banner",
@@ -13493,12 +13584,26 @@
         "name": "WroughtIron",
         "children": [
           {
-            "name": "Plain",
-            "children": []
+            "name": "Block",
+            "children": [
+              {
+                "name": "Plain",
+                "children": []
+              },
+              {
+                "name": "Waxed",
+                "children": []
+              }
+            ]
           },
           {
-            "name": "Waxed",
-            "children": []
+            "name": "Bars",
+            "children": [
+              {
+                "name": "Plain",
+                "children": []
+              }
+            ]
           }
         ]
       },

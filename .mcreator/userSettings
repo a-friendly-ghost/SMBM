@@ -1,16 +1,11 @@
 {
-  "workspacePanelIconSize": "TILES",
+  "workspacePanelIconSize": "DETAILS",
   "workspacePanelSortType": "CREATED",
   "workspacePanelSortAscending": true,
-  "projectBrowserSplitPos": 0,
+  "projectBrowserSplitPos": 129,
   "projectBrowserState": {
     "expandedPaths": [
-      "[, SMBM]",
-      "[, SMBM, Source (Gradle)]",
-      "[, SMBM, Source (Gradle), C:\\Users\\Asus\\MCreatorWorkspaces\\extra_building_blocks\\src\\main\\java\\net]",
-      "[, SMBM, Source (Gradle), C:\\Users\\Asus\\MCreatorWorkspaces\\extra_building_blocks\\src\\main\\java\\net, C:\\Users\\Asus\\MCreatorWorkspaces\\extra_building_blocks\\src\\main\\java\\net\\mcreator]",
-      "[, SMBM, Source (Gradle), C:\\Users\\Asus\\MCreatorWorkspaces\\extra_building_blocks\\src\\main\\java\\net, C:\\Users\\Asus\\MCreatorWorkspaces\\extra_building_blocks\\src\\main\\java\\net\\mcreator, C:\\Users\\Asus\\MCreatorWorkspaces\\extra_building_blocks\\src\\main\\java\\net\\mcreator\\extrabuildingblocks]",
-      "[, SMBM, Source (Gradle), C:\\Users\\Asus\\MCreatorWorkspaces\\extra_building_blocks\\src\\main\\java\\net, C:\\Users\\Asus\\MCreatorWorkspaces\\extra_building_blocks\\src\\main\\java\\net\\mcreator, C:\\Users\\Asus\\MCreatorWorkspaces\\extra_building_blocks\\src\\main\\java\\net\\mcreator\\extrabuildingblocks, C:\\Users\\Asus\\MCreatorWorkspaces\\extra_building_blocks\\src\\main\\java\\net\\mcreator\\extrabuildingblocks\\block]"
+      "[, SMBM]"
     ]
   }
 }

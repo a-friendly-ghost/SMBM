@@ -11735,13 +11735,6 @@
       "~CUSTOM:WaxedWeatheredCopperBars",
       "~CUSTOM:WaxedExposedCopperBars",
       "~CUSTOM:WaxedCopperBars",
-      "~CUSTOM:WaxedRustedWroughtIron",
-      "~CUSTOM:WaxedExposedWroughtIron",
-      "~CUSTOM:WaxedWeatheredWroughtIron",
-      "~CUSTOM:WroughtIronGate",
-      "~CUSTOM:ExposedWroughtIron",
-      "~CUSTOM:RustedWroughtIron",
-      "~CUSTOM:WeatheredWroughtIron",
       "~CUSTOM:Brace",
       "~CUSTOM:ChiseledBlackstoneBricks",
       "~CUSTOM:ChiseledDeepslateBricks",
@@ -11857,7 +11850,11 @@
       "~CUSTOM:CutGranite",
       "~CUSTOM:CutAndesiteSlab",
       "~CUSTOM:CutAndesiteStairs",
-      "~CUSTOM:CutAndesite"
+      "~CUSTOM:CutAndesite",
+      "CUSTOM:CopperBars",
+      "CUSTOM:ExposedCopperBars",
+      "CUSTOM:WeatheredCopperBars",
+      "CUSTOM:OxidisedCopperBars"
     ],
     "BLOCKS:mod:all_wrought_iron": [
       "CUSTOM:WroughtIron",
@@ -11937,7 +11934,15 @@
       "~CUSTOM:WeatheredWroughtIronBars",
       "~CUSTOM:ExposedWroughtIronBars",
       "~CUSTOM:WaxedWroughtIron",
-      "~CUSTOM:WroughtIron"
+      "~CUSTOM:WroughtIron",
+      "CUSTOM:WeatheredWroughtIron",
+      "CUSTOM:WroughtIronBars",
+      "CUSTOM:RustedWroughtIron",
+      "CUSTOM:ExposedWroughtIron",
+      "CUSTOM:WroughtIronGate",
+      "CUSTOM:WaxedWeatheredWroughtIron",
+      "CUSTOM:WaxedExposedWroughtIron",
+      "CUSTOM:WaxedRustedWroughtIron"
     ],
     "BLOCKS:minecraft:infiniburn_overworld": [
       "CUSTOM:SoulMagma"
@@ -12109,7 +12114,13 @@
       "~CUSTOM:CutGranite",
       "~CUSTOM:CutAndesiteSlab",
       "~CUSTOM:CutAndesiteStairs",
-      "~CUSTOM:CutAndesite"
+      "~CUSTOM:CutAndesite",
+      "CUSTOM:CopperBars",
+      "CUSTOM:ExposedCopperBars",
+      "CUSTOM:WeatheredCopperBars",
+      "CUSTOM:OxidisedCopperBars",
+      "CUSTOM:WroughtIronBars",
+      "Blocks.IRON_BARS"
     ],
     "BLOCKS:minecraft:mineable/axe": [
       "~CUSTOM:CactusWoodTrapdoor",
@@ -12253,8 +12264,11 @@
       "WroughtIronBars",
       "WroughtIronGate",
       "ExposedWroughtIron",
+      "ExposedWroughtIronBars",
       "WeatheredWroughtIron",
+      "WeatheredWroughtIronBars",
       "RustedWroughtIron",
+      "RustedWroughtIronBars",
       "WaxedWroughtIron",
       "WaxedWeatheredWroughtIron",
       "WaxedExposedWroughtIron",
@@ -12303,10 +12317,7 @@
       "DarkPrismarineWall",
       "StoneWall",
       "SmoothStoneWall",
-      "PurpurWall",
-      "ExposedWroughtIronBars",
-      "WeatheredWroughtIronBars",
-      "RustedWroughtIronBars"
+      "PurpurWall"
     ],
     "CUSTOM:Mishmash": [
       "CutAndesite",

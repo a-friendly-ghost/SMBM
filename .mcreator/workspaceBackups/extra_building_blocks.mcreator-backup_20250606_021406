@@ -10596,7 +10596,7 @@
           "src/main/resources/assets/extra_building_blocks/models/block/wrought_iron_bars_noside_alt.json"
         ]
       },
-      "path": "~/WroughtIron"
+      "path": "~/WroughtIron/Bars/Plain"
     },
     {
       "name": "IronGatePlaced",
@@ -11100,8 +11100,7 @@
             "type": "world"
           }
         ]
-      },
-      "path": "~/WroughtIron/Block/Plain"
+      }
     },
     {
       "name": "WroughtIronOnTickUpdate",
@@ -11581,6 +11580,69 @@
         ]
       },
       "path": "~/CopperBars"
+    },
+    {
+      "name": "ExposedWroughtIronBars",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "exposed_wrought_iron_bars",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/extra_building_blocks/models/block/exposed_wrought_iron_bars_noside.json",
+          "src/main/resources/assets/extra_building_blocks/models/item/exposed_wrought_iron_bars.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/exposed_wrought_iron_bars_post.json",
+          "src/main/resources/assets/extra_building_blocks/blockstates/exposed_wrought_iron_bars.json",
+          "src/main/java/net/mcreator/extrabuildingblocks/block/ExposedWroughtIronBarsBlock.java",
+          "src/main/resources/assets/extra_building_blocks/models/block/exposed_wrought_iron_bars_side_alt.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/exposed_wrought_iron_bars_noside_alt.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/exposed_wrought_iron_bars_side.json",
+          "src/main/resources/data/extra_building_blocks/loot_tables/blocks/exposed_wrought_iron_bars.json"
+        ]
+      },
+      "path": "~/WroughtIron/Bars/Plain"
+    },
+    {
+      "name": "WeatheredWroughtIronBars",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "weathered_wrought_iron_bars",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/extra_building_blocks/models/block/weathered_wrought_iron_bars_side_alt.json",
+          "src/main/resources/assets/extra_building_blocks/models/item/weathered_wrought_iron_bars.json",
+          "src/main/resources/data/extra_building_blocks/loot_tables/blocks/weathered_wrought_iron_bars.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/weathered_wrought_iron_bars_noside_alt.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/weathered_wrought_iron_bars_post.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/weathered_wrought_iron_bars_side.json",
+          "src/main/java/net/mcreator/extrabuildingblocks/block/WeatheredWroughtIronBarsBlock.java",
+          "src/main/resources/assets/extra_building_blocks/blockstates/weathered_wrought_iron_bars.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/weathered_wrought_iron_bars_noside.json"
+        ]
+      },
+      "path": "~/WroughtIron/Bars/Plain"
+    },
+    {
+      "name": "RustedWroughtIronBars",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "rusted_wrought_iron_bars",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/extra_building_blocks/loot_tables/blocks/rusted_wrought_iron_bars.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/rusted_wrought_iron_bars_noside_alt.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/rusted_wrought_iron_bars_noside.json",
+          "src/main/resources/assets/extra_building_blocks/models/item/rusted_wrought_iron_bars.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/rusted_wrought_iron_bars_side.json",
+          "src/main/java/net/mcreator/extrabuildingblocks/block/RustedWroughtIronBarsBlock.java",
+          "src/main/resources/assets/extra_building_blocks/blockstates/rusted_wrought_iron_bars.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/rusted_wrought_iron_bars_post.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/rusted_wrought_iron_bars_side_alt.json"
+        ]
+      },
+      "path": "~/WroughtIron/Bars/Plain"
     }
   ],
   "variable_elements": [],
@@ -11673,13 +11735,6 @@
       "~CUSTOM:WaxedWeatheredCopperBars",
       "~CUSTOM:WaxedExposedCopperBars",
       "~CUSTOM:WaxedCopperBars",
-      "~CUSTOM:WaxedRustedWroughtIron",
-      "~CUSTOM:WaxedExposedWroughtIron",
-      "~CUSTOM:WaxedWeatheredWroughtIron",
-      "~CUSTOM:WroughtIronGate",
-      "~CUSTOM:ExposedWroughtIron",
-      "~CUSTOM:RustedWroughtIron",
-      "~CUSTOM:WeatheredWroughtIron",
       "~CUSTOM:Brace",
       "~CUSTOM:ChiseledBlackstoneBricks",
       "~CUSTOM:ChiseledDeepslateBricks",
@@ -11795,7 +11850,11 @@
       "~CUSTOM:CutGranite",
       "~CUSTOM:CutAndesiteSlab",
       "~CUSTOM:CutAndesiteStairs",
-      "~CUSTOM:CutAndesite"
+      "~CUSTOM:CutAndesite",
+      "CUSTOM:CopperBars",
+      "CUSTOM:ExposedCopperBars",
+      "CUSTOM:WeatheredCopperBars",
+      "CUSTOM:OxidisedCopperBars"
     ],
     "BLOCKS:mod:all_wrought_iron": [
       "CUSTOM:WroughtIron",
@@ -11871,8 +11930,19 @@
       "CUSTOM:CactusWPlanks"
     ],
     "BLOCKS:minecraft:needs_iron_tool": [
+      "~CUSTOM:RustedWroughtIronBars",
+      "~CUSTOM:WeatheredWroughtIronBars",
+      "~CUSTOM:ExposedWroughtIronBars",
       "~CUSTOM:WaxedWroughtIron",
-      "~CUSTOM:WroughtIron"
+      "~CUSTOM:WroughtIron",
+      "CUSTOM:WeatheredWroughtIron",
+      "CUSTOM:WroughtIronBars",
+      "CUSTOM:RustedWroughtIron",
+      "CUSTOM:ExposedWroughtIron",
+      "CUSTOM:WroughtIronGate",
+      "CUSTOM:WaxedWeatheredWroughtIron",
+      "CUSTOM:WaxedExposedWroughtIron",
+      "CUSTOM:WaxedRustedWroughtIron"
     ],
     "BLOCKS:minecraft:infiniburn_overworld": [
       "CUSTOM:SoulMagma"
@@ -11901,6 +11971,9 @@
       "CUSTOM:SoulMagma"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:RustedWroughtIronBars",
+      "~CUSTOM:WeatheredWroughtIronBars",
+      "~CUSTOM:ExposedWroughtIronBars",
       "~CUSTOM:WaxedOxidisedCopperBars",
       "~CUSTOM:WaxedWeatheredCopperBars",
       "~CUSTOM:WaxedExposedCopperBars",
@@ -12041,7 +12114,13 @@
       "~CUSTOM:CutGranite",
       "~CUSTOM:CutAndesiteSlab",
       "~CUSTOM:CutAndesiteStairs",
-      "~CUSTOM:CutAndesite"
+      "~CUSTOM:CutAndesite",
+      "CUSTOM:CopperBars",
+      "CUSTOM:ExposedCopperBars",
+      "CUSTOM:WeatheredCopperBars",
+      "CUSTOM:OxidisedCopperBars",
+      "CUSTOM:WroughtIronBars",
+      "Blocks.IRON_BARS"
     ],
     "BLOCKS:minecraft:mineable/axe": [
       "~CUSTOM:CactusWoodTrapdoor",
@@ -12185,8 +12264,11 @@
       "WroughtIronBars",
       "WroughtIronGate",
       "ExposedWroughtIron",
+      "ExposedWroughtIronBars",
       "WeatheredWroughtIron",
+      "WeatheredWroughtIronBars",
       "RustedWroughtIron",
+      "RustedWroughtIronBars",
       "WaxedWroughtIron",
       "WaxedWeatheredWroughtIron",
       "WaxedExposedWroughtIron",
@@ -12488,9 +12570,9 @@
     "en_us": {
       "block.extra_building_blocks.smooth_stone_stairs": "Smooth Stone Stairs",
       "block.extra_building_blocks.very_cracked_bricks": "Very Cracked Bricks",
-      "block.extra_building_blocks.cyan_stained_soul_glass_pane": "Cyan Stained Soul Glass Pane",
-      "block.extra_building_blocks.chain_left": "Chain Left",
       "biome.extra_building_blocks.salt_basin": "Salt Basin",
+      "block.extra_building_blocks.chain_left": "Chain Left",
+      "block.extra_building_blocks.cyan_stained_soul_glass_pane": "Cyan Stained Soul Glass Pane",
       "block.extra_building_blocks.red_lace_banner": "Red Lace Banner",
       "block.extra_building_blocks.yellow_lace_carpet": "Yellow Lace Carpet",
       "gui.extra_building_blocks.emitter_gui.label_particle_emitter": "Particle Emitter",
@@ -12498,8 +12580,8 @@
       "block.extra_building_blocks.hanging_torchflower": "Hanging Torchflower",
       "block.extra_building_blocks.light_blue_lace_banner": "Light Blue Lace Banner",
       "block.extra_building_blocks.cactus_w_stairs": "Cactus Wood Stairs",
-      "block.extra_building_blocks.cut_granite_stairs": "Cut Granite Stairs",
       "block.extra_building_blocks.weathered_copper_bars": "Weathered Copper Bars",
+      "block.extra_building_blocks.cut_granite_stairs": "Cut Granite Stairs",
       "block.extra_building_blocks.calcite_bricks": "Calcite Bricks",
       "block.extra_building_blocks.warped_beam": "Warped Beam",
       "block.extra_building_blocks.wrought_iron_gate": "Wrought Iron Gate",
@@ -12517,14 +12599,14 @@
       "block.extra_building_blocks.jungle_beam": "Jungle Beam",
       "block.extra_building_blocks.exposed_wrought_iron": "Exposed Wrought Iron",
       "block.extra_building_blocks.dark_prismarine_pillar.description_0": "texture inspired by _Fungus on planet minecraft ^-^",
-      "block.extra_building_blocks.polished_dripstone": "Polished Dripstone",
       "block.extra_building_blocks.lime_lace_carpet": "Lime Lace Carpet",
+      "block.extra_building_blocks.polished_dripstone": "Polished Dripstone",
       "block.extra_building_blocks.acacia_beam": "Acacia Beam",
       "block.extra_building_blocks.black_stained_soul_glass": "Black Stained Soul Glass",
-      "block.extra_building_blocks.orange_stained_soul_glass_pane": "Orange Stained Soul Glass Pane",
       "block.extra_building_blocks.cactus_w_fence_gate": "Cactus Wood Fence Gate",
-      "block.extra_building_blocks.chorus_fence": "Chorus Wood Fence",
+      "block.extra_building_blocks.orange_stained_soul_glass_pane": "Orange Stained Soul Glass Pane",
       "block.extra_building_blocks.soul_glass_pane": "Soul Glass Pane",
+      "block.extra_building_blocks.chorus_fence": "Chorus Wood Fence",
       "block.extra_building_blocks.prismarine_pillar": "Prismarine Pillar",
       "block.extra_building_blocks.yellow_stained_soul_glass_pane": "Yellow Stained Soul Glass Pane",
       "block.extra_building_blocks.duck_weed": "Duck Weed",
@@ -12544,6 +12626,7 @@
       "block.extra_building_blocks.polished_calcite": "Polished Calcite",
       "block.extra_building_blocks.waxed_copper_bars": "Waxed Copper Bars",
       "block.extra_building_blocks.cut_smooth_stone_slab": "Cut Smooth Stone Slab",
+      "block.extra_building_blocks.rusted_wrought_iron_bars": "Wrought Iron Bars",
       "block.extra_building_blocks.ice_bricks": "Ice Bricks",
       "block.extra_building_blocks.purple_lace_banner": "Purple Lace Banner",
       "block.extra_building_blocks.very_cracked_stone_bricks": "Very Cracked Stone Bricks",
@@ -12658,6 +12741,7 @@
       "block.extra_building_blocks.icicle_frustum": "Icicle Frustum",
       "block.extra_building_blocks.pink_lace_banner": "Pink Lace Banner",
       "block.extra_building_blocks.copper_bars": "Copper Bars",
+      "block.extra_building_blocks.weathered_wrought_iron_bars": "Wrought Iron Bars",
       "block.extra_building_blocks.cut_diorite_slab": "Cut Diorite Slab",
       "block.extra_building_blocks.icicle_middle": "Icicle Middle",
       "block.extra_building_blocks.dark_grey_stained_soul_glass": "Dark Grey Stained Soul Glass",
@@ -12740,6 +12824,7 @@
       "block.extra_building_blocks.hook": "Hook",
       "block.extra_building_blocks.chiseled_blackstone_bricks.description_0": "texture inspired by @Other_Goblin on twitter !!",
       "block.extra_building_blocks.dripstone_stairs": "Dripstone Stairs",
+      "block.extra_building_blocks.exposed_wrought_iron_bars": "Wrought Iron Bars",
       "block.extra_building_blocks.soul_slate_bricks": "Soul Slate Bricks",
       "block.extra_building_blocks.chorus_fence_gate": "Chorus Wood Fence Gate",
       "block.extra_building_blocks.black_lace_banner": "Black Lace Banner",
@@ -12751,9 +12836,9 @@
     "fr_fr": {
       "block.extra_building_blocks.smooth_stone_stairs": "Escaliers en roche lisse",
       "block.extra_building_blocks.very_cracked_bricks": "Briques très craquelées",
-      "block.extra_building_blocks.cyan_stained_soul_glass_pane": "Vitre cyan des âmes",
-      "block.extra_building_blocks.chain_left": "Chain Left",
       "biome.extra_building_blocks.salt_basin": "Salt Basin",
+      "block.extra_building_blocks.chain_left": "Chain Left",
+      "block.extra_building_blocks.cyan_stained_soul_glass_pane": "Vitre cyan des âmes",
       "block.extra_building_blocks.red_lace_banner": "Bannière de dentelle rouge",
       "block.extra_building_blocks.yellow_lace_carpet": "Tapis de dentelle jaune",
       "gui.extra_building_blocks.emitter_gui.label_particle_emitter": "Particle Emitter",
@@ -12761,8 +12846,8 @@
       "block.extra_building_blocks.test": "INGAMENAME",
       "block.extra_building_blocks.light_blue_lace_banner": "Bannière de dentelle bleu clair",
       "block.extra_building_blocks.cactus_w_stairs": "Escaliers en bois de cactus",
-      "block.extra_building_blocks.cut_granite_stairs": "Escaliers en granite taillé",
       "block.extra_building_blocks.weathered_copper_bars": "Barreaux de cuivre érodé",
+      "block.extra_building_blocks.cut_granite_stairs": "Escaliers en granite taillé",
       "block.extra_building_blocks.calcite_bricks": "Briques de calcite",
       "block.extra_building_blocks.warped_beam": "Poutre biscornue",
       "block.extra_building_blocks.wrought_iron_gate": "Portillon en fer forgé",
@@ -12780,14 +12865,14 @@
       "block.extra_building_blocks.jungle_beam": "Poutre en acajou",
       "block.extra_building_blocks.exposed_wrought_iron": "Fer forgé exposé",
       "block.extra_building_blocks.dark_prismarine_pillar.description_0": "texture inspirée par _Fungus sur planet minecraft ^-^",
-      "block.extra_building_blocks.lime_lace_carpet": "Tapis de dentelle vert clair",
       "block.extra_building_blocks.polished_dripstone": "Spéléothème poli",
+      "block.extra_building_blocks.lime_lace_carpet": "Tapis de dentelle vert clair",
       "block.extra_building_blocks.acacia_beam": "Poutre en acacia",
       "block.extra_building_blocks.black_stained_soul_glass": "Verre noir des âmes",
-      "block.extra_building_blocks.cactus_w_fence_gate": "Portillon en bois de cactus",
       "block.extra_building_blocks.orange_stained_soul_glass_pane": "Vitre orange des âmes",
-      "block.extra_building_blocks.chorus_fence": "Barrière en chorus",
+      "block.extra_building_blocks.cactus_w_fence_gate": "Portillon en bois de cactus",
       "block.extra_building_blocks.soul_glass_pane": "Vitre des âmes",
+      "block.extra_building_blocks.chorus_fence": "Barrière en chorus",
       "block.extra_building_blocks.prismarine_pillar": "Pilier de prismarine",
       "block.extra_building_blocks.yellow_stained_soul_glass_pane": "Vitre jaune des âmes",
       "block.extra_building_blocks.duck_weed": "Lentille d\u0027eau",
@@ -12807,6 +12892,7 @@
       "block.extra_building_blocks.polished_calcite": "Calcite polie",
       "block.extra_building_blocks.waxed_copper_bars": "Barreaux de cuivre ciré",
       "block.extra_building_blocks.cut_smooth_stone_slab": "Dalle de roche lisse taillée",
+      "block.extra_building_blocks.rusted_wrought_iron_bars": "Wrought Iron Bars",
       "block.extra_building_blocks.purple_lace_banner": "Bannière de dentelle violette",
       "block.extra_building_blocks.ice_bricks": "Briques de glace",
       "block.extra_building_blocks.very_cracked_stone_bricks": "Pierre taillée très craquelée",
@@ -12921,6 +13007,7 @@
       "block.extra_building_blocks.icicle_frustum": "Icicle Frustum",
       "block.extra_building_blocks.pink_lace_banner": "Bannière de dentelle rose",
       "block.extra_building_blocks.copper_bars": "Barreaux de cuivre",
+      "block.extra_building_blocks.weathered_wrought_iron_bars": "Wrought Iron Bars",
       "block.extra_building_blocks.cut_diorite_slab": "Dalle de diorite taillée",
       "block.extra_building_blocks.icicle_middle": "Icicle Middle",
       "block.extra_building_blocks.dark_grey_stained_soul_glass": "Verre gris des âmes",
@@ -13003,6 +13090,7 @@
       "block.extra_building_blocks.hook": "Crochet",
       "block.extra_building_blocks.chiseled_blackstone_bricks.description_0": "texture inspirée par @Other_Goblin sur twitter !!",
       "block.extra_building_blocks.dripstone_stairs": "Escaliers en spéléothème",
+      "block.extra_building_blocks.exposed_wrought_iron_bars": "Wrought Iron Bars",
       "block.extra_building_blocks.soul_slate_bricks": "Briques d\u0027ardoise des âmes",
       "block.extra_building_blocks.chorus_fence_gate": "Portillon en chorus",
       "block.extra_building_blocks.black_lace_banner": "Bannière de dentelle noire",
@@ -13014,9 +13102,9 @@
     "ja_jp": {
       "block.extra_building_blocks.smooth_stone_stairs": "滑らかな石の階段",
       "block.extra_building_blocks.very_cracked_bricks": "Very Cracked Bricks",
-      "biome.extra_building_blocks.salt_basin": "Salt Basin",
-      "block.extra_building_blocks.chain_left": "Chain Left",
       "block.extra_building_blocks.cyan_stained_soul_glass_pane": "Cyan Stained Soul Glass Pane",
+      "block.extra_building_blocks.chain_left": "Chain Left",
+      "biome.extra_building_blocks.salt_basin": "Salt Basin",
       "block.extra_building_blocks.red_lace_banner": "Red Lace Banner",
       "block.extra_building_blocks.yellow_lace_carpet": "Yellow Lace Carpet",
       "gui.extra_building_blocks.emitter_gui.label_particle_emitter": "Particle Emitter",
@@ -13024,8 +13112,8 @@
       "block.extra_building_blocks.hanging_torchflower": "Hanging Torchflower",
       "block.extra_building_blocks.light_blue_lace_banner": "Light Blue Lace Banner",
       "block.extra_building_blocks.cactus_w_stairs": "Cactus Wood Stairs",
-      "block.extra_building_blocks.weathered_copper_bars": "錆びた銅格子",
       "block.extra_building_blocks.cut_granite_stairs": "研がれた花崗岩の階段",
+      "block.extra_building_blocks.weathered_copper_bars": "錆びた銅格子",
       "block.extra_building_blocks.calcite_bricks": "方解石レンガ",
       "block.extra_building_blocks.warped_beam": "歪んだ梁",
       "block.extra_building_blocks.wrought_iron_gate": "Wrought Iron Gate",
@@ -13043,14 +13131,14 @@
       "block.extra_building_blocks.jungle_beam": "ジャングルの梁",
       "block.extra_building_blocks.exposed_wrought_iron": "風化した錬鉄",
       "block.extra_building_blocks.dark_prismarine_pillar.description_0": "texture inspired by _Fungus on planet minecraft ^-^",
-      "block.extra_building_blocks.lime_lace_carpet": "Lime Lace Carpet",
       "block.extra_building_blocks.polished_dripstone": "磨かれた鍾乳石",
+      "block.extra_building_blocks.lime_lace_carpet": "Lime Lace Carpet",
       "block.extra_building_blocks.acacia_beam": "アカシアの梁",
       "block.extra_building_blocks.black_stained_soul_glass": "Black Stained Soul Glass",
-      "block.extra_building_blocks.cactus_w_fence_gate": "Cactus Wood Fence Gate",
       "block.extra_building_blocks.orange_stained_soul_glass_pane": "Orange Stained Soul Glass Pane",
-      "block.extra_building_blocks.soul_glass_pane": "Soul Glass Pane",
+      "block.extra_building_blocks.cactus_w_fence_gate": "Cactus Wood Fence Gate",
       "block.extra_building_blocks.chorus_fence": "コーラスのフェンス",
+      "block.extra_building_blocks.soul_glass_pane": "Soul Glass Pane",
       "block.extra_building_blocks.prismarine_pillar": "プリズマリンの柱",
       "block.extra_building_blocks.yellow_stained_soul_glass_pane": "Yellow Stained Soul Glass Pane",
       "block.extra_building_blocks.duck_weed": "青浮草",
@@ -13070,6 +13158,7 @@
       "block.extra_building_blocks.polished_calcite": "磨かれた方解石",
       "block.extra_building_blocks.waxed_copper_bars": "錆止めされた銅格子",
       "block.extra_building_blocks.cut_smooth_stone_slab": "研がれた滑らかな石のハーフブロック",
+      "block.extra_building_blocks.rusted_wrought_iron_bars": "Wrought Iron Bars",
       "block.extra_building_blocks.purple_lace_banner": "Purple Lace Banner",
       "block.extra_building_blocks.ice_bricks": "Ice Bricks",
       "block.extra_building_blocks.very_cracked_stone_bricks": "Very Cracked Stone Bricks",
@@ -13184,6 +13273,7 @@
       "block.extra_building_blocks.icicle_frustum": "Icicle Frustum",
       "block.extra_building_blocks.pink_lace_banner": "Pink Lace Banner",
       "block.extra_building_blocks.copper_bars": "銅格子",
+      "block.extra_building_blocks.weathered_wrought_iron_bars": "Wrought Iron Bars",
       "block.extra_building_blocks.cut_diorite_slab": "研がれた閃緑岩のハーフブロック",
       "block.extra_building_blocks.icicle_middle": "Icicle Middle",
       "block.extra_building_blocks.dark_grey_stained_soul_glass": "Dark Grey Stained Soul Glass",
@@ -13266,6 +13356,7 @@
       "block.extra_building_blocks.hook": "Hook",
       "block.extra_building_blocks.chiseled_blackstone_bricks.description_0": "texture inspired by @Other_Goblin on twitter !!",
       "block.extra_building_blocks.dripstone_stairs": "鍾乳石の階段",
+      "block.extra_building_blocks.exposed_wrought_iron_bars": "Wrought Iron Bars",
       "block.extra_building_blocks.soul_slate_bricks": "Soul Slate Bricks",
       "block.extra_building_blocks.chorus_fence_gate": "コーラスのフェンスゲート",
       "block.extra_building_blocks.black_lace_banner": "Black Lace Banner",
@@ -13501,6 +13592,15 @@
               },
               {
                 "name": "Waxed",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Bars",
+            "children": [
+              {
+                "name": "Plain",
                 "children": []
               }
             ]
