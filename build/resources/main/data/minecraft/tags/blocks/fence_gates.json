@@ -3,6 +3,7 @@
   "values": [
     "extra_building_blocks:cactus_w_fence_gate",
     "extra_building_blocks:chorus_fence_gate",
-    "extra_building_blocks:iron_gate"
+    "extra_building_blocks:iron_gate",
+    "extra_building_blocks:wrought_iron_gate"
   ]
 }

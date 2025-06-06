@@ -11935,6 +11935,19 @@
           }
         ]
       }
+    },
+    {
+      "name": "WroughtIronRecipeBlastFurnace",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wrought_iron_recipe_blast_furnace",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/extra_building_blocks/recipes/wrought_iron_recipe_blast_furnace.json"
+        ]
+      },
+      "path": "~/WroughtIron/Block/Plain"
     }
   ],
   "variable_elements": [],
@@ -12581,6 +12594,7 @@
       "WarpedBeam",
       "EchoCrystal",
       "CutAmethyst",
+      "IronGate",
       "WroughtIron",
       "WroughtIronBars",
       "WroughtIronGate",
@@ -12591,10 +12605,13 @@
       "RustedWroughtIron",
       "RustedWroughtIronBars",
       "WaxedWroughtIron",
-      "WaxedWeatheredWroughtIron",
+      "WaxedWroughtIronBars",
       "WaxedExposedWroughtIron",
+      "WaxedExposedWroughtIronBars",
+      "WaxedWeatheredWroughtIron",
+      "WaxedWeatheredWroughtIronBars",
       "WaxedRustedWroughtIron",
-      "IronGate",
+      "WaxedRustedWroughtIronBars",
       "CopperBars",
       "ExposedCopperBars",
       "WeatheredCopperBars",
@@ -12638,11 +12655,7 @@
       "DarkPrismarineWall",
       "StoneWall",
       "SmoothStoneWall",
-      "PurpurWall",
-      "WaxedWroughtIronBars",
-      "WaxedWeatheredWroughtIronBars",
-      "WaxedExposedWroughtIronBars",
-      "WaxedRustedWroughtIronBars"
+      "PurpurWall"
     ],
     "CUSTOM:Mishmash": [
       "CutAndesite",

@@ -1,0 +1,22 @@
+{
+  "_fv": 73,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Blasting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "BLOCKS",
+    "xpReward": 0.1,
+    "cookingTime": 100,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "blastingInputStack": {
+      "value": "Blocks.IRON_BLOCK"
+    },
+    "blastingReturnStack": {
+      "value": "CUSTOM:WroughtIron"
+    },
+    "name": "wrought_iron_recipe_blast_furnace",
+    "namespace": "mod"
+  }
+}
