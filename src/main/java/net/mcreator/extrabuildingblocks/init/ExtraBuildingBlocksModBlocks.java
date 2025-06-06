@@ -25,11 +25,15 @@ import net.mcreator.extrabuildingblocks.block.WeatheredWroughtIronBlock;
 import net.mcreator.extrabuildingblocks.block.WeatheredWroughtIronBarsBlock;
 import net.mcreator.extrabuildingblocks.block.WeatheredCopperBarsBlock;
 import net.mcreator.extrabuildingblocks.block.WaxedWroughtIronBlock;
+import net.mcreator.extrabuildingblocks.block.WaxedWroughtIronBarsBlock;
 import net.mcreator.extrabuildingblocks.block.WaxedWeatheredWroughtIronBlock;
+import net.mcreator.extrabuildingblocks.block.WaxedWeatheredWroughtIronBarsBlock;
 import net.mcreator.extrabuildingblocks.block.WaxedWeatheredCopperBarsBlock;
 import net.mcreator.extrabuildingblocks.block.WaxedRustedWroughtIronBlock;
+import net.mcreator.extrabuildingblocks.block.WaxedRustedWroughtIronBarsBlock;
 import net.mcreator.extrabuildingblocks.block.WaxedOxidisedCopperBarsBlock;
 import net.mcreator.extrabuildingblocks.block.WaxedExposedWroughtIronBlock;
+import net.mcreator.extrabuildingblocks.block.WaxedExposedWroughtIronBarsBlock;
 import net.mcreator.extrabuildingblocks.block.WaxedExposedCopperBarsBlock;
 import net.mcreator.extrabuildingblocks.block.WaxedCopperBarsBlock;
 import net.mcreator.extrabuildingblocks.block.WarpedBeamBlock;
@@ -492,6 +496,10 @@ public class ExtraBuildingBlocksModBlocks {
 	public static final RegistryObject<Block> EXPOSED_WROUGHT_IRON_BARS = REGISTRY.register("exposed_wrought_iron_bars", () -> new ExposedWroughtIronBarsBlock());
 	public static final RegistryObject<Block> WEATHERED_WROUGHT_IRON_BARS = REGISTRY.register("weathered_wrought_iron_bars", () -> new WeatheredWroughtIronBarsBlock());
 	public static final RegistryObject<Block> RUSTED_WROUGHT_IRON_BARS = REGISTRY.register("rusted_wrought_iron_bars", () -> new RustedWroughtIronBarsBlock());
+	public static final RegistryObject<Block> WAXED_WROUGHT_IRON_BARS = REGISTRY.register("waxed_wrought_iron_bars", () -> new WaxedWroughtIronBarsBlock());
+	public static final RegistryObject<Block> WAXED_WEATHERED_WROUGHT_IRON_BARS = REGISTRY.register("waxed_weathered_wrought_iron_bars", () -> new WaxedWeatheredWroughtIronBarsBlock());
+	public static final RegistryObject<Block> WAXED_EXPOSED_WROUGHT_IRON_BARS = REGISTRY.register("waxed_exposed_wrought_iron_bars", () -> new WaxedExposedWroughtIronBarsBlock());
+	public static final RegistryObject<Block> WAXED_RUSTED_WROUGHT_IRON_BARS = REGISTRY.register("waxed_rusted_wrought_iron_bars", () -> new WaxedRustedWroughtIronBarsBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

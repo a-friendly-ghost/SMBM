@@ -6,6 +6,7 @@
     "minecraft:weathered_copper",
     "minecraft:weathered_cut_copper",
     "minecraft:weathered_cut_copper_stairs",
-    "minecraft:weathered_cut_copper_slab"
+    "minecraft:weathered_cut_copper_slab",
+    "extra_building_blocks:weathered_wrought_iron_bars"
   ]
 }

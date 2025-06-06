@@ -336,6 +336,10 @@ public class ExtraBuildingBlocksModTabs {
 			tabData.accept(ExtraBuildingBlocksModBlocks.STONE_WALL.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.SMOOTH_STONE_WALL.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.PURPUR_WALL.get().asItem());
+			tabData.accept(ExtraBuildingBlocksModBlocks.WAXED_WROUGHT_IRON_BARS.get().asItem());
+			tabData.accept(ExtraBuildingBlocksModBlocks.WAXED_WEATHERED_WROUGHT_IRON_BARS.get().asItem());
+			tabData.accept(ExtraBuildingBlocksModBlocks.WAXED_EXPOSED_WROUGHT_IRON_BARS.get().asItem());
+			tabData.accept(ExtraBuildingBlocksModBlocks.WAXED_RUSTED_WROUGHT_IRON_BARS.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.COLORED_BLOCKS) {
 			tabData.accept(ExtraBuildingBlocksModBlocks.SOUL_GLASS.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.WHITE_STAINED_SOUL_GLASS.get().asItem());

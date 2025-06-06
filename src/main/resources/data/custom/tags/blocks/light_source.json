@@ -22,6 +22,9 @@
     "minecraft:soul_campfire",
     "minecraft:fire",
     "minecraft:soul_fire",
-    "extra_building_blocks:salt_crystal_emissive"
+    "extra_building_blocks:salt_crystal_emissive",
+    "extra_building_blocks:dark_sea_lantern",
+    "extra_building_blocks:sconce",
+    "extra_building_blocks:soul_sconce"
   ]
 }

@@ -1,11 +1,22 @@
 {
   "workspacePanelIconSize": "DETAILS",
-  "workspacePanelSortType": "CREATED",
+  "workspacePanelSortType": "NAME",
   "workspacePanelSortAscending": true,
-  "projectBrowserSplitPos": 129,
+  "projectBrowserSplitPos": 69,
   "projectBrowserState": {
     "expandedPaths": [
-      "[, SMBM]"
+      "[, SMBM]",
+      "[, SMBM, Resources (Gradle)]",
+      "[, SMBM, Resources (Gradle), C:\\Users\\Asus\\MCreatorWorkspaces\\extra_building_blocks\\src\\main\\resources\\assets]",
+      "[, SMBM, Resources (Gradle), C:\\Users\\Asus\\MCreatorWorkspaces\\extra_building_blocks\\src\\main\\resources\\assets, C:\\Users\\Asus\\MCreatorWorkspaces\\extra_building_blocks\\src\\main\\resources\\assets\\extra_building_blocks]",
+      "[, SMBM, Resources (Gradle), C:\\Users\\Asus\\MCreatorWorkspaces\\extra_building_blocks\\src\\main\\resources\\assets, C:\\Users\\Asus\\MCreatorWorkspaces\\extra_building_blocks\\src\\main\\resources\\assets\\extra_building_blocks, C:\\Users\\Asus\\MCreatorWorkspaces\\extra_building_blocks\\src\\main\\resources\\assets\\extra_building_blocks\\blockstates]",
+      "[, SMBM, Resources (Gradle), C:\\Users\\Asus\\MCreatorWorkspaces\\extra_building_blocks\\src\\main\\resources\\assets, C:\\Users\\Asus\\MCreatorWorkspaces\\extra_building_blocks\\src\\main\\resources\\assets\\extra_building_blocks, C:\\Users\\Asus\\MCreatorWorkspaces\\extra_building_blocks\\src\\main\\resources\\assets\\extra_building_blocks\\models]",
+      "[, SMBM, Resources (Gradle), C:\\Users\\Asus\\MCreatorWorkspaces\\extra_building_blocks\\src\\main\\resources\\assets, C:\\Users\\Asus\\MCreatorWorkspaces\\extra_building_blocks\\src\\main\\resources\\assets\\extra_building_blocks, C:\\Users\\Asus\\MCreatorWorkspaces\\extra_building_blocks\\src\\main\\resources\\assets\\extra_building_blocks\\models, C:\\Users\\Asus\\MCreatorWorkspaces\\extra_building_blocks\\src\\main\\resources\\assets\\extra_building_blocks\\models\\block]",
+      "[, SMBM, Resources (Gradle), C:\\Users\\Asus\\MCreatorWorkspaces\\extra_building_blocks\\src\\main\\resources\\assets, C:\\Users\\Asus\\MCreatorWorkspaces\\extra_building_blocks\\src\\main\\resources\\assets\\extra_building_blocks, C:\\Users\\Asus\\MCreatorWorkspaces\\extra_building_blocks\\src\\main\\resources\\assets\\extra_building_blocks\\models, C:\\Users\\Asus\\MCreatorWorkspaces\\extra_building_blocks\\src\\main\\resources\\assets\\extra_building_blocks\\models\\item]",
+      "[, SMBM, Resources (Gradle), C:\\Users\\Asus\\MCreatorWorkspaces\\extra_building_blocks\\src\\main\\resources\\data]",
+      "[, SMBM, Resources (Gradle), C:\\Users\\Asus\\MCreatorWorkspaces\\extra_building_blocks\\src\\main\\resources\\data, C:\\Users\\Asus\\MCreatorWorkspaces\\extra_building_blocks\\src\\main\\resources\\data\\extra_building_blocks]",
+      "[, SMBM, Resources (Gradle), C:\\Users\\Asus\\MCreatorWorkspaces\\extra_building_blocks\\src\\main\\resources\\data, C:\\Users\\Asus\\MCreatorWorkspaces\\extra_building_blocks\\src\\main\\resources\\data\\extra_building_blocks, C:\\Users\\Asus\\MCreatorWorkspaces\\extra_building_blocks\\src\\main\\resources\\data\\extra_building_blocks\\loot_tables]",
+      "[, SMBM, Resources (Gradle), C:\\Users\\Asus\\MCreatorWorkspaces\\extra_building_blocks\\src\\main\\resources\\data, C:\\Users\\Asus\\MCreatorWorkspaces\\extra_building_blocks\\src\\main\\resources\\data\\extra_building_blocks, C:\\Users\\Asus\\MCreatorWorkspaces\\extra_building_blocks\\src\\main\\resources\\data\\extra_building_blocks\\loot_tables, C:\\Users\\Asus\\MCreatorWorkspaces\\extra_building_blocks\\src\\main\\resources\\data\\extra_building_blocks\\loot_tables\\blocks]"
     ]
   }
 }

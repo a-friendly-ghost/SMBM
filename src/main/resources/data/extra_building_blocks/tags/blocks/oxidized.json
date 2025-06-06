@@ -6,6 +6,7 @@
     "minecraft:oxidized_cut_copper",
     "minecraft:oxidized_cut_copper_stairs",
     "minecraft:oxidized_cut_copper_slab",
-    "extra_building_blocks:rusted_wrought_iron"
+    "extra_building_blocks:rusted_wrought_iron",
+    "extra_building_blocks:rusted_wrought_iron_bars"
   ]
 }

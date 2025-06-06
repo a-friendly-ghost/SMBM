@@ -1,6 +1,10 @@
 {
   "replace": false,
   "values": [
+    "extra_building_blocks:waxed_rusted_wrought_iron_bars",
+    "extra_building_blocks:waxed_exposed_wrought_iron_bars",
+    "extra_building_blocks:waxed_weathered_wrought_iron_bars",
+    "extra_building_blocks:waxed_wrought_iron_bars",
     "extra_building_blocks:rusted_wrought_iron_bars",
     "extra_building_blocks:weathered_wrought_iron_bars",
     "extra_building_blocks:exposed_wrought_iron_bars",
