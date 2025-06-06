@@ -282,8 +282,11 @@ public class ExtraBuildingBlocksModTabs {
 			tabData.accept(ExtraBuildingBlocksModBlocks.WROUGHT_IRON_BARS.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.WROUGHT_IRON_GATE.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.EXPOSED_WROUGHT_IRON.get().asItem());
+			tabData.accept(ExtraBuildingBlocksModBlocks.EXPOSED_WROUGHT_IRON_BARS.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.WEATHERED_WROUGHT_IRON.get().asItem());
+			tabData.accept(ExtraBuildingBlocksModBlocks.WEATHERED_WROUGHT_IRON_BARS.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.RUSTED_WROUGHT_IRON.get().asItem());
+			tabData.accept(ExtraBuildingBlocksModBlocks.RUSTED_WROUGHT_IRON_BARS.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.WAXED_WROUGHT_IRON.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.WAXED_WEATHERED_WROUGHT_IRON.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.WAXED_EXPOSED_WROUGHT_IRON.get().asItem());

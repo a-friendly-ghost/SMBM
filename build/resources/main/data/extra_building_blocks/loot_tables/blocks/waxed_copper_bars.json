@@ -1,6 +1,6 @@
 {
   "type": "minecraft:block",
-  "random_sequence": "extra_building_blocks:blocks/copper_bars",
+  "random_sequence": "extra_building_blocks:blocks/waxed_copper_bars",
   "pools": [
     {
       "rolls": 1.0,
@@ -12,7 +12,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "extra_building_blocks:copper_bars"
+          "name": "extra_building_blocks:waxed_copper_bars"
         }
       ]
     }
