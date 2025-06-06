@@ -1,0 +1,8 @@
+{
+  "parent": "extra_building_blocks:custom/wrought_iron_bars_post_ends_alt",
+  "textures": {
+    "edge": "extra_building_blocks:block/weatheredwroughtironedge",
+    "particle": "extra_building_blocks:block/weatheredwroughtironbars"
+  },
+  "render_type": "cutout_mipped"
+}
