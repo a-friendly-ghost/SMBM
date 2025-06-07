@@ -12047,6 +12047,83 @@
         "files": []
       },
       "path": "~/Beams"
+    },
+    {
+      "name": "GreenDesertBushComposting",
+      "type": "itemextension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_desert_bush_composting",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/DesertPlants/DesertBushes"
+    },
+    {
+      "name": "PurpleDesertBushComposting",
+      "type": "itemextension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_desert_bush_composting",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/DesertPlants/DesertBushes"
+    },
+    {
+      "name": "FountainGrassComposting",
+      "type": "itemextension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fountain_grass_composting",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/DesertPlants/FountainGrass"
+    },
+    {
+      "name": "PurpleFountainGrassComposting",
+      "type": "itemextension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_fountain_grass_composting",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/DesertPlants/FountainGrass"
+    },
+    {
+      "name": "DuckWeedComposting",
+      "type": "itemextension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "duck_weed_composting",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/DuckWeed"
+    },
+    {
+      "name": "SwampGrassComposting",
+      "type": "itemextension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "swamp_grass_composting",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/SwampGrass"
+    },
+    {
+      "name": "CactusWoodFuelAndComposting",
+      "type": "itemextension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cactus_wood_fuel_and_composting",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/CactusWood"
     }
   ],
   "variable_elements": [],
@@ -12141,37 +12218,7 @@
       "~CUSTOM:WaxedExposedCopperBars",
       "~CUSTOM:WaxedCopperBars",
       "~CUSTOM:Brace",
-      "~CUSTOM:ChiseledBlackstoneBricks",
-      "~CUSTOM:ChiseledDeepslateBricks",
-      "~CUSTOM:ChiseledStone",
-      "~CUSTOM:SoulMagma",
-      "~CUSTOM:ChiseledPrismarine",
-      "~CUSTOM:DarkPrismarinePillar",
-      "~CUSTOM:PrismarinePillar",
-      "~CUSTOM:DarkPrismarineWall",
-      "~CUSTOM:PrismarineBrickWall",
-      "~CUSTOM:MossyBricks",
-      "~CUSTOM:DestroyedBricks",
-      "~CUSTOM:VeryCrackedBricks",
-      "~CUSTOM:CrackedBricks",
-      "~CUSTOM:ChiseledRedNetherBrick",
-      "~CUSTOM:StonePillar",
       "~CUSTOM:EchoCrystal",
-      "~CUSTOM:PurpurWall",
-      "~CUSTOM:SoulSlateBrickWall",
-      "~CUSTOM:SoulSlateBrickSlab",
-      "~CUSTOM:SoulSlateBrickStairs",
-      "~CUSTOM:ChiseledSoulSlate",
-      "~CUSTOM:SoulSlateBricks",
-      "~CUSTOM:SoulSlate",
-      "~CUSTOM:RedSandstoneBrickWall",
-      "~CUSTOM:RedSandstoneBrickSlab",
-      "~CUSTOM:RedSandstoneBrickStairs",
-      "~CUSTOM:RedSandstoneBricks",
-      "~CUSTOM:SandstoneBrickWall",
-      "~CUSTOM:SandstoneBrickSlab",
-      "~CUSTOM:SandstoneBrickStairs",
-      "~CUSTOM:SandstoneBricks",
       "~CUSTOM:BrownStainedSoulGlassPane",
       "~CUSTOM:BrownStainedSoulGlass",
       "~CUSTOM:DarkGreyStainedSoulGlassPane",
@@ -12206,11 +12253,6 @@
       "~CUSTOM:WhiteStainedSoulGlass",
       "~CUSTOM:SoulGlassPane",
       "~CUSTOM:SoulGlass",
-      "~CUSTOM:EndStoneWall",
-      "~CUSTOM:EndStoneSlab",
-      "~CUSTOM:EndStoneStairs",
-      "~CUSTOM:CutAmethyst",
-      "~CUSTOM:SmoothStoneWall",
       "~CUSTOM:CutSmoothStoneSlab",
       "~CUSTOM:CutSmoothStoneStairs",
       "~CUSTOM:CutSmoothStone",
@@ -12218,44 +12260,8 @@
       "~CUSTOM:IceBrickSlab",
       "~CUSTOM:IceBrickStairs",
       "~CUSTOM:ChainConnected",
-      "~CUSTOM:CrackedCalciteBricks",
-      "~CUSTOM:CrackedDripstoneBricks",
-      "~CUSTOM:DripstoneWall",
-      "~CUSTOM:DripstoneSlab",
-      "~CUSTOM:DripstoneStairs",
-      "~CUSTOM:DripstoneBrickWall",
-      "~CUSTOM:DripstoneBrickSlab",
-      "~CUSTOM:DripstoneBricks",
-      "~CUSTOM:PolishedDripstoneWall",
-      "~CUSTOM:PolishedDripstoneSlab",
-      "~CUSTOM:PolishedDripstoneStairs",
-      "~CUSTOM:PolishedDripstone",
       "~CUSTOM:Bracket",
-      "~CUSTOM:CrackedRedNetherBrick",
-      "~CUSTOM:SmoothStoneStairs",
-      "~CUSTOM:QuartzBrickWall",
-      "~CUSTOM:QuartzBrickSlab",
-      "~CUSTOM:CrackedQuartzBricks",
-      "~CUSTOM:CrackedEndBricks",
-      "~CUSTOM:CrackedMudBricks",
-      "~CUSTOM:CutDioriteSlab",
-      "~CUSTOM:CutDioriteStairs",
-      "~CUSTOM:CutDiorite",
-      "~CUSTOM:CalciteBrickWall",
-      "~CUSTOM:CalciteBrickSlab",
-      "~CUSTOM:CalciteBrickStairs",
-      "~CUSTOM:CalciteWall",
-      "~CUSTOM:CalciteBricks",
-      "~CUSTOM:PolishedCalciteWall",
-      "~CUSTOM:PolishedCalciteStairs",
-      "~CUSTOM:PolishedCalcite",
       "~CUSTOM:Swampvine",
-      "~CUSTOM:CutGraniteSlab",
-      "~CUSTOM:CutGraniteStairs",
-      "~CUSTOM:CutGranite",
-      "~CUSTOM:CutAndesiteSlab",
-      "~CUSTOM:CutAndesiteStairs",
-      "~CUSTOM:CutAndesite",
       "CUSTOM:CopperBars",
       "CUSTOM:ExposedCopperBars",
       "CUSTOM:WeatheredCopperBars",
@@ -12388,6 +12394,10 @@
       "CUSTOM:SoulMagma"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:Hook",
+      "~CUSTOM:PolishedCalciteSlab",
+      "~CUSTOM:CalciteStairs",
+      "~CUSTOM:CalciteSlab",
       "~CUSTOM:WaxedRustedWroughtIronBars",
       "~CUSTOM:WaxedExposedWroughtIronBars",
       "~CUSTOM:WaxedWeatheredWroughtIronBars",
@@ -13144,7 +13154,7 @@
       "block.extra_building_blocks.calcite_brick_stairs": "Calcite Brick Stairs",
       "block.extra_building_blocks.red_lace_carpet": "Red Lace Carpet",
       "block.extra_building_blocks.quartz_brick_wall": "Quartz Brick Wall",
-      "block.extra_building_blocks.dark_sea_lantern": "Deep Sea Lantern",
+      "block.extra_building_blocks.dark_sea_lantern": "Dark Sea Lantern",
       "block.extra_building_blocks.yellow_stained_soul_glass": "Yellow Stained Soul Glass",
       "block.extra_building_blocks.icicle_base": "Icicle Base",
       "block.extra_building_blocks.red_sandstone_brick_slab": "Red Sandstone Brick Slab",
