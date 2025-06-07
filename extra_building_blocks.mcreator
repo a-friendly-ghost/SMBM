@@ -12047,6 +12047,72 @@
         "files": []
       },
       "path": "~/Beams"
+    },
+    {
+      "name": "GreenDesertBushComposting",
+      "type": "itemextension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_desert_bush_composting",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/DesertPlants/DesertBushes"
+    },
+    {
+      "name": "PurpleDesertBushComposting",
+      "type": "itemextension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_desert_bush_composting",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/DesertPlants/DesertBushes"
+    },
+    {
+      "name": "FountainGrassComposting",
+      "type": "itemextension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fountain_grass_composting",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/DesertPlants/FountainGrass"
+    },
+    {
+      "name": "PurpleFountainGrassComposting",
+      "type": "itemextension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_fountain_grass_composting",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/DesertPlants/FountainGrass"
+    },
+    {
+      "name": "DuckWeedComposting",
+      "type": "itemextension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "duck_weed_composting",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/DuckWeed"
+    },
+    {
+      "name": "SwampGrassComposting",
+      "type": "itemextension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "swamp_grass_composting",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/SwampGrass"
     }
   ],
   "variable_elements": [],

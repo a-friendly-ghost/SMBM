@@ -33,5 +33,7 @@ public class ExtraBuildingBlocksModFuels {
 			event.setBurnTime(300);
 		else if (itemstack.getItem() == ExtraBuildingBlocksModBlocks.BAMBOO_BEAM.get().asItem())
 			event.setBurnTime(300);
+		else if (itemstack.getItem() == ExtraBuildingBlocksModBlocks.CACTUS_WOOD.get().asItem())
+			event.setBurnTime(300);
 	}
 }
