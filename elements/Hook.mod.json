@@ -52,7 +52,7 @@
         "value": "CUSTOM:Mishmash"
       }
     ],
-    "destroyTool": "Not specified",
+    "destroyTool": "pickaxe",
     "customDrop": {
       "value": ""
     },

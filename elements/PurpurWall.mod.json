@@ -40,7 +40,7 @@
       "fixedValue": []
     },
     "hardness": 1.5,
-    "resistance": 5.0,
+    "resistance": 6.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTabs": [
@@ -107,7 +107,7 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "vanillaToolTier": "STONE",
+    "vanillaToolTier": "NONE",
     "isBonemealable": false,
     "hasInventory": false,
     "openGUIOnRightClick": false,

@@ -11,7 +11,7 @@ import net.minecraft.core.BlockPos;
 
 public class PolishedCalciteSlabBlock extends SlabBlock {
 	public PolishedCalciteSlabBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.CALCITE).strength(0.75f).dynamicShape());
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.CALCITE).strength(0.75f).requiresCorrectToolForDrops().dynamicShape());
 	}
 
 	@Override

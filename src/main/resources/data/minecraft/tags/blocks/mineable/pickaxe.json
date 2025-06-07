@@ -1,6 +1,10 @@
 {
   "replace": false,
   "values": [
+    "extra_building_blocks:hook",
+    "extra_building_blocks:polished_calcite_slab",
+    "extra_building_blocks:calcite_stairs",
+    "extra_building_blocks:calcite_slab",
     "extra_building_blocks:waxed_rusted_wrought_iron_bars",
     "extra_building_blocks:waxed_exposed_wrought_iron_bars",
     "extra_building_blocks:waxed_weathered_wrought_iron_bars",
