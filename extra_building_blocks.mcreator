@@ -11768,7 +11768,7 @@
           "src/main/resources/assets/extra_building_blocks/models/block/waxed_wrought_iron_bars_post.json"
         ]
       },
-      "path": "~/WroughtIron/Bars/Plain"
+      "path": "~/WroughtIron/Bars/Waxed"
     },
     {
       "name": "WaxedWeatheredWroughtIronBars",
@@ -11789,7 +11789,7 @@
           "src/main/resources/assets/extra_building_blocks/models/block/waxed_weathered_wrought_iron_bars_noside_alt.json"
         ]
       },
-      "path": "~/WroughtIron/Bars/Plain"
+      "path": "~/WroughtIron/Bars/Waxed"
     },
     {
       "name": "WaxedExposedWroughtIronBars",
@@ -11810,7 +11810,7 @@
           "src/main/resources/assets/extra_building_blocks/models/block/waxed_exposed_wrought_iron_bars_side.json"
         ]
       },
-      "path": "~/WroughtIron/Bars/Plain"
+      "path": "~/WroughtIron/Bars/Waxed"
     },
     {
       "name": "WaxedRustedWroughtIronBars",
@@ -11831,7 +11831,7 @@
           "src/main/resources/assets/extra_building_blocks/models/block/waxed_rusted_wrought_iron_bars_noside.json"
         ]
       },
-      "path": "~/WroughtIron/Bars/Plain"
+      "path": "~/WroughtIron/Bars/Waxed"
     },
     {
       "name": "WaxingAudiovisualProcedure",
@@ -12124,6 +12124,162 @@
         "files": []
       },
       "path": "~/CactusWood"
+    },
+    {
+      "name": "WaxedCopperBarsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "waxed_copper_bars_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/extra_building_blocks/recipes/waxed_copper_bars_recipe.json"
+        ]
+      },
+      "path": "~/CopperBars"
+    },
+    {
+      "name": "WaxedExposedCopperBarsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "waxed_exposed_copper_bars_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/extra_building_blocks/recipes/waxed_exposed_copper_bars_recipe.json"
+        ]
+      },
+      "path": "~/CopperBars"
+    },
+    {
+      "name": "WaxedWeatheredCopperBarsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "waxed_weathered_copper_bars_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/extra_building_blocks/recipes/waxed_weathered_copper_bars_recipe.json"
+        ]
+      },
+      "path": "~/CopperBars"
+    },
+    {
+      "name": "WaxedOxidisedCopperBarsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "waxed_oxidised_copper_bars_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/extra_building_blocks/recipes/waxed_oxidised_copper_bars_recipe.json"
+        ]
+      },
+      "path": "~/CopperBars"
+    },
+    {
+      "name": "WaxedWroughtIronRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "waxed_wrought_iron_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/extra_building_blocks/recipes/waxed_wrought_iron_recipe.json"
+        ]
+      },
+      "path": "~/WroughtIron/Block/Waxed"
+    },
+    {
+      "name": "WaxedExposedWroughtIronRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "waxed_exposed_wrought_iron_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/extra_building_blocks/recipes/waxed_exposed_wrought_iron_recipe.json"
+        ]
+      },
+      "path": "~/WroughtIron/Block/Waxed"
+    },
+    {
+      "name": "WaxedWeatheredWroughtIronRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "waxed_weathered_wrought_iron_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/extra_building_blocks/recipes/waxed_weathered_wrought_iron_recipe.json"
+        ]
+      },
+      "path": "~/WroughtIron/Block/Waxed"
+    },
+    {
+      "name": "WaxedWroughtIronBarsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "waxed_wrought_iron_bars_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/extra_building_blocks/recipes/waxed_wrought_iron_bars_recipe.json"
+        ]
+      },
+      "path": "~/WroughtIron/Bars/Waxed"
+    },
+    {
+      "name": "WaxedExposedWroughtIronBarsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "waxed_exposed_wrought_iron_bars_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/extra_building_blocks/recipes/waxed_exposed_wrought_iron_bars_recipe.json"
+        ]
+      },
+      "path": "~/WroughtIron/Bars/Waxed"
+    },
+    {
+      "name": "WaxedWeatheredWroughtIronBarsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "waxed_weathered_wrought_iron_bars_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/extra_building_blocks/recipes/waxed_weathered_wrought_iron_bars_recipe.json"
+        ]
+      },
+      "path": "~/WroughtIron/Bars/Waxed"
+    },
+    {
+      "name": "WaxedRustedWroughtIronBarsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "waxed_rusted_wrought_iron_bars_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/extra_building_blocks/recipes/waxed_rusted_wrought_iron_bars_recipe.json"
+        ]
+      },
+      "path": "~/WroughtIron/Bars/Waxed"
+    },
+    {
+      "name": "WaxedRustedWroughtIronRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "waxed_rusted_wrought_iron_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/extra_building_blocks/recipes/waxed_rusted_wrought_iron_recipe.json"
+        ]
+      },
+      "path": "~/WroughtIron/Block/Waxed"
     }
   ],
   "variable_elements": [],
@@ -14066,6 +14222,10 @@
             "children": [
               {
                 "name": "Plain",
+                "children": []
+              },
+              {
+                "name": "Waxed",
                 "children": []
               }
             ]
