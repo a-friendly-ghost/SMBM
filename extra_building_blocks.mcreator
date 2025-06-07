@@ -11948,6 +11948,105 @@
         ]
       },
       "path": "~/WroughtIron/Block/Plain"
+    },
+    {
+      "name": "OakBeamFuel",
+      "type": "itemextension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oak_beam_fuel",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Beams"
+    },
+    {
+      "name": "SpruceBeamFuel",
+      "type": "itemextension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spruce_beam_fuel",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Beams"
+    },
+    {
+      "name": "BirchBeamFuel",
+      "type": "itemextension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "birch_beam_fuel",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Beams"
+    },
+    {
+      "name": "JungleBeamFuel",
+      "type": "itemextension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jungle_beam_fuel",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Beams"
+    },
+    {
+      "name": "AcaciaBeamFuel",
+      "type": "itemextension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "acacia_beam_fuel",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Beams"
+    },
+    {
+      "name": "DarkOakBeamFuel",
+      "type": "itemextension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_oak_beam_fuel",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Beams"
+    },
+    {
+      "name": "MangroveBeamFuel",
+      "type": "itemextension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mangrove_beam_fuel",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Beams"
+    },
+    {
+      "name": "CherryBeamFuel",
+      "type": "itemextension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cherry_beam_fuel",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Beams"
+    },
+    {
+      "name": "BambooBeamFuel",
+      "type": "itemextension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bamboo_beam_fuel",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Beams"
     }
   ],
   "variable_elements": [],
