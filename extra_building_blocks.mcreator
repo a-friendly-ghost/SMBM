@@ -10409,7 +10409,7 @@
           "src/main/resources/assets/extra_building_blocks/models/block/iron_gate.json"
         ]
       },
-      "path": "~/MetalGates"
+      "path": "~/MetalGates/Iron"
     },
     {
       "name": "IronGateBlockstates",
@@ -10422,7 +10422,7 @@
           "src/main/resources/assets/extra_building_blocks/models/block/iron_gate_blockstates_blockstate_0.json"
         ]
       },
-      "path": "~/MetalGates"
+      "path": "~/MetalGates/Iron"
     },
     {
       "name": "IronGateOnBlockRightClicked",
@@ -10640,7 +10640,7 @@
           "src/main/resources/data/extra_building_blocks/recipes/iron_gate_recipe.json"
         ]
       },
-      "path": "~/MetalGates"
+      "path": "~/MetalGates/Iron"
     },
     {
       "name": "FrostedGlass",
@@ -11039,7 +11039,7 @@
           "src/main/resources/assets/extra_building_blocks/models/block/wrought_iron_gate.json"
         ]
       },
-      "path": "~/MetalGates"
+      "path": "~/MetalGates/WroughtIron"
     },
     {
       "name": "WroughtIronGateBlockstates",
@@ -11052,7 +11052,7 @@
           "src/main/resources/assets/extra_building_blocks/models/block/wrought_iron_gate_blockstates_blockstate_0.json"
         ]
       },
-      "path": "~/MetalGates"
+      "path": "~/MetalGates/WroughtIron"
     },
     {
       "name": "WroughtIronGateRecipe",
@@ -11065,7 +11065,7 @@
           "src/main/resources/data/extra_building_blocks/recipes/wrought_iron_gate_recipe.json"
         ]
       },
-      "path": "~/MetalGates"
+      "path": "~/MetalGates/WroughtIron"
     },
     {
       "name": "OxidationTick",
@@ -12280,6 +12280,19 @@
         ]
       },
       "path": "~/WroughtIron/Block/Waxed"
+    },
+    {
+      "name": "SaltGrowthLootTable",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "salt_growth_loot_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/extra_building_blocks/loot_tables/blocks/salt_growth.json"
+        ]
+      },
+      "path": "~/SaltBlocks"
     }
   ],
   "variable_elements": [],
@@ -12704,7 +12717,8 @@
       "CUSTOM:WeatheredCopperBars",
       "CUSTOM:OxidisedCopperBars",
       "CUSTOM:WroughtIronBars",
-      "Blocks.IRON_BARS"
+      "Blocks.IRON_BARS",
+      "CUSTOM:SaltGrowth"
     ],
     "BLOCKS:minecraft:mineable/axe": [
       "~CUSTOM:CactusWoodTrapdoor",
@@ -14322,7 +14336,16 @@
       },
       {
         "name": "MetalGates",
-        "children": []
+        "children": [
+          {
+            "name": "Iron",
+            "children": []
+          },
+          {
+            "name": "WroughtIron",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Advancements",

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "extra_building_blocks:exposed_wrought_iron"
+    },
+    {
+      "item": "minecraft:honeycomb"
+    }
+  ],
+  "result": {
+    "item": "extra_building_blocks:waxed_exposed_wrought_iron",
+    "count": 1
+  }
+}

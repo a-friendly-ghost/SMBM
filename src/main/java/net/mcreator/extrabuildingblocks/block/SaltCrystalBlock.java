@@ -13,7 +13,7 @@ import net.mcreator.extrabuildingblocks.procedures.SaltCrystalNeighbourBlockChan
 
 public class SaltCrystalBlock extends Block {
 	public SaltCrystalBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(1f, 10f));
+		super(BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(1f, 1.5f).requiresCorrectToolForDrops());
 	}
 
 	@Override
