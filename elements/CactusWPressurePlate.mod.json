@@ -51,7 +51,7 @@
         "value": "CUSTOM:Mishmash"
       }
     ],
-    "destroyTool": "Not specified",
+    "destroyTool": "axe",
     "customDrop": {
       "value": ""
     },

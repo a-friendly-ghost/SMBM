@@ -107,6 +107,9 @@
     "luminance": 0,
     "unbreakable": false,
     "vanillaToolTier": "STONE",
+    "placingCondition": {
+      "name": "FountainGrassBlockValidPlacementCondition"
+    },
     "isBonemealable": false,
     "hasInventory": false,
     "openGUIOnRightClick": false,
