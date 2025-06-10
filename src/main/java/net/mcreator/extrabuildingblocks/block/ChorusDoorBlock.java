@@ -11,7 +11,7 @@ import net.minecraft.core.BlockPos;
 
 public class ChorusDoorBlock extends DoorBlock {
 	public ChorusDoorBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.NETHER_WOOD).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false).dynamicShape(), BlockSetType.CRIMSON);
+		super(BlockBehaviour.Properties.of().sound(SoundType.NETHER_WOOD).strength(3f, 3f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false).dynamicShape(), BlockSetType.CRIMSON);
 	}
 
 	@Override

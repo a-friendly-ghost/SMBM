@@ -12,7 +12,7 @@ import net.minecraft.core.BlockPos;
 
 public class ChorusButtonBlock extends ButtonBlock {
 	public ChorusButtonBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.NETHER_WOOD).strength(2f, 3f).dynamicShape(), BlockSetType.CRIMSON, 20, false);
+		super(BlockBehaviour.Properties.of().sound(SoundType.NETHER_WOOD).strength(0.5f, 0.5f).dynamicShape(), BlockSetType.CRIMSON, 20, false);
 	}
 
 	@Override

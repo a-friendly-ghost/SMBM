@@ -13,12 +13,12 @@ import net.minecraft.core.BlockPos;
 
 public class CactusWStairsBlock extends StairBlock {
 	public CactusWStairsBlock() {
-		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(3f, 2f).dynamicShape());
+		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(2f, 3f).dynamicShape());
 	}
 
 	@Override
 	public float getExplosionResistance() {
-		return 2f;
+		return 3f;
 	}
 
 	@Override

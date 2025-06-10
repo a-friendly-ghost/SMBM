@@ -12,7 +12,7 @@ import net.minecraft.core.BlockPos;
 
 public class ChorusPressurePlateBlock extends PressurePlateBlock {
 	public ChorusPressurePlateBlock() {
-		super(Sensitivity.MOBS, BlockBehaviour.Properties.of().sound(SoundType.NETHER_WOOD).strength(2f, 3f).dynamicShape().forceSolidOn(), BlockSetType.CRIMSON);
+		super(Sensitivity.MOBS, BlockBehaviour.Properties.of().sound(SoundType.NETHER_WOOD).strength(0.5f, 0.5f).dynamicShape().forceSolidOn(), BlockSetType.CRIMSON);
 	}
 
 	@Override

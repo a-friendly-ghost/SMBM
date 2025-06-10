@@ -13,7 +13,7 @@ import net.minecraft.core.BlockPos;
 
 public class CactusWPressurePlateBlock extends PressurePlateBlock {
 	public CactusWPressurePlateBlock() {
-		super(Sensitivity.EVERYTHING, BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(2f, 3f).dynamicShape().forceSolidOn(), BlockSetType.OAK);
+		super(Sensitivity.EVERYTHING, BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(0.5f).dynamicShape().forceSolidOn(), BlockSetType.OAK);
 	}
 
 	@Override
