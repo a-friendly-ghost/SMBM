@@ -106,7 +106,7 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "vanillaToolTier": "STONE",
+    "vanillaToolTier": "NONE",
     "placingCondition": {
       "name": "FountainGrassBlockValidPlacementCondition"
     },

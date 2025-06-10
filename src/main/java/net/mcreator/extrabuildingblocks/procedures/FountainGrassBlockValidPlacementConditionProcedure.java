@@ -7,7 +7,7 @@ import net.minecraft.core.BlockPos;
 
 public class FountainGrassBlockValidPlacementConditionProcedure {
 	public static boolean execute(LevelAccessor world, double x, double y, double z) {
-		if ((world.getBlockState(BlockPos.containing(x, y - 1, z))).is(BlockTags.create(new ResourceLocation("minecraft:dry_vegetation_may_place_on")))) {
+		if ((world.getBlockState(BlockPos.containing(x, y - 1, z))).is(BlockTags.create(new ResourceLocation("minecraft:dead_bush_may_place_on")))) {
 			return true;
 		}
 		return false;
