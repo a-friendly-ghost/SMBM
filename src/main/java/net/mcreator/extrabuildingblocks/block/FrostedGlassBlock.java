@@ -11,8 +11,6 @@ import net.minecraft.world.level.BlockAndTintGetter;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.extrabuildingblocks.procedures.SilkTouchHoldingProcedure;
-
 public class FrostedGlassBlock extends IronBarsBlock {
 	public FrostedGlassBlock() {
 		super(BlockBehaviour.Properties.of().sound(SoundType.GLASS).strength(0.3f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
@@ -28,8 +26,4 @@ public class FrostedGlassBlock extends IronBarsBlock {
 		return 1;
 	}
 
-	@Override
-	public boolean canHarvestBlock(BlockState state, BlockGetter world, BlockPos pos, Player player) {
-		return super.canHarvestBlock(state, world, pos, player) && SilkTouchHoldingProcedure.execute(player.level(), player);
-	}
 }

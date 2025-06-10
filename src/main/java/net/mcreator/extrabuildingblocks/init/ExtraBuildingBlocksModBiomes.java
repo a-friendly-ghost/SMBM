@@ -52,21 +52,21 @@ public class ExtraBuildingBlocksModBiomes {
 				if (chunkGenerator.getBiomeSource() instanceof MultiNoiseBiomeSource noiseSource) {
 					List<Pair<Climate.ParameterPoint, Holder<Biome>>> parameters = new ArrayList<>(noiseSource.parameters().values());
 					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0.55f, 1f), Climate.Parameter.span(-1f, 0f), Climate.Parameter.span(-0.11f, 1f), Climate.Parameter.span(-0.1f, 0.1f),
-							Climate.Parameter.point(0.0f), Climate.Parameter.span(0.325f, 0.45f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("extra_building_blocks", "salt_flats")))));
+							Climate.Parameter.point(0.0f), Climate.Parameter.span(0f, 0.3f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("extra_building_blocks", "salt_flats")))));
 					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0.55f, 1f), Climate.Parameter.span(-1f, 0f), Climate.Parameter.span(-0.11f, 1f), Climate.Parameter.span(-0.1f, 0.1f),
-							Climate.Parameter.point(1.0f), Climate.Parameter.span(0.325f, 0.45f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("extra_building_blocks", "salt_flats")))));
+							Climate.Parameter.point(1.0f), Climate.Parameter.span(0f, 0.3f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("extra_building_blocks", "salt_flats")))));
 					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0.55f, 1f), Climate.Parameter.span(-1f, 0f), Climate.Parameter.span(-0.11f, 1f), Climate.Parameter.span(0.1f, 1f),
-							Climate.Parameter.point(0.0f), Climate.Parameter.span(0.05f, 0.325f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("extra_building_blocks", "salt_outcrops")))));
+							Climate.Parameter.point(0.0f), Climate.Parameter.span(0.2f, 0.4f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("extra_building_blocks", "salt_outcrops")))));
 					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0.55f, 1f), Climate.Parameter.span(-1f, 0f), Climate.Parameter.span(-0.11f, 1f), Climate.Parameter.span(0.1f, 1f),
-							Climate.Parameter.point(1.0f), Climate.Parameter.span(0.05f, 0.325f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("extra_building_blocks", "salt_outcrops")))));
+							Climate.Parameter.point(1.0f), Climate.Parameter.span(0.2f, 0.4f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("extra_building_blocks", "salt_outcrops")))));
 					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0.55f, 1f), Climate.Parameter.span(-0.35f, -0.1f), Climate.Parameter.span(-0.19f, 1f), Climate.Parameter.span(-1f, 1f),
 							Climate.Parameter.point(0.0f), Climate.Parameter.span(-1f, 1f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("extra_building_blocks", "sparse_desert")))));
 					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0.55f, 1f), Climate.Parameter.span(-0.35f, -0.1f), Climate.Parameter.span(-0.19f, 1f), Climate.Parameter.span(-1f, 1f),
 							Climate.Parameter.point(1.0f), Climate.Parameter.span(-1f, 1f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("extra_building_blocks", "sparse_desert")))));
 					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0.55f, 1f), Climate.Parameter.span(-1f, 0f), Climate.Parameter.span(-0.11f, 1f), Climate.Parameter.span(0.1f, 1f),
-							Climate.Parameter.point(0.0f), Climate.Parameter.span(0.05f, 0.285f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("extra_building_blocks", "salt_basin")))));
+							Climate.Parameter.point(0.0f), Climate.Parameter.span(0f, 0.2f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("extra_building_blocks", "salt_basin")))));
 					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0.55f, 1f), Climate.Parameter.span(-1f, 0f), Climate.Parameter.span(-0.11f, 1f), Climate.Parameter.span(0.1f, 1f),
-							Climate.Parameter.point(1.0f), Climate.Parameter.span(0.05f, 0.285f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("extra_building_blocks", "salt_basin")))));
+							Climate.Parameter.point(1.0f), Climate.Parameter.span(0f, 0.2f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("extra_building_blocks", "salt_basin")))));
 					chunkGenerator.biomeSource = MultiNoiseBiomeSource.createFromList(new Climate.ParameterList<>(parameters));
 					chunkGenerator.featuresPerStep = Suppliers
 							.memoize(() -> FeatureSorter.buildFeaturesPerStep(List.copyOf(chunkGenerator.biomeSource.possibleBiomes()), biome -> chunkGenerator.generationSettingsGetter.apply(biome).features(), true));
@@ -98,9 +98,9 @@ public class ExtraBuildingBlocksModBiomes {
 				if (chunkGenerator.getBiomeSource() instanceof MultiNoiseBiomeSource noiseSource) {
 					List<Pair<Climate.ParameterPoint, Holder<Biome>>> parameters = new ArrayList<>(noiseSource.parameters().values());
 					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0.55f, 1f), Climate.Parameter.span(-1f, 0f), Climate.Parameter.span(-0.11f, 1f), Climate.Parameter.span(0.1f, 1f),
-							Climate.Parameter.point(0.0f), Climate.Parameter.span(0.05f, 0.325f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("extra_building_blocks", "salt_outcrops")))));
+							Climate.Parameter.point(0.0f), Climate.Parameter.span(0.2f, 0.4f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("extra_building_blocks", "salt_outcrops")))));
 					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0.55f, 1f), Climate.Parameter.span(-1f, 0f), Climate.Parameter.span(-0.11f, 1f), Climate.Parameter.span(0.1f, 1f),
-							Climate.Parameter.point(1.0f), Climate.Parameter.span(0.05f, 0.325f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("extra_building_blocks", "salt_outcrops")))));
+							Climate.Parameter.point(1.0f), Climate.Parameter.span(0.2f, 0.4f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("extra_building_blocks", "salt_outcrops")))));
 					chunkGenerator.biomeSource = MultiNoiseBiomeSource.createFromList(new Climate.ParameterList<>(parameters));
 					chunkGenerator.featuresPerStep = Suppliers
 							.memoize(() -> FeatureSorter.buildFeaturesPerStep(List.copyOf(chunkGenerator.biomeSource.possibleBiomes()), biome -> chunkGenerator.generationSettingsGetter.apply(biome).features(), true));

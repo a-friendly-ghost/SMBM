@@ -6,7 +6,7 @@
         "feature": {
           "type": "minecraft:random_patch",
           "config": {
-            "tries": 30,
+            "tries": 20,
             "xz_spread": 5,
             "feature": {
               "feature": {
@@ -63,7 +63,7 @@
         "feature": {
           "type": "minecraft:random_patch",
           "config": {
-            "tries": 30,
+            "tries": 20,
             "xz_spread": 5,
             "feature": {
               "feature": {

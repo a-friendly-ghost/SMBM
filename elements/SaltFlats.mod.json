@@ -56,8 +56,8 @@
       "max": 0.1
     },
     "genWeirdness": {
-      "min": 0.325,
-      "max": 0.45
+      "min": 0.0,
+      "max": 0.3
     },
     "treesPerChunk": 0,
     "vanillaTreeType": "Default",

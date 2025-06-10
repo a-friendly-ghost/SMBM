@@ -99,7 +99,7 @@
     },
     "luminance": 1,
     "unbreakable": false,
-    "vanillaToolTier": "STONE",
+    "vanillaToolTier": "NONE",
     "isBonemealable": false,
     "hasInventory": false,
     "openGUIOnRightClick": false,
