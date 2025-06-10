@@ -362,8 +362,8 @@ public class ExtraBuildingBlocksModTabs {
 			tabData.accept(ExtraBuildingBlocksModBlocks.WHITE_STAINED_SOUL_GLASS_PANE.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.GREY_STAINED_SOUL_GLASS_PANE.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.DARK_GREY_STAINED_SOUL_GLASS_PANE.get().asItem());
-			tabData.accept(ExtraBuildingBlocksModBlocks.RED_STAINED_SOUL_GLASS_PANE.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.BROWN_STAINED_SOUL_GLASS_PANE.get().asItem());
+			tabData.accept(ExtraBuildingBlocksModBlocks.RED_STAINED_SOUL_GLASS_PANE.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.ORANGE_STAINED_SOUL_GLASS_PANE.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.YELLOW_STAINED_SOUL_GLASS_PANE.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.LIME_STAINED_SOUL_GLASS_PANE.get().asItem());

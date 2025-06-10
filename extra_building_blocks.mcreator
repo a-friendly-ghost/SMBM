@@ -12717,6 +12717,19 @@
         ]
       },
       "path": "~/SoulGlass/Panes/Yellow"
+    },
+    {
+      "name": "FrostedGlassLootTable",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "frosted_glass_loot_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/extra_building_blocks/loot_tables/blocks/frosted_glass.json"
+        ]
+      },
+      "path": "~/FrostedGlass"
     }
   ],
   "variable_elements": [],
@@ -13469,8 +13482,8 @@
       "WhiteStainedSoulGlassPane",
       "GreyStainedSoulGlassPane",
       "DarkGreyStainedSoulGlassPane",
-      "RedStainedSoulGlassPane",
       "BrownStainedSoulGlassPane",
+      "RedStainedSoulGlassPane",
       "OrangeStainedSoulGlassPane",
       "YellowStainedSoulGlassPane",
       "LimeStainedSoulGlassPane",
