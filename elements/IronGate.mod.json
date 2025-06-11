@@ -47,6 +47,9 @@
     "creativeTabs": [
       {
         "value": "BUILDING_BLOCKS"
+      },
+      {
+        "value": "CUSTOM:Mishmash"
       }
     ],
     "destroyTool": "pickaxe",
@@ -123,9 +126,6 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onRightClicked": {
-      "name": "IronGateOnBlockRightClicked"
-    },
     "onBlockAdded": {
       "name": "IronGatePlaced"
     },
