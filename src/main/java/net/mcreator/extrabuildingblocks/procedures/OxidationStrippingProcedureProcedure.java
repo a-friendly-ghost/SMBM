@@ -199,6 +199,62 @@ public class OxidationStrippingProcedureProcedure {
 				}
 				return true;
 			}
+			if (entity.isShiftKeyDown()) {
+				if (blockstate.getBlock() == ExtraBuildingBlocksModBlocks.RUSTED_WROUGHT_IRON_GATE.get()) {
+					OxidationStrippingAudiovisualProcedureProcedure.execute(world, x, y, z, entity);
+					{
+						BlockPos _bp = BlockPos.containing(x, y, z);
+						BlockState _bs = ExtraBuildingBlocksModBlocks.WEATHERED_WROUGHT_IRON_GATE.get().defaultBlockState();
+						BlockState _bso = world.getBlockState(_bp);
+						for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+							Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
+							if (_property != null && _bs.getValue(_property) != null)
+								try {
+									_bs = _bs.setValue(_property, (Comparable) entry.getValue());
+								} catch (Exception e) {
+								}
+						}
+						world.setBlock(_bp, _bs, 3);
+					}
+					return true;
+				}
+				if (blockstate.getBlock() == ExtraBuildingBlocksModBlocks.WEATHERED_WROUGHT_IRON_GATE.get()) {
+					OxidationStrippingAudiovisualProcedureProcedure.execute(world, x, y, z, entity);
+					{
+						BlockPos _bp = BlockPos.containing(x, y, z);
+						BlockState _bs = ExtraBuildingBlocksModBlocks.EXPOSED_WROUGHT_IRON_GATE.get().defaultBlockState();
+						BlockState _bso = world.getBlockState(_bp);
+						for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+							Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
+							if (_property != null && _bs.getValue(_property) != null)
+								try {
+									_bs = _bs.setValue(_property, (Comparable) entry.getValue());
+								} catch (Exception e) {
+								}
+						}
+						world.setBlock(_bp, _bs, 3);
+					}
+					return true;
+				}
+				if (blockstate.getBlock() == ExtraBuildingBlocksModBlocks.EXPOSED_WROUGHT_IRON_GATE.get()) {
+					OxidationStrippingAudiovisualProcedureProcedure.execute(world, x, y, z, entity);
+					{
+						BlockPos _bp = BlockPos.containing(x, y, z);
+						BlockState _bs = ExtraBuildingBlocksModBlocks.WROUGHT_IRON_GATE.get().defaultBlockState();
+						BlockState _bso = world.getBlockState(_bp);
+						for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+							Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
+							if (_property != null && _bs.getValue(_property) != null)
+								try {
+									_bs = _bs.setValue(_property, (Comparable) entry.getValue());
+								} catch (Exception e) {
+								}
+						}
+						world.setBlock(_bp, _bs, 3);
+					}
+					return true;
+				}
+			}
 		}
 		return true;
 	}

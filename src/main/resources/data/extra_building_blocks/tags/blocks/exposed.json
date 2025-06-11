@@ -7,6 +7,7 @@
     "minecraft:exposed_cut_copper",
     "minecraft:exposed_cut_copper_stairs",
     "minecraft:exposed_cut_copper_slab",
-    "extra_building_blocks:exposed_wrought_iron_bars"
+    "extra_building_blocks:exposed_wrought_iron_bars",
+    "extra_building_blocks:exposed_wrought_iron_gate"
   ]
 }

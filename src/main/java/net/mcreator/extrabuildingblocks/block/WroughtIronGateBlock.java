@@ -23,9 +23,12 @@ import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
+import net.minecraft.util.RandomSource;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.extrabuildingblocks.procedures.WroughtIronGateOnTickUpdateProcedure;
 import net.mcreator.extrabuildingblocks.procedures.IronGatePlacedProcedure;
 import net.mcreator.extrabuildingblocks.procedures.IronGateOnBlockRightClickedProcedure;
 import net.mcreator.extrabuildingblocks.procedures.IronGateBlockAddedProcedure;
@@ -41,7 +44,7 @@ public class WroughtIronGateBlock extends Block {
 					return 0;
 				return 0;
 			}
-		}.getLightLevel())).requiresCorrectToolForDrops().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		}.getLightLevel())).requiresCorrectToolForDrops().noOcclusion().randomTicks().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 
@@ -107,6 +110,15 @@ public class WroughtIronGateBlock extends Block {
 	public void neighborChanged(BlockState blockstate, Level world, BlockPos pos, Block neighborBlock, BlockPos fromPos, boolean moving) {
 		super.neighborChanged(blockstate, world, pos, neighborBlock, fromPos, moving);
 		IronGateBlockAddedProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+	}
+
+	@Override
+	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
+		super.tick(blockstate, world, pos, random);
+		int x = pos.getX();
+		int y = pos.getY();
+		int z = pos.getZ();
+		WroughtIronGateOnTickUpdateProcedure.execute(world, x, y, z, blockstate);
 	}
 
 	@Override

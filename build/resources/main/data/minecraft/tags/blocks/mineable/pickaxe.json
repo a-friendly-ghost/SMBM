@@ -1,6 +1,13 @@
 {
   "replace": false,
   "values": [
+    "extra_building_blocks:waxed_rusted_wrought_iron_gate",
+    "extra_building_blocks:waxed_weathered_wrought_iron_gate",
+    "extra_building_blocks:waxed_exposed_wrought_iron_gate",
+    "extra_building_blocks:waxed_wrought_iron_gate",
+    "extra_building_blocks:rusted_wrought_iron_gate",
+    "extra_building_blocks:weathered_wrought_iron_gate",
+    "extra_building_blocks:exposed_wrought_iron_gate",
     "extra_building_blocks:hook",
     "extra_building_blocks:polished_calcite_slab",
     "extra_building_blocks:calcite_stairs",
@@ -125,6 +132,7 @@
     "extra_building_blocks:oxidised_copper_bars",
     "extra_building_blocks:wrought_iron_bars",
     "minecraft:iron_bars",
-    "extra_building_blocks:salt_growth"
+    "extra_building_blocks:salt_growth",
+    "extra_building_blocks:chiseled_end_stone_bricks"
   ]
 }

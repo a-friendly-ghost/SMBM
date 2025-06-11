@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "extra_building_blocks:blocks/waxed_exposed_wrought_iron_gate",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "extra_building_blocks:waxed_exposed_wrought_iron_gate"
+        }
+      ]
+    }
+  ]
+}

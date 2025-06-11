@@ -18,19 +18,22 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 public class IronGateOnBlockRightClickedProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
+	public static boolean execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
-			return;
+			return false;
 		double checkY = 0;
 		double aboveCount = 0;
+		if (entity.isShiftKeyDown()) {
+			return false;
+		}
 		checkY = y;
 		aboveCount = -1;
 		for (int index0 = 0; index0 < 15; index0++) {
 			if (!(world.getBlockState(BlockPos.containing(x, checkY, z))).is(BlockTags.create(new ResourceLocation("extra_building_blocks:metal_gates")))) {
 				break;
 			}
-			if (((world.getBlockState(BlockPos.containing(x, checkY, z))).getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip3
-					? (world.getBlockState(BlockPos.containing(x, checkY, z))).getValue(_getip3)
+			if (((world.getBlockState(BlockPos.containing(x, checkY, z))).getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip4
+					? (world.getBlockState(BlockPos.containing(x, checkY, z))).getValue(_getip4)
 					: -1) == 0) {
 				if ((new Object() {
 					public Direction getDirection(BlockPos pos) {
@@ -150,8 +153,8 @@ public class IronGateOnBlockRightClickedProcedure {
 			if (!(world.getBlockState(BlockPos.containing(x, checkY, z))).is(BlockTags.create(new ResourceLocation("extra_building_blocks:metal_gates")))) {
 				break;
 			}
-			if (((world.getBlockState(BlockPos.containing(x, checkY, z))).getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip20
-					? (world.getBlockState(BlockPos.containing(x, checkY, z))).getValue(_getip20)
+			if (((world.getBlockState(BlockPos.containing(x, checkY, z))).getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip21
+					? (world.getBlockState(BlockPos.containing(x, checkY, z))).getValue(_getip21)
 					: -1) == 0) {
 				if ((new Object() {
 					public Direction getDirection(BlockPos pos) {
@@ -266,5 +269,6 @@ public class IronGateOnBlockRightClickedProcedure {
 			checkY = checkY - 1;
 		}
 		IronGateBlockAddedProcedure.execute(world, x, y, z);
+		return true;
 	}
 }

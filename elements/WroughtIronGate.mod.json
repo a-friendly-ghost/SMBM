@@ -65,7 +65,7 @@
       "value": "NONE"
     },
     "tickRate": 0,
-    "tickRandomly": false,
+    "tickRandomly": true,
     "isReplaceable": false,
     "canProvidePower": false,
     "emittedRedstonePower": {
@@ -132,6 +132,9 @@
     },
     "onNeighbourBlockChanges": {
       "name": "IronGateBlockAdded"
+    },
+    "onTickUpdate": {
+      "name": "WroughtIronGateOnTickUpdate"
     },
     "generateFeature": false,
     "restrictionBiomes": [],

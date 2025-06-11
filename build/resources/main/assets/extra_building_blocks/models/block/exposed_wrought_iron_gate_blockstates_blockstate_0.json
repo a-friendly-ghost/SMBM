@@ -1,0 +1,11 @@
+{
+  "parent": "extra_building_blocks:custom/wroughtgateopen",
+  "textures": {
+    "all": "extra_building_blocks:block/exposedwroughtgate",
+    "particle": "extra_building_blocks:block/exposedwroughtgate",
+    "0": "extra_building_blocks:block/exposedwroughtgateside",
+    "1": "extra_building_blocks:block/exposedwroughtgate",
+    "missing": "extra_building_blocks:block/exposedwroughtgate"
+  },
+  "render_type": "cutout"
+}
