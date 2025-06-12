@@ -107,9 +107,6 @@
     "luminance": 0,
     "unbreakable": false,
     "vanillaToolTier": "STONE",
-    "placingCondition": {
-      "name": "CactusWoodBlockValidPlacementCondition"
-    },
     "isBonemealable": false,
     "hasInventory": false,
     "openGUIOnRightClick": false,
