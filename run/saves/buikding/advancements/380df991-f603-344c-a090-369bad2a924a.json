@@ -1512,5 +1512,17 @@
     },
     "done": true
   },
+  "extra_building_blocks:bus_carpet_advancement": {
+    "criteria": {
+      "bus_carpet_advancement_0": "2025-06-12 00:28:27 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/brewing/cauldron": {
+    "criteria": {
+      "has_water_bucket": "2025-06-12 00:29:12 +0100"
+    },
+    "done": true
+  },
   "DataVersion": 3465
 }
