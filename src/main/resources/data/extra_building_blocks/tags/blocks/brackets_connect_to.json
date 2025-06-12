@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:fences",
+    "#minecraft:walls",
+    "#extra_building_blocks:bars",
+    "minecraft:chain",
+    "minecraft:lantern",
+    "minecraft:soul_lantern",
+    "extra_building_blocks:lamp",
+    "extra_building_blocks:soul_lamp",
+    "minecraft:bell"
+  ]
+}

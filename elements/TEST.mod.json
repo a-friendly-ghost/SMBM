@@ -117,6 +117,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onBlockPlayedBy": {
+      "name": "LampBlockAdded"
+    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

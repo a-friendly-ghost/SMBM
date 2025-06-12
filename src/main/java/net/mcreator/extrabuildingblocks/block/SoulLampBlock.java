@@ -30,6 +30,9 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.LivingEntity;
+
 
 import net.mcreator.extrabuildingblocks.procedures.LampBlockValidPlacementConditionProcedure;
 import net.mcreator.extrabuildingblocks.procedures.LampBlockAddedProcedure;
@@ -69,17 +72,17 @@ public class SoulLampBlock extends Block implements SimpleWaterloggedBlock {
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		if (state.getValue(BLOCKSTATE) == 1) {
 			return switch (state.getValue(FACING)) {
-				default -> box(3, 0, 4, 13, 15, 12);
-				case NORTH -> box(3, 0, 4, 13, 15, 12);
-				case EAST -> box(4, 0, 3, 12, 15, 13);
-				case WEST -> box(4, 0, 3, 12, 15, 13);
+				default -> box(3, 0, 4, 13, 13, 12);
+				case NORTH -> box(3, 0, 4, 13, 13, 12);
+				case EAST -> box(4, 0, 3, 12, 13, 13);
+				case WEST -> box(4, 0, 3, 12, 13, 13);
 			};
 		}
 		return switch (state.getValue(FACING)) {
-			default -> box(3, 0, 4, 13, 15, 12);
-			case NORTH -> box(3, 0, 4, 13, 15, 12);
-			case EAST -> box(4, 0, 3, 12, 15, 13);
-			case WEST -> box(4, 0, 3, 12, 15, 13);
+			default -> box(3, 0, 4, 13, 13, 12);
+			case NORTH -> box(3, 0, 4, 13, 13, 12);
+			case EAST -> box(4, 0, 3, 12, 13, 13);
+			case WEST -> box(4, 0, 3, 12, 13, 13);
 		};
 	}
 
@@ -128,8 +131,9 @@ public class SoulLampBlock extends Block implements SimpleWaterloggedBlock {
 	}
 
 	@Override
-	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
-		super.onPlace(blockstate, world, pos, oldState, moving);
-		LampBlockAddedProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+	public void setPlacedBy(Level world, BlockPos pos, BlockState blockstate, LivingEntity entity, ItemStack itemstack) {
+		super.setPlacedBy(world, pos, blockstate, entity, itemstack);
+		LampBlockAddedProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), entity);
 	}
+
 }
