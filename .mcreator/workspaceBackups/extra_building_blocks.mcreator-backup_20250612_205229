@@ -13118,6 +13118,17 @@
       "CUSTOM:SoulSlateBricks",
       "CUSTOM:SoulMagma"
     ],
+    "BLOCKS:mod:brackets_connect_to": [
+      "TAG:minecraft:fences",
+      "TAG:minecraft:walls",
+      "TAG:mod:bars",
+      "Blocks.CHAIN",
+      "Blocks.LANTERN",
+      "Blocks.SOUL_LANTERN",
+      "CUSTOM:Lamp",
+      "CUSTOM:SoulLamp",
+      "Blocks.BELL"
+    ],
     "BIOMES:minecraft:has_structure/mineshaft_mesa": [
       "~CUSTOM:SaltBasin",
       "~CUSTOM:SaltOutcrops",
@@ -13277,7 +13288,7 @@
       "Blocks.CHAIN",
       "CUSTOM:Brace",
       "CUSTOM:Bracket",
-      "TAG:extra_building_blocks:bars"
+      "TAG:mod:bars"
     ],
     "ITEMS:minecraft:planks": [
       "CUSTOM:ChorusPlanks",
