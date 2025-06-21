@@ -13082,6 +13082,71 @@
       "metadata": {
         "files": []
       }
+    },
+    {
+      "name": "CopperBarsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_bars_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/extra_building_blocks/recipes/copper_bars_recipe.json"
+        ]
+      },
+      "path": "~/CopperBars"
+    },
+    {
+      "name": "WaxedWroughtIronGateRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "waxed_wrought_iron_gate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/extra_building_blocks/recipes/waxed_wrought_iron_gate_recipe.json"
+        ]
+      },
+      "path": "~/MetalGates/WroughtIron/Waxed"
+    },
+    {
+      "name": "WaxedExposedWroughtIronGateRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "waxed_exposed_wrought_iron_gate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/extra_building_blocks/recipes/waxed_exposed_wrought_iron_gate_recipe.json"
+        ]
+      },
+      "path": "~/MetalGates/WroughtIron/Waxed"
+    },
+    {
+      "name": "WaxedWeatheredWroughtIronGateRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "waxed_weathered_wrought_iron_gate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/extra_building_blocks/recipes/waxed_weathered_wrought_iron_gate_recipe.json"
+        ]
+      },
+      "path": "~/MetalGates/WroughtIron/Waxed"
+    },
+    {
+      "name": "WaxedRustedWroughtIronGateRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "waxed_rusted_wrought_iron_gate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/extra_building_blocks/recipes/waxed_rusted_wrought_iron_gate_recipe.json"
+        ]
+      },
+      "path": "~/MetalGates/WroughtIron/Waxed"
     }
   ],
   "variable_elements": [],
