@@ -10,7 +10,7 @@
     "textureBack": "",
     "renderType": 2,
     "customModelName": "brace:default",
-    "rotationMode": 1,
+    "rotationMode": 3,
     "enablePitch": true,
     "emissiveRendering": false,
     "displayFluidOverlay": false,

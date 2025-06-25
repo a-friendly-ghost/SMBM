@@ -19,7 +19,7 @@ import net.mcreator.extrabuildingblocks.procedures.FountainGrassBlockValidPlacem
 
 public class FountainGrassBlock extends Block {
 	public FountainGrassBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.GRASS).strength(0.1f).noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false).offsetType(Block.OffsetType.XZ));
+		super(BlockBehaviour.Properties.of().sound(SoundType.GRASS).strength(0.1f).noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false).dynamicShape().offsetType(Block.OffsetType.XZ));
 	}
 
 	@Override
@@ -35,6 +35,11 @@ public class FountainGrassBlock extends Block {
 	@Override
 	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return Shapes.empty();
+	}
+
+	@Override
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return box(2, 0, 2, 14, 13, 14);
 	}
 
 	@Override

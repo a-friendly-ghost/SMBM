@@ -98,7 +98,9 @@ public class BraceBlock extends Block implements SimpleWaterloggedBlock {
 	@Override
 	public BlockState getStateForPlacement(BlockPlaceContext context) {
 		boolean flag = context.getLevel().getFluidState(context.getClickedPos()).getType() == Fluids.WATER;
-		return super.getStateForPlacement(context).setValue(FACE, faceForDirection(context.getNearestLookingDirection())).setValue(FACING, context.getHorizontalDirection().getOpposite()).setValue(WATERLOGGED, flag);
+		if (context.getClickedFace().getAxis() == Direction.Axis.Y)
+			return super.getStateForPlacement(context).setValue(FACE, context.getClickedFace().getOpposite() == Direction.UP ? AttachFace.CEILING : AttachFace.FLOOR).setValue(FACING, context.getHorizontalDirection()).setValue(WATERLOGGED, flag);
+		return super.getStateForPlacement(context).setValue(FACE, AttachFace.WALL).setValue(FACING, context.getClickedFace()).setValue(WATERLOGGED, flag);
 	}
 
 	public BlockState rotate(BlockState state, Rotation rot) {
@@ -107,13 +109,6 @@ public class BraceBlock extends Block implements SimpleWaterloggedBlock {
 
 	public BlockState mirror(BlockState state, Mirror mirrorIn) {
 		return state.rotate(mirrorIn.getRotation(state.getValue(FACING)));
-	}
-
-	private AttachFace faceForDirection(Direction direction) {
-		if (direction.getAxis() == Direction.Axis.Y)
-			return direction == Direction.UP ? AttachFace.CEILING : AttachFace.FLOOR;
-		else
-			return AttachFace.WALL;
 	}
 
 	@Override
