@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "extra_building_blocks:soul_glass",
+    "extra_building_blocks:white_stained_soul_glass",
+    "extra_building_blocks:grey_stained_soul_glass",
+    "extra_building_blocks:black_stained_soul_glass",
+    "extra_building_blocks:red_stained_soul_glass",
+    "extra_building_blocks:orange_stained_soul_glass",
+    "extra_building_blocks:yellow_stained_soul_glass",
+    "extra_building_blocks:lime_stained_soul_glass",
+    "extra_building_blocks:green_stained_soul_glass",
+    "extra_building_blocks:cyan_stained_soul_glass",
+    "extra_building_blocks:light_blue_stained_soul_glass",
+    "extra_building_blocks:blue_stained_soul_glass",
+    "extra_building_blocks:purple_stained_soul_glass",
+    "extra_building_blocks:magenta_stained_soul_glass",
+    "extra_building_blocks:pink_stained_soul_glass",
+    "extra_building_blocks:dark_grey_stained_soul_glass",
+    "extra_building_blocks:brown_stained_soul_glass"
+  ]
+}

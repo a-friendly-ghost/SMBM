@@ -13193,6 +13193,10 @@
     "BLOCKS:minecraft:replaceable": [
       "~CUSTOM:DuckWeed"
     ],
+    "BLOCKS:minecraft:wooden_doors": [
+      "CUSTOM:ChorusDoor",
+      "CUSTOM:CactusWoodDoor"
+    ],
     "BLOCKS:minecraft:infiniburn_nether": [
       "CUSTOM:SoulMagma"
     ],
@@ -13392,6 +13396,10 @@
       "CUSTOM:Bracket",
       "TAG:mod:bars"
     ],
+    "BLOCKS:minecraft:wooden_pressure_plates": [
+      "CUSTOM:ChorusPressurePlate",
+      "CUSTOM:CactusWPressurePlate"
+    ],
     "ITEMS:minecraft:planks": [
       "CUSTOM:ChorusPlanks",
       "CUSTOM:CactusWPlanks"
@@ -13422,6 +13430,10 @@
       "CUSTOM:WaxedExposedWroughtIron",
       "CUSTOM:WaxedRustedWroughtIron"
     ],
+    "BLOCKS:minecraft:wooden_fences": [
+      "CUSTOM:ChorusFence",
+      "CUSTOM:CactusWFence"
+    ],
     "BLOCKS:minecraft:infiniburn_overworld": [
       "CUSTOM:SoulMagma"
     ],
@@ -13430,6 +13442,28 @@
     ],
     "BIOMES:minecraft:has_structure/desert_pyramid": [
       "~CUSTOM:SparseDesert"
+    ],
+    "BLOCKS:minecraft:impermeable": [
+      "CUSTOM:SoulGlass",
+      "CUSTOM:WhiteStainedSoulGlass",
+      "CUSTOM:GreyStainedSoulGlass",
+      "CUSTOM:BlackStainedSoulGlass",
+      "CUSTOM:RedStainedSoulGlass",
+      "CUSTOM:OrangeStainedSoulGlass",
+      "CUSTOM:YellowStainedSoulGlass",
+      "CUSTOM:LimeStainedSoulGlass",
+      "CUSTOM:GreenStainedSoulGlass",
+      "CUSTOM:CyanStainedSoulGlass",
+      "CUSTOM:LightBlueStainedSoulGlass",
+      "CUSTOM:BlueStainedSoulGlass",
+      "CUSTOM:PurpleStainedSoulGlass",
+      "CUSTOM:MagentaStainedSoulGlass",
+      "CUSTOM:PinkStainedSoulGlass",
+      "CUSTOM:DarkGreyStainedSoulGlass",
+      "CUSTOM:BrownStainedSoulGlass"
+    ],
+    "BLOCKS:minecraft:combination_step_sound_blocks": [
+      "TAG:mod:lace_carpets"
     ],
     "BLOCKS:mod:metal_gates": [
       "CUSTOM:IronGate",
@@ -13451,6 +13485,26 @@
       "CUSTOM:WroughtIron",
       "CUSTOM:WroughtIronBars",
       "CUSTOM:WroughtIronGate"
+    ],
+    "BLOCKS:mod:lace_carpets": [
+      "CUSTOM:RedLaceCarpet",
+      "CUSTOM:OrangeLaceCarpet",
+      "CUSTOM:YellowLaceCarpet",
+      "CUSTOM:LimeLaceCarpet",
+      "CUSTOM:GreenLaceCarpet",
+      "CUSTOM:CyanLaceCarpet",
+      "CUSTOM:LightBlueLaceCarpet",
+      "CUSTOM:BlueLaceCarpet",
+      "CUSTOM:PurpleLaceCarpet",
+      "CUSTOM:MagentaLaceCarpet",
+      "CUSTOM:PinkLaceCarpet",
+      "CUSTOM:BrownLaceCarpet",
+      "CUSTOM:BlackLaceCarpet",
+      "CUSTOM:GreyLaceCarpet",
+      "CUSTOM:LightGreyLaceCarpet",
+      "CUSTOM:WhiteLaceCarpet",
+      "CUSTOM:BusLaceCarpet",
+      "CUSTOM:LaceCarpet"
     ],
     "BLOCKS:minecraft:infiniburn_end": [
       "CUSTOM:SoulMagma"
@@ -13622,9 +13676,10 @@
       "CUSTOM:CrimsonBeam",
       "CUSTOM:WarpedBeam"
     ],
-    "BLOCKS:minecraft:fences": [
-      "CUSTOM:ChorusFence",
-      "CUSTOM:CactusWFence"
+    "BLOCKS:minecraft:fences": [],
+    "BLOCKS:minecraft:wooden_buttons": [
+      "CUSTOM:ChorusButton",
+      "CUSTOM:CactusWButton"
     ],
     "BLOCKS:minecraft:walls": [
       "~CUSTOM:StoneWall",
@@ -13660,6 +13715,9 @@
       "CUSTOM:WaxedExposedWroughtIronGate",
       "CUSTOM:WaxedWeatheredWroughtIronGate",
       "CUSTOM:WaxedRustedWroughtIronGate"
+    ],
+    "BLOCKS:minecraft:dampens_vibrations": [
+      "TAG:mod:lace_carpets"
     ],
     "BLOCKS:mod:bars": [
       "CUSTOM:CopperBars",

@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "extra_building_blocks:red_lace_carpet",
+    "extra_building_blocks:orange_lace_carpet",
+    "extra_building_blocks:yellow_lace_carpet",
+    "extra_building_blocks:lime_lace_carpet",
+    "extra_building_blocks:green_lace_carpet",
+    "extra_building_blocks:cyan_lace_carpet",
+    "extra_building_blocks:light_blue_lace_carpet",
+    "extra_building_blocks:blue_lace_carpet",
+    "extra_building_blocks:purple_lace_carpet",
+    "extra_building_blocks:magenta_lace_carpet",
+    "extra_building_blocks:pink_lace_carpet",
+    "extra_building_blocks:brown_lace_carpet",
+    "extra_building_blocks:black_lace_carpet",
+    "extra_building_blocks:grey_lace_carpet",
+    "extra_building_blocks:light_grey_lace_carpet",
+    "extra_building_blocks:white_lace_carpet",
+    "extra_building_blocks:bus_lace_carpet",
+    "extra_building_blocks:lace_carpet"
+  ]
+}
