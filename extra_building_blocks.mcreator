@@ -14145,7 +14145,6 @@
       "SmoothStoneStairs",
       "PurpurWall",
       "SoulGlass",
-      "SoulGlassPane",
       "WhiteStainedSoulGlass",
       "GreyStainedSoulGlass",
       "DarkGreyStainedSoulGlass",
@@ -14162,6 +14161,7 @@
       "PurpleStainedSoulGlass",
       "MagentaStainedSoulGlass",
       "PinkStainedSoulGlass",
+      "SoulGlassPane",
       "WhiteStainedSoulGlassPane",
       "GreyStainedSoulGlassPane",
       "DarkGreyStainedSoulGlassPane",
@@ -14224,6 +14224,7 @@
       "PurpleFountainGrass",
       "GreenDesertBush",
       "PurpleDesertBush",
+      "Swampvine",
       "Lace"
     ]
   },

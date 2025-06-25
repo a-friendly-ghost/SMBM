@@ -182,7 +182,6 @@ public class ExtraBuildingBlocksModTabs {
 				tabData.accept(ExtraBuildingBlocksModBlocks.SMOOTH_STONE_STAIRS.get().asItem());
 				tabData.accept(ExtraBuildingBlocksModBlocks.PURPUR_WALL.get().asItem());
 				tabData.accept(ExtraBuildingBlocksModBlocks.SOUL_GLASS.get().asItem());
-				tabData.accept(ExtraBuildingBlocksModBlocks.SOUL_GLASS_PANE.get().asItem());
 				tabData.accept(ExtraBuildingBlocksModBlocks.WHITE_STAINED_SOUL_GLASS.get().asItem());
 				tabData.accept(ExtraBuildingBlocksModBlocks.GREY_STAINED_SOUL_GLASS.get().asItem());
 				tabData.accept(ExtraBuildingBlocksModBlocks.DARK_GREY_STAINED_SOUL_GLASS.get().asItem());
@@ -199,6 +198,7 @@ public class ExtraBuildingBlocksModTabs {
 				tabData.accept(ExtraBuildingBlocksModBlocks.PURPLE_STAINED_SOUL_GLASS.get().asItem());
 				tabData.accept(ExtraBuildingBlocksModBlocks.MAGENTA_STAINED_SOUL_GLASS.get().asItem());
 				tabData.accept(ExtraBuildingBlocksModBlocks.PINK_STAINED_SOUL_GLASS.get().asItem());
+				tabData.accept(ExtraBuildingBlocksModBlocks.SOUL_GLASS_PANE.get().asItem());
 				tabData.accept(ExtraBuildingBlocksModBlocks.WHITE_STAINED_SOUL_GLASS_PANE.get().asItem());
 				tabData.accept(ExtraBuildingBlocksModBlocks.GREY_STAINED_SOUL_GLASS_PANE.get().asItem());
 				tabData.accept(ExtraBuildingBlocksModBlocks.DARK_GREY_STAINED_SOUL_GLASS_PANE.get().asItem());
@@ -261,6 +261,7 @@ public class ExtraBuildingBlocksModTabs {
 				tabData.accept(ExtraBuildingBlocksModBlocks.PURPLE_FOUNTAIN_GRASS.get().asItem());
 				tabData.accept(ExtraBuildingBlocksModBlocks.GREEN_DESERT_BUSH.get().asItem());
 				tabData.accept(ExtraBuildingBlocksModBlocks.PURPLE_DESERT_BUSH.get().asItem());
+				tabData.accept(ExtraBuildingBlocksModBlocks.SWAMPVINE.get().asItem());
 				tabData.accept(ExtraBuildingBlocksModItems.LACE.get());
 			}).withSearchBar().build());
 

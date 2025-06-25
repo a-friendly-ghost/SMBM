@@ -47,6 +47,9 @@
     "creativeTabs": [
       {
         "value": "DECORATIONS"
+      },
+      {
+        "value": "CUSTOM:Mishmash"
       }
     ],
     "destroyTool": "Not specified",
