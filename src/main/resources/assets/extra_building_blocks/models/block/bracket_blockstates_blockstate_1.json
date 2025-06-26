@@ -1,9 +1,0 @@
-{
-  "parent": "extra_building_blocks:custom/bracketmodel",
-  "textures": {
-    "all": "extra_building_blocks:block/texture_2",
-    "particle": "extra_building_blocks:block/texture_2",
-    "0": "extra_building_blocks:block/texture_2"
-  },
-  "render_type": "solid"
-}

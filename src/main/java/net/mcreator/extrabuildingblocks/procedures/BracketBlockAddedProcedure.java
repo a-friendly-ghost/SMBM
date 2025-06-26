@@ -11,7 +11,7 @@ public class BracketBlockAddedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		if (world.getBlockState(BlockPos.containing(x, y - 1, z)).canOcclude() || (world.getBlockState(BlockPos.containing(x, y - 1, z))).is(BlockTags.create(new ResourceLocation("extra_building_blocks:brackets_connect_to")))) {
 			{
-				int _value = 2;
+				int _value = 1;
 				BlockPos _pos = BlockPos.containing(x, y, z);
 				BlockState _bs = world.getBlockState(_pos);
 				if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
@@ -19,7 +19,7 @@ public class BracketBlockAddedProcedure {
 			}
 		} else {
 			{
-				int _value = 1;
+				int _value = 0;
 				BlockPos _pos = BlockPos.containing(x, y, z);
 				BlockState _bs = world.getBlockState(_pos);
 				if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))

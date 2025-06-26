@@ -10699,7 +10699,6 @@
       "registry_name": "bracket_blockstates",
       "metadata": {
         "files": [
-          "src/main/resources/assets/extra_building_blocks/models/block/bracket_blockstates_blockstate_1.json",
           "src/main/resources/assets/extra_building_blocks/models/block/bracket_blockstates_blockstate_0.json"
         ]
       },
@@ -15603,7 +15602,7 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.20.1",
-    "credits": "created using mcreator https://mcreator.net/about , some textures courtesy of my friend lord , prismarine pillar patterns by fungus , chiseled stone patterns by pixel goblin",
+    "credits": "created using mcreator https://mcreator.net/about, some textures courtesy of my friend lord , prismarine pillar patterns by fungus , chiseled stone patterns by pixel goblin",
     "modElementsPackage": "net.mcreator.extrabuildingblocks"
   },
   "mcreatorVersion": 202400452410

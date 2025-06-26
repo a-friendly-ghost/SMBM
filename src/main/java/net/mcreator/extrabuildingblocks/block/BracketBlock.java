@@ -34,7 +34,7 @@ import net.mcreator.extrabuildingblocks.procedures.BracketBlockValidPlacementCon
 import net.mcreator.extrabuildingblocks.procedures.BracketBlockAddedProcedure;
 
 public class BracketBlock extends Block implements SimpleWaterloggedBlock {
-	public static final IntegerProperty BLOCKSTATE = IntegerProperty.create("blockstate", 0, 2);
+	public static final IntegerProperty BLOCKSTATE = IntegerProperty.create("blockstate", 0, 1);
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 	public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
@@ -42,8 +42,6 @@ public class BracketBlock extends Block implements SimpleWaterloggedBlock {
 		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(5f, 6f).lightLevel(s -> (new Object() {
 			public int getLightLevel() {
 				if (s.getValue(BLOCKSTATE) == 1)
-					return 0;
-				if (s.getValue(BLOCKSTATE) == 2)
 					return 0;
 				return 0;
 			}
@@ -69,14 +67,6 @@ public class BracketBlock extends Block implements SimpleWaterloggedBlock {
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		if (state.getValue(BLOCKSTATE) == 1) {
-			return switch (state.getValue(FACING)) {
-				default -> box(5, 5, 0, 11, 16, 11);
-				case NORTH -> box(5, 5, 5, 11, 16, 16);
-				case EAST -> box(0, 5, 5, 11, 16, 11);
-				case WEST -> box(5, 5, 5, 16, 16, 11);
-			};
-		}
-		if (state.getValue(BLOCKSTATE) == 2) {
 			return switch (state.getValue(FACING)) {
 				default -> box(5, 0, 0, 11, 16, 11);
 				case NORTH -> box(5, 0, 5, 11, 16, 16);
