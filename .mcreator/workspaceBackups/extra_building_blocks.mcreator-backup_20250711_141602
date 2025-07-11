@@ -13181,6 +13181,23 @@
         ]
       },
       "path": "~/Brace"
+    },
+    {
+      "name": "TEMPBEAM",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tempbeam",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/extra_building_blocks/models/block/tempbeam.json",
+          "src/main/java/net/mcreator/extrabuildingblocks/block/TEMPBEAMBlock.java",
+          "src/main/resources/assets/extra_building_blocks/models/item/tempbeam.json",
+          "src/main/resources/data/extra_building_blocks/loot_tables/blocks/tempbeam.json",
+          "src/main/resources/assets/extra_building_blocks/blockstates/tempbeam.json"
+        ]
+      },
+      "path": "~/Beams"
     }
   ],
   "variable_elements": [],
@@ -13644,6 +13661,7 @@
       "CUSTOM:ChiseledEndStoneBricks"
     ],
     "BLOCKS:minecraft:mineable/axe": [
+      "~CUSTOM:TEMPBEAM",
       "~CUSTOM:CactusWoodTrapdoor",
       "~CUSTOM:CactusWoodDoor",
       "~CUSTOM:CactusWPlanks",
@@ -14457,6 +14475,7 @@
       "block.extra_building_blocks.chorus_pressure_plate": "Chorus Wood Pressure Plate",
       "block.extra_building_blocks.end_stone_slab": "End Stone Slab",
       "biome.extra_building_blocks.salt_flats": "Salt Flats",
+      "block.extra_building_blocks.tempbeam": "TEMPBEAM",
       "block.extra_building_blocks.waxed_weathered_wrought_iron_gate": "Waxed Weathered Wrought Iron Gate",
       "block.extra_building_blocks.cut_amethyst": "Cut Amethyst",
       "block.extra_building_blocks.orange_lace_banner": "Orange Lace Banner",
@@ -14734,6 +14753,7 @@
       "block.extra_building_blocks.chorus_pressure_plate": "Plaque de pression en chorus",
       "block.extra_building_blocks.end_stone_slab": "Dalle de pierre de l\u0027End",
       "biome.extra_building_blocks.salt_flats": "Lac salé",
+      "block.extra_building_blocks.tempbeam": "TEMPBEAM",
       "block.extra_building_blocks.waxed_weathered_wrought_iron_gate": "Portillon en fer forgé érodé ciré",
       "block.extra_building_blocks.cut_amethyst": "Améthyste taillée",
       "block.extra_building_blocks.orange_lace_banner": "Bannière de dentelle orange",
@@ -15011,6 +15031,7 @@
       "block.extra_building_blocks.chorus_pressure_plate": "コーラスの感圧板",
       "block.extra_building_blocks.end_stone_slab": "エンドストーンのハーフブロック",
       "biome.extra_building_blocks.salt_flats": "Salt Flats",
+      "block.extra_building_blocks.tempbeam": "TEMPBEAM",
       "block.extra_building_blocks.waxed_weathered_wrought_iron_gate": "Weathered Wrought Iron Gate",
       "block.extra_building_blocks.cut_amethyst": "切り込み入りのアメジスト",
       "block.extra_building_blocks.orange_lace_banner": "Orange Lace Banner",

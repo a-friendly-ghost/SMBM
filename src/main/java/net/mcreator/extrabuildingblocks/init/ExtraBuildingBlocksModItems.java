@@ -269,6 +269,7 @@ public class ExtraBuildingBlocksModItems {
 	public static final RegistryObject<Item> WAXED_EXPOSED_WROUGHT_IRON_GATE = block(ExtraBuildingBlocksModBlocks.WAXED_EXPOSED_WROUGHT_IRON_GATE);
 	public static final RegistryObject<Item> WAXED_WEATHERED_WROUGHT_IRON_GATE = block(ExtraBuildingBlocksModBlocks.WAXED_WEATHERED_WROUGHT_IRON_GATE);
 	public static final RegistryObject<Item> WAXED_RUSTED_WROUGHT_IRON_GATE = block(ExtraBuildingBlocksModBlocks.WAXED_RUSTED_WROUGHT_IRON_GATE);
+	public static final RegistryObject<Item> TEMPBEAM = block(ExtraBuildingBlocksModBlocks.TEMPBEAM);
 
 	// Start of user code block custom items
 	// End of user code block custom items

@@ -1,0 +1,9 @@
+{
+  "parent": "extra_building_blocks:custom/beammodel",
+  "textures": {
+    "all": "extra_building_blocks:block/cropped_2",
+    "particle": "extra_building_blocks:block/cropped_2",
+    "0": "extra_building_blocks:block/calcite_texture_je2_1"
+  },
+  "render_type": "solid"
+}

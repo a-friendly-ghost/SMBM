@@ -45,6 +45,7 @@ import net.mcreator.extrabuildingblocks.block.WarpedBeamBlock;
 import net.mcreator.extrabuildingblocks.block.VeryCrackedStoneBricksBlock;
 import net.mcreator.extrabuildingblocks.block.VeryCrackedBricksBlock;
 import net.mcreator.extrabuildingblocks.block.TESTBlock;
+import net.mcreator.extrabuildingblocks.block.TEMPBEAMBlock;
 import net.mcreator.extrabuildingblocks.block.SwampvineBlock;
 import net.mcreator.extrabuildingblocks.block.SwampGrassBlock;
 import net.mcreator.extrabuildingblocks.block.StoneWallBlock;
@@ -514,6 +515,7 @@ public class ExtraBuildingBlocksModBlocks {
 	public static final RegistryObject<Block> WAXED_EXPOSED_WROUGHT_IRON_GATE = REGISTRY.register("waxed_exposed_wrought_iron_gate", () -> new WaxedExposedWroughtIronGateBlock());
 	public static final RegistryObject<Block> WAXED_WEATHERED_WROUGHT_IRON_GATE = REGISTRY.register("waxed_weathered_wrought_iron_gate", () -> new WaxedWeatheredWroughtIronGateBlock());
 	public static final RegistryObject<Block> WAXED_RUSTED_WROUGHT_IRON_GATE = REGISTRY.register("waxed_rusted_wrought_iron_gate", () -> new WaxedRustedWroughtIronGateBlock());
+	public static final RegistryObject<Block> TEMPBEAM = REGISTRY.register("tempbeam", () -> new TEMPBEAMBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

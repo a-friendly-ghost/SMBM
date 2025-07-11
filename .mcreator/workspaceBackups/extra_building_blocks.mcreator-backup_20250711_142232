@@ -3927,7 +3927,7 @@
     {
       "name": "OakBeam",
       "type": "block",
-      "compiles": true,
+      "compiles": false,
       "locked_code": true,
       "registry_name": "oak_beam",
       "metadata": {
@@ -3943,7 +3943,7 @@
     {
       "name": "SpruceBeam",
       "type": "block",
-      "compiles": true,
+      "compiles": false,
       "locked_code": true,
       "registry_name": "spruce_beam",
       "metadata": {
@@ -3959,7 +3959,7 @@
     {
       "name": "BirchBeam",
       "type": "block",
-      "compiles": true,
+      "compiles": false,
       "locked_code": true,
       "registry_name": "birch_beam",
       "metadata": {
@@ -3975,7 +3975,7 @@
     {
       "name": "DarkOakBeam",
       "type": "block",
-      "compiles": true,
+      "compiles": false,
       "locked_code": true,
       "registry_name": "dark_oak_beam",
       "metadata": {
@@ -3991,7 +3991,7 @@
     {
       "name": "AcaciaBeam",
       "type": "block",
-      "compiles": true,
+      "compiles": false,
       "locked_code": true,
       "registry_name": "acacia_beam",
       "metadata": {
@@ -4007,7 +4007,7 @@
     {
       "name": "MangroveBeam",
       "type": "block",
-      "compiles": true,
+      "compiles": false,
       "locked_code": true,
       "registry_name": "mangrove_beam",
       "metadata": {
@@ -4023,7 +4023,7 @@
     {
       "name": "CherryBeam",
       "type": "block",
-      "compiles": true,
+      "compiles": false,
       "locked_code": true,
       "registry_name": "cherry_beam",
       "metadata": {
@@ -4039,7 +4039,7 @@
     {
       "name": "JungleBeam",
       "type": "block",
-      "compiles": true,
+      "compiles": false,
       "locked_code": true,
       "registry_name": "jungle_beam",
       "metadata": {
@@ -4055,7 +4055,7 @@
     {
       "name": "BambooBeam",
       "type": "block",
-      "compiles": true,
+      "compiles": false,
       "locked_code": true,
       "registry_name": "bamboo_beam",
       "metadata": {
@@ -4071,7 +4071,7 @@
     {
       "name": "CrimsonBeam",
       "type": "block",
-      "compiles": true,
+      "compiles": false,
       "locked_code": true,
       "registry_name": "crimson_beam",
       "metadata": {
@@ -4087,7 +4087,7 @@
     {
       "name": "WarpedBeam",
       "type": "block",
-      "compiles": true,
+      "compiles": false,
       "locked_code": true,
       "registry_name": "warped_beam",
       "metadata": {
@@ -13181,6 +13181,23 @@
         ]
       },
       "path": "~/Brace"
+    },
+    {
+      "name": "TEMPBEAM",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tempbeam",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/extra_building_blocks/models/block/tempbeam.json",
+          "src/main/java/net/mcreator/extrabuildingblocks/block/TEMPBEAMBlock.java",
+          "src/main/resources/assets/extra_building_blocks/models/item/tempbeam.json",
+          "src/main/resources/data/extra_building_blocks/loot_tables/blocks/tempbeam.json",
+          "src/main/resources/assets/extra_building_blocks/blockstates/tempbeam.json"
+        ]
+      },
+      "path": "~/Beams"
     }
   ],
   "variable_elements": [],
@@ -13189,12 +13206,12 @@
     "BIOMES:minecraft:has_structure/stronghold": [
       "~CUSTOM:SaltFlats"
     ],
+    "BLOCKS:minecraft:replaceable": [
+      "~CUSTOM:DuckWeed"
+    ],
     "BLOCKS:minecraft:wooden_doors": [
       "CUSTOM:ChorusDoor",
       "CUSTOM:CactusWoodDoor"
-    ],
-    "BLOCKS:minecraft:replaceable": [
-      "~CUSTOM:DuckWeed"
     ],
     "BLOCKS:minecraft:infiniburn_nether": [
       "CUSTOM:SoulMagma"
@@ -13644,6 +13661,7 @@
       "CUSTOM:ChiseledEndStoneBricks"
     ],
     "BLOCKS:minecraft:mineable/axe": [
+      "~CUSTOM:TEMPBEAM",
       "~CUSTOM:CactusWoodTrapdoor",
       "~CUSTOM:CactusWoodDoor",
       "~CUSTOM:CactusWPlanks",
@@ -14239,17 +14257,17 @@
       "block.extra_building_blocks.yellow_lace_carpet": "Yellow Lace Carpet",
       "block.extra_building_blocks.waxed_exposed_wrought_iron_gate": "Waxed Exposed Wrought Iron Gate",
       "gui.extra_building_blocks.emitter_gui.label_particle_emitter": "Particle Emitter",
-      "block.extra_building_blocks.hanging_torchflower": "Hanging Torchflower",
       "block.extra_building_blocks.test": "INGAMENAME",
+      "block.extra_building_blocks.hanging_torchflower": "Hanging Torchflower",
       "block.extra_building_blocks.light_blue_lace_banner": "Light Blue Lace Banner",
       "block.extra_building_blocks.cactus_w_stairs": "Cactus Wood Stairs",
-      "block.extra_building_blocks.cut_granite_stairs": "Cut Granite Stairs",
       "block.extra_building_blocks.weathered_copper_bars": "Weathered Copper Bars",
+      "block.extra_building_blocks.cut_granite_stairs": "Cut Granite Stairs",
       "block.extra_building_blocks.calcite_bricks": "Calcite Bricks",
       "block.extra_building_blocks.warped_beam": "Warped Beam",
       "block.extra_building_blocks.wrought_iron_gate": "Wrought Iron Gate",
-      "block.extra_building_blocks.ice_brick_wall": "Ice Brick Wall",
       "block.extra_building_blocks.calcite_wall": "Calcite Wall",
+      "block.extra_building_blocks.ice_brick_wall": "Ice Brick Wall",
       "block.extra_building_blocks.light_blue_lace_carpet": "Light Blue Lace Carpet",
       "block.extra_building_blocks.cactus_wood": "Cactus Wood",
       "block.extra_building_blocks.chorus_door": "Chorus Wood Door",
@@ -14262,14 +14280,14 @@
       "block.extra_building_blocks.jungle_beam": "Jungle Beam",
       "block.extra_building_blocks.exposed_wrought_iron": "Exposed Wrought Iron",
       "block.extra_building_blocks.dark_prismarine_pillar.description_0": "texture inspired by _Fungus on planet minecraft ^-^",
-      "block.extra_building_blocks.polished_dripstone": "Polished Dripstone",
       "block.extra_building_blocks.lime_lace_carpet": "Lime Lace Carpet",
-      "block.extra_building_blocks.black_stained_soul_glass": "Black Stained Soul Glass",
+      "block.extra_building_blocks.polished_dripstone": "Polished Dripstone",
       "block.extra_building_blocks.acacia_beam": "Acacia Beam",
-      "block.extra_building_blocks.orange_stained_soul_glass_pane": "Orange Stained Soul Glass Pane",
+      "block.extra_building_blocks.black_stained_soul_glass": "Black Stained Soul Glass",
       "block.extra_building_blocks.cactus_w_fence_gate": "Cactus Wood Fence Gate",
-      "block.extra_building_blocks.chorus_fence": "Chorus Wood Fence",
+      "block.extra_building_blocks.orange_stained_soul_glass_pane": "Orange Stained Soul Glass Pane",
       "block.extra_building_blocks.soul_glass_pane": "Soul Glass Pane",
+      "block.extra_building_blocks.chorus_fence": "Chorus Wood Fence",
       "block.extra_building_blocks.prismarine_pillar": "Prismarine Pillar",
       "block.extra_building_blocks.yellow_stained_soul_glass_pane": "Yellow Stained Soul Glass Pane",
       "block.extra_building_blocks.duck_weed": "Duck Weed",
@@ -14457,6 +14475,7 @@
       "block.extra_building_blocks.chorus_pressure_plate": "Chorus Wood Pressure Plate",
       "block.extra_building_blocks.end_stone_slab": "End Stone Slab",
       "biome.extra_building_blocks.salt_flats": "Salt Flats",
+      "block.extra_building_blocks.tempbeam": "TEMPBEAM",
       "block.extra_building_blocks.waxed_weathered_wrought_iron_gate": "Waxed Weathered Wrought Iron Gate",
       "block.extra_building_blocks.cut_amethyst": "Cut Amethyst",
       "block.extra_building_blocks.orange_lace_banner": "Orange Lace Banner",
@@ -14516,17 +14535,17 @@
       "block.extra_building_blocks.yellow_lace_carpet": "Tapis de dentelle jaune",
       "block.extra_building_blocks.waxed_exposed_wrought_iron_gate": "Portillon en fer forgé exposé ciré",
       "gui.extra_building_blocks.emitter_gui.label_particle_emitter": "Particle Emitter",
-      "block.extra_building_blocks.test": "INGAMENAME",
       "block.extra_building_blocks.hanging_torchflower": "Hanging Torchflower",
+      "block.extra_building_blocks.test": "INGAMENAME",
       "block.extra_building_blocks.light_blue_lace_banner": "Bannière de dentelle bleu clair",
       "block.extra_building_blocks.cactus_w_stairs": "Escaliers en bois de cactus",
-      "block.extra_building_blocks.cut_granite_stairs": "Escaliers en granite taillé",
       "block.extra_building_blocks.weathered_copper_bars": "Barreaux de cuivre érodé",
+      "block.extra_building_blocks.cut_granite_stairs": "Escaliers en granite taillé",
       "block.extra_building_blocks.calcite_bricks": "Briques de calcite",
       "block.extra_building_blocks.warped_beam": "Poutre biscornue",
       "block.extra_building_blocks.wrought_iron_gate": "Portillon en fer forgé",
-      "block.extra_building_blocks.calcite_wall": "Muret de calcite",
       "block.extra_building_blocks.ice_brick_wall": "Muret de briques de glace",
+      "block.extra_building_blocks.calcite_wall": "Muret de calcite",
       "block.extra_building_blocks.light_blue_lace_carpet": "Tapis de dentelle blue clair",
       "block.extra_building_blocks.cactus_wood": "Bois de cactus",
       "block.extra_building_blocks.chorus_door": "Porte en chorus",
@@ -14539,14 +14558,14 @@
       "block.extra_building_blocks.jungle_beam": "Poutre en acajou",
       "block.extra_building_blocks.exposed_wrought_iron": "Fer forgé exposé",
       "block.extra_building_blocks.dark_prismarine_pillar.description_0": "texture inspirée par _Fungus sur planet minecraft ^-^",
-      "block.extra_building_blocks.lime_lace_carpet": "Tapis de dentelle vert clair",
       "block.extra_building_blocks.polished_dripstone": "Spéléothème poli",
-      "block.extra_building_blocks.black_stained_soul_glass": "Verre noir des âmes",
+      "block.extra_building_blocks.lime_lace_carpet": "Tapis de dentelle vert clair",
       "block.extra_building_blocks.acacia_beam": "Poutre en acacia",
-      "block.extra_building_blocks.cactus_w_fence_gate": "Portillon en bois de cactus",
+      "block.extra_building_blocks.black_stained_soul_glass": "Verre noir des âmes",
       "block.extra_building_blocks.orange_stained_soul_glass_pane": "Vitre orange des âmes",
-      "block.extra_building_blocks.chorus_fence": "Barrière en chorus",
+      "block.extra_building_blocks.cactus_w_fence_gate": "Portillon en bois de cactus",
       "block.extra_building_blocks.soul_glass_pane": "Vitre des âmes",
+      "block.extra_building_blocks.chorus_fence": "Barrière en chorus",
       "block.extra_building_blocks.prismarine_pillar": "Pilier de prismarine",
       "block.extra_building_blocks.yellow_stained_soul_glass_pane": "Vitre jaune des âmes",
       "block.extra_building_blocks.duck_weed": "Lentille d\u0027eau",
@@ -14734,6 +14753,7 @@
       "block.extra_building_blocks.chorus_pressure_plate": "Plaque de pression en chorus",
       "block.extra_building_blocks.end_stone_slab": "Dalle de pierre de l\u0027End",
       "biome.extra_building_blocks.salt_flats": "Lac salé",
+      "block.extra_building_blocks.tempbeam": "TEMPBEAM",
       "block.extra_building_blocks.waxed_weathered_wrought_iron_gate": "Portillon en fer forgé érodé ciré",
       "block.extra_building_blocks.cut_amethyst": "Améthyste taillée",
       "block.extra_building_blocks.orange_lace_banner": "Bannière de dentelle orange",
@@ -14793,17 +14813,17 @@
       "block.extra_building_blocks.yellow_lace_carpet": "Yellow Lace Carpet",
       "block.extra_building_blocks.waxed_exposed_wrought_iron_gate": "Exposed Wrought Iron Gate",
       "gui.extra_building_blocks.emitter_gui.label_particle_emitter": "Particle Emitter",
-      "block.extra_building_blocks.test": "INGAMENAME",
       "block.extra_building_blocks.hanging_torchflower": "Hanging Torchflower",
+      "block.extra_building_blocks.test": "INGAMENAME",
       "block.extra_building_blocks.light_blue_lace_banner": "Light Blue Lace Banner",
       "block.extra_building_blocks.cactus_w_stairs": "Cactus Wood Stairs",
-      "block.extra_building_blocks.cut_granite_stairs": "研がれた花崗岩の階段",
       "block.extra_building_blocks.weathered_copper_bars": "錆びた銅格子",
+      "block.extra_building_blocks.cut_granite_stairs": "研がれた花崗岩の階段",
       "block.extra_building_blocks.calcite_bricks": "方解石レンガ",
       "block.extra_building_blocks.warped_beam": "歪んだ梁",
       "block.extra_building_blocks.wrought_iron_gate": "Wrought Iron Gate",
-      "block.extra_building_blocks.calcite_wall": "方解石の塀",
       "block.extra_building_blocks.ice_brick_wall": "Ice Brick Wall",
+      "block.extra_building_blocks.calcite_wall": "方解石の塀",
       "block.extra_building_blocks.light_blue_lace_carpet": "Light Blue Lace Carpet",
       "block.extra_building_blocks.cactus_wood": "Cactus Wood",
       "block.extra_building_blocks.chorus_door": "コーラスのドア",
@@ -14816,14 +14836,14 @@
       "block.extra_building_blocks.jungle_beam": "ジャングルの梁",
       "block.extra_building_blocks.exposed_wrought_iron": "風化した錬鉄",
       "block.extra_building_blocks.dark_prismarine_pillar.description_0": "texture inspired by _Fungus on planet minecraft ^-^",
-      "block.extra_building_blocks.polished_dripstone": "磨かれた鍾乳石",
       "block.extra_building_blocks.lime_lace_carpet": "Lime Lace Carpet",
-      "block.extra_building_blocks.acacia_beam": "アカシアの梁",
+      "block.extra_building_blocks.polished_dripstone": "磨かれた鍾乳石",
       "block.extra_building_blocks.black_stained_soul_glass": "Black Stained Soul Glass",
-      "block.extra_building_blocks.orange_stained_soul_glass_pane": "Orange Stained Soul Glass Pane",
+      "block.extra_building_blocks.acacia_beam": "アカシアの梁",
       "block.extra_building_blocks.cactus_w_fence_gate": "Cactus Wood Fence Gate",
-      "block.extra_building_blocks.chorus_fence": "コーラスのフェンス",
+      "block.extra_building_blocks.orange_stained_soul_glass_pane": "Orange Stained Soul Glass Pane",
       "block.extra_building_blocks.soul_glass_pane": "Soul Glass Pane",
+      "block.extra_building_blocks.chorus_fence": "コーラスのフェンス",
       "block.extra_building_blocks.prismarine_pillar": "プリズマリンの柱",
       "block.extra_building_blocks.yellow_stained_soul_glass_pane": "Yellow Stained Soul Glass Pane",
       "block.extra_building_blocks.duck_weed": "青浮草",
@@ -15011,6 +15031,7 @@
       "block.extra_building_blocks.chorus_pressure_plate": "コーラスの感圧板",
       "block.extra_building_blocks.end_stone_slab": "エンドストーンのハーフブロック",
       "biome.extra_building_blocks.salt_flats": "Salt Flats",
+      "block.extra_building_blocks.tempbeam": "TEMPBEAM",
       "block.extra_building_blocks.waxed_weathered_wrought_iron_gate": "Weathered Wrought Iron Gate",
       "block.extra_building_blocks.cut_amethyst": "切り込み入りのアメジスト",
       "block.extra_building_blocks.orange_lace_banner": "Orange Lace Banner",
