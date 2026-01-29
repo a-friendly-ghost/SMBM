@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:end_stone_bricks",
+  "result": {
+    "id": "extra_building_blocks:chiseled_end_stone_bricks",
+    "count": 1
+  }
+}

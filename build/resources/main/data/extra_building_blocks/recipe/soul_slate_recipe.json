@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "ab",
+    "ba"
+  ],
+  "key": {
+    "a": "minecraft:blackstone",
+    "b": "minecraft:soul_sand"
+  },
+  "result": {
+    "id": "extra_building_blocks:soul_slate",
+    "count": 4
+  }
+}

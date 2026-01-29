@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "extra_building_blocks:weathered_copper_bars",
+    "minecraft:honeycomb"
+  ],
+  "result": {
+    "id": "extra_building_blocks:waxed_weathered_copper_bars",
+    "count": 1
+  }
+}

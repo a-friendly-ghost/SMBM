@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa"
+  ],
+  "key": {
+    "a": "extra_building_blocks:cut_granite"
+  },
+  "result": {
+    "id": "extra_building_blocks:cut_granite_slab",
+    "count": 6
+  }
+}

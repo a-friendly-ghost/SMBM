@@ -13,22 +13,22 @@ public class SaltCrystalNeighbourBlockChangesProcedure {
 		double sx = 0;
 		double sy = 0;
 		double sz = 0;
-		if ((world.getBlockState(BlockPos.containing(x + 1, y, z))).is(BlockTags.create(new ResourceLocation("custom:light_source")))) {
+		if ((world.getBlockState(BlockPos.containing(x + 1, y, z))).is(BlockTags.create(ResourceLocation.parse("custom:light_source")))) {
 			world.setBlock(BlockPos.containing(x, y, z), ExtraBuildingBlocksModBlocks.SALT_CRYSTAL_EMISSIVE.get().defaultBlockState(), 3);
 		}
-		if ((world.getBlockState(BlockPos.containing(x - 1, y, z))).is(BlockTags.create(new ResourceLocation("custom:light_source")))) {
+		if ((world.getBlockState(BlockPos.containing(x - 1, y, z))).is(BlockTags.create(ResourceLocation.parse("custom:light_source")))) {
 			world.setBlock(BlockPos.containing(x, y, z), ExtraBuildingBlocksModBlocks.SALT_CRYSTAL_EMISSIVE.get().defaultBlockState(), 3);
 		}
-		if ((world.getBlockState(BlockPos.containing(x, y + 1, z))).is(BlockTags.create(new ResourceLocation("custom:light_source")))) {
+		if ((world.getBlockState(BlockPos.containing(x, y + 1, z))).is(BlockTags.create(ResourceLocation.parse("custom:light_source")))) {
 			world.setBlock(BlockPos.containing(x, y, z), ExtraBuildingBlocksModBlocks.SALT_CRYSTAL_EMISSIVE.get().defaultBlockState(), 3);
 		}
-		if ((world.getBlockState(BlockPos.containing(x, y - 1, z))).is(BlockTags.create(new ResourceLocation("custom:light_source")))) {
+		if ((world.getBlockState(BlockPos.containing(x, y - 1, z))).is(BlockTags.create(ResourceLocation.parse("custom:light_source")))) {
 			world.setBlock(BlockPos.containing(x, y, z), ExtraBuildingBlocksModBlocks.SALT_CRYSTAL_EMISSIVE.get().defaultBlockState(), 3);
 		}
-		if ((world.getBlockState(BlockPos.containing(x, y, z + 1))).is(BlockTags.create(new ResourceLocation("custom:light_source")))) {
+		if ((world.getBlockState(BlockPos.containing(x, y, z + 1))).is(BlockTags.create(ResourceLocation.parse("custom:light_source")))) {
 			world.setBlock(BlockPos.containing(x, y, z), ExtraBuildingBlocksModBlocks.SALT_CRYSTAL_EMISSIVE.get().defaultBlockState(), 3);
 		}
-		if ((world.getBlockState(BlockPos.containing(x, y, z - 1))).is(BlockTags.create(new ResourceLocation("custom:light_source")))) {
+		if ((world.getBlockState(BlockPos.containing(x, y, z - 1))).is(BlockTags.create(ResourceLocation.parse("custom:light_source")))) {
 			world.setBlock(BlockPos.containing(x, y, z), ExtraBuildingBlocksModBlocks.SALT_CRYSTAL_EMISSIVE.get().defaultBlockState(), 3);
 		}
 	}

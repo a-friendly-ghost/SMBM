@@ -14,7 +14,7 @@ public class LampBlockValidPlacementConditionProcedure {
 		if (world.getBlockState(BlockPos.containing(x, y + 1, z)).isFaceSturdy(world, BlockPos.containing(x, y + 1, z), Direction.DOWN)) {
 			return true;
 		}
-		if ((world.getBlockState(BlockPos.containing(x, y + 1, z))).is(BlockTags.create(new ResourceLocation("extra_building_blocks:lanterns_connect_to")))) {
+		if ((world.getBlockState(BlockPos.containing(x, y + 1, z))).is(BlockTags.create(ResourceLocation.parse("extra_building_blocks:lanterns_connect_to")))) {
 			return true;
 		}
 		return false;

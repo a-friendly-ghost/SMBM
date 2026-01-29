@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "a  ",
+    "aa ",
+    "aaa"
+  ],
+  "key": {
+    "a": "extra_building_blocks:polished_dripstone"
+  },
+  "result": {
+    "id": "extra_building_blocks:polished_dripstone_stairs",
+    "count": 4
+  }
+}

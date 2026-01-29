@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:blue_dye",
+    "minecraft:yellow_dye",
+    "extra_building_blocks:lace_carpet",
+    "minecraft:red_dye"
+  ],
+  "result": {
+    "id": "extra_building_blocks:bus_lace_carpet",
+    "count": 1
+  }
+}

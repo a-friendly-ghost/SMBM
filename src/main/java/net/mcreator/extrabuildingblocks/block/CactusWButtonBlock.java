@@ -1,4 +1,3 @@
-
 package net.mcreator.extrabuildingblocks.block;
 
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
@@ -12,12 +11,12 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 public class CactusWButtonBlock extends ButtonBlock {
-	public CactusWButtonBlock() {
-		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(0.5f).dynamicShape(), BlockSetType.OAK, 30, true);
+	public CactusWButtonBlock(BlockBehaviour.Properties properties) {
+		super(BlockSetType.OAK, 30, properties.sound(SoundType.WOOD).strength(0.5f).ignitedByLava().instrument(NoteBlockInstrument.BASS));
 	}
 
 	@Override
-	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
+	public int getLightBlock(BlockState state) {
 		return 0;
 	}
 

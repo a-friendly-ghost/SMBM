@@ -1,4 +1,3 @@
-
 package net.mcreator.extrabuildingblocks.block;
 
 import net.minecraft.world.level.block.state.BlockState;
@@ -11,8 +10,8 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 public class ChorusStairsBlock extends StairBlock {
-	public ChorusStairsBlock() {
-		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of().sound(SoundType.NETHER_WOOD).strength(2f, 3f).dynamicShape());
+	public ChorusStairsBlock(BlockBehaviour.Properties properties) {
+		super(Blocks.AIR.defaultBlockState(), properties.sound(SoundType.NETHER_WOOD).strength(2f, 3f));
 	}
 
 	@Override
@@ -21,12 +20,7 @@ public class ChorusStairsBlock extends StairBlock {
 	}
 
 	@Override
-	public boolean isRandomlyTicking(BlockState state) {
-		return false;
-	}
-
-	@Override
-	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
+	public int getLightBlock(BlockState state) {
 		return 0;
 	}
 

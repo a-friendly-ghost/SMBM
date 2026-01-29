@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aaa"
+  ],
+  "key": {
+    "a": "minecraft:dripstone_block"
+  },
+  "result": {
+    "id": "extra_building_blocks:dripstone_slab",
+    "count": 6
+  }
+}

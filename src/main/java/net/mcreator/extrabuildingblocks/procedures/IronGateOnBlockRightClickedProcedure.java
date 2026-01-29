@@ -1,11 +1,8 @@
 package net.mcreator.extrabuildingblocks.procedures;
 
-import net.minecraftforge.registries.ForgeRegistries;
-
 import net.minecraft.world.level.block.state.properties.Property;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
-import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.LevelAccessor;
@@ -14,6 +11,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
@@ -29,64 +27,25 @@ public class IronGateOnBlockRightClickedProcedure {
 		checkY = y;
 		aboveCount = -1;
 		for (int index0 = 0; index0 < 15; index0++) {
-			if (!(world.getBlockState(BlockPos.containing(x, checkY, z))).is(BlockTags.create(new ResourceLocation("extra_building_blocks:metal_gates")))) {
+			if (!(world.getBlockState(BlockPos.containing(x, checkY, z))).is(BlockTags.create(ResourceLocation.parse("extra_building_blocks:metal_gates")))) {
 				break;
 			}
-			if (!((new Object() {
-				public Direction getDirection(BlockPos pos) {
-					BlockState _bs = world.getBlockState(pos);
-					Property<?> property = _bs.getBlock().getStateDefinition().getProperty("facing");
-					if (property != null && _bs.getValue(property) instanceof Direction _dir)
-						return _dir;
-					else if (_bs.hasProperty(BlockStateProperties.AXIS))
-						return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.AXIS), Direction.AxisDirection.POSITIVE);
-					else if (_bs.hasProperty(BlockStateProperties.HORIZONTAL_AXIS))
-						return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.HORIZONTAL_AXIS), Direction.AxisDirection.POSITIVE);
-					return Direction.NORTH;
-				}
-			}.getDirection(BlockPos.containing(x, checkY, z))).getAxis() == (new Object() {
-				public Direction getDirection(BlockPos pos) {
-					BlockState _bs = world.getBlockState(pos);
-					Property<?> property = _bs.getBlock().getStateDefinition().getProperty("facing");
-					if (property != null && _bs.getValue(property) instanceof Direction _dir)
-						return _dir;
-					else if (_bs.hasProperty(BlockStateProperties.AXIS))
-						return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.AXIS), Direction.AxisDirection.POSITIVE);
-					else if (_bs.hasProperty(BlockStateProperties.HORIZONTAL_AXIS))
-						return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.HORIZONTAL_AXIS), Direction.AxisDirection.POSITIVE);
-					return Direction.NORTH;
-				}
-			}.getDirection(BlockPos.containing(x, y, z))).getAxis())) {
+			if (!((getBlockDirection(world, BlockPos.containing(x, checkY, z))).getAxis() == (getBlockDirection(world, BlockPos.containing(x, y, z))).getAxis())) {
 				break;
 			}
 			if (((world.getBlockState(BlockPos.containing(x, checkY, z))).getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip7
 					? (world.getBlockState(BlockPos.containing(x, checkY, z))).getValue(_getip7)
 					: -1) == 0) {
-				if ((new Object() {
-					public Direction getDirection(BlockPos pos) {
-						BlockState _bs = world.getBlockState(pos);
-						Property<?> property = _bs.getBlock().getStateDefinition().getProperty("facing");
-						if (property != null && _bs.getValue(property) instanceof Direction _dir)
-							return _dir;
-						else if (_bs.hasProperty(BlockStateProperties.AXIS))
-							return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.AXIS), Direction.AxisDirection.POSITIVE);
-						else if (_bs.hasProperty(BlockStateProperties.HORIZONTAL_AXIS))
-							return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.HORIZONTAL_AXIS), Direction.AxisDirection.POSITIVE);
-						return Direction.NORTH;
-					}
-				}.getDirection(BlockPos.containing(x, checkY, z))).getAxis() == Direction.Axis.Z) {
+				if ((getBlockDirection(world, BlockPos.containing(x, checkY, z))).getAxis() == Direction.Axis.Z) {
 					if (entity.getZ() > z) {
 						{
 							Direction _dir = Direction.NORTH;
 							BlockPos _pos = BlockPos.containing(x, checkY, z);
 							BlockState _bs = world.getBlockState(_pos);
-							Property<?> _property = _bs.getBlock().getStateDefinition().getProperty("facing");
-							if (_property instanceof DirectionProperty _dp && _dp.getPossibleValues().contains(_dir)) {
+							if (_bs.getBlock().getStateDefinition().getProperty("facing") instanceof EnumProperty _dp && _dp.getPossibleValues().contains(_dir)) {
 								world.setBlock(_pos, _bs.setValue(_dp, _dir), 3);
-							} else {
-								_property = _bs.getBlock().getStateDefinition().getProperty("axis");
-								if (_property instanceof EnumProperty _ap && _ap.getPossibleValues().contains(_dir.getAxis()))
-									world.setBlock(_pos, _bs.setValue(_ap, _dir.getAxis()), 3);
+							} else if (_bs.getBlock().getStateDefinition().getProperty("axis") instanceof EnumProperty _ap && _ap.getPossibleValues().contains(_dir.getAxis())) {
+								world.setBlock(_pos, _bs.setValue(_ap, _dir.getAxis()), 3);
 							}
 						}
 					} else {
@@ -94,13 +53,10 @@ public class IronGateOnBlockRightClickedProcedure {
 							Direction _dir = Direction.SOUTH;
 							BlockPos _pos = BlockPos.containing(x, checkY, z);
 							BlockState _bs = world.getBlockState(_pos);
-							Property<?> _property = _bs.getBlock().getStateDefinition().getProperty("facing");
-							if (_property instanceof DirectionProperty _dp && _dp.getPossibleValues().contains(_dir)) {
+							if (_bs.getBlock().getStateDefinition().getProperty("facing") instanceof EnumProperty _dp && _dp.getPossibleValues().contains(_dir)) {
 								world.setBlock(_pos, _bs.setValue(_dp, _dir), 3);
-							} else {
-								_property = _bs.getBlock().getStateDefinition().getProperty("axis");
-								if (_property instanceof EnumProperty _ap && _ap.getPossibleValues().contains(_dir.getAxis()))
-									world.setBlock(_pos, _bs.setValue(_ap, _dir.getAxis()), 3);
+							} else if (_bs.getBlock().getStateDefinition().getProperty("axis") instanceof EnumProperty _ap && _ap.getPossibleValues().contains(_dir.getAxis())) {
+								world.setBlock(_pos, _bs.setValue(_ap, _dir.getAxis()), 3);
 							}
 						}
 					}
@@ -117,13 +73,10 @@ public class IronGateOnBlockRightClickedProcedure {
 							Direction _dir = Direction.WEST;
 							BlockPos _pos = BlockPos.containing(x, checkY, z);
 							BlockState _bs = world.getBlockState(_pos);
-							Property<?> _property = _bs.getBlock().getStateDefinition().getProperty("facing");
-							if (_property instanceof DirectionProperty _dp && _dp.getPossibleValues().contains(_dir)) {
+							if (_bs.getBlock().getStateDefinition().getProperty("facing") instanceof EnumProperty _dp && _dp.getPossibleValues().contains(_dir)) {
 								world.setBlock(_pos, _bs.setValue(_dp, _dir), 3);
-							} else {
-								_property = _bs.getBlock().getStateDefinition().getProperty("axis");
-								if (_property instanceof EnumProperty _ap && _ap.getPossibleValues().contains(_dir.getAxis()))
-									world.setBlock(_pos, _bs.setValue(_ap, _dir.getAxis()), 3);
+							} else if (_bs.getBlock().getStateDefinition().getProperty("axis") instanceof EnumProperty _ap && _ap.getPossibleValues().contains(_dir.getAxis())) {
+								world.setBlock(_pos, _bs.setValue(_ap, _dir.getAxis()), 3);
 							}
 						}
 					} else {
@@ -131,13 +84,10 @@ public class IronGateOnBlockRightClickedProcedure {
 							Direction _dir = Direction.EAST;
 							BlockPos _pos = BlockPos.containing(x, checkY, z);
 							BlockState _bs = world.getBlockState(_pos);
-							Property<?> _property = _bs.getBlock().getStateDefinition().getProperty("facing");
-							if (_property instanceof DirectionProperty _dp && _dp.getPossibleValues().contains(_dir)) {
+							if (_bs.getBlock().getStateDefinition().getProperty("facing") instanceof EnumProperty _dp && _dp.getPossibleValues().contains(_dir)) {
 								world.setBlock(_pos, _bs.setValue(_dp, _dir), 3);
-							} else {
-								_property = _bs.getBlock().getStateDefinition().getProperty("axis");
-								if (_property instanceof EnumProperty _ap && _ap.getPossibleValues().contains(_dir.getAxis()))
-									world.setBlock(_pos, _bs.setValue(_ap, _dir.getAxis()), 3);
+							} else if (_bs.getBlock().getStateDefinition().getProperty("axis") instanceof EnumProperty _ap && _ap.getPossibleValues().contains(_dir.getAxis())) {
+								world.setBlock(_pos, _bs.setValue(_ap, _dir.getAxis()), 3);
 							}
 						}
 					}
@@ -151,9 +101,9 @@ public class IronGateOnBlockRightClickedProcedure {
 				}
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, BlockPos.containing(x, checkY, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.iron_trapdoor.open")), SoundSource.NEUTRAL, 1, 1);
+						_level.playSound(null, BlockPos.containing(x, checkY, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("block.iron_trapdoor.open")), SoundSource.NEUTRAL, 1, 1);
 					} else {
-						_level.playLocalSound(x, checkY, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.iron_trapdoor.open")), SoundSource.NEUTRAL, 1, 1, false);
+						_level.playLocalSound(x, checkY, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("block.iron_trapdoor.open")), SoundSource.NEUTRAL, 1, 1, false);
 					}
 				}
 			} else {
@@ -166,9 +116,9 @@ public class IronGateOnBlockRightClickedProcedure {
 				}
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, BlockPos.containing(x, checkY, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.iron_trapdoor.close")), SoundSource.NEUTRAL, 1, 1);
+						_level.playSound(null, BlockPos.containing(x, checkY, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("block.iron_trapdoor.close")), SoundSource.NEUTRAL, 1, 1);
 					} else {
-						_level.playLocalSound(x, checkY, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.iron_trapdoor.close")), SoundSource.NEUTRAL, 1, 1, false);
+						_level.playLocalSound(x, checkY, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("block.iron_trapdoor.close")), SoundSource.NEUTRAL, 1, 1, false);
 					}
 				}
 			}
@@ -177,64 +127,25 @@ public class IronGateOnBlockRightClickedProcedure {
 		}
 		checkY = y - 1;
 		for (int index1 = 0; index1 < (int) (16 - aboveCount); index1++) {
-			if (!(world.getBlockState(BlockPos.containing(x, checkY, z))).is(BlockTags.create(new ResourceLocation("extra_building_blocks:metal_gates")))) {
+			if (!(world.getBlockState(BlockPos.containing(x, checkY, z))).is(BlockTags.create(ResourceLocation.parse("extra_building_blocks:metal_gates")))) {
 				break;
 			}
-			if (!((new Object() {
-				public Direction getDirection(BlockPos pos) {
-					BlockState _bs = world.getBlockState(pos);
-					Property<?> property = _bs.getBlock().getStateDefinition().getProperty("facing");
-					if (property != null && _bs.getValue(property) instanceof Direction _dir)
-						return _dir;
-					else if (_bs.hasProperty(BlockStateProperties.AXIS))
-						return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.AXIS), Direction.AxisDirection.POSITIVE);
-					else if (_bs.hasProperty(BlockStateProperties.HORIZONTAL_AXIS))
-						return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.HORIZONTAL_AXIS), Direction.AxisDirection.POSITIVE);
-					return Direction.NORTH;
-				}
-			}.getDirection(BlockPos.containing(x, checkY, z))).getAxis() == (new Object() {
-				public Direction getDirection(BlockPos pos) {
-					BlockState _bs = world.getBlockState(pos);
-					Property<?> property = _bs.getBlock().getStateDefinition().getProperty("facing");
-					if (property != null && _bs.getValue(property) instanceof Direction _dir)
-						return _dir;
-					else if (_bs.hasProperty(BlockStateProperties.AXIS))
-						return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.AXIS), Direction.AxisDirection.POSITIVE);
-					else if (_bs.hasProperty(BlockStateProperties.HORIZONTAL_AXIS))
-						return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.HORIZONTAL_AXIS), Direction.AxisDirection.POSITIVE);
-					return Direction.NORTH;
-				}
-			}.getDirection(BlockPos.containing(x, y, z))).getAxis())) {
+			if (!((getBlockDirection(world, BlockPos.containing(x, checkY, z))).getAxis() == (getBlockDirection(world, BlockPos.containing(x, y, z))).getAxis())) {
 				break;
 			}
 			if (((world.getBlockState(BlockPos.containing(x, checkY, z))).getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip27
 					? (world.getBlockState(BlockPos.containing(x, checkY, z))).getValue(_getip27)
 					: -1) == 0) {
-				if ((new Object() {
-					public Direction getDirection(BlockPos pos) {
-						BlockState _bs = world.getBlockState(pos);
-						Property<?> property = _bs.getBlock().getStateDefinition().getProperty("facing");
-						if (property != null && _bs.getValue(property) instanceof Direction _dir)
-							return _dir;
-						else if (_bs.hasProperty(BlockStateProperties.AXIS))
-							return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.AXIS), Direction.AxisDirection.POSITIVE);
-						else if (_bs.hasProperty(BlockStateProperties.HORIZONTAL_AXIS))
-							return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.HORIZONTAL_AXIS), Direction.AxisDirection.POSITIVE);
-						return Direction.NORTH;
-					}
-				}.getDirection(BlockPos.containing(x, checkY, z))).getAxis() == Direction.Axis.Z) {
+				if ((getBlockDirection(world, BlockPos.containing(x, checkY, z))).getAxis() == Direction.Axis.Z) {
 					if (entity.getZ() > z) {
 						{
 							Direction _dir = Direction.NORTH;
 							BlockPos _pos = BlockPos.containing(x, checkY, z);
 							BlockState _bs = world.getBlockState(_pos);
-							Property<?> _property = _bs.getBlock().getStateDefinition().getProperty("facing");
-							if (_property instanceof DirectionProperty _dp && _dp.getPossibleValues().contains(_dir)) {
+							if (_bs.getBlock().getStateDefinition().getProperty("facing") instanceof EnumProperty _dp && _dp.getPossibleValues().contains(_dir)) {
 								world.setBlock(_pos, _bs.setValue(_dp, _dir), 3);
-							} else {
-								_property = _bs.getBlock().getStateDefinition().getProperty("axis");
-								if (_property instanceof EnumProperty _ap && _ap.getPossibleValues().contains(_dir.getAxis()))
-									world.setBlock(_pos, _bs.setValue(_ap, _dir.getAxis()), 3);
+							} else if (_bs.getBlock().getStateDefinition().getProperty("axis") instanceof EnumProperty _ap && _ap.getPossibleValues().contains(_dir.getAxis())) {
+								world.setBlock(_pos, _bs.setValue(_ap, _dir.getAxis()), 3);
 							}
 						}
 					} else {
@@ -242,13 +153,10 @@ public class IronGateOnBlockRightClickedProcedure {
 							Direction _dir = Direction.SOUTH;
 							BlockPos _pos = BlockPos.containing(x, checkY, z);
 							BlockState _bs = world.getBlockState(_pos);
-							Property<?> _property = _bs.getBlock().getStateDefinition().getProperty("facing");
-							if (_property instanceof DirectionProperty _dp && _dp.getPossibleValues().contains(_dir)) {
+							if (_bs.getBlock().getStateDefinition().getProperty("facing") instanceof EnumProperty _dp && _dp.getPossibleValues().contains(_dir)) {
 								world.setBlock(_pos, _bs.setValue(_dp, _dir), 3);
-							} else {
-								_property = _bs.getBlock().getStateDefinition().getProperty("axis");
-								if (_property instanceof EnumProperty _ap && _ap.getPossibleValues().contains(_dir.getAxis()))
-									world.setBlock(_pos, _bs.setValue(_ap, _dir.getAxis()), 3);
+							} else if (_bs.getBlock().getStateDefinition().getProperty("axis") instanceof EnumProperty _ap && _ap.getPossibleValues().contains(_dir.getAxis())) {
+								world.setBlock(_pos, _bs.setValue(_ap, _dir.getAxis()), 3);
 							}
 						}
 					}
@@ -265,13 +173,10 @@ public class IronGateOnBlockRightClickedProcedure {
 							Direction _dir = Direction.WEST;
 							BlockPos _pos = BlockPos.containing(x, checkY, z);
 							BlockState _bs = world.getBlockState(_pos);
-							Property<?> _property = _bs.getBlock().getStateDefinition().getProperty("facing");
-							if (_property instanceof DirectionProperty _dp && _dp.getPossibleValues().contains(_dir)) {
+							if (_bs.getBlock().getStateDefinition().getProperty("facing") instanceof EnumProperty _dp && _dp.getPossibleValues().contains(_dir)) {
 								world.setBlock(_pos, _bs.setValue(_dp, _dir), 3);
-							} else {
-								_property = _bs.getBlock().getStateDefinition().getProperty("axis");
-								if (_property instanceof EnumProperty _ap && _ap.getPossibleValues().contains(_dir.getAxis()))
-									world.setBlock(_pos, _bs.setValue(_ap, _dir.getAxis()), 3);
+							} else if (_bs.getBlock().getStateDefinition().getProperty("axis") instanceof EnumProperty _ap && _ap.getPossibleValues().contains(_dir.getAxis())) {
+								world.setBlock(_pos, _bs.setValue(_ap, _dir.getAxis()), 3);
 							}
 						}
 					} else {
@@ -279,13 +184,10 @@ public class IronGateOnBlockRightClickedProcedure {
 							Direction _dir = Direction.EAST;
 							BlockPos _pos = BlockPos.containing(x, checkY, z);
 							BlockState _bs = world.getBlockState(_pos);
-							Property<?> _property = _bs.getBlock().getStateDefinition().getProperty("facing");
-							if (_property instanceof DirectionProperty _dp && _dp.getPossibleValues().contains(_dir)) {
+							if (_bs.getBlock().getStateDefinition().getProperty("facing") instanceof EnumProperty _dp && _dp.getPossibleValues().contains(_dir)) {
 								world.setBlock(_pos, _bs.setValue(_dp, _dir), 3);
-							} else {
-								_property = _bs.getBlock().getStateDefinition().getProperty("axis");
-								if (_property instanceof EnumProperty _ap && _ap.getPossibleValues().contains(_dir.getAxis()))
-									world.setBlock(_pos, _bs.setValue(_ap, _dir.getAxis()), 3);
+							} else if (_bs.getBlock().getStateDefinition().getProperty("axis") instanceof EnumProperty _ap && _ap.getPossibleValues().contains(_dir.getAxis())) {
+								world.setBlock(_pos, _bs.setValue(_ap, _dir.getAxis()), 3);
 							}
 						}
 					}
@@ -299,9 +201,9 @@ public class IronGateOnBlockRightClickedProcedure {
 				}
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, BlockPos.containing(x, checkY, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.iron_trapdoor.open")), SoundSource.NEUTRAL, 1, 1);
+						_level.playSound(null, BlockPos.containing(x, checkY, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("block.iron_trapdoor.open")), SoundSource.NEUTRAL, 1, 1);
 					} else {
-						_level.playLocalSound(x, checkY, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.iron_trapdoor.open")), SoundSource.NEUTRAL, 1, 1, false);
+						_level.playLocalSound(x, checkY, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("block.iron_trapdoor.open")), SoundSource.NEUTRAL, 1, 1, false);
 					}
 				}
 			} else {
@@ -314,9 +216,9 @@ public class IronGateOnBlockRightClickedProcedure {
 				}
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, BlockPos.containing(x, checkY, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.iron_trapdoor.close")), SoundSource.NEUTRAL, 1, 1);
+						_level.playSound(null, BlockPos.containing(x, checkY, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("block.iron_trapdoor.close")), SoundSource.NEUTRAL, 1, 1);
 					} else {
-						_level.playLocalSound(x, checkY, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.iron_trapdoor.close")), SoundSource.NEUTRAL, 1, 1, false);
+						_level.playLocalSound(x, checkY, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("block.iron_trapdoor.close")), SoundSource.NEUTRAL, 1, 1, false);
 					}
 				}
 			}
@@ -324,5 +226,17 @@ public class IronGateOnBlockRightClickedProcedure {
 		}
 		IronGateBlockAddedProcedure.execute(world, x, y, z);
 		return true;
+	}
+
+	private static Direction getBlockDirection(LevelAccessor world, BlockPos pos) {
+		BlockState blockState = world.getBlockState(pos);
+		Property<?> property = blockState.getBlock().getStateDefinition().getProperty("facing");
+		if (property != null && blockState.getValue(property) instanceof Direction direction)
+			return direction;
+		else if (blockState.hasProperty(BlockStateProperties.AXIS))
+			return Direction.fromAxisAndDirection(blockState.getValue(BlockStateProperties.AXIS), Direction.AxisDirection.POSITIVE);
+		else if (blockState.hasProperty(BlockStateProperties.HORIZONTAL_AXIS))
+			return Direction.fromAxisAndDirection(blockState.getValue(BlockStateProperties.HORIZONTAL_AXIS), Direction.AxisDirection.POSITIVE);
+		return Direction.NORTH;
 	}
 }

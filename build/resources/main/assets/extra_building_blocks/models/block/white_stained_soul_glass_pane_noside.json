@@ -1,8 +1,8 @@
 {
   "parent": "block/template_glass_pane_noside",
   "textures": {
-    "particle": "extra_building_blocks:block/whitestained",
-    "pane": "extra_building_blocks:block/whitestained"
+    "pane": "extra_building_blocks:block/whitestained",
+    "particle": "extra_building_blocks:block/whitestained"
   },
   "render_type": "translucent"
 }

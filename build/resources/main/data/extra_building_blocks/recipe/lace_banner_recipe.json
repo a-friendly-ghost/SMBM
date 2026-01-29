@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "a",
+    "b",
+    "b"
+  ],
+  "key": {
+    "a": "minecraft:stick",
+    "b": "extra_building_blocks:lace"
+  },
+  "result": {
+    "id": "extra_building_blocks:lace_banner",
+    "count": 1
+  }
+}

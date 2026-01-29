@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:cobbled_deepslate",
+  "result": {
+    "id": "extra_building_blocks:chiseled_deepslate_bricks",
+    "count": 1
+  }
+}

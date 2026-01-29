@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "a  ",
+    "aa ",
+    "aaa"
+  ],
+  "key": {
+    "a": "extra_building_blocks:cut_diorite"
+  },
+  "result": {
+    "id": "extra_building_blocks:cut_diorite_stairs",
+    "count": 4
+  }
+}

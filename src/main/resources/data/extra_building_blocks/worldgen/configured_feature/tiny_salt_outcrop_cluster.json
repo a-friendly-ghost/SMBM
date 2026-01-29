@@ -30,10 +30,8 @@
       {
         "height": {
           "type": "biased_to_bottom",
-          "value": {
-            "min_inclusive": 2,
-            "max_inclusive": 3
-          }
+          "min_inclusive": 2,
+          "max_inclusive": 3
         },
         "provider": {
           "type": "minecraft:simple_state_provider",
@@ -45,10 +43,8 @@
       {
         "height": {
           "type": "biased_to_bottom",
-          "value": {
-            "min_inclusive": 0,
-            "max_inclusive": 1
-          }
+          "min_inclusive": 0,
+          "max_inclusive": 1
         },
         "provider": {
           "type": "minecraft:simple_state_provider",

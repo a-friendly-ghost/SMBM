@@ -1,4 +1,3 @@
-
 package net.mcreator.extrabuildingblocks.world.features;
 
 import net.minecraft.world.level.levelgen.feature.configurations.SimpleBlockConfiguration;

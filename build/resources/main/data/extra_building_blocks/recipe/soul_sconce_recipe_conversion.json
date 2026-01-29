@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "minecraft:iron_ingot",
+    "minecraft:soul_torch"
+  ],
+  "result": {
+    "id": "extra_building_blocks:soul_sconce",
+    "count": 1
+  }
+}

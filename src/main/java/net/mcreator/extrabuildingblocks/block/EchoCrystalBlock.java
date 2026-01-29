@@ -1,4 +1,3 @@
-
 package net.mcreator.extrabuildingblocks.block;
 
 import org.checkerframework.checker.units.qual.s;
@@ -18,9 +17,9 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 public class EchoCrystalBlock extends Block {
-	public EchoCrystalBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.HAT).sound(SoundType.AMETHYST).strength(2f).lightLevel(s -> 2).requiresCorrectToolForDrops().noOcclusion().hasPostProcess((bs, br, bp) -> true)
-				.emissiveRendering((bs, br, bp) -> true).isRedstoneConductor((bs, br, bp) -> false));
+	public EchoCrystalBlock(BlockBehaviour.Properties properties) {
+		super(properties.sound(SoundType.AMETHYST).strength(2f).lightLevel(s -> 2).requiresCorrectToolForDrops().noOcclusion().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true).isRedstoneConductor((bs, br, bp) -> false)
+				.instrument(NoteBlockInstrument.HAT));
 	}
 
 	@Override
@@ -34,12 +33,12 @@ public class EchoCrystalBlock extends Block {
 	}
 
 	@Override
-	public boolean propagatesSkylightDown(BlockState state, BlockGetter reader, BlockPos pos) {
+	public boolean propagatesSkylightDown(BlockState state) {
 		return true;
 	}
 
 	@Override
-	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
+	public int getLightBlock(BlockState state) {
 		return 0;
 	}
 

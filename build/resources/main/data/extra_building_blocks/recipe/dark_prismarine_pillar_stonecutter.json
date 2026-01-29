@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:dark_prismarine",
+  "result": {
+    "id": "extra_building_blocks:dark_prismarine_pillar",
+    "count": 1
+  }
+}

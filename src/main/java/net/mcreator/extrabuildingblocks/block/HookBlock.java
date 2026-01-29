@@ -1,54 +1,51 @@
-
 package net.mcreator.extrabuildingblocks.block;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.level.redstone.Orientation;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.material.FluidState;
-import net.minecraft.world.level.block.state.properties.DirectionProperty;
+import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.SimpleWaterloggedBlock;
-import net.minecraft.world.level.block.Rotation;
-import net.minecraft.world.level.block.Mirror;
-import net.minecraft.world.level.block.DirectionalBlock;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.LevelReader;
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.level.BlockAndTintGetter;
+import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.*;
 import net.minecraft.world.item.context.BlockPlaceContext;
+import net.minecraft.world.item.component.TooltipDisplay;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.util.RandomSource;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.extrabuildingblocks.procedures.SaltGrowthNeighbourBlockChangesProcedure;
 import net.mcreator.extrabuildingblocks.procedures.SaltGrowthBlockValidPlacementConditionProcedure;
+import net.mcreator.extrabuildingblocks.init.ExtraBuildingBlocksModBlocks;
 
-import java.util.List;
+import javax.annotation.Nullable;
+
+import java.util.function.Consumer;
 
 public class HookBlock extends Block implements SimpleWaterloggedBlock {
-	public static final DirectionProperty FACING = DirectionalBlock.FACING;
+	public static final EnumProperty<Direction> FACING = DirectionalBlock.FACING;
 	public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
+	private static final VoxelShape SHAPE_NORTH = box(6, 4, 9, 10, 11, 16);
+	private static final VoxelShape SHAPE_SOUTH = box(6, 4, 0, 10, 11, 7);
+	private static final VoxelShape SHAPE_EAST = box(0, 4, 6, 7, 11, 10);
+	private static final VoxelShape SHAPE_WEST = box(9, 4, 6, 16, 11, 10);
+	private static final VoxelShape SHAPE_UP = box(6, 0, 4, 10, 7, 11);
+	private static final VoxelShape SHAPE_DOWN = box(6, 9, 5, 10, 16, 12);
 
-	public HookBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.LANTERN).strength(0.1f).noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+	public HookBlock(BlockBehaviour.Properties properties) {
+		super(properties.sound(SoundType.LANTERN).strength(0.1f).noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, false));
-	}
-
-	@Override
-	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.translatable("block.extra_building_blocks.hook.description_0"));
 	}
 
 	@Override
@@ -57,12 +54,12 @@ public class HookBlock extends Block implements SimpleWaterloggedBlock {
 	}
 
 	@Override
-	public boolean propagatesSkylightDown(BlockState state, BlockGetter reader, BlockPos pos) {
+	public boolean propagatesSkylightDown(BlockState state) {
 		return state.getFluidState().isEmpty();
 	}
 
 	@Override
-	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
+	public int getLightBlock(BlockState state) {
 		return 0;
 	}
 
@@ -73,14 +70,15 @@ public class HookBlock extends Block implements SimpleWaterloggedBlock {
 
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		return switch (state.getValue(FACING)) {
-			default -> box(6, 4, 0, 10, 11, 7);
-			case NORTH -> box(6, 4, 9, 10, 11, 16);
-			case EAST -> box(0, 4, 6, 7, 11, 10);
-			case WEST -> box(9, 4, 6, 16, 11, 10);
-			case UP -> box(6, 0, 4, 10, 7, 11);
-			case DOWN -> box(6, 9, 5, 10, 16, 12);
-		};
+		return (switch (state.getValue(FACING)) {
+			case NORTH -> SHAPE_NORTH;
+			case SOUTH -> SHAPE_SOUTH;
+			case EAST -> SHAPE_EAST;
+			case WEST -> SHAPE_WEST;
+			case UP -> SHAPE_UP;
+			case DOWN -> SHAPE_DOWN;
+			default -> SHAPE_NORTH;
+		});
 	}
 
 	@Override
@@ -120,16 +118,28 @@ public class HookBlock extends Block implements SimpleWaterloggedBlock {
 	}
 
 	@Override
-	public BlockState updateShape(BlockState state, Direction facing, BlockState facingState, LevelAccessor world, BlockPos currentPos, BlockPos facingPos) {
+	public BlockState updateShape(BlockState state, LevelReader world, ScheduledTickAccess scheduledTickAccess, BlockPos currentPos, Direction facing, BlockPos facingPos, BlockState facingState, RandomSource random) {
 		if (state.getValue(WATERLOGGED)) {
-			world.scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickDelay(world));
+			scheduledTickAccess.scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickDelay(world));
 		}
-		return !state.canSurvive(world, currentPos) ? Blocks.AIR.defaultBlockState() : super.updateShape(state, facing, facingState, world, currentPos, facingPos);
+		return !state.canSurvive(world, currentPos) ? Blocks.AIR.defaultBlockState() : super.updateShape(state, world, scheduledTickAccess, currentPos, facing, facingPos, facingState, random);
 	}
 
 	@Override
-	public void neighborChanged(BlockState blockstate, Level world, BlockPos pos, Block neighborBlock, BlockPos fromPos, boolean moving) {
-		super.neighborChanged(blockstate, world, pos, neighborBlock, fromPos, moving);
+	public void neighborChanged(BlockState blockstate, Level world, BlockPos pos, Block neighborBlock, @Nullable Orientation orientation, boolean moving) {
+		super.neighborChanged(blockstate, world, pos, neighborBlock, orientation, moving);
 		SaltGrowthNeighbourBlockChangesProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+	}
+
+	public static class Item extends BlockItem {
+		public Item(Item.Properties properties) {
+			super(ExtraBuildingBlocksModBlocks.HOOK.get(), properties);
+		}
+
+		@Override
+		public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, TooltipDisplay tooltipDisplay, Consumer<Component> componentConsumer, TooltipFlag flag) {
+			super.appendHoverText(itemstack, context, tooltipDisplay, componentConsumer, flag);
+			componentConsumer.accept(Component.translatable("block.extra_building_blocks.hook.description_0"));
+		}
 	}
 }

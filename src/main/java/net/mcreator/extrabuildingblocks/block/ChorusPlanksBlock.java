@@ -1,4 +1,3 @@
-
 package net.mcreator.extrabuildingblocks.block;
 
 import net.minecraft.world.level.block.state.BlockState;
@@ -10,12 +9,12 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 public class ChorusPlanksBlock extends Block {
-	public ChorusPlanksBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.NETHER_WOOD).strength(2f, 3f));
+	public ChorusPlanksBlock(BlockBehaviour.Properties properties) {
+		super(properties.sound(SoundType.NETHER_WOOD).strength(2f, 3f));
 	}
 
 	@Override
-	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
+	public int getLightBlock(BlockState state) {
 		return 15;
 	}
 

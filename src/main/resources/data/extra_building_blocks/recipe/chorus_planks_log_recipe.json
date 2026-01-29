@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "planks",
+  "category": "building",
+  "ingredients": [
+    "minecraft:chorus_flower",
+    "minecraft:chorus_flower",
+    "minecraft:chorus_flower",
+    "minecraft:chorus_flower"
+  ],
+  "result": {
+    "id": "extra_building_blocks:chorus_planks",
+    "count": 4
+  }
+}

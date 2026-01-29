@@ -1,0 +1,25 @@
+{
+  "values": {
+    "extra_building_blocks:green_desert_bush": {
+      "chance": 0.5
+    },
+    "extra_building_blocks:purple_desert_bush": {
+      "chance": 0.5
+    },
+    "extra_building_blocks:fountain_grass": {
+      "chance": 0.3
+    },
+    "extra_building_blocks:purple_fountain_grass": {
+      "chance": 0.3
+    },
+    "extra_building_blocks:duck_weed": {
+      "chance": 0.3
+    },
+    "extra_building_blocks:swamp_grass": {
+      "chance": 0.3
+    },
+    "extra_building_blocks:cactus_wood": {
+      "chance": 0.5
+    }
+  }
+}

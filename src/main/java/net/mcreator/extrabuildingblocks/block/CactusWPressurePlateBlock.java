@@ -1,4 +1,3 @@
-
 package net.mcreator.extrabuildingblocks.block;
 
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
@@ -12,12 +11,12 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 public class CactusWPressurePlateBlock extends PressurePlateBlock {
-	public CactusWPressurePlateBlock() {
-		super(Sensitivity.EVERYTHING, BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(0.5f).dynamicShape().forceSolidOn(), BlockSetType.OAK);
+	public CactusWPressurePlateBlock(BlockBehaviour.Properties properties) {
+		super(BlockSetType.OAK, properties.sound(SoundType.WOOD).strength(0.5f).ignitedByLava().instrument(NoteBlockInstrument.BASS).forceSolidOn());
 	}
 
 	@Override
-	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
+	public int getLightBlock(BlockState state) {
 		return 0;
 	}
 

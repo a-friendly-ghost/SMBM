@@ -24,21 +24,22 @@ public class OxidationTickProcedure {
 		double c = 0;
 		double probability = 0;
 		if (Mth.nextInt(RandomSource.create(), 1, 1125) <= 64) {
-			if (blockstate.is(BlockTags.create(new ResourceLocation("extra_building_blocks:unoxidized")))) {
+			if (blockstate.is(BlockTags.create(ResourceLocation.parse("extra_building_blocks:unoxidized")))) {
 				currentOxidation = 0;
 				modifyingFactor = 0.75;
-			} else if (blockstate.is(BlockTags.create(new ResourceLocation("extra_building_blocks:exposed")))) {
+			} else if (blockstate.is(BlockTags.create(ResourceLocation.parse("extra_building_blocks:exposed")))) {
 				currentOxidation = 1;
 				modifyingFactor = 1;
-			} else if (blockstate.is(BlockTags.create(new ResourceLocation("extra_building_blocks:weathered")))) {
+			} else if (blockstate.is(BlockTags.create(ResourceLocation.parse("extra_building_blocks:weathered")))) {
 				currentOxidation = 2;
 				modifyingFactor = 1;
 			} else {
 				return false;
 			}
-			if (blockstate.is(BlockTags.create(new ResourceLocation("extra_building_blocks:all_wrought_iron")))) {
+			if (blockstate.is(BlockTags.create(ResourceLocation.parse("extra_building_blocks:all_wrought_iron")))) {
 				for (Direction directioniterator : Direction.values()) {
-					if ((world.getBlockState(BlockPos.containing(x + directioniterator.getStepX(), y + directioniterator.getStepY(), z + directioniterator.getStepZ()))).is(BlockTags.create(new ResourceLocation("extra_building_blocks:all_copper")))) {
+					if ((world.getBlockState(BlockPos.containing(x + directioniterator.getStepX(), y + directioniterator.getStepY(), z + directioniterator.getStepZ())))
+							.is(BlockTags.create(ResourceLocation.parse("extra_building_blocks:all_copper")))) {
 						modifyingFactor = modifyingFactor + 0.5;
 						break;
 					}
@@ -54,7 +55,7 @@ public class OxidationTickProcedure {
 					zOffset = checkDistance * (-1) + Math.abs(xOffset) + Math.abs(yOffset);
 					while (zOffset <= (checkDistance - Math.abs(xOffset)) - Math.abs(yOffset)) {
 						blockToCheck = (world.getBlockState(BlockPos.containing(x + xOffset, y + yOffset, z + zOffset)));
-						if (blockToCheck.is(BlockTags.create(new ResourceLocation("extra_building_blocks:unoxidized")))) {
+						if (blockToCheck.is(BlockTags.create(ResourceLocation.parse("extra_building_blocks:unoxidized")))) {
 							if (currentOxidation > 0) {
 								return false;
 							}
@@ -63,7 +64,7 @@ public class OxidationTickProcedure {
 							}
 							totalNearby = totalNearby + 1;
 						}
-						if (blockToCheck.is(BlockTags.create(new ResourceLocation("extra_building_blocks:exposed")))) {
+						if (blockToCheck.is(BlockTags.create(ResourceLocation.parse("extra_building_blocks:exposed")))) {
 							if (currentOxidation > 1) {
 								return false;
 							}
@@ -72,7 +73,7 @@ public class OxidationTickProcedure {
 							}
 							totalNearby = totalNearby + 1;
 						}
-						if (blockToCheck.is(BlockTags.create(new ResourceLocation("extra_building_blocks:weathered")))) {
+						if (blockToCheck.is(BlockTags.create(ResourceLocation.parse("extra_building_blocks:weathered")))) {
 							if (currentOxidation > 2) {
 								return false;
 							}
@@ -81,7 +82,7 @@ public class OxidationTickProcedure {
 							}
 							totalNearby = totalNearby + 1;
 						}
-						if (blockToCheck.is(BlockTags.create(new ResourceLocation("extra_building_blocks:oxidized")))) {
+						if (blockToCheck.is(BlockTags.create(ResourceLocation.parse("extra_building_blocks:oxidized")))) {
 							if (currentOxidation > 3) {
 								return false;
 							}

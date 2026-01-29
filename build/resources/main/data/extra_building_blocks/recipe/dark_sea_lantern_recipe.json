@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aba",
+    "bcb",
+    "aba"
+  ],
+  "key": {
+    "a": "minecraft:prismarine_crystals",
+    "b": "minecraft:prismarine_shard",
+    "c": "minecraft:black_dye"
+  },
+  "result": {
+    "id": "extra_building_blocks:dark_sea_lantern",
+    "count": 1
+  }
+}

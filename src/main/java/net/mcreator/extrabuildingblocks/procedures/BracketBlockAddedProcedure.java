@@ -9,7 +9,7 @@ import net.minecraft.core.BlockPos;
 
 public class BracketBlockAddedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		if (world.getBlockState(BlockPos.containing(x, y - 1, z)).canOcclude() || (world.getBlockState(BlockPos.containing(x, y - 1, z))).is(BlockTags.create(new ResourceLocation("extra_building_blocks:brackets_connect_to")))) {
+		if (world.getBlockState(BlockPos.containing(x, y - 1, z)).canOcclude() || (world.getBlockState(BlockPos.containing(x, y - 1, z))).is(BlockTags.create(ResourceLocation.parse("extra_building_blocks:brackets_connect_to")))) {
 			{
 				int _value = 1;
 				BlockPos _pos = BlockPos.containing(x, y, z);

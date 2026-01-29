@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aba",
+    "aba"
+  ],
+  "key": {
+    "a": "minecraft:iron_bars",
+    "b": "minecraft:iron_ingot"
+  },
+  "result": {
+    "id": "extra_building_blocks:iron_gate",
+    "count": 1
+  }
+}

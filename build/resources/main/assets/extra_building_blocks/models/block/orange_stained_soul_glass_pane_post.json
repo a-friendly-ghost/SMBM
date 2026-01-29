@@ -2,8 +2,8 @@
   "parent": "block/template_glass_pane_post",
   "textures": {
     "particle": "extra_building_blocks:block/orangestained",
-    "edge": "extra_building_blocks:block/orangestained",
-    "pane": "extra_building_blocks:block/orangestained"
+    "pane": "extra_building_blocks:block/orangestained",
+    "edge": "extra_building_blocks:block/orangestained"
   },
   "render_type": "translucent"
 }

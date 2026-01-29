@@ -1,63 +1,70 @@
-
 package net.mcreator.extrabuildingblocks.block;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.level.redstone.Orientation;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
-import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.AttachFace;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.SimpleWaterloggedBlock;
-import net.minecraft.world.level.block.Rotation;
-import net.minecraft.world.level.block.Mirror;
-import net.minecraft.world.level.block.HorizontalDirectionalBlock;
-import net.minecraft.world.level.block.FaceAttachedHorizontalDirectionalBlock;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.ScheduledTickAccess;
+import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
+import net.minecraft.world.item.component.TooltipDisplay;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.util.RandomSource;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.extrabuildingblocks.procedures.BraceBlockAddedProcedure;
+import net.mcreator.extrabuildingblocks.init.ExtraBuildingBlocksModBlocks;
 
-import java.util.List;
+import javax.annotation.Nullable;
+
+import java.util.function.Consumer;
 
 public class BraceBlock extends Block implements SimpleWaterloggedBlock {
-	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
+	public static final EnumProperty<Direction> FACING = HorizontalDirectionalBlock.FACING;
 	public static final EnumProperty<AttachFace> FACE = FaceAttachedHorizontalDirectionalBlock.FACE;
 	public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
+	private static final VoxelShape SHAPE_NORTH_FLOOR = box(5, -1, -1, 11, 11.5, 11);
+	private static final VoxelShape SHAPE_NORTH_WALL = box(5, -1, 4.5, 11, 11, 17);
+	private static final VoxelShape SHAPE_NORTH_CEILING = box(5, 4.5, -1, 11, 17, 11);
+	private static final VoxelShape SHAPE_SOUTH_FLOOR = box(5, -1, 5, 11, 11.5, 17);
+	private static final VoxelShape SHAPE_SOUTH_WALL = box(5, -1, -1, 11, 11, 11.5);
+	private static final VoxelShape SHAPE_SOUTH_CEILING = box(5, 4.5, 5, 11, 17, 17);
+	private static final VoxelShape SHAPE_EAST_FLOOR = box(5, -1, 5, 17, 11.5, 11);
+	private static final VoxelShape SHAPE_EAST_WALL = box(-1, -1, 5, 11.5, 11, 11);
+	private static final VoxelShape SHAPE_EAST_CEILING = box(5, 4.5, 5, 17, 17, 11);
+	private static final VoxelShape SHAPE_WEST_FLOOR = box(-1, -1, 5, 11, 11.5, 11);
+	private static final VoxelShape SHAPE_WEST_WALL = box(4.5, -1, 5, 17, 11, 11);
+	private static final VoxelShape SHAPE_WEST_CEILING = box(-1, 4.5, 5, 11, 17, 11);
 
-	public BraceBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(5f, 6f).requiresCorrectToolForDrops().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+	public BraceBlock(BlockBehaviour.Properties properties) {
+		super(properties.sound(SoundType.METAL).strength(5f, 6f).requiresCorrectToolForDrops().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(FACE, AttachFace.WALL).setValue(WATERLOGGED, false));
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.translatable("block.extra_building_blocks.brace.description_0"));
-	}
-
-	@Override
-	public boolean propagatesSkylightDown(BlockState state, BlockGetter reader, BlockPos pos) {
+	public boolean propagatesSkylightDown(BlockState state) {
 		return state.getFluidState().isEmpty();
 	}
 
 	@Override
-	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
+	public int getLightBlock(BlockState state) {
 		return 0;
 	}
 
@@ -68,28 +75,33 @@ public class BraceBlock extends Block implements SimpleWaterloggedBlock {
 
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		return switch (state.getValue(FACING)) {
-			default -> switch (state.getValue(FACE)) {
-				case FLOOR -> box(5, -1, 5, 11, 11.5, 17);
-				case WALL -> box(5, -1, -1, 11, 11, 11.5);
-				case CEILING -> box(5, 4.5, 5, 11, 17, 17);
-			};
+		return (switch (state.getValue(FACING)) {
 			case NORTH -> switch (state.getValue(FACE)) {
-				case FLOOR -> box(5, -1, -1, 11, 11.5, 11);
-				case WALL -> box(5, -1, 4.5, 11, 11, 17);
-				case CEILING -> box(5, 4.5, -1, 11, 17, 11);
+				case FLOOR -> SHAPE_NORTH_FLOOR;
+				case WALL -> SHAPE_NORTH_WALL;
+				case CEILING -> SHAPE_NORTH_CEILING;
+			};
+			case SOUTH -> switch (state.getValue(FACE)) {
+				case FLOOR -> SHAPE_SOUTH_FLOOR;
+				case WALL -> SHAPE_SOUTH_WALL;
+				case CEILING -> SHAPE_SOUTH_CEILING;
 			};
 			case EAST -> switch (state.getValue(FACE)) {
-				case FLOOR -> box(5, -1, 5, 17, 11.5, 11);
-				case WALL -> box(-1, -1, 5, 11.5, 11, 11);
-				case CEILING -> box(5, 4.5, 5, 17, 17, 11);
+				case FLOOR -> SHAPE_EAST_FLOOR;
+				case WALL -> SHAPE_EAST_WALL;
+				case CEILING -> SHAPE_EAST_CEILING;
 			};
 			case WEST -> switch (state.getValue(FACE)) {
-				case FLOOR -> box(-1, -1, 5, 11, 11.5, 11);
-				case WALL -> box(4.5, -1, 5, 17, 11, 11);
-				case CEILING -> box(-1, 4.5, 5, 11, 17, 11);
+				case FLOOR -> SHAPE_WEST_FLOOR;
+				case WALL -> SHAPE_WEST_WALL;
+				case CEILING -> SHAPE_WEST_CEILING;
 			};
-		};
+			default -> switch (state.getValue(FACE)) {
+				case FLOOR -> SHAPE_NORTH_FLOOR;
+				case WALL -> SHAPE_NORTH_WALL;
+				case CEILING -> SHAPE_NORTH_CEILING;
+			};
+		});
 	}
 
 	@Override
@@ -120,11 +132,11 @@ public class BraceBlock extends Block implements SimpleWaterloggedBlock {
 	}
 
 	@Override
-	public BlockState updateShape(BlockState state, Direction facing, BlockState facingState, LevelAccessor world, BlockPos currentPos, BlockPos facingPos) {
+	public BlockState updateShape(BlockState state, LevelReader world, ScheduledTickAccess scheduledTickAccess, BlockPos currentPos, Direction facing, BlockPos facingPos, BlockState facingState, RandomSource random) {
 		if (state.getValue(WATERLOGGED)) {
-			world.scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickDelay(world));
+			scheduledTickAccess.scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickDelay(world));
 		}
-		return super.updateShape(state, facing, facingState, world, currentPos, facingPos);
+		return super.updateShape(state, world, scheduledTickAccess, currentPos, facing, facingPos, facingState, random);
 	}
 
 	@Override
@@ -134,8 +146,20 @@ public class BraceBlock extends Block implements SimpleWaterloggedBlock {
 	}
 
 	@Override
-	public void neighborChanged(BlockState blockstate, Level world, BlockPos pos, Block neighborBlock, BlockPos fromPos, boolean moving) {
-		super.neighborChanged(blockstate, world, pos, neighborBlock, fromPos, moving);
+	public void neighborChanged(BlockState blockstate, Level world, BlockPos pos, Block neighborBlock, @Nullable Orientation orientation, boolean moving) {
+		super.neighborChanged(blockstate, world, pos, neighborBlock, orientation, moving);
 		BraceBlockAddedProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), blockstate);
+	}
+
+	public static class Item extends BlockItem {
+		public Item(Item.Properties properties) {
+			super(ExtraBuildingBlocksModBlocks.BRACE.get(), properties);
+		}
+
+		@Override
+		public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, TooltipDisplay tooltipDisplay, Consumer<Component> componentConsumer, TooltipFlag flag) {
+			super.appendHoverText(itemstack, context, tooltipDisplay, componentConsumer, flag);
+			componentConsumer.accept(Component.translatable("block.extra_building_blocks.brace.description_0"));
+		}
 	}
 }

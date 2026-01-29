@@ -1,4 +1,3 @@
-
 package net.mcreator.extrabuildingblocks.block;
 
 import net.minecraft.world.level.block.state.properties.WoodType;
@@ -11,12 +10,12 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 public class ChorusFenceGateBlock extends FenceGateBlock {
-	public ChorusFenceGateBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.NETHER_WOOD).strength(2f, 3f).dynamicShape().forceSolidOn(), WoodType.OAK);
+	public ChorusFenceGateBlock(BlockBehaviour.Properties properties) {
+		super(WoodType.OAK, properties.sound(SoundType.NETHER_WOOD).strength(2f, 3f).forceSolidOn());
 	}
 
 	@Override
-	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
+	public int getLightBlock(BlockState state) {
 		return 0;
 	}
 

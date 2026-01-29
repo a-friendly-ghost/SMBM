@@ -1,0 +1,30 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:soul_wall_torch",
+    "minecraft:soul_torch",
+    "extra_building_blocks:sconce",
+    "minecraft:redstone_wall_torch",
+    "minecraft:soul_campfire",
+    "extra_building_blocks:salt_crystal_emissive",
+    "minecraft:lantern",
+    "minecraft:wall_torch",
+    "minecraft:ochre_froglight",
+    "minecraft:soul_fire",
+    "minecraft:pearlescent_froglight",
+    "extra_building_blocks:soul_sconce",
+    "extra_building_blocks:soul_lamp",
+    "minecraft:campfire",
+    "minecraft:verdant_froglight",
+    "minecraft:jack_o_lantern",
+    "minecraft:fire",
+    "minecraft:glowstone",
+    "minecraft:torch",
+    "minecraft:soul_lantern",
+    "extra_building_blocks:lamp",
+    "minecraft:air",
+    "minecraft:sea_lantern",
+    "minecraft:redstone_torch",
+    "extra_building_blocks:dark_sea_lantern"
+  ]
+}

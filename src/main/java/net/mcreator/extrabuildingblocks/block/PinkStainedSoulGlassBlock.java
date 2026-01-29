@@ -1,4 +1,3 @@
-
 package net.mcreator.extrabuildingblocks.block;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
@@ -14,8 +13,8 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 public class PinkStainedSoulGlassBlock extends Block {
-	public PinkStainedSoulGlassBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.HAT).sound(SoundType.GLASS).strength(0.5f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+	public PinkStainedSoulGlassBlock(BlockBehaviour.Properties properties) {
+		super(properties.sound(SoundType.GLASS).strength(0.5f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false).instrument(NoteBlockInstrument.HAT));
 	}
 
 	@Override
@@ -24,7 +23,7 @@ public class PinkStainedSoulGlassBlock extends Block {
 	}
 
 	@Override
-	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
+	public int getLightBlock(BlockState state) {
 		return 2;
 	}
 

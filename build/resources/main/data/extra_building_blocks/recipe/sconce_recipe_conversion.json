@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "minecraft:iron_ingot",
+    "minecraft:torch"
+  ],
+  "result": {
+    "id": "extra_building_blocks:sconce",
+    "count": 1
+  }
+}

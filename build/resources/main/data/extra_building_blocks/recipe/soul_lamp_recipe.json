@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    " a ",
+    "bcb",
+    " a "
+  ],
+  "key": {
+    "a": "minecraft:polished_deepslate",
+    "b": "minecraft:chain",
+    "c": "minecraft:soul_sand"
+  },
+  "result": {
+    "id": "extra_building_blocks:soul_lamp",
+    "count": 1
+  }
+}

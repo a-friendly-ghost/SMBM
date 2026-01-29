@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": "extra_building_blocks:brown_stained_soul_glass"
+  },
+  "result": {
+    "id": "extra_building_blocks:brown_stained_soul_glass_pane",
+    "count": 16
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "a",
+    "b",
+    "c"
+  ],
+  "key": {
+    "a": "minecraft:soul_sand",
+    "b": "minecraft:iron_ingot",
+    "c": "minecraft:stick"
+  },
+  "result": {
+    "id": "extra_building_blocks:soul_sconce",
+    "count": 2
+  }
+}

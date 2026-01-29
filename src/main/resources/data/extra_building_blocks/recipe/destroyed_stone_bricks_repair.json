@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "extra_building_blocks:destroyed_stone_bricks",
+    "minecraft:stone_bricks"
+  ],
+  "result": {
+    "id": "minecraft:stone_bricks",
+    "count": 2
+  }
+}

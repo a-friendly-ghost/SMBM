@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:cut_copper",
+    "minecraft:cut_copper_slab",
+    "extra_building_blocks:wrought_iron_bars",
+    "extra_building_blocks:wrought_iron_gate",
+    "minecraft:copper_block",
+    "extra_building_blocks:wrought_iron",
+    "minecraft:cut_copper_stairs",
+    "extra_building_blocks:copper_bars"
+  ]
+}

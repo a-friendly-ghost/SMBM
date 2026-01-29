@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:soul_lantern",
+    {
+      "id": "#minecraft:fences",
+      "required": false
+    },
+    "extra_building_blocks:bracket",
+    "extra_building_blocks:brace",
+    "minecraft:lantern",
+    "extra_building_blocks:lamp",
+    "extra_building_blocks:soul_lamp",
+    {
+      "id": "#minecraft:walls",
+      "required": false
+    },
+    {
+      "id": "#extra_building_blocks:bars",
+      "required": false
+    },
+    "minecraft:bell",
+    "minecraft:chain"
+  ]
+}

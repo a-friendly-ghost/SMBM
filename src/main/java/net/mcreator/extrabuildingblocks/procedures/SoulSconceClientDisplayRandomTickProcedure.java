@@ -10,69 +10,33 @@ import net.minecraft.core.BlockPos;
 
 public class SoulSconceClientDisplayRandomTickProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		if ((new Object() {
-			public Direction getDirection(BlockPos pos) {
-				BlockState _bs = world.getBlockState(pos);
-				Property<?> property = _bs.getBlock().getStateDefinition().getProperty("facing");
-				if (property != null && _bs.getValue(property) instanceof Direction _dir)
-					return _dir;
-				else if (_bs.hasProperty(BlockStateProperties.AXIS))
-					return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.AXIS), Direction.AxisDirection.POSITIVE);
-				else if (_bs.hasProperty(BlockStateProperties.HORIZONTAL_AXIS))
-					return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.HORIZONTAL_AXIS), Direction.AxisDirection.POSITIVE);
-				return Direction.NORTH;
-			}
-		}.getDirection(BlockPos.containing(x, y, z))) == Direction.NORTH) {
+		if ((getBlockDirection(world, BlockPos.containing(x, y, z))) == Direction.NORTH) {
 			world.addParticle(ParticleTypes.SOUL_FIRE_FLAME, (x + 0.5), (y + 0.8), (z + 0.72), 0, 0, 0);
 			world.addParticle(ParticleTypes.SMOKE, (x + 0.5), (y + 0.8), (z + 0.72), 0, 0, 0);
 		}
-		if ((new Object() {
-			public Direction getDirection(BlockPos pos) {
-				BlockState _bs = world.getBlockState(pos);
-				Property<?> property = _bs.getBlock().getStateDefinition().getProperty("facing");
-				if (property != null && _bs.getValue(property) instanceof Direction _dir)
-					return _dir;
-				else if (_bs.hasProperty(BlockStateProperties.AXIS))
-					return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.AXIS), Direction.AxisDirection.POSITIVE);
-				else if (_bs.hasProperty(BlockStateProperties.HORIZONTAL_AXIS))
-					return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.HORIZONTAL_AXIS), Direction.AxisDirection.POSITIVE);
-				return Direction.NORTH;
-			}
-		}.getDirection(BlockPos.containing(x, y, z))) == Direction.SOUTH) {
+		if ((getBlockDirection(world, BlockPos.containing(x, y, z))) == Direction.SOUTH) {
 			world.addParticle(ParticleTypes.SOUL_FIRE_FLAME, (x + 0.5), (y + 0.8), (z + 0.22), 0, 0, 0);
 			world.addParticle(ParticleTypes.SMOKE, (x + 0.5), (y + 0.8), (z + 0.22), 0, 0, 0);
 		}
-		if ((new Object() {
-			public Direction getDirection(BlockPos pos) {
-				BlockState _bs = world.getBlockState(pos);
-				Property<?> property = _bs.getBlock().getStateDefinition().getProperty("facing");
-				if (property != null && _bs.getValue(property) instanceof Direction _dir)
-					return _dir;
-				else if (_bs.hasProperty(BlockStateProperties.AXIS))
-					return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.AXIS), Direction.AxisDirection.POSITIVE);
-				else if (_bs.hasProperty(BlockStateProperties.HORIZONTAL_AXIS))
-					return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.HORIZONTAL_AXIS), Direction.AxisDirection.POSITIVE);
-				return Direction.NORTH;
-			}
-		}.getDirection(BlockPos.containing(x, y, z))) == Direction.EAST) {
+		if ((getBlockDirection(world, BlockPos.containing(x, y, z))) == Direction.EAST) {
 			world.addParticle(ParticleTypes.SOUL_FIRE_FLAME, (x + 0.22), (y + 0.8), (z + 0.5), 0, 0, 0);
 			world.addParticle(ParticleTypes.SMOKE, (x + 0.22), (y + 0.8), (z + 0.5), 0, 0, 0);
 		}
-		if ((new Object() {
-			public Direction getDirection(BlockPos pos) {
-				BlockState _bs = world.getBlockState(pos);
-				Property<?> property = _bs.getBlock().getStateDefinition().getProperty("facing");
-				if (property != null && _bs.getValue(property) instanceof Direction _dir)
-					return _dir;
-				else if (_bs.hasProperty(BlockStateProperties.AXIS))
-					return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.AXIS), Direction.AxisDirection.POSITIVE);
-				else if (_bs.hasProperty(BlockStateProperties.HORIZONTAL_AXIS))
-					return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.HORIZONTAL_AXIS), Direction.AxisDirection.POSITIVE);
-				return Direction.NORTH;
-			}
-		}.getDirection(BlockPos.containing(x, y, z))) == Direction.WEST) {
+		if ((getBlockDirection(world, BlockPos.containing(x, y, z))) == Direction.WEST) {
 			world.addParticle(ParticleTypes.SOUL_FIRE_FLAME, (x + 0.78), (y + 0.8), (z + 0.5), 0, 0, 0);
 			world.addParticle(ParticleTypes.SMOKE, (x + 0.78), (y + 0.8), (z + 0.5), 0, 0, 0);
 		}
+	}
+
+	private static Direction getBlockDirection(LevelAccessor world, BlockPos pos) {
+		BlockState blockState = world.getBlockState(pos);
+		Property<?> property = blockState.getBlock().getStateDefinition().getProperty("facing");
+		if (property != null && blockState.getValue(property) instanceof Direction direction)
+			return direction;
+		else if (blockState.hasProperty(BlockStateProperties.AXIS))
+			return Direction.fromAxisAndDirection(blockState.getValue(BlockStateProperties.AXIS), Direction.AxisDirection.POSITIVE);
+		else if (blockState.hasProperty(BlockStateProperties.HORIZONTAL_AXIS))
+			return Direction.fromAxisAndDirection(blockState.getValue(BlockStateProperties.HORIZONTAL_AXIS), Direction.AxisDirection.POSITIVE);
+		return Direction.NORTH;
 	}
 }

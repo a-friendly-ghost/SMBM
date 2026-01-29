@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:oxidized_copper",
+    "extra_building_blocks:rusted_wrought_iron_bars",
+    "minecraft:oxidized_cut_copper",
+    "extra_building_blocks:oxidised_copper_bars",
+    "extra_building_blocks:rusted_wrought_iron",
+    "extra_building_blocks:rusted_wrought_iron_gate",
+    "minecraft:oxidized_cut_copper_stairs",
+    "minecraft:oxidized_cut_copper_slab"
+  ]
+}

@@ -16,9 +16,9 @@ public class PottedChorusOnBlockRightClickedProcedure {
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.AIR.asItem()) {
 			world.setBlock(BlockPos.containing(x, y, z), Blocks.FLOWER_POT.defaultBlockState(), 3);
 			if (entity instanceof LivingEntity _entity) {
-				ItemStack _setstack = new ItemStack(Blocks.CHORUS_FLOWER).copy();
-				_setstack.setCount(1);
-				_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+				ItemStack _setstack3 = new ItemStack(Blocks.CHORUS_FLOWER).copy();
+				_setstack3.setCount(1);
+				_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack3);
 				if (_entity instanceof Player _player)
 					_player.getInventory().setChanged();
 			}

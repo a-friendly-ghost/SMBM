@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": "extra_building_blocks:soul_glass",
+    "b": "minecraft:light_blue_dye"
+  },
+  "result": {
+    "id": "extra_building_blocks:light_blue_stained_soul_glass",
+    "count": 8
+  }
+}

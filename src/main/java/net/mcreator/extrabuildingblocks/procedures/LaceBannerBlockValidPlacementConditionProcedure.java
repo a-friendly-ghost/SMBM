@@ -12,76 +12,28 @@ public class LaceBannerBlockValidPlacementConditionProcedure {
 		if (!world.isEmptyBlock(BlockPos.containing(x, y + 1, z))) {
 			return true;
 		}
-		if ((new Object() {
-			public Direction getDirection(BlockPos pos) {
-				BlockState _bs = world.getBlockState(pos);
-				Property<?> property = _bs.getBlock().getStateDefinition().getProperty("facing");
-				if (property != null && _bs.getValue(property) instanceof Direction _dir)
-					return _dir;
-				else if (_bs.hasProperty(BlockStateProperties.AXIS))
-					return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.AXIS), Direction.AxisDirection.POSITIVE);
-				else if (_bs.hasProperty(BlockStateProperties.HORIZONTAL_AXIS))
-					return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.HORIZONTAL_AXIS), Direction.AxisDirection.POSITIVE);
-				return Direction.NORTH;
-			}
-		}.getDirection(BlockPos.containing(x, y, z))) == Direction.EAST) {
+		if ((getBlockDirection(world, BlockPos.containing(x, y, z))) == Direction.EAST) {
 			if (!world.isEmptyBlock(BlockPos.containing(x - 1, y, z))) {
 				return true;
 			} else {
 				return false;
 			}
 		}
-		if ((new Object() {
-			public Direction getDirection(BlockPos pos) {
-				BlockState _bs = world.getBlockState(pos);
-				Property<?> property = _bs.getBlock().getStateDefinition().getProperty("facing");
-				if (property != null && _bs.getValue(property) instanceof Direction _dir)
-					return _dir;
-				else if (_bs.hasProperty(BlockStateProperties.AXIS))
-					return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.AXIS), Direction.AxisDirection.POSITIVE);
-				else if (_bs.hasProperty(BlockStateProperties.HORIZONTAL_AXIS))
-					return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.HORIZONTAL_AXIS), Direction.AxisDirection.POSITIVE);
-				return Direction.NORTH;
-			}
-		}.getDirection(BlockPos.containing(x, y, z))) == Direction.WEST) {
+		if ((getBlockDirection(world, BlockPos.containing(x, y, z))) == Direction.WEST) {
 			if (!world.isEmptyBlock(BlockPos.containing(x + 1, y, z))) {
 				return true;
 			} else {
 				return false;
 			}
 		}
-		if ((new Object() {
-			public Direction getDirection(BlockPos pos) {
-				BlockState _bs = world.getBlockState(pos);
-				Property<?> property = _bs.getBlock().getStateDefinition().getProperty("facing");
-				if (property != null && _bs.getValue(property) instanceof Direction _dir)
-					return _dir;
-				else if (_bs.hasProperty(BlockStateProperties.AXIS))
-					return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.AXIS), Direction.AxisDirection.POSITIVE);
-				else if (_bs.hasProperty(BlockStateProperties.HORIZONTAL_AXIS))
-					return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.HORIZONTAL_AXIS), Direction.AxisDirection.POSITIVE);
-				return Direction.NORTH;
-			}
-		}.getDirection(BlockPos.containing(x, y, z))) == Direction.NORTH) {
+		if ((getBlockDirection(world, BlockPos.containing(x, y, z))) == Direction.NORTH) {
 			if (!world.isEmptyBlock(BlockPos.containing(x, y, z + 1))) {
 				return true;
 			} else {
 				return false;
 			}
 		}
-		if ((new Object() {
-			public Direction getDirection(BlockPos pos) {
-				BlockState _bs = world.getBlockState(pos);
-				Property<?> property = _bs.getBlock().getStateDefinition().getProperty("facing");
-				if (property != null && _bs.getValue(property) instanceof Direction _dir)
-					return _dir;
-				else if (_bs.hasProperty(BlockStateProperties.AXIS))
-					return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.AXIS), Direction.AxisDirection.POSITIVE);
-				else if (_bs.hasProperty(BlockStateProperties.HORIZONTAL_AXIS))
-					return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.HORIZONTAL_AXIS), Direction.AxisDirection.POSITIVE);
-				return Direction.NORTH;
-			}
-		}.getDirection(BlockPos.containing(x, y, z))) == Direction.SOUTH) {
+		if ((getBlockDirection(world, BlockPos.containing(x, y, z))) == Direction.SOUTH) {
 			if (!world.isEmptyBlock(BlockPos.containing(x, y, z - 1))) {
 				return true;
 			} else {
@@ -89,5 +41,17 @@ public class LaceBannerBlockValidPlacementConditionProcedure {
 			}
 		}
 		return false;
+	}
+
+	private static Direction getBlockDirection(LevelAccessor world, BlockPos pos) {
+		BlockState blockState = world.getBlockState(pos);
+		Property<?> property = blockState.getBlock().getStateDefinition().getProperty("facing");
+		if (property != null && blockState.getValue(property) instanceof Direction direction)
+			return direction;
+		else if (blockState.hasProperty(BlockStateProperties.AXIS))
+			return Direction.fromAxisAndDirection(blockState.getValue(BlockStateProperties.AXIS), Direction.AxisDirection.POSITIVE);
+		else if (blockState.hasProperty(BlockStateProperties.HORIZONTAL_AXIS))
+			return Direction.fromAxisAndDirection(blockState.getValue(BlockStateProperties.HORIZONTAL_AXIS), Direction.AxisDirection.POSITIVE);
+		return Direction.NORTH;
 	}
 }

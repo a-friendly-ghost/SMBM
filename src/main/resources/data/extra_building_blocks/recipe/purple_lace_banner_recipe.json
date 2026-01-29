@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "minecraft:purple_dye",
+    "extra_building_blocks:lace_banner"
+  ],
+  "result": {
+    "id": "extra_building_blocks:purple_lace_banner",
+    "count": 1
+  }
+}
