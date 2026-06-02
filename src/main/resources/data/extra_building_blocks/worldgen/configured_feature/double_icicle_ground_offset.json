@@ -4,8 +4,12 @@
     "to_place": {
       "type": "minecraft:simple_state_provider",
       "state": {
-        "Name": "extra_building_blocks:icicle_frustum"
+        "Name": "extra_building_blocks:icicle",
+        "Properties": {
+          "thickness": "frustum"
+        }
       }
-    }
+    },
+    "schedule_tick": true
   }
 }

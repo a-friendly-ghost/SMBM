@@ -7,11 +7,11 @@
     "aba"
   ],
   "key": {
-    "a": "extra_building_blocks:cactus_w_planks",
+    "a": "extra_building_blocks:cactus_wood_planks",
     "b": "minecraft:stick"
   },
   "result": {
-    "id": "extra_building_blocks:cactus_w_fence",
+    "id": "extra_building_blocks:cactus_wood_fence",
     "count": 3
   }
 }

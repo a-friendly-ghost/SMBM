@@ -1,11 +1,130 @@
 {
   "mappings": {
     "default": {
+      "name": "default",
+      "map": {
+        "1": "lacecarpet",
+        "missing": "pixil-frame-0"
+      }
+    },
+    "white": {
+      "name": "white",
+      "map": {
+        "1": "pixil-frame-0_7",
+        "missing": ""
+      }
+    },
+    "lightgrey": {
+      "name": "lightgrey",
+      "map": {
+        "1": "pixil-frame-0_13",
+        "missing": ""
+      }
+    },
+    "grey": {
+      "name": "grey",
+      "map": {
+        "1": "pixil-frame-0_15",
+        "missing": ""
+      }
+    },
+    "black": {
+      "name": "black",
+      "map": {
+        "1": "pixil-frame-0_1",
+        "missing": ""
+      }
+    },
+    "red": {
+      "name": "red",
       "map": {
         "1": "pixil-frame-0",
-        "missing": "pixil-frame-0"
-      },
-      "name": "default"
+        "missing": ""
+      }
+    },
+    "orange": {
+      "name": "orange",
+      "map": {
+        "1": "pixil-frame-0_9",
+        "missing": ""
+      }
+    },
+    "yellow": {
+      "name": "yellow",
+      "map": {
+        "1": "pixil-frame-0_8",
+        "missing": ""
+      }
+    },
+    "lime": {
+      "name": "lime",
+      "map": {
+        "1": "pixil-frame-0_12",
+        "missing": ""
+      }
+    },
+    "green": {
+      "name": "green",
+      "map": {
+        "1": "pixil-frame-0_6",
+        "missing": ""
+      }
+    },
+    "cyan": {
+      "name": "cyan",
+      "map": {
+        "1": "pixil-frame-0_11",
+        "missing": ""
+      }
+    },
+    "lightblue": {
+      "name": "lightblue",
+      "map": {
+        "1": "light",
+        "missing": ""
+      }
+    },
+    "blue": {
+      "name": "blue",
+      "map": {
+        "1": "pixil-frame-0_4",
+        "missing": ""
+      }
+    },
+    "purple": {
+      "name": "purple",
+      "map": {
+        "1": "pixil-frame-0_14",
+        "missing": ""
+      }
+    },
+    "magenta": {
+      "name": "magenta",
+      "map": {
+        "1": "pixil-frame-0_3",
+        "missing": ""
+      }
+    },
+    "pink": {
+      "name": "pink",
+      "map": {
+        "1": "pixil-frame-0_10",
+        "missing": ""
+      }
+    },
+    "brown": {
+      "name": "brown",
+      "map": {
+        "1": "pixil-frame-0_16",
+        "missing": ""
+      }
+    },
+    "train": {
+      "name": "train",
+      "map": {
+        "1": "pixil-frame-0_5",
+        "missing": ""
+      }
     }
   }
 }

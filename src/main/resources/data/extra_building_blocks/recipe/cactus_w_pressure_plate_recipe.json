@@ -6,10 +6,10 @@
     "aa"
   ],
   "key": {
-    "a": "extra_building_blocks:cactus_w_planks"
+    "a": "extra_building_blocks:cactus_wood_planks"
   },
   "result": {
-    "id": "extra_building_blocks:cactus_w_pressure_plate",
+    "id": "extra_building_blocks:cactus_wood_pressure_plate",
     "count": 1
   }
 }

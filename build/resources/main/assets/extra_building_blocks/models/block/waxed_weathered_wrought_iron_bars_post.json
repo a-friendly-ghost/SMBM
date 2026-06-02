@@ -1,8 +1,9 @@
 {
-  "parent": "block/iron_bars_post",
+  "parent": "block/template_glass_pane_post",
   "textures": {
-    "bars": "extra_building_blocks:block/weatheredwroughtironedge",
-    "particle": "extra_building_blocks:block/weatheredwroughtironbars"
+    "particle": "extra_building_blocks:block/weatheredwroughtironbars",
+    "pane": "extra_building_blocks:block/weatheredwroughtironbars",
+    "edge": "extra_building_blocks:block/weatheredwroughtironbars"
   },
-  "render_type": "cutout_mipped"
+  "render_type": "cutout"
 }

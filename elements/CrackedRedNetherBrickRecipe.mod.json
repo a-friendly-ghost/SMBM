@@ -5,7 +5,11 @@
     "recipeType": "Smelting",
     "recipeRetstackSize": 1,
     "group": "",
-    "unlockingItems": [],
+    "unlockingItems": [
+      {
+        "value": "Blocks.RED_NETHER_BRICK"
+      }
+    ],
     "cookingBookCategory": "BLOCKS",
     "xpReward": 0.1,
     "cookingTime": 200,

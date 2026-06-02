@@ -1,9 +1,9 @@
 {
-  "parent": "extra_building_blocks:custom/wrought_iron_bars_side_alt",
+  "parent": "block/template_glass_pane_side_alt",
   "textures": {
-    "edge": "extra_building_blocks:block/rustedwroughtironedge",
-    "bars": "extra_building_blocks:block/rustedwroughtironbars",
-    "particle": "extra_building_blocks:block/rustedwroughtironbars"
+    "particle": "extra_building_blocks:block/rustedwroughtironbars",
+    "pane": "extra_building_blocks:block/rustedwroughtironbars",
+    "edge": "extra_building_blocks:block/rustedwroughtironbars"
   },
-  "render_type": "cutout_mipped"
+  "render_type": "cutout"
 }

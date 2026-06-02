@@ -1,8 +1,8 @@
 package net.mcreator.extrabuildingblocks.procedures;
 
 import net.minecraft.world.level.block.state.properties.Property;
-import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
+import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.LevelAccessor;
@@ -33,9 +33,8 @@ public class IronGateOnBlockRightClickedProcedure {
 			if (!((getBlockDirection(world, BlockPos.containing(x, checkY, z))).getAxis() == (getBlockDirection(world, BlockPos.containing(x, y, z))).getAxis())) {
 				break;
 			}
-			if (((world.getBlockState(BlockPos.containing(x, checkY, z))).getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip7
-					? (world.getBlockState(BlockPos.containing(x, checkY, z))).getValue(_getip7)
-					: -1) == 0) {
+			if (((world.getBlockState(BlockPos.containing(x, checkY, z))).getBlock().getStateDefinition().getProperty("open") instanceof BooleanProperty _getbp7
+					&& (world.getBlockState(BlockPos.containing(x, checkY, z))).getValue(_getbp7)) == false) {
 				if ((getBlockDirection(world, BlockPos.containing(x, checkY, z))).getAxis() == Direction.Axis.Z) {
 					if (entity.getZ() > z) {
 						{
@@ -61,11 +60,10 @@ public class IronGateOnBlockRightClickedProcedure {
 						}
 					}
 					{
-						int _value = 1;
 						BlockPos _pos = BlockPos.containing(x, checkY, z);
 						BlockState _bs = world.getBlockState(_pos);
-						if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
-							world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
+						if (_bs.getBlock().getStateDefinition().getProperty("open") instanceof BooleanProperty _booleanProp)
+							world.setBlock(_pos, _bs.setValue(_booleanProp, true), 3);
 					}
 				} else {
 					if (entity.getX() > x) {
@@ -92,11 +90,10 @@ public class IronGateOnBlockRightClickedProcedure {
 						}
 					}
 					{
-						int _value = 1;
 						BlockPos _pos = BlockPos.containing(x, checkY, z);
 						BlockState _bs = world.getBlockState(_pos);
-						if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
-							world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
+						if (_bs.getBlock().getStateDefinition().getProperty("open") instanceof BooleanProperty _booleanProp)
+							world.setBlock(_pos, _bs.setValue(_booleanProp, true), 3);
 					}
 				}
 				if (world instanceof Level _level) {
@@ -108,11 +105,10 @@ public class IronGateOnBlockRightClickedProcedure {
 				}
 			} else {
 				{
-					int _value = 0;
 					BlockPos _pos = BlockPos.containing(x, checkY, z);
 					BlockState _bs = world.getBlockState(_pos);
-					if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
-						world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
+					if (_bs.getBlock().getStateDefinition().getProperty("open") instanceof BooleanProperty _booleanProp)
+						world.setBlock(_pos, _bs.setValue(_booleanProp, false), 3);
 				}
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
@@ -133,9 +129,8 @@ public class IronGateOnBlockRightClickedProcedure {
 			if (!((getBlockDirection(world, BlockPos.containing(x, checkY, z))).getAxis() == (getBlockDirection(world, BlockPos.containing(x, y, z))).getAxis())) {
 				break;
 			}
-			if (((world.getBlockState(BlockPos.containing(x, checkY, z))).getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip27
-					? (world.getBlockState(BlockPos.containing(x, checkY, z))).getValue(_getip27)
-					: -1) == 0) {
+			if (((world.getBlockState(BlockPos.containing(x, checkY, z))).getBlock().getStateDefinition().getProperty("open") instanceof BooleanProperty _getbp27
+					&& (world.getBlockState(BlockPos.containing(x, checkY, z))).getValue(_getbp27)) == false) {
 				if ((getBlockDirection(world, BlockPos.containing(x, checkY, z))).getAxis() == Direction.Axis.Z) {
 					if (entity.getZ() > z) {
 						{
@@ -161,11 +156,10 @@ public class IronGateOnBlockRightClickedProcedure {
 						}
 					}
 					{
-						int _value = 1;
 						BlockPos _pos = BlockPos.containing(x, checkY, z);
 						BlockState _bs = world.getBlockState(_pos);
-						if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
-							world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
+						if (_bs.getBlock().getStateDefinition().getProperty("open") instanceof BooleanProperty _booleanProp)
+							world.setBlock(_pos, _bs.setValue(_booleanProp, true), 3);
 					}
 				} else {
 					if (entity.getX() > x) {
@@ -192,11 +186,10 @@ public class IronGateOnBlockRightClickedProcedure {
 						}
 					}
 					{
-						int _value = 1;
 						BlockPos _pos = BlockPos.containing(x, checkY, z);
 						BlockState _bs = world.getBlockState(_pos);
-						if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
-							world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
+						if (_bs.getBlock().getStateDefinition().getProperty("open") instanceof BooleanProperty _booleanProp)
+							world.setBlock(_pos, _bs.setValue(_booleanProp, true), 3);
 					}
 				}
 				if (world instanceof Level _level) {
@@ -208,11 +201,10 @@ public class IronGateOnBlockRightClickedProcedure {
 				}
 			} else {
 				{
-					int _value = 0;
 					BlockPos _pos = BlockPos.containing(x, checkY, z);
 					BlockState _bs = world.getBlockState(_pos);
-					if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
-						world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
+					if (_bs.getBlock().getStateDefinition().getProperty("open") instanceof BooleanProperty _booleanProp)
+						world.setBlock(_pos, _bs.setValue(_booleanProp, false), 3);
 				}
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {

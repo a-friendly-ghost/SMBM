@@ -5,7 +5,14 @@
     "recipeType": "Crafting",
     "recipeRetstackSize": 8,
     "group": "",
-    "unlockingItems": [],
+    "unlockingItems": [
+      {
+        "value": "Items.DYE#8"
+      },
+      {
+        "value": "CUSTOM:SoulGlass"
+      }
+    ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
     "cookingTime": 200,

@@ -1,9 +1,9 @@
 {
-  "parent": "extra_building_blocks:custom/wrought_iron_bars_side_alt",
+  "parent": "block/template_glass_pane_side_alt",
   "textures": {
-    "edge": "extra_building_blocks:block/weatheredwroughtironedge",
-    "bars": "extra_building_blocks:block/weatheredwroughtironbars",
-    "particle": "extra_building_blocks:block/weatheredwroughtironbars"
+    "particle": "extra_building_blocks:block/weatheredwroughtironbars",
+    "pane": "extra_building_blocks:block/weatheredwroughtironbars",
+    "edge": "extra_building_blocks:block/weatheredwroughtironbars"
   },
-  "render_type": "cutout_mipped"
+  "render_type": "cutout"
 }

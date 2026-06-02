@@ -10,10 +10,10 @@
         "model": "extra_building_blocks:block/exposed_copper_bars_post"
       },
       "when": {
-        "east": "false",
-        "north": "false",
-        "south": "false",
-        "west": "false"
+        "east": false,
+        "north": false,
+        "south": false,
+        "west": false
       }
     },
     {
@@ -21,10 +21,10 @@
         "model": "extra_building_blocks:block/exposed_copper_bars_cap"
       },
       "when": {
-        "east": "false",
-        "north": "true",
-        "south": "false",
-        "west": "false"
+        "east": false,
+        "north": true,
+        "south": false,
+        "west": false
       }
     },
     {
@@ -33,10 +33,10 @@
         "y": 90
       },
       "when": {
-        "east": "true",
-        "north": "false",
-        "south": "false",
-        "west": "false"
+        "east": true,
+        "north": false,
+        "south": false,
+        "west": false
       }
     },
     {
@@ -44,10 +44,10 @@
         "model": "extra_building_blocks:block/exposed_copper_bars_cap_alt"
       },
       "when": {
-        "east": "false",
-        "north": "false",
-        "south": "true",
-        "west": "false"
+        "east": false,
+        "north": false,
+        "south": true,
+        "west": false
       }
     },
     {
@@ -56,10 +56,10 @@
         "y": 90
       },
       "when": {
-        "east": "false",
-        "north": "false",
-        "south": "false",
-        "west": "true"
+        "east": false,
+        "north": false,
+        "south": false,
+        "west": true
       }
     },
     {
@@ -67,7 +67,7 @@
         "model": "extra_building_blocks:block/exposed_copper_bars_side"
       },
       "when": {
-        "north": "true"
+        "north": true
       }
     },
     {
@@ -76,7 +76,7 @@
         "y": 90
       },
       "when": {
-        "east": "true"
+        "east": true
       }
     },
     {
@@ -84,7 +84,7 @@
         "model": "extra_building_blocks:block/exposed_copper_bars_side_alt"
       },
       "when": {
-        "south": "true"
+        "south": true
       }
     },
     {
@@ -93,7 +93,7 @@
         "y": 90
       },
       "when": {
-        "west": "true"
+        "west": true
       }
     }
   ]

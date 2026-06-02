@@ -18,6 +18,9 @@
     "itemTexture": "packed_ice_texture_je2_be3_6",
     "particleTexture": "",
     "blockSetType": "OAK",
+    "pottedPlant": {
+      "value": ""
+    },
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": true,
@@ -35,7 +38,19 @@
         "subtract": false
       }
     ],
-    "customProperties": [],
+    "customProperties": [
+      {
+        "arrayData": [
+          "tip",
+          "frustum",
+          "middle",
+          "base"
+        ],
+        "name": "CUSTOM:thickness",
+        "type": "string",
+        "value": "tip"
+      }
+    ],
     "name": "Icicle",
     "specialInformation": {
       "fixedValue": []
@@ -83,6 +98,9 @@
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
+    "strippingResult": {
+      "value": ""
+    },
     "ignitedByLava": false,
     "flammability": 0,
     "fireSpreadSpeed": 0,
@@ -120,6 +138,9 @@
     "isBonemealable": false,
     "sensitiveToVibration": false,
     "vibrationalEvents": [],
+    "vibrationSensitivityRadius": {
+      "fixedValue": 7.0
+    },
     "hasInventory": false,
     "openGUIOnRightClick": false,
     "inventorySize": 9,

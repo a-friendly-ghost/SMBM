@@ -3,15 +3,23 @@
   "values": [
     "minecraft:soul_lantern",
     "extra_building_blocks:bracket",
-    "extra_building_blocks:brace",
-    "minecraft:lantern",
-    "extra_building_blocks:lamp",
-    "extra_building_blocks:soul_lamp",
-    "extra_building_blocks:chain_mid",
     {
-      "id": "#extra_building_blocks:bars",
+      "id": "#minecraft:fences",
       "required": false
     },
+    "extra_building_blocks:brace",
+    "minecraft:lantern",
+    "extra_building_blocks:storm_lantern",
+    "extra_building_blocks:soul_storm_lantern",
+    {
+      "id": "#minecraft:walls",
+      "required": false
+    },
+    {
+      "id": "#minecraft:bars",
+      "required": false
+    },
+    "extra_building_blocks:chain_mid",
     "minecraft:chain"
   ]
 }

@@ -2,7 +2,7 @@
   "display": {
     "background": "minecraft:block/stone",
     "icon": {
-      "id": "extra_building_blocks:bus_lace_carpet"
+      "id": "extra_building_blocks:train_lace_carpet"
     },
     "title": {
       "translate": "advancements.bus_carpet_advancement.title"
@@ -22,7 +22,7 @@
         "items": [
           {
             "items": [
-              "extra_building_blocks:bus_lace_carpet"
+              "extra_building_blocks:train_lace_carpet"
             ],
             "count": {
               "min": 1,

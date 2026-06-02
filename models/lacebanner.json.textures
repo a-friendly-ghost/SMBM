@@ -1,11 +1,123 @@
 {
   "mappings": {
     "default": {
+      "name": "default",
       "map": {
-        "1": "texture_29",
-        "2": "texture_28_2_1"
-      },
-      "name": "default"
+        "all": "texture_28_2_1",
+        "wood": "texture_29"
+      }
+    },
+    "black": {
+      "name": "black",
+      "map": {
+        "all": "blacklace",
+        "wood": "texture_29"
+      }
+    },
+    "grey": {
+      "name": "grey",
+      "map": {
+        "all": "darkgreylace",
+        "wood": "texture_29"
+      }
+    },
+    "lightgrey": {
+      "name": "lightgrey",
+      "map": {
+        "all": "lightgreylace",
+        "wood": "texture_29"
+      }
+    },
+    "white": {
+      "name": "white",
+      "map": {
+        "all": "whitelace",
+        "wood": "texture_29"
+      }
+    },
+    "red": {
+      "name": "red",
+      "map": {
+        "all": "redlace",
+        "wood": "texture_29"
+      }
+    },
+    "orange": {
+      "name": "orange",
+      "map": {
+        "all": "orangelace",
+        "wood": "texture_29"
+      }
+    },
+    "yellow": {
+      "name": "yellow",
+      "map": {
+        "all": "yellowlace",
+        "wood": "texture_29"
+      }
+    },
+    "lime": {
+      "name": "lime",
+      "map": {
+        "all": "limelace",
+        "wood": "texture_29"
+      }
+    },
+    "green": {
+      "name": "green",
+      "map": {
+        "all": "greenlace",
+        "wood": "texture_29"
+      }
+    },
+    "lightblue": {
+      "name": "lightblue",
+      "map": {
+        "all": "lightbluelace",
+        "wood": "texture_29"
+      }
+    },
+    "blue": {
+      "name": "blue",
+      "map": {
+        "all": "bluelace",
+        "wood": "texture_29"
+      }
+    },
+    "purple": {
+      "name": "purple",
+      "map": {
+        "all": "purplelace",
+        "wood": "texture_29"
+      }
+    },
+    "magenta": {
+      "name": "magenta",
+      "map": {
+        "all": "magentalace",
+        "wood": "texture_29"
+      }
+    },
+    "pink": {
+      "name": "pink",
+      "map": {
+        "all": "pinklace",
+        "wood": "texture_29"
+      }
+    },
+    "brown": {
+      "name": "brown",
+      "map": {
+        "all": "brownlace",
+        "wood": "texture_29"
+      }
+    },
+    "cyan": {
+      "name": "cyan",
+      "map": {
+        "all": "cyanlace",
+        "wood": "texture_29"
+      }
     }
   }
 }

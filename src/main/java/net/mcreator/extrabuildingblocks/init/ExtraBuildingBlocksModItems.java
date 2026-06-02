@@ -27,7 +27,7 @@ public class ExtraBuildingBlocksModItems {
 	public static final DeferredItem<Item> CUT_GRANITE_STAIRS;
 	public static final DeferredItem<Item> CUT_GRANITE_SLAB;
 	public static final DeferredItem<Item> SWAMPVINE;
-	public static final DeferredItem<Item> LAMP;
+	public static final DeferredItem<Item> STORM_LANTERN;
 	public static final DeferredItem<Item> TEST;
 	public static final DeferredItem<Item> POLISHED_CALCITE;
 	public static final DeferredItem<Item> POLISHED_CALCITE_STAIRS;
@@ -77,10 +77,7 @@ public class ExtraBuildingBlocksModItems {
 	public static final DeferredItem<Item> CUT_SMOOTH_STONE_STAIRS;
 	public static final DeferredItem<Item> CUT_SMOOTH_STONE_SLAB;
 	public static final DeferredItem<Item> SMOOTH_STONE_WALL;
-	public static final DeferredItem<Item> ICICLE_TIP;
-	public static final DeferredItem<Item> ICICLE_FRUSTUM;
-	public static final DeferredItem<Item> ICICLE_MIDDLE;
-	public static final DeferredItem<Item> ICICLE_BASE;
+	public static final DeferredItem<Item> ICICLE;
 	public static final DeferredItem<Item> CHORUS_PLANKS;
 	public static final DeferredItem<Item> CHORUS_STAIRS;
 	public static final DeferredItem<Item> CHORUS_SLAB;
@@ -90,7 +87,7 @@ public class ExtraBuildingBlocksModItems {
 	public static final DeferredItem<Item> CHORUS_BUTTON;
 	public static final DeferredItem<Item> CHORUS_DOOR;
 	public static final DeferredItem<Item> CHORUS_TRAPDOOR;
-	public static final DeferredItem<Item> SOUL_LAMP;
+	public static final DeferredItem<Item> SOUL_STORM_LANTERN;
 	public static final DeferredItem<Item> SOUL_SCONCE;
 	public static final DeferredItem<Item> OAK_BEAM;
 	public static final DeferredItem<Item> SPRUCE_BEAM;
@@ -166,13 +163,13 @@ public class ExtraBuildingBlocksModItems {
 	public static final DeferredItem<Item> STONE_PILLAR;
 	public static final DeferredItem<Item> CHISELED_RED_NETHER_BRICK;
 	public static final DeferredItem<Item> CACTUS_WOOD;
-	public static final DeferredItem<Item> CACTUS_W_PLANKS;
-	public static final DeferredItem<Item> CACTUS_W_STAIRS;
-	public static final DeferredItem<Item> CACTUS_W_SLAB;
-	public static final DeferredItem<Item> CACTUS_W_FENCE;
-	public static final DeferredItem<Item> CACTUS_W_FENCE_GATE;
-	public static final DeferredItem<Item> CACTUS_W_PRESSURE_PLATE;
-	public static final DeferredItem<Item> CACTUS_W_BUTTON;
+	public static final DeferredItem<Item> CACTUS_WOOD_PLANKS;
+	public static final DeferredItem<Item> CACTUS_WOOD_STAIRS;
+	public static final DeferredItem<Item> CACTUS_WOOD_SLAB;
+	public static final DeferredItem<Item> CACTUS_WOOD_FENCE;
+	public static final DeferredItem<Item> CACTUS_WOOD_FENCE_GATE;
+	public static final DeferredItem<Item> CACTUS_WOOD_PRESSURE_PLATE;
+	public static final DeferredItem<Item> CACTUS_WOOD_BUTTON;
 	public static final DeferredItem<Item> POTTED_CHORUS;
 	public static final DeferredItem<Item> VERY_CRACKED_STONE_BRICKS;
 	public static final DeferredItem<Item> DESTROYED_STONE_BRICKS;
@@ -205,7 +202,6 @@ public class ExtraBuildingBlocksModItems {
 	public static final DeferredItem<Item> PRISMARINE_PILLAR;
 	public static final DeferredItem<Item> DARK_PRISMARINE_PILLAR;
 	public static final DeferredItem<Item> CHISELED_PRISMARINE;
-	public static final DeferredItem<Item> SALT_CRYSTAL_EMISSIVE;
 	public static final DeferredItem<Item> SOUL_MAGMA;
 	public static final DeferredItem<Item> RED_LACE_CARPET;
 	public static final DeferredItem<Item> ORANGE_LACE_CARPET;
@@ -223,7 +219,7 @@ public class ExtraBuildingBlocksModItems {
 	public static final DeferredItem<Item> GREY_LACE_CARPET;
 	public static final DeferredItem<Item> LIGHT_GREY_LACE_CARPET;
 	public static final DeferredItem<Item> WHITE_LACE_CARPET;
-	public static final DeferredItem<Item> BUS_LACE_CARPET;
+	public static final DeferredItem<Item> TRAIN_LACE_CARPET;
 	public static final DeferredItem<Item> LACE_CARPET;
 	public static final DeferredItem<Item> CHISELED_STONE;
 	public static final DeferredItem<Item> CHISELED_DEEPSLATE_BRICKS;
@@ -271,7 +267,6 @@ public class ExtraBuildingBlocksModItems {
 	public static final DeferredItem<Item> WAXED_EXPOSED_WROUGHT_IRON_GATE;
 	public static final DeferredItem<Item> WAXED_WEATHERED_WROUGHT_IRON_GATE;
 	public static final DeferredItem<Item> WAXED_RUSTED_WROUGHT_IRON_GATE;
-	public static final DeferredItem<Item> TEMPBEAM;
 	static {
 		CUT_ANDESITE = block(ExtraBuildingBlocksModBlocks.CUT_ANDESITE);
 		CUT_ANDESITE_STAIRS = block(ExtraBuildingBlocksModBlocks.CUT_ANDESITE_STAIRS);
@@ -280,7 +275,7 @@ public class ExtraBuildingBlocksModItems {
 		CUT_GRANITE_STAIRS = block(ExtraBuildingBlocksModBlocks.CUT_GRANITE_STAIRS);
 		CUT_GRANITE_SLAB = block(ExtraBuildingBlocksModBlocks.CUT_GRANITE_SLAB);
 		SWAMPVINE = register("swampvine", SwampvineBlock.Item::new);
-		LAMP = block(ExtraBuildingBlocksModBlocks.LAMP);
+		STORM_LANTERN = block(ExtraBuildingBlocksModBlocks.STORM_LANTERN);
 		TEST = block(ExtraBuildingBlocksModBlocks.TEST);
 		POLISHED_CALCITE = block(ExtraBuildingBlocksModBlocks.POLISHED_CALCITE);
 		POLISHED_CALCITE_STAIRS = block(ExtraBuildingBlocksModBlocks.POLISHED_CALCITE_STAIRS);
@@ -330,10 +325,7 @@ public class ExtraBuildingBlocksModItems {
 		CUT_SMOOTH_STONE_STAIRS = block(ExtraBuildingBlocksModBlocks.CUT_SMOOTH_STONE_STAIRS);
 		CUT_SMOOTH_STONE_SLAB = block(ExtraBuildingBlocksModBlocks.CUT_SMOOTH_STONE_SLAB);
 		SMOOTH_STONE_WALL = block(ExtraBuildingBlocksModBlocks.SMOOTH_STONE_WALL);
-		ICICLE_TIP = block(ExtraBuildingBlocksModBlocks.ICICLE_TIP);
-		ICICLE_FRUSTUM = block(ExtraBuildingBlocksModBlocks.ICICLE_FRUSTUM);
-		ICICLE_MIDDLE = block(ExtraBuildingBlocksModBlocks.ICICLE_MIDDLE);
-		ICICLE_BASE = block(ExtraBuildingBlocksModBlocks.ICICLE_BASE);
+		ICICLE = block(ExtraBuildingBlocksModBlocks.ICICLE);
 		CHORUS_PLANKS = block(ExtraBuildingBlocksModBlocks.CHORUS_PLANKS);
 		CHORUS_STAIRS = block(ExtraBuildingBlocksModBlocks.CHORUS_STAIRS);
 		CHORUS_SLAB = block(ExtraBuildingBlocksModBlocks.CHORUS_SLAB);
@@ -343,7 +335,7 @@ public class ExtraBuildingBlocksModItems {
 		CHORUS_BUTTON = block(ExtraBuildingBlocksModBlocks.CHORUS_BUTTON);
 		CHORUS_DOOR = doubleBlock(ExtraBuildingBlocksModBlocks.CHORUS_DOOR);
 		CHORUS_TRAPDOOR = block(ExtraBuildingBlocksModBlocks.CHORUS_TRAPDOOR);
-		SOUL_LAMP = block(ExtraBuildingBlocksModBlocks.SOUL_LAMP);
+		SOUL_STORM_LANTERN = block(ExtraBuildingBlocksModBlocks.SOUL_STORM_LANTERN);
 		SOUL_SCONCE = block(ExtraBuildingBlocksModBlocks.SOUL_SCONCE);
 		OAK_BEAM = block(ExtraBuildingBlocksModBlocks.OAK_BEAM);
 		SPRUCE_BEAM = block(ExtraBuildingBlocksModBlocks.SPRUCE_BEAM);
@@ -419,13 +411,13 @@ public class ExtraBuildingBlocksModItems {
 		STONE_PILLAR = block(ExtraBuildingBlocksModBlocks.STONE_PILLAR);
 		CHISELED_RED_NETHER_BRICK = block(ExtraBuildingBlocksModBlocks.CHISELED_RED_NETHER_BRICK);
 		CACTUS_WOOD = block(ExtraBuildingBlocksModBlocks.CACTUS_WOOD);
-		CACTUS_W_PLANKS = block(ExtraBuildingBlocksModBlocks.CACTUS_W_PLANKS);
-		CACTUS_W_STAIRS = block(ExtraBuildingBlocksModBlocks.CACTUS_W_STAIRS);
-		CACTUS_W_SLAB = block(ExtraBuildingBlocksModBlocks.CACTUS_W_SLAB);
-		CACTUS_W_FENCE = block(ExtraBuildingBlocksModBlocks.CACTUS_W_FENCE);
-		CACTUS_W_FENCE_GATE = block(ExtraBuildingBlocksModBlocks.CACTUS_W_FENCE_GATE);
-		CACTUS_W_PRESSURE_PLATE = block(ExtraBuildingBlocksModBlocks.CACTUS_W_PRESSURE_PLATE);
-		CACTUS_W_BUTTON = block(ExtraBuildingBlocksModBlocks.CACTUS_W_BUTTON);
+		CACTUS_WOOD_PLANKS = block(ExtraBuildingBlocksModBlocks.CACTUS_WOOD_PLANKS);
+		CACTUS_WOOD_STAIRS = block(ExtraBuildingBlocksModBlocks.CACTUS_WOOD_STAIRS);
+		CACTUS_WOOD_SLAB = block(ExtraBuildingBlocksModBlocks.CACTUS_WOOD_SLAB);
+		CACTUS_WOOD_FENCE = block(ExtraBuildingBlocksModBlocks.CACTUS_WOOD_FENCE);
+		CACTUS_WOOD_FENCE_GATE = block(ExtraBuildingBlocksModBlocks.CACTUS_WOOD_FENCE_GATE);
+		CACTUS_WOOD_PRESSURE_PLATE = block(ExtraBuildingBlocksModBlocks.CACTUS_WOOD_PRESSURE_PLATE);
+		CACTUS_WOOD_BUTTON = block(ExtraBuildingBlocksModBlocks.CACTUS_WOOD_BUTTON);
 		POTTED_CHORUS = block(ExtraBuildingBlocksModBlocks.POTTED_CHORUS);
 		VERY_CRACKED_STONE_BRICKS = block(ExtraBuildingBlocksModBlocks.VERY_CRACKED_STONE_BRICKS);
 		DESTROYED_STONE_BRICKS = block(ExtraBuildingBlocksModBlocks.DESTROYED_STONE_BRICKS);
@@ -458,7 +450,6 @@ public class ExtraBuildingBlocksModItems {
 		PRISMARINE_PILLAR = register("prismarine_pillar", PrismarinePillarBlock.Item::new);
 		DARK_PRISMARINE_PILLAR = register("dark_prismarine_pillar", DarkPrismarinePillarBlock.Item::new);
 		CHISELED_PRISMARINE = block(ExtraBuildingBlocksModBlocks.CHISELED_PRISMARINE);
-		SALT_CRYSTAL_EMISSIVE = block(ExtraBuildingBlocksModBlocks.SALT_CRYSTAL_EMISSIVE);
 		SOUL_MAGMA = block(ExtraBuildingBlocksModBlocks.SOUL_MAGMA);
 		RED_LACE_CARPET = block(ExtraBuildingBlocksModBlocks.RED_LACE_CARPET);
 		ORANGE_LACE_CARPET = block(ExtraBuildingBlocksModBlocks.ORANGE_LACE_CARPET);
@@ -476,7 +467,7 @@ public class ExtraBuildingBlocksModItems {
 		GREY_LACE_CARPET = block(ExtraBuildingBlocksModBlocks.GREY_LACE_CARPET);
 		LIGHT_GREY_LACE_CARPET = block(ExtraBuildingBlocksModBlocks.LIGHT_GREY_LACE_CARPET);
 		WHITE_LACE_CARPET = block(ExtraBuildingBlocksModBlocks.WHITE_LACE_CARPET);
-		BUS_LACE_CARPET = block(ExtraBuildingBlocksModBlocks.BUS_LACE_CARPET);
+		TRAIN_LACE_CARPET = block(ExtraBuildingBlocksModBlocks.TRAIN_LACE_CARPET);
 		LACE_CARPET = block(ExtraBuildingBlocksModBlocks.LACE_CARPET);
 		CHISELED_STONE = register("chiseled_stone", ChiseledStoneBlock.Item::new);
 		CHISELED_DEEPSLATE_BRICKS = register("chiseled_deepslate_bricks", ChiseledDeepslateBricksBlock.Item::new);
@@ -524,7 +515,6 @@ public class ExtraBuildingBlocksModItems {
 		WAXED_EXPOSED_WROUGHT_IRON_GATE = block(ExtraBuildingBlocksModBlocks.WAXED_EXPOSED_WROUGHT_IRON_GATE);
 		WAXED_WEATHERED_WROUGHT_IRON_GATE = block(ExtraBuildingBlocksModBlocks.WAXED_WEATHERED_WROUGHT_IRON_GATE);
 		WAXED_RUSTED_WROUGHT_IRON_GATE = block(ExtraBuildingBlocksModBlocks.WAXED_RUSTED_WROUGHT_IRON_GATE);
-		TEMPBEAM = block(ExtraBuildingBlocksModBlocks.TEMPBEAM);
 	}
 
 	// Start of user code block custom items

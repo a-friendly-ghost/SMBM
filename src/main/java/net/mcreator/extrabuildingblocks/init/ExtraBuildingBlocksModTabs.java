@@ -85,15 +85,8 @@ public class ExtraBuildingBlocksModTabs {
 				tabData.accept(ExtraBuildingBlocksModBlocks.CHORUS_TRAPDOOR.get().asItem());
 				tabData.accept(ExtraBuildingBlocksModBlocks.CHORUS_PRESSURE_PLATE.get().asItem());
 				tabData.accept(ExtraBuildingBlocksModBlocks.CHORUS_BUTTON.get().asItem());
-				tabData.accept(ExtraBuildingBlocksModBlocks.CACTUS_W_PLANKS.get().asItem());
-				tabData.accept(ExtraBuildingBlocksModBlocks.CACTUS_W_STAIRS.get().asItem());
-				tabData.accept(ExtraBuildingBlocksModBlocks.CACTUS_W_SLAB.get().asItem());
-				tabData.accept(ExtraBuildingBlocksModBlocks.CACTUS_W_FENCE.get().asItem());
-				tabData.accept(ExtraBuildingBlocksModBlocks.CACTUS_W_FENCE_GATE.get().asItem());
 				tabData.accept(ExtraBuildingBlocksModBlocks.CACTUS_WOOD_DOOR.get().asItem());
 				tabData.accept(ExtraBuildingBlocksModBlocks.CACTUS_WOOD_TRAPDOOR.get().asItem());
-				tabData.accept(ExtraBuildingBlocksModBlocks.CACTUS_W_PRESSURE_PLATE.get().asItem());
-				tabData.accept(ExtraBuildingBlocksModBlocks.CACTUS_W_BUTTON.get().asItem());
 				tabData.accept(ExtraBuildingBlocksModBlocks.OAK_BEAM.get().asItem());
 				tabData.accept(ExtraBuildingBlocksModBlocks.SPRUCE_BEAM.get().asItem());
 				tabData.accept(ExtraBuildingBlocksModBlocks.BIRCH_BEAM.get().asItem());
@@ -142,8 +135,6 @@ public class ExtraBuildingBlocksModTabs {
 				tabData.accept(ExtraBuildingBlocksModBlocks.PRISMARINE_PILLAR.get().asItem());
 				tabData.accept(ExtraBuildingBlocksModBlocks.DARK_PRISMARINE_PILLAR.get().asItem());
 				tabData.accept(ExtraBuildingBlocksModBlocks.DARK_SEA_LANTERN.get().asItem());
-				tabData.accept(ExtraBuildingBlocksModBlocks.LAMP.get().asItem());
-				tabData.accept(ExtraBuildingBlocksModBlocks.SOUL_LAMP.get().asItem());
 				tabData.accept(ExtraBuildingBlocksModBlocks.SCONCE.get().asItem());
 				tabData.accept(ExtraBuildingBlocksModBlocks.SOUL_SCONCE.get().asItem());
 				tabData.accept(ExtraBuildingBlocksModBlocks.BRACE.get().asItem());
@@ -248,7 +239,6 @@ public class ExtraBuildingBlocksModTabs {
 				tabData.accept(ExtraBuildingBlocksModBlocks.PURPLE_LACE_CARPET.get().asItem());
 				tabData.accept(ExtraBuildingBlocksModBlocks.MAGENTA_LACE_CARPET.get().asItem());
 				tabData.accept(ExtraBuildingBlocksModBlocks.PINK_LACE_CARPET.get().asItem());
-				tabData.accept(ExtraBuildingBlocksModBlocks.ICICLE_TIP.get().asItem());
 				tabData.accept(ExtraBuildingBlocksModBlocks.SOUL_MAGMA.get().asItem());
 				tabData.accept(ExtraBuildingBlocksModBlocks.RAW_SALT.get().asItem());
 				tabData.accept(ExtraBuildingBlocksModBlocks.SALT_CRYSTAL.get().asItem());
@@ -262,6 +252,16 @@ public class ExtraBuildingBlocksModTabs {
 				tabData.accept(ExtraBuildingBlocksModBlocks.PURPLE_DESERT_BUSH.get().asItem());
 				tabData.accept(ExtraBuildingBlocksModBlocks.SWAMPVINE.get().asItem());
 				tabData.accept(ExtraBuildingBlocksModItems.LACE.get());
+				tabData.accept(ExtraBuildingBlocksModBlocks.STORM_LANTERN.get().asItem());
+				tabData.accept(ExtraBuildingBlocksModBlocks.SOUL_STORM_LANTERN.get().asItem());
+				tabData.accept(ExtraBuildingBlocksModBlocks.CACTUS_WOOD_BUTTON.get().asItem());
+				tabData.accept(ExtraBuildingBlocksModBlocks.CACTUS_WOOD_FENCE.get().asItem());
+				tabData.accept(ExtraBuildingBlocksModBlocks.CACTUS_WOOD_FENCE_GATE.get().asItem());
+				tabData.accept(ExtraBuildingBlocksModBlocks.CACTUS_WOOD_PLANKS.get().asItem());
+				tabData.accept(ExtraBuildingBlocksModBlocks.CACTUS_WOOD_PRESSURE_PLATE.get().asItem());
+				tabData.accept(ExtraBuildingBlocksModBlocks.CACTUS_WOOD_SLAB.get().asItem());
+				tabData.accept(ExtraBuildingBlocksModBlocks.ICICLE.get().asItem());
+				tabData.accept(ExtraBuildingBlocksModBlocks.CACTUS_WOOD_STAIRS.get().asItem());
 			}).withSearchBar().build());
 
 	@SubscribeEvent
@@ -332,15 +332,8 @@ public class ExtraBuildingBlocksModTabs {
 			tabData.accept(ExtraBuildingBlocksModBlocks.CHORUS_TRAPDOOR.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.CHORUS_PRESSURE_PLATE.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.CHORUS_BUTTON.get().asItem());
-			tabData.accept(ExtraBuildingBlocksModBlocks.CACTUS_W_PLANKS.get().asItem());
-			tabData.accept(ExtraBuildingBlocksModBlocks.CACTUS_W_STAIRS.get().asItem());
-			tabData.accept(ExtraBuildingBlocksModBlocks.CACTUS_W_SLAB.get().asItem());
-			tabData.accept(ExtraBuildingBlocksModBlocks.CACTUS_W_FENCE.get().asItem());
-			tabData.accept(ExtraBuildingBlocksModBlocks.CACTUS_W_FENCE_GATE.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.CACTUS_WOOD_DOOR.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.CACTUS_WOOD_TRAPDOOR.get().asItem());
-			tabData.accept(ExtraBuildingBlocksModBlocks.CACTUS_W_PRESSURE_PLATE.get().asItem());
-			tabData.accept(ExtraBuildingBlocksModBlocks.CACTUS_W_BUTTON.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.OAK_BEAM.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.SPRUCE_BEAM.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.BIRCH_BEAM.get().asItem());
@@ -389,8 +382,6 @@ public class ExtraBuildingBlocksModTabs {
 			tabData.accept(ExtraBuildingBlocksModBlocks.PRISMARINE_PILLAR.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.DARK_PRISMARINE_PILLAR.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.DARK_SEA_LANTERN.get().asItem());
-			tabData.accept(ExtraBuildingBlocksModBlocks.LAMP.get().asItem());
-			tabData.accept(ExtraBuildingBlocksModBlocks.SOUL_LAMP.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.SCONCE.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.SOUL_SCONCE.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.BRACE.get().asItem());
@@ -427,6 +418,15 @@ public class ExtraBuildingBlocksModTabs {
 			tabData.accept(ExtraBuildingBlocksModBlocks.SMOOTH_STONE_WALL.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.SMOOTH_STONE_STAIRS.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.PURPUR_WALL.get().asItem());
+			tabData.accept(ExtraBuildingBlocksModBlocks.STORM_LANTERN.get().asItem());
+			tabData.accept(ExtraBuildingBlocksModBlocks.SOUL_STORM_LANTERN.get().asItem());
+			tabData.accept(ExtraBuildingBlocksModBlocks.CACTUS_WOOD_BUTTON.get().asItem());
+			tabData.accept(ExtraBuildingBlocksModBlocks.CACTUS_WOOD_FENCE.get().asItem());
+			tabData.accept(ExtraBuildingBlocksModBlocks.CACTUS_WOOD_FENCE_GATE.get().asItem());
+			tabData.accept(ExtraBuildingBlocksModBlocks.CACTUS_WOOD_PLANKS.get().asItem());
+			tabData.accept(ExtraBuildingBlocksModBlocks.CACTUS_WOOD_PRESSURE_PLATE.get().asItem());
+			tabData.accept(ExtraBuildingBlocksModBlocks.CACTUS_WOOD_SLAB.get().asItem());
+			tabData.accept(ExtraBuildingBlocksModBlocks.CACTUS_WOOD_STAIRS.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.COLORED_BLOCKS) {
 			tabData.accept(ExtraBuildingBlocksModBlocks.SOUL_GLASS.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.WHITE_STAINED_SOUL_GLASS.get().asItem());
@@ -497,7 +497,6 @@ public class ExtraBuildingBlocksModTabs {
 			tabData.accept(ExtraBuildingBlocksModBlocks.MAGENTA_LACE_CARPET.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.PINK_LACE_CARPET.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
-			tabData.accept(ExtraBuildingBlocksModBlocks.ICICLE_TIP.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.SOUL_MAGMA.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.RAW_SALT.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.SALT_CRYSTAL.get().asItem());
@@ -510,6 +509,7 @@ public class ExtraBuildingBlocksModTabs {
 			tabData.accept(ExtraBuildingBlocksModBlocks.GREEN_DESERT_BUSH.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.PURPLE_DESERT_BUSH.get().asItem());
 			tabData.accept(ExtraBuildingBlocksModBlocks.SWAMPVINE.get().asItem());
+			tabData.accept(ExtraBuildingBlocksModBlocks.ICICLE.get().asItem());
 		}
 	}
 }

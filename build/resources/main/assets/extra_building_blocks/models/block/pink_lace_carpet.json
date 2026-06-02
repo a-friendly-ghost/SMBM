@@ -4,7 +4,7 @@
     "all": "extra_building_blocks:block/pixil-frame-0_10",
     "particle": "extra_building_blocks:block/pixil-frame-0_10",
     "1": "extra_building_blocks:block/pixil-frame-0_10",
-    "missing": "extra_building_blocks:block/pixil-frame-0_10"
+    "missing": "extra_building_blocks:block/"
   },
   "render_type": "translucent"
 }

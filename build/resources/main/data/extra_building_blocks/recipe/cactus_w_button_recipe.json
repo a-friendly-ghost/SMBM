@@ -3,10 +3,10 @@
   "group": "wooden_button",
   "category": "redstone",
   "ingredients": [
-    "extra_building_blocks:cactus_w_planks"
+    "extra_building_blocks:cactus_wood_planks"
   ],
   "result": {
-    "id": "extra_building_blocks:cactus_w_button",
+    "id": "extra_building_blocks:cactus_wood_button",
     "count": 1
   }
 }

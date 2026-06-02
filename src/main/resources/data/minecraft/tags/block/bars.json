@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#extra_building_blocks:bars",
+      "required": false
+    }
+  ]
+}

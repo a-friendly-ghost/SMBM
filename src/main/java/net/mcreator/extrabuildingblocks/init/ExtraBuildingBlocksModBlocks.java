@@ -23,7 +23,7 @@ public class ExtraBuildingBlocksModBlocks {
 	public static final DeferredBlock<Block> CUT_GRANITE_STAIRS;
 	public static final DeferredBlock<Block> CUT_GRANITE_SLAB;
 	public static final DeferredBlock<Block> SWAMPVINE;
-	public static final DeferredBlock<Block> LAMP;
+	public static final DeferredBlock<Block> STORM_LANTERN;
 	public static final DeferredBlock<Block> TEST;
 	public static final DeferredBlock<Block> POLISHED_CALCITE;
 	public static final DeferredBlock<Block> POLISHED_CALCITE_STAIRS;
@@ -73,10 +73,7 @@ public class ExtraBuildingBlocksModBlocks {
 	public static final DeferredBlock<Block> CUT_SMOOTH_STONE_STAIRS;
 	public static final DeferredBlock<Block> CUT_SMOOTH_STONE_SLAB;
 	public static final DeferredBlock<Block> SMOOTH_STONE_WALL;
-	public static final DeferredBlock<Block> ICICLE_TIP;
-	public static final DeferredBlock<Block> ICICLE_FRUSTUM;
-	public static final DeferredBlock<Block> ICICLE_MIDDLE;
-	public static final DeferredBlock<Block> ICICLE_BASE;
+	public static final DeferredBlock<Block> ICICLE;
 	public static final DeferredBlock<Block> CHORUS_PLANKS;
 	public static final DeferredBlock<Block> CHORUS_STAIRS;
 	public static final DeferredBlock<Block> CHORUS_SLAB;
@@ -86,7 +83,7 @@ public class ExtraBuildingBlocksModBlocks {
 	public static final DeferredBlock<Block> CHORUS_BUTTON;
 	public static final DeferredBlock<Block> CHORUS_DOOR;
 	public static final DeferredBlock<Block> CHORUS_TRAPDOOR;
-	public static final DeferredBlock<Block> SOUL_LAMP;
+	public static final DeferredBlock<Block> SOUL_STORM_LANTERN;
 	public static final DeferredBlock<Block> SOUL_SCONCE;
 	public static final DeferredBlock<Block> OAK_BEAM;
 	public static final DeferredBlock<Block> SPRUCE_BEAM;
@@ -162,13 +159,13 @@ public class ExtraBuildingBlocksModBlocks {
 	public static final DeferredBlock<Block> STONE_PILLAR;
 	public static final DeferredBlock<Block> CHISELED_RED_NETHER_BRICK;
 	public static final DeferredBlock<Block> CACTUS_WOOD;
-	public static final DeferredBlock<Block> CACTUS_W_PLANKS;
-	public static final DeferredBlock<Block> CACTUS_W_STAIRS;
-	public static final DeferredBlock<Block> CACTUS_W_SLAB;
-	public static final DeferredBlock<Block> CACTUS_W_FENCE;
-	public static final DeferredBlock<Block> CACTUS_W_FENCE_GATE;
-	public static final DeferredBlock<Block> CACTUS_W_PRESSURE_PLATE;
-	public static final DeferredBlock<Block> CACTUS_W_BUTTON;
+	public static final DeferredBlock<Block> CACTUS_WOOD_PLANKS;
+	public static final DeferredBlock<Block> CACTUS_WOOD_STAIRS;
+	public static final DeferredBlock<Block> CACTUS_WOOD_SLAB;
+	public static final DeferredBlock<Block> CACTUS_WOOD_FENCE;
+	public static final DeferredBlock<Block> CACTUS_WOOD_FENCE_GATE;
+	public static final DeferredBlock<Block> CACTUS_WOOD_PRESSURE_PLATE;
+	public static final DeferredBlock<Block> CACTUS_WOOD_BUTTON;
 	public static final DeferredBlock<Block> POTTED_CHORUS;
 	public static final DeferredBlock<Block> VERY_CRACKED_STONE_BRICKS;
 	public static final DeferredBlock<Block> DESTROYED_STONE_BRICKS;
@@ -200,7 +197,6 @@ public class ExtraBuildingBlocksModBlocks {
 	public static final DeferredBlock<Block> PRISMARINE_PILLAR;
 	public static final DeferredBlock<Block> DARK_PRISMARINE_PILLAR;
 	public static final DeferredBlock<Block> CHISELED_PRISMARINE;
-	public static final DeferredBlock<Block> SALT_CRYSTAL_EMISSIVE;
 	public static final DeferredBlock<Block> SOUL_MAGMA;
 	public static final DeferredBlock<Block> RED_LACE_CARPET;
 	public static final DeferredBlock<Block> ORANGE_LACE_CARPET;
@@ -218,7 +214,7 @@ public class ExtraBuildingBlocksModBlocks {
 	public static final DeferredBlock<Block> GREY_LACE_CARPET;
 	public static final DeferredBlock<Block> LIGHT_GREY_LACE_CARPET;
 	public static final DeferredBlock<Block> WHITE_LACE_CARPET;
-	public static final DeferredBlock<Block> BUS_LACE_CARPET;
+	public static final DeferredBlock<Block> TRAIN_LACE_CARPET;
 	public static final DeferredBlock<Block> LACE_CARPET;
 	public static final DeferredBlock<Block> CHISELED_STONE;
 	public static final DeferredBlock<Block> CHISELED_DEEPSLATE_BRICKS;
@@ -266,7 +262,6 @@ public class ExtraBuildingBlocksModBlocks {
 	public static final DeferredBlock<Block> WAXED_EXPOSED_WROUGHT_IRON_GATE;
 	public static final DeferredBlock<Block> WAXED_WEATHERED_WROUGHT_IRON_GATE;
 	public static final DeferredBlock<Block> WAXED_RUSTED_WROUGHT_IRON_GATE;
-	public static final DeferredBlock<Block> TEMPBEAM;
 	static {
 		CUT_ANDESITE = register("cut_andesite", CutAndesiteBlock::new);
 		CUT_ANDESITE_STAIRS = register("cut_andesite_stairs", CutAndesiteStairsBlock::new);
@@ -275,7 +270,7 @@ public class ExtraBuildingBlocksModBlocks {
 		CUT_GRANITE_STAIRS = register("cut_granite_stairs", CutGraniteStairsBlock::new);
 		CUT_GRANITE_SLAB = register("cut_granite_slab", CutGraniteSlabBlock::new);
 		SWAMPVINE = register("swampvine", SwampvineBlock::new);
-		LAMP = register("lamp", LampBlock::new);
+		STORM_LANTERN = register("storm_lantern", LampBlock::new);
 		TEST = register("test", TESTBlock::new);
 		POLISHED_CALCITE = register("polished_calcite", PolishedCalciteBlock::new);
 		POLISHED_CALCITE_STAIRS = register("polished_calcite_stairs", PolishedCalciteStairsBlock::new);
@@ -325,10 +320,7 @@ public class ExtraBuildingBlocksModBlocks {
 		CUT_SMOOTH_STONE_STAIRS = register("cut_smooth_stone_stairs", CutSmoothStoneStairsBlock::new);
 		CUT_SMOOTH_STONE_SLAB = register("cut_smooth_stone_slab", CutSmoothStoneSlabBlock::new);
 		SMOOTH_STONE_WALL = register("smooth_stone_wall", SmoothStoneWallBlock::new);
-		ICICLE_TIP = register("icicle_tip", IcicleTipBlock::new);
-		ICICLE_FRUSTUM = register("icicle_frustum", IcicleFrustumBlock::new);
-		ICICLE_MIDDLE = register("icicle_middle", IcicleMiddleBlock::new);
-		ICICLE_BASE = register("icicle_base", IcicleBaseBlock::new);
+		ICICLE = register("icicle", IcicleTipBlock::new);
 		CHORUS_PLANKS = register("chorus_planks", ChorusPlanksBlock::new);
 		CHORUS_STAIRS = register("chorus_stairs", ChorusStairsBlock::new);
 		CHORUS_SLAB = register("chorus_slab", ChorusSlabBlock::new);
@@ -338,7 +330,7 @@ public class ExtraBuildingBlocksModBlocks {
 		CHORUS_BUTTON = register("chorus_button", ChorusButtonBlock::new);
 		CHORUS_DOOR = register("chorus_door", ChorusDoorBlock::new);
 		CHORUS_TRAPDOOR = register("chorus_trapdoor", ChorusTrapdoorBlock::new);
-		SOUL_LAMP = register("soul_lamp", SoulLampBlock::new);
+		SOUL_STORM_LANTERN = register("soul_storm_lantern", SoulLampBlock::new);
 		SOUL_SCONCE = register("soul_sconce", SoulSconceBlock::new);
 		OAK_BEAM = register("oak_beam", OakBeamBlock::new);
 		SPRUCE_BEAM = register("spruce_beam", SpruceBeamBlock::new);
@@ -414,13 +406,13 @@ public class ExtraBuildingBlocksModBlocks {
 		STONE_PILLAR = register("stone_pillar", StonePillarBlock::new);
 		CHISELED_RED_NETHER_BRICK = register("chiseled_red_nether_brick", ChiseledRedNetherBrickBlock::new);
 		CACTUS_WOOD = register("cactus_wood", CactusWoodBlock::new);
-		CACTUS_W_PLANKS = register("cactus_w_planks", CactusWPlanksBlock::new);
-		CACTUS_W_STAIRS = register("cactus_w_stairs", CactusWStairsBlock::new);
-		CACTUS_W_SLAB = register("cactus_w_slab", CactusWSlabBlock::new);
-		CACTUS_W_FENCE = register("cactus_w_fence", CactusWFenceBlock::new);
-		CACTUS_W_FENCE_GATE = register("cactus_w_fence_gate", CactusWFenceGateBlock::new);
-		CACTUS_W_PRESSURE_PLATE = register("cactus_w_pressure_plate", CactusWPressurePlateBlock::new);
-		CACTUS_W_BUTTON = register("cactus_w_button", CactusWButtonBlock::new);
+		CACTUS_WOOD_PLANKS = register("cactus_wood_planks", CactusWPlanksBlock::new);
+		CACTUS_WOOD_STAIRS = register("cactus_wood_stairs", CactusWStairsBlock::new);
+		CACTUS_WOOD_SLAB = register("cactus_wood_slab", CactusWSlabBlock::new);
+		CACTUS_WOOD_FENCE = register("cactus_wood_fence", CactusWFenceBlock::new);
+		CACTUS_WOOD_FENCE_GATE = register("cactus_wood_fence_gate", CactusWFenceGateBlock::new);
+		CACTUS_WOOD_PRESSURE_PLATE = register("cactus_wood_pressure_plate", CactusWPressurePlateBlock::new);
+		CACTUS_WOOD_BUTTON = register("cactus_wood_button", CactusWButtonBlock::new);
 		POTTED_CHORUS = register("potted_chorus", PottedChorusBlock::new);
 		VERY_CRACKED_STONE_BRICKS = register("very_cracked_stone_bricks", VeryCrackedStoneBricksBlock::new);
 		DESTROYED_STONE_BRICKS = register("destroyed_stone_bricks", DestroyedStoneBricksBlock::new);
@@ -452,7 +444,6 @@ public class ExtraBuildingBlocksModBlocks {
 		PRISMARINE_PILLAR = register("prismarine_pillar", PrismarinePillarBlock::new);
 		DARK_PRISMARINE_PILLAR = register("dark_prismarine_pillar", DarkPrismarinePillarBlock::new);
 		CHISELED_PRISMARINE = register("chiseled_prismarine", ChiseledPrismarineBlock::new);
-		SALT_CRYSTAL_EMISSIVE = register("salt_crystal_emissive", SaltCrystalEmissiveBlock::new);
 		SOUL_MAGMA = register("soul_magma", SoulMagmaBlock::new);
 		RED_LACE_CARPET = register("red_lace_carpet", RedLaceCarpetBlock::new);
 		ORANGE_LACE_CARPET = register("orange_lace_carpet", OrangeLaceCarpetBlock::new);
@@ -470,7 +461,7 @@ public class ExtraBuildingBlocksModBlocks {
 		GREY_LACE_CARPET = register("grey_lace_carpet", GreyLaceCarpetBlock::new);
 		LIGHT_GREY_LACE_CARPET = register("light_grey_lace_carpet", LightGreyLaceCarpetBlock::new);
 		WHITE_LACE_CARPET = register("white_lace_carpet", WhiteLaceCarpetBlock::new);
-		BUS_LACE_CARPET = register("bus_lace_carpet", BusLaceCarpetBlock::new);
+		TRAIN_LACE_CARPET = register("train_lace_carpet", BusLaceCarpetBlock::new);
 		LACE_CARPET = register("lace_carpet", LaceCarpetBlock::new);
 		CHISELED_STONE = register("chiseled_stone", ChiseledStoneBlock::new);
 		CHISELED_DEEPSLATE_BRICKS = register("chiseled_deepslate_bricks", ChiseledDeepslateBricksBlock::new);
@@ -518,7 +509,6 @@ public class ExtraBuildingBlocksModBlocks {
 		WAXED_EXPOSED_WROUGHT_IRON_GATE = register("waxed_exposed_wrought_iron_gate", WaxedExposedWroughtIronGateBlock::new);
 		WAXED_WEATHERED_WROUGHT_IRON_GATE = register("waxed_weathered_wrought_iron_gate", WaxedWeatheredWroughtIronGateBlock::new);
 		WAXED_RUSTED_WROUGHT_IRON_GATE = register("waxed_rusted_wrought_iron_gate", WaxedRustedWroughtIronGateBlock::new);
-		TEMPBEAM = register("tempbeam", TEMPBEAMBlock::new);
 	}
 
 	// Start of user code block custom blocks

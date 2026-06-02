@@ -5,7 +5,11 @@
     "recipeType": "Smelting",
     "recipeRetstackSize": 1,
     "group": "",
-    "unlockingItems": [],
+    "unlockingItems": [
+      {
+        "value": "Blocks.MUD_BRICKS"
+      }
+    ],
     "cookingBookCategory": "BLOCKS",
     "xpReward": 0.1,
     "cookingTime": 200,

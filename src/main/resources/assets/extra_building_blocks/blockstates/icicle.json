@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "thickness=tip": {
+      "model": "extra_building_blocks:block/icicle_tip"
+    },
+    "thickness=frustum": {
+      "model": "extra_building_blocks:block/icicle_frustum"
+    },
+    "thickness=middle": {
+      "model": "extra_building_blocks:block/icicle_middle"
+    },
+    "thickness=base": {
+      "model": "extra_building_blocks:block/icicle_base"
+    }
+  }
+}

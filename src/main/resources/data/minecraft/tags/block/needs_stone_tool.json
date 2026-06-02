@@ -2,7 +2,6 @@
   "replace": false,
   "values": [
     "extra_building_blocks:echo_crystal",
-    "extra_building_blocks:bracket",
     "extra_building_blocks:brace",
     "extra_building_blocks:exposed_copper_bars",
     "extra_building_blocks:swampvine",

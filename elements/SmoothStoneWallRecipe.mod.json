@@ -5,7 +5,11 @@
     "recipeType": "Crafting",
     "recipeRetstackSize": 6,
     "group": "",
-    "unlockingItems": [],
+    "unlockingItems": [
+      {
+        "value": "Blocks.SMOOTH_STONE"
+      }
+    ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
     "cookingTime": 200,

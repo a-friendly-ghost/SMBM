@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "extra_building_blocks:item/frostedglassitem"
+    "layer0": "extra_building_blocks:block/frostedglass"
   },
   "render_type": "translucent"
 }

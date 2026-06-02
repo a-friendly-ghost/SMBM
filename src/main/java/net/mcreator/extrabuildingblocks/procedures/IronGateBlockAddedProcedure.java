@@ -13,7 +13,7 @@ import net.minecraft.core.BlockPos;
 public class IronGateBlockAddedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		if ((getBlockDirection(world, BlockPos.containing(x, y, z))).getAxis() == Direction.Axis.X) {
-			if ((world.getBlockState(BlockPos.containing(x, y, z + 1))).is(BlockTags.create(ResourceLocation.parse("extra_building_blocks:bars")))) {
+			if ((world.getBlockState(BlockPos.containing(x, y, z + 1))).is(BlockTags.create(ResourceLocation.parse("minecraft:bars")))) {
 				if (!((world.getBlockState(BlockPos.containing(x, y, z + 1))).getBlock().getStateDefinition().getProperty("north") instanceof BooleanProperty _getbp5 && (world.getBlockState(BlockPos.containing(x, y, z + 1))).getValue(_getbp5))) {
 					{
 						BlockPos _pos = BlockPos.containing(x, y, z + 1);
@@ -23,7 +23,7 @@ public class IronGateBlockAddedProcedure {
 					}
 				}
 			}
-			if ((world.getBlockState(BlockPos.containing(x, y, z - 1))).is(BlockTags.create(ResourceLocation.parse("extra_building_blocks:bars")))) {
+			if ((world.getBlockState(BlockPos.containing(x, y, z - 1))).is(BlockTags.create(ResourceLocation.parse("minecraft:bars")))) {
 				if (!((world.getBlockState(BlockPos.containing(x, y, z - 1))).getBlock().getStateDefinition().getProperty("south") instanceof BooleanProperty _getbp10 && (world.getBlockState(BlockPos.containing(x, y, z - 1))).getValue(_getbp10))) {
 					{
 						BlockPos _pos = BlockPos.containing(x, y, z - 1);
@@ -34,7 +34,7 @@ public class IronGateBlockAddedProcedure {
 				}
 			}
 		} else {
-			if ((world.getBlockState(BlockPos.containing(x + 1, y, z))).is(BlockTags.create(ResourceLocation.parse("extra_building_blocks:bars")))) {
+			if ((world.getBlockState(BlockPos.containing(x + 1, y, z))).is(BlockTags.create(ResourceLocation.parse("minecraft:bars")))) {
 				if (!((world.getBlockState(BlockPos.containing(x + 1, y, z))).getBlock().getStateDefinition().getProperty("west") instanceof BooleanProperty _getbp15 && (world.getBlockState(BlockPos.containing(x + 1, y, z))).getValue(_getbp15))) {
 					{
 						BlockPos _pos = BlockPos.containing(x + 1, y, z);
@@ -44,7 +44,7 @@ public class IronGateBlockAddedProcedure {
 					}
 				}
 			}
-			if ((world.getBlockState(BlockPos.containing(x - 1, y, z))).is(BlockTags.create(ResourceLocation.parse("extra_building_blocks:bars")))) {
+			if ((world.getBlockState(BlockPos.containing(x - 1, y, z))).is(BlockTags.create(ResourceLocation.parse("minecraft:bars")))) {
 				if (!((world.getBlockState(BlockPos.containing(x - 1, y, z))).getBlock().getStateDefinition().getProperty("east") instanceof BooleanProperty _getbp20 && (world.getBlockState(BlockPos.containing(x - 1, y, z))).getValue(_getbp20))) {
 					{
 						BlockPos _pos = BlockPos.containing(x - 1, y, z);

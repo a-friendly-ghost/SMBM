@@ -12,7 +12,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "extra_building_blocks:lamp"
+          "name": "extra_building_blocks:storm_lantern"
         }
       ]
     }

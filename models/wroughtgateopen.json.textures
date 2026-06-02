@@ -1,12 +1,36 @@
 {
   "mappings": {
     "default": {
+      "name": "default",
       "map": {
         "0": "wroughtgateside",
         "1": "wroughtgate",
         "missing": "wroughtgate"
-      },
-      "name": "default"
+      }
+    },
+    "exposed": {
+      "name": "exposed",
+      "map": {
+        "0": "exposedwroughtgateside",
+        "1": "exposedwroughtgate",
+        "missing": "exposedwroughtgate"
+      }
+    },
+    "weathered": {
+      "name": "weathered",
+      "map": {
+        "0": "weatheredwroughtgateside",
+        "1": "weatheredwroughtgate",
+        "missing": "weatheredwroughtgate"
+      }
+    },
+    "rusted": {
+      "name": "rusted",
+      "map": {
+        "0": "rustedwroughtgateside",
+        "1": "rustedwroughtgate",
+        "missing": "rustedwroughtgate"
+      }
     }
   }
 }

@@ -1,33 +1,33 @@
 {
   "variants": {
-    "facing=north,blockstate=0": {
+    "facing=north,attached=false": {
       "model": "extra_building_blocks:block/bracket"
     },
-    "facing=east,blockstate=0": {
+    "facing=east,attached=false": {
       "model": "extra_building_blocks:block/bracket",
       "y": 90
     },
-    "facing=south,blockstate=0": {
+    "facing=south,attached=false": {
       "model": "extra_building_blocks:block/bracket",
       "y": 180
     },
-    "facing=west,blockstate=0": {
+    "facing=west,attached=false": {
       "model": "extra_building_blocks:block/bracket",
       "y": 270
     },
-    "facing=north,blockstate=1": {
-      "model": "extra_building_blocks:block/bracket_blockstates_blockstate_0"
+    "facing=north,attached=true": {
+      "model": "extra_building_blocks:block/bracket_attached"
     },
-    "facing=east,blockstate=1": {
-      "model": "extra_building_blocks:block/bracket_blockstates_blockstate_0",
+    "facing=east,attached=true": {
+      "model": "extra_building_blocks:block/bracket_attached",
       "y": 90
     },
-    "facing=south,blockstate=1": {
-      "model": "extra_building_blocks:block/bracket_blockstates_blockstate_0",
+    "facing=south,attached=true": {
+      "model": "extra_building_blocks:block/bracket_attached",
       "y": 180
     },
-    "facing=west,blockstate=1": {
-      "model": "extra_building_blocks:block/bracket_blockstates_blockstate_0",
+    "facing=west,attached=true": {
+      "model": "extra_building_blocks:block/bracket_attached",
       "y": 270
     }
   }

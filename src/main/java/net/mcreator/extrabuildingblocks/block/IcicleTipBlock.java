@@ -6,6 +6,8 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.level.redstone.Orientation;
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.block.state.properties.EnumProperty;
+import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
@@ -16,6 +18,8 @@ import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.item.context.BlockPlaceContext;
+import net.minecraft.util.StringRepresentable;
 import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.Direction;
@@ -28,10 +32,12 @@ import net.mcreator.extrabuildingblocks.procedures.IcicleTipBlockValidPlacementC
 import javax.annotation.Nullable;
 
 public class IcicleTipBlock extends Block {
+	public static final EnumProperty<ThicknessProperty> THICKNESS = EnumProperty.create("thickness", ThicknessProperty.class);
 	private static final VoxelShape SHAPE = box(5, 6, 5, 11, 16, 11);
 
 	public IcicleTipBlock(BlockBehaviour.Properties properties) {
 		super(properties.sound(SoundType.GLASS).strength(0.5f).noOcclusion().randomTicks().pushReaction(PushReaction.DESTROY).isRedstoneConductor((bs, br, bp) -> false).instrument(NoteBlockInstrument.BASEDRUM));
+		this.registerDefaultState(this.stateDefinition.any().setValue(THICKNESS, ThicknessProperty.TIP));
 	}
 
 	@Override
@@ -52,6 +58,17 @@ public class IcicleTipBlock extends Block {
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return (SHAPE);
+	}
+
+	@Override
+	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
+		super.createBlockStateDefinition(builder);
+		builder.add(THICKNESS);
+	}
+
+	@Override
+	public BlockState getStateForPlacement(BlockPlaceContext context) {
+		return super.getStateForPlacement(context).setValue(THICKNESS, ThicknessProperty.TIP);
 	}
 
 	@Override
@@ -86,5 +103,20 @@ public class IcicleTipBlock extends Block {
 	public void randomTick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
 		super.randomTick(blockstate, world, pos, random);
 		IcicleTipUpdateTickProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+	}
+
+	public enum ThicknessProperty implements StringRepresentable {
+		TIP("tip"), FRUSTUM("frustum"), MIDDLE("middle"), BASE("base");
+
+		private final String name;
+
+		private ThicknessProperty(String name) {
+			this.name = name;
+		}
+
+		@Override
+		public String getSerializedName() {
+			return this.name;
+		}
 	}
 }

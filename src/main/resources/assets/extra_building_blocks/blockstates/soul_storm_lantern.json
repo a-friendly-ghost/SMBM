@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=north,attached=false": {
+      "model": "extra_building_blocks:block/soul_storm_lantern"
+    },
+    "facing=east,attached=false": {
+      "model": "extra_building_blocks:block/soul_storm_lantern",
+      "y": 90
+    },
+    "facing=south,attached=false": {
+      "model": "extra_building_blocks:block/soul_storm_lantern",
+      "y": 180
+    },
+    "facing=west,attached=false": {
+      "model": "extra_building_blocks:block/soul_storm_lantern",
+      "y": 270
+    },
+    "facing=north,attached=true": {
+      "model": "extra_building_blocks:block/soul_storm_lantern_attached"
+    },
+    "facing=east,attached=true": {
+      "model": "extra_building_blocks:block/soul_storm_lantern_attached_alt",
+      "y": 90
+    },
+    "facing=south,attached=true": {
+      "model": "extra_building_blocks:block/soul_storm_lantern_attached",
+      "y": 180
+    },
+    "facing=west,attached=true": {
+      "model": "extra_building_blocks:block/soul_storm_lantern_attached_alt",
+      "y": 270
+    }
+  }
+}

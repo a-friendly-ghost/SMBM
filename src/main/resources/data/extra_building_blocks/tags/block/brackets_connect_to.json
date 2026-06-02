@@ -9,14 +9,14 @@
     "extra_building_blocks:bracket",
     "extra_building_blocks:brace",
     "minecraft:lantern",
-    "extra_building_blocks:lamp",
-    "extra_building_blocks:soul_lamp",
+    "extra_building_blocks:storm_lantern",
+    "extra_building_blocks:soul_storm_lantern",
     {
       "id": "#minecraft:walls",
       "required": false
     },
     {
-      "id": "#extra_building_blocks:bars",
+      "id": "#minecraft:bars",
       "required": false
     },
     "minecraft:bell",
