@@ -36,23 +36,23 @@ public class MagentaLaceCarpetBlock extends Block implements SimpleWaterloggedBl
 	}
 
 	@Override
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return SHAPE;
+	}
+
+	@Override
 	public boolean propagatesSkylightDown(BlockState state) {
 		return state.getFluidState().isEmpty();
 	}
 
 	@Override
 	public int getLightBlock(BlockState state) {
-		return 0;
+		return propagatesSkylightDown(state) ? 0 : 1;
 	}
 
 	@Override
 	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return Shapes.empty();
-	}
-
-	@Override
-	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		return (SHAPE);
 	}
 
 	@Override

@@ -1,7 +1,5 @@
 package net.mcreator.extrabuildingblocks.block;
 
-import org.checkerframework.checker.units.qual.s;
-
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -14,12 +12,7 @@ import net.mcreator.extrabuildingblocks.procedures.SoulMagmaEntityWalksOnTheBloc
 
 public class SoulMagmaBlock extends Block {
 	public SoulMagmaBlock(BlockBehaviour.Properties properties) {
-		super(properties.strength(0.5f).lightLevel(s -> 2).requiresCorrectToolForDrops().speedFactor(0.8f).hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true).instrument(NoteBlockInstrument.BASEDRUM));
-	}
-
-	@Override
-	public int getLightBlock(BlockState state) {
-		return 15;
+		super(properties.strength(0.5f).lightLevel(blockstate -> 2).requiresCorrectToolForDrops().speedFactor(0.8f).hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true).instrument(NoteBlockInstrument.BASEDRUM));
 	}
 
 	@Override

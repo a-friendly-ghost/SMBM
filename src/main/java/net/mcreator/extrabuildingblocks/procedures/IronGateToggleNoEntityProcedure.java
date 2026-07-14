@@ -1,5 +1,6 @@
 package net.mcreator.extrabuildingblocks.procedures;
 
+import net.minecraft.world.level.block.state.properties.Property;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.LevelAccessor;
@@ -21,8 +22,7 @@ public class IronGateToggleNoEntityProcedure {
 			if (!((world.getBlockState(BlockPos.containing(x, checkY, z))).getBlock() == ExtraBuildingBlocksModBlocks.IRON_GATE.get())) {
 				break;
 			}
-			if (((world.getBlockState(BlockPos.containing(x, checkY, z))).getBlock().getStateDefinition().getProperty("open") instanceof BooleanProperty _getbp3
-					&& (world.getBlockState(BlockPos.containing(x, checkY, z))).getValue(_getbp3)) == false) {
+			if ((getPropertyByName((world.getBlockState(BlockPos.containing(x, checkY, z))), "open") instanceof BooleanProperty _getbp3 && (world.getBlockState(BlockPos.containing(x, checkY, z))).getValue(_getbp3)) == false) {
 				{
 					BlockPos _pos = BlockPos.containing(x, checkY, z);
 					BlockState _bs = world.getBlockState(_pos);
@@ -59,8 +59,7 @@ public class IronGateToggleNoEntityProcedure {
 			if (!((world.getBlockState(BlockPos.containing(x, checkY, z))).getBlock() == ExtraBuildingBlocksModBlocks.IRON_GATE.get())) {
 				break;
 			}
-			if (((world.getBlockState(BlockPos.containing(x, checkY, z))).getBlock().getStateDefinition().getProperty("open") instanceof BooleanProperty _getbp11
-					&& (world.getBlockState(BlockPos.containing(x, checkY, z))).getValue(_getbp11)) == false) {
+			if ((getPropertyByName((world.getBlockState(BlockPos.containing(x, checkY, z))), "open") instanceof BooleanProperty _getbp11 && (world.getBlockState(BlockPos.containing(x, checkY, z))).getValue(_getbp11)) == false) {
 				{
 					BlockPos _pos = BlockPos.containing(x, checkY, z);
 					BlockState _bs = world.getBlockState(_pos);
@@ -92,5 +91,14 @@ public class IronGateToggleNoEntityProcedure {
 			checkY = checkY - 1;
 		}
 		IronGateBlockAddedProcedure.execute(world, x, y, z);
+	}
+
+	private static Property<?> getPropertyByName(BlockState state, String name) {
+		for (Property<?> property : state.getProperties()) {
+			if (property.getName().equals(name)) {
+				return property;
+			}
+		}
+		return null;
 	}
 }

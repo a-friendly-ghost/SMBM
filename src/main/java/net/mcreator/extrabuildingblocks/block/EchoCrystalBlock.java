@@ -1,7 +1,5 @@
 package net.mcreator.extrabuildingblocks.block;
 
-import org.checkerframework.checker.units.qual.s;
-
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
@@ -18,8 +16,8 @@ import net.minecraft.core.BlockPos;
 
 public class EchoCrystalBlock extends Block {
 	public EchoCrystalBlock(BlockBehaviour.Properties properties) {
-		super(properties.sound(SoundType.AMETHYST).strength(2f).lightLevel(s -> 2).requiresCorrectToolForDrops().noOcclusion().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true).isRedstoneConductor((bs, br, bp) -> false)
-				.instrument(NoteBlockInstrument.HAT));
+		super(properties.sound(SoundType.AMETHYST).strength(2f).lightLevel(blockstate -> 2).requiresCorrectToolForDrops().noOcclusion().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true)
+				.isRedstoneConductor((bs, br, bp) -> false).instrument(NoteBlockInstrument.HAT));
 	}
 
 	@Override

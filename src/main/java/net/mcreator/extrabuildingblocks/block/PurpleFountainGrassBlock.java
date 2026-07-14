@@ -22,27 +22,17 @@ public class PurpleFountainGrassBlock extends Block {
 	private static final VoxelShape SHAPE = box(2, 0, 2, 14, 13, 14);
 
 	public PurpleFountainGrassBlock(BlockBehaviour.Properties properties) {
-		super(properties.sound(SoundType.GRASS).strength(0.1f).noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false).offsetType(Block.OffsetType.XZ));
+		super(properties.sound(SoundType.GRASS).strength(0.1f).noCollission().isRedstoneConductor((bs, br, bp) -> false).offsetType(Block.OffsetType.XZ));
 	}
 
 	@Override
-	public boolean propagatesSkylightDown(BlockState state) {
-		return true;
-	}
-
-	@Override
-	public int getLightBlock(BlockState state) {
-		return 0;
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return SHAPE;
 	}
 
 	@Override
 	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return Shapes.empty();
-	}
-
-	@Override
-	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		return (SHAPE);
 	}
 
 	@Override

@@ -28,70 +28,44 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import net.minecraft.world.InteractionResult;
-import net.minecraft.world.InteractionHand;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.phys.BlockHitResult;
-
 import net.mcreator.extrabuildingblocks.procedures.IronGatePlacedProcedure;
 import net.mcreator.extrabuildingblocks.procedures.IronGateBlockAddedProcedure;
-import net.mcreator.extrabuildingblocks.procedures.IronGateOnBlockRightClickedProcedure;
-import net.mcreator.extrabuildingblocks.procedures.IronGateRedstoneOnProcedure;
-import net.mcreator.extrabuildingblocks.procedures.IronGateRedstoneOffProcedure;
 import net.mcreator.extrabuildingblocks.init.ExtraBuildingBlocksModBlocks;
 
 import javax.annotation.Nullable;
 
+import java.util.function.Function;
 import java.util.function.Consumer;
 
 public class IronGateBlock extends Block {
 	public static final EnumProperty<Direction> FACING = HorizontalDirectionalBlock.FACING;
 	public static final BooleanProperty OPEN = BlockStateProperties.OPEN;
-	private static final VoxelShape SHAPE_NORTH = box(0, 0, 7, 16, 16, 9);
-	private static final VoxelShape SHAPE_SOUTH = box(0, 0, 7, 16, 16, 9);
-	private static final VoxelShape SHAPE_EAST = box(7, 0, 0, 9, 16, 16);
-	private static final VoxelShape SHAPE_WEST = box(7, 0, 0, 9, 16, 16);
+	private final Function<BlockState, VoxelShape> shapes = this.makeShapes();
 
 	public IronGateBlock(BlockBehaviour.Properties properties) {
 		super(properties.sound(SoundType.METAL).strength(5f, 6f).requiresCorrectToolForDrops().noOcclusion().isRedstoneConductor((bs, br, bp) -> false).instrument(NoteBlockInstrument.BASEDRUM));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(OPEN, false));
 	}
 
-	@Override
-	public boolean propagatesSkylightDown(BlockState state) {
-		return true;
+	private Function<BlockState, VoxelShape> makeShapes() {
+		return this.getShapeForEachState(state -> {
+			return switch (state.getValue(FACING)) {
+				default -> box(0, 0, 7, 16, 16, 9);
+				case NORTH -> box(0, 0, 7, 16, 16, 9);
+				case EAST -> box(7, 0, 0, 9, 16, 16);
+				case WEST -> box(7, 0, 0, 9, 16, 16);
+			};
+		}, OPEN);
 	}
 
 	@Override
-	public int getLightBlock(BlockState state) {
-		return 0;
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return shapes.apply(state);
 	}
 
 	@Override
 	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return Shapes.empty();
-	}
-
-	@Override
-	public VoxelShape getCollisionShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
-	    return state.getValue(OPEN) ? Shapes.empty() : getShape(state, level, pos, context);
-	}
-
-	@Override
-	public InteractionResult useWithoutItem(BlockState state, Level level, BlockPos pos, Player player, BlockHitResult hit) {
-	    IronGateOnBlockRightClickedProcedure.execute(level, pos.getX(), pos.getY(), pos.getZ(), player);
-	    return InteractionResult.SUCCESS;
-	}
-
-	@Override
-	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		return (switch (state.getValue(FACING)) {
-			case NORTH -> SHAPE_NORTH;
-			case SOUTH -> SHAPE_SOUTH;
-			case EAST -> SHAPE_EAST;
-			case WEST -> SHAPE_WEST;
-			default -> SHAPE_NORTH;
-		});
 	}
 
 	@Override
@@ -127,11 +101,6 @@ public class IronGateBlock extends Block {
 	@Override
 	public void neighborChanged(BlockState blockstate, Level world, BlockPos pos, Block neighborBlock, @Nullable Orientation orientation, boolean moving) {
 		super.neighborChanged(blockstate, world, pos, neighborBlock, orientation, moving);
-		if (world.getBestNeighborSignal(pos) > 0 && !blockstate.getValue(OPEN)) {
-			IronGateRedstoneOnProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), blockstate);
-		} else if (blockstate.getValue(OPEN)) {
-			IronGateRedstoneOffProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), blockstate);
-		}
 		IronGateBlockAddedProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 

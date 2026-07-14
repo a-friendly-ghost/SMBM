@@ -31,21 +31,35 @@ import net.mcreator.extrabuildingblocks.init.ExtraBuildingBlocksModBlocks;
 
 import javax.annotation.Nullable;
 
+import java.util.function.Function;
 import java.util.function.Consumer;
 
 public class HookBlock extends Block implements SimpleWaterloggedBlock {
 	public static final EnumProperty<Direction> FACING = DirectionalBlock.FACING;
 	public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
-	private static final VoxelShape SHAPE_NORTH = box(6, 4, 9, 10, 11, 16);
-	private static final VoxelShape SHAPE_SOUTH = box(6, 4, 0, 10, 11, 7);
-	private static final VoxelShape SHAPE_EAST = box(0, 4, 6, 7, 11, 10);
-	private static final VoxelShape SHAPE_WEST = box(9, 4, 6, 16, 11, 10);
-	private static final VoxelShape SHAPE_UP = box(6, 0, 4, 10, 7, 11);
-	private static final VoxelShape SHAPE_DOWN = box(6, 9, 5, 10, 16, 12);
+	private final Function<BlockState, VoxelShape> shapes = this.makeShapes();
 
 	public HookBlock(BlockBehaviour.Properties properties) {
-		super(properties.sound(SoundType.LANTERN).strength(0.1f).noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		super(properties.sound(SoundType.LANTERN).strength(0.1f).noCollission().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, false));
+	}
+
+	private Function<BlockState, VoxelShape> makeShapes() {
+		return this.getShapeForEachState(state -> {
+			return switch (state.getValue(FACING)) {
+				default -> box(6, 4, 0, 10, 11, 7);
+				case NORTH -> box(6, 4, 9, 10, 11, 16);
+				case EAST -> box(0, 4, 6, 7, 11, 10);
+				case WEST -> box(9, 4, 6, 16, 11, 10);
+				case UP -> box(6, 0, 4, 10, 7, 11);
+				case DOWN -> box(6, 9, 5, 10, 16, 12);
+			};
+		}, WATERLOGGED);
+	}
+
+	@Override
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return shapes.apply(state);
 	}
 
 	@Override
@@ -60,25 +74,12 @@ public class HookBlock extends Block implements SimpleWaterloggedBlock {
 
 	@Override
 	public int getLightBlock(BlockState state) {
-		return 0;
+		return propagatesSkylightDown(state) ? 0 : 1;
 	}
 
 	@Override
 	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return Shapes.empty();
-	}
-
-	@Override
-	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		return (switch (state.getValue(FACING)) {
-			case NORTH -> SHAPE_NORTH;
-			case SOUTH -> SHAPE_SOUTH;
-			case EAST -> SHAPE_EAST;
-			case WEST -> SHAPE_WEST;
-			case UP -> SHAPE_UP;
-			case DOWN -> SHAPE_DOWN;
-			default -> SHAPE_NORTH;
-		});
 	}
 
 	@Override

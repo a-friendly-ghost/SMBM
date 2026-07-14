@@ -34,28 +34,50 @@ import net.mcreator.extrabuildingblocks.init.ExtraBuildingBlocksModBlocks;
 
 import javax.annotation.Nullable;
 
+import java.util.function.Function;
 import java.util.function.Consumer;
 
 public class BraceBlock extends Block implements SimpleWaterloggedBlock {
 	public static final EnumProperty<Direction> FACING = HorizontalDirectionalBlock.FACING;
 	public static final EnumProperty<AttachFace> FACE = FaceAttachedHorizontalDirectionalBlock.FACE;
 	public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
-	private static final VoxelShape SHAPE_NORTH_FLOOR = box(5, -1, -1, 11, 11.5, 11);
-	private static final VoxelShape SHAPE_NORTH_WALL = box(5, -1, 4.5, 11, 11, 17);
-	private static final VoxelShape SHAPE_NORTH_CEILING = box(5, 4.5, -1, 11, 17, 11);
-	private static final VoxelShape SHAPE_SOUTH_FLOOR = box(5, -1, 5, 11, 11.5, 17);
-	private static final VoxelShape SHAPE_SOUTH_WALL = box(5, -1, -1, 11, 11, 11.5);
-	private static final VoxelShape SHAPE_SOUTH_CEILING = box(5, 4.5, 5, 11, 17, 17);
-	private static final VoxelShape SHAPE_EAST_FLOOR = box(5, -1, 5, 17, 11.5, 11);
-	private static final VoxelShape SHAPE_EAST_WALL = box(-1, -1, 5, 11.5, 11, 11);
-	private static final VoxelShape SHAPE_EAST_CEILING = box(5, 4.5, 5, 17, 17, 11);
-	private static final VoxelShape SHAPE_WEST_FLOOR = box(-1, -1, 5, 11, 11.5, 11);
-	private static final VoxelShape SHAPE_WEST_WALL = box(4.5, -1, 5, 17, 11, 11);
-	private static final VoxelShape SHAPE_WEST_CEILING = box(-1, 4.5, 5, 11, 17, 11);
+	private final Function<BlockState, VoxelShape> shapes = this.makeShapes();
 
 	public BraceBlock(BlockBehaviour.Properties properties) {
 		super(properties.sound(SoundType.METAL).strength(5f, 6f).requiresCorrectToolForDrops().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(FACE, AttachFace.WALL).setValue(WATERLOGGED, false));
+	}
+
+	private Function<BlockState, VoxelShape> makeShapes() {
+		return this.getShapeForEachState(state -> {
+			return switch (state.getValue(FACING)) {
+				default -> switch (state.getValue(FACE)) {
+					case FLOOR -> box(5, -1, 5, 11, 11.5, 17);
+					case WALL -> box(5, -1, -1, 11, 11, 11.5);
+					case CEILING -> box(5, 4.5, 5, 11, 17, 17);
+				};
+				case NORTH -> switch (state.getValue(FACE)) {
+					case FLOOR -> box(5, -1, -1, 11, 11.5, 11);
+					case WALL -> box(5, -1, 4.5, 11, 11, 17);
+					case CEILING -> box(5, 4.5, -1, 11, 17, 11);
+				};
+				case EAST -> switch (state.getValue(FACE)) {
+					case FLOOR -> box(5, -1, 5, 17, 11.5, 11);
+					case WALL -> box(-1, -1, 5, 11.5, 11, 11);
+					case CEILING -> box(5, 4.5, 5, 17, 17, 11);
+				};
+				case WEST -> switch (state.getValue(FACE)) {
+					case FLOOR -> box(-1, -1, 5, 11, 11.5, 11);
+					case WALL -> box(4.5, -1, 5, 17, 11, 11);
+					case CEILING -> box(-1, 4.5, 5, 11, 17, 11);
+				};
+			};
+		}, WATERLOGGED);
+	}
+
+	@Override
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return shapes.apply(state);
 	}
 
 	@Override
@@ -65,43 +87,12 @@ public class BraceBlock extends Block implements SimpleWaterloggedBlock {
 
 	@Override
 	public int getLightBlock(BlockState state) {
-		return 0;
+		return propagatesSkylightDown(state) ? 0 : 1;
 	}
 
 	@Override
 	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return Shapes.empty();
-	}
-
-	@Override
-	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		return (switch (state.getValue(FACING)) {
-			case NORTH -> switch (state.getValue(FACE)) {
-				case FLOOR -> SHAPE_NORTH_FLOOR;
-				case WALL -> SHAPE_NORTH_WALL;
-				case CEILING -> SHAPE_NORTH_CEILING;
-			};
-			case SOUTH -> switch (state.getValue(FACE)) {
-				case FLOOR -> SHAPE_SOUTH_FLOOR;
-				case WALL -> SHAPE_SOUTH_WALL;
-				case CEILING -> SHAPE_SOUTH_CEILING;
-			};
-			case EAST -> switch (state.getValue(FACE)) {
-				case FLOOR -> SHAPE_EAST_FLOOR;
-				case WALL -> SHAPE_EAST_WALL;
-				case CEILING -> SHAPE_EAST_CEILING;
-			};
-			case WEST -> switch (state.getValue(FACE)) {
-				case FLOOR -> SHAPE_WEST_FLOOR;
-				case WALL -> SHAPE_WEST_WALL;
-				case CEILING -> SHAPE_WEST_CEILING;
-			};
-			default -> switch (state.getValue(FACE)) {
-				case FLOOR -> SHAPE_NORTH_FLOOR;
-				case WALL -> SHAPE_NORTH_WALL;
-				case CEILING -> SHAPE_NORTH_CEILING;
-			};
-		});
 	}
 
 	@Override

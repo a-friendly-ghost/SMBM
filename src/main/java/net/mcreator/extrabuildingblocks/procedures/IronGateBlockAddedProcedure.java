@@ -14,7 +14,7 @@ public class IronGateBlockAddedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		if ((getBlockDirection(world, BlockPos.containing(x, y, z))).getAxis() == Direction.Axis.X) {
 			if ((world.getBlockState(BlockPos.containing(x, y, z + 1))).is(BlockTags.create(ResourceLocation.parse("minecraft:bars")))) {
-				if (!((world.getBlockState(BlockPos.containing(x, y, z + 1))).getBlock().getStateDefinition().getProperty("north") instanceof BooleanProperty _getbp5 && (world.getBlockState(BlockPos.containing(x, y, z + 1))).getValue(_getbp5))) {
+				if (!(getPropertyByName((world.getBlockState(BlockPos.containing(x, y, z + 1))), "north") instanceof BooleanProperty _getbp5 && (world.getBlockState(BlockPos.containing(x, y, z + 1))).getValue(_getbp5))) {
 					{
 						BlockPos _pos = BlockPos.containing(x, y, z + 1);
 						BlockState _bs = world.getBlockState(_pos);
@@ -24,7 +24,7 @@ public class IronGateBlockAddedProcedure {
 				}
 			}
 			if ((world.getBlockState(BlockPos.containing(x, y, z - 1))).is(BlockTags.create(ResourceLocation.parse("minecraft:bars")))) {
-				if (!((world.getBlockState(BlockPos.containing(x, y, z - 1))).getBlock().getStateDefinition().getProperty("south") instanceof BooleanProperty _getbp10 && (world.getBlockState(BlockPos.containing(x, y, z - 1))).getValue(_getbp10))) {
+				if (!(getPropertyByName((world.getBlockState(BlockPos.containing(x, y, z - 1))), "south") instanceof BooleanProperty _getbp10 && (world.getBlockState(BlockPos.containing(x, y, z - 1))).getValue(_getbp10))) {
 					{
 						BlockPos _pos = BlockPos.containing(x, y, z - 1);
 						BlockState _bs = world.getBlockState(_pos);
@@ -35,7 +35,7 @@ public class IronGateBlockAddedProcedure {
 			}
 		} else {
 			if ((world.getBlockState(BlockPos.containing(x + 1, y, z))).is(BlockTags.create(ResourceLocation.parse("minecraft:bars")))) {
-				if (!((world.getBlockState(BlockPos.containing(x + 1, y, z))).getBlock().getStateDefinition().getProperty("west") instanceof BooleanProperty _getbp15 && (world.getBlockState(BlockPos.containing(x + 1, y, z))).getValue(_getbp15))) {
+				if (!(getPropertyByName((world.getBlockState(BlockPos.containing(x + 1, y, z))), "west") instanceof BooleanProperty _getbp15 && (world.getBlockState(BlockPos.containing(x + 1, y, z))).getValue(_getbp15))) {
 					{
 						BlockPos _pos = BlockPos.containing(x + 1, y, z);
 						BlockState _bs = world.getBlockState(_pos);
@@ -45,7 +45,7 @@ public class IronGateBlockAddedProcedure {
 				}
 			}
 			if ((world.getBlockState(BlockPos.containing(x - 1, y, z))).is(BlockTags.create(ResourceLocation.parse("minecraft:bars")))) {
-				if (!((world.getBlockState(BlockPos.containing(x - 1, y, z))).getBlock().getStateDefinition().getProperty("east") instanceof BooleanProperty _getbp20 && (world.getBlockState(BlockPos.containing(x - 1, y, z))).getValue(_getbp20))) {
+				if (!(getPropertyByName((world.getBlockState(BlockPos.containing(x - 1, y, z))), "east") instanceof BooleanProperty _getbp20 && (world.getBlockState(BlockPos.containing(x - 1, y, z))).getValue(_getbp20))) {
 					{
 						BlockPos _pos = BlockPos.containing(x - 1, y, z);
 						BlockState _bs = world.getBlockState(_pos);
@@ -67,5 +67,14 @@ public class IronGateBlockAddedProcedure {
 		else if (blockState.hasProperty(BlockStateProperties.HORIZONTAL_AXIS))
 			return Direction.fromAxisAndDirection(blockState.getValue(BlockStateProperties.HORIZONTAL_AXIS), Direction.AxisDirection.POSITIVE);
 		return Direction.NORTH;
+	}
+
+	private static Property<?> getPropertyByName(BlockState state, String name) {
+		for (Property<?> property : state.getProperties()) {
+			if (property.getName().equals(name)) {
+				return property;
+			}
+		}
+		return null;
 	}
 }

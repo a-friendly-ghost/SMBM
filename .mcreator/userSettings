@@ -1,20 +1,24 @@
 {
   "workspacePanelIconSize": "LARGE",
-  "workspacePanelSortType": "NAME",
+  "workspacePanelSortType": "CREATED",
   "workspacePanelSortAscending": true,
-  "projectBrowserSplitPos": 308,
   "projectBrowserState": {
     "expandedPaths": [
-      "[, Mishmash]",
-      "[, Mishmash, Source (Gradle)]",
-      "[, Mishmash, Source (Gradle), C:\\Users\\Asus\\MCreatorWorkspaces\\extra_building_blocks\\src\\main\\java\\net]",
-      "[, Mishmash, Source (Gradle), C:\\Users\\Asus\\MCreatorWorkspaces\\extra_building_blocks\\src\\main\\java\\net, C:\\Users\\Asus\\MCreatorWorkspaces\\extra_building_blocks\\src\\main\\java\\net\\mcreator]",
-      "[, Mishmash, Source (Gradle), C:\\Users\\Asus\\MCreatorWorkspaces\\extra_building_blocks\\src\\main\\java\\net, C:\\Users\\Asus\\MCreatorWorkspaces\\extra_building_blocks\\src\\main\\java\\net\\mcreator, C:\\Users\\Asus\\MCreatorWorkspaces\\extra_building_blocks\\src\\main\\java\\net\\mcreator\\extrabuildingblocks]",
-      "[, Mishmash, Resources (Gradle)]",
-      "[, Mishmash, Resources (Gradle), C:\\Users\\Asus\\MCreatorWorkspaces\\extra_building_blocks\\src\\main\\resources\\assets]",
-      "[, Mishmash, Resources (Gradle), C:\\Users\\Asus\\MCreatorWorkspaces\\extra_building_blocks\\src\\main\\resources\\assets, C:\\Users\\Asus\\MCreatorWorkspaces\\extra_building_blocks\\src\\main\\resources\\assets\\extra_building_blocks]",
-      "[, Mishmash, Resources (Gradle), C:\\Users\\Asus\\MCreatorWorkspaces\\extra_building_blocks\\src\\main\\resources\\assets, C:\\Users\\Asus\\MCreatorWorkspaces\\extra_building_blocks\\src\\main\\resources\\assets\\extra_building_blocks, C:\\Users\\Asus\\MCreatorWorkspaces\\extra_building_blocks\\src\\main\\resources\\assets\\extra_building_blocks\\models]",
-      "[, Mishmash, Resources (Gradle), C:\\Users\\Asus\\MCreatorWorkspaces\\extra_building_blocks\\src\\main\\resources\\assets, C:\\Users\\Asus\\MCreatorWorkspaces\\extra_building_blocks\\src\\main\\resources\\assets\\extra_building_blocks, C:\\Users\\Asus\\MCreatorWorkspaces\\extra_building_blocks\\src\\main\\resources\\assets\\extra_building_blocks\\models, C:\\Users\\Asus\\MCreatorWorkspaces\\extra_building_blocks\\src\\main\\resources\\assets\\extra_building_blocks\\models\\block]"
+      "[, Mishmash]"
     ]
+  },
+  "leftDockState": {
+    "expandedDock": "project_browser",
+    "dockSizes": {
+      "project_browser": 195
+    }
+  },
+  "bottomDockState": {
+    "expandedDock": "console",
+    "dockSizes": {
+      "console": 300,
+      "code_viewer": 300,
+      "debugger": 300
+    }
   }
 }

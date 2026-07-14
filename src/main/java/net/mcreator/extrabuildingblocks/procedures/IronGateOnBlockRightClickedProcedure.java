@@ -33,8 +33,7 @@ public class IronGateOnBlockRightClickedProcedure {
 			if (!((getBlockDirection(world, BlockPos.containing(x, checkY, z))).getAxis() == (getBlockDirection(world, BlockPos.containing(x, y, z))).getAxis())) {
 				break;
 			}
-			if (((world.getBlockState(BlockPos.containing(x, checkY, z))).getBlock().getStateDefinition().getProperty("open") instanceof BooleanProperty _getbp7
-					&& (world.getBlockState(BlockPos.containing(x, checkY, z))).getValue(_getbp7)) == false) {
+			if ((getPropertyByName((world.getBlockState(BlockPos.containing(x, checkY, z))), "open") instanceof BooleanProperty _getbp7 && (world.getBlockState(BlockPos.containing(x, checkY, z))).getValue(_getbp7)) == false) {
 				if ((getBlockDirection(world, BlockPos.containing(x, checkY, z))).getAxis() == Direction.Axis.Z) {
 					if (entity.getZ() > z) {
 						{
@@ -129,8 +128,7 @@ public class IronGateOnBlockRightClickedProcedure {
 			if (!((getBlockDirection(world, BlockPos.containing(x, checkY, z))).getAxis() == (getBlockDirection(world, BlockPos.containing(x, y, z))).getAxis())) {
 				break;
 			}
-			if (((world.getBlockState(BlockPos.containing(x, checkY, z))).getBlock().getStateDefinition().getProperty("open") instanceof BooleanProperty _getbp27
-					&& (world.getBlockState(BlockPos.containing(x, checkY, z))).getValue(_getbp27)) == false) {
+			if ((getPropertyByName((world.getBlockState(BlockPos.containing(x, checkY, z))), "open") instanceof BooleanProperty _getbp27 && (world.getBlockState(BlockPos.containing(x, checkY, z))).getValue(_getbp27)) == false) {
 				if ((getBlockDirection(world, BlockPos.containing(x, checkY, z))).getAxis() == Direction.Axis.Z) {
 					if (entity.getZ() > z) {
 						{
@@ -230,5 +228,14 @@ public class IronGateOnBlockRightClickedProcedure {
 		else if (blockState.hasProperty(BlockStateProperties.HORIZONTAL_AXIS))
 			return Direction.fromAxisAndDirection(blockState.getValue(BlockStateProperties.HORIZONTAL_AXIS), Direction.AxisDirection.POSITIVE);
 		return Direction.NORTH;
+	}
+
+	private static Property<?> getPropertyByName(BlockState state, String name) {
+		for (Property<?> property : state.getProperties()) {
+			if (property.getName().equals(name)) {
+				return property;
+			}
+		}
+		return null;
 	}
 }

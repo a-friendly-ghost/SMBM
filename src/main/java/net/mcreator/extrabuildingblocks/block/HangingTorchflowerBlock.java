@@ -23,7 +23,7 @@ import net.mcreator.extrabuildingblocks.procedures.HangingTorchflowerBlockValidP
 
 public class HangingTorchflowerBlock extends Block {
 	public HangingTorchflowerBlock(BlockBehaviour.Properties properties) {
-		super(properties.sound(SoundType.GRASS).instabreak().noCollission().noOcclusion().pushReaction(PushReaction.DESTROY).isRedstoneConductor((bs, br, bp) -> false).offsetType(Block.OffsetType.XZ));
+		super(properties.sound(SoundType.GRASS).instabreak().noCollission().pushReaction(PushReaction.DESTROY).isRedstoneConductor((bs, br, bp) -> false).offsetType(Block.OffsetType.XZ));
 	}
 
 	@Override

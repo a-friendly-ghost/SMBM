@@ -40,7 +40,7 @@ import java.util.function.Consumer;
 
 public class SwampvineBlock extends Block {
 	public SwampvineBlock(BlockBehaviour.Properties properties) {
-		super(properties.sound(SoundType.GRASS).instabreak().requiresCorrectToolForDrops().noCollission().noOcclusion().randomTicks().pushReaction(PushReaction.DESTROY).isRedstoneConductor((bs, br, bp) -> false).offsetType(Block.OffsetType.XZ));
+		super(properties.sound(SoundType.GRASS).instabreak().requiresCorrectToolForDrops().noCollission().randomTicks().pushReaction(PushReaction.DESTROY).isRedstoneConductor((bs, br, bp) -> false).offsetType(Block.OffsetType.XZ));
 	}
 
 	@Override

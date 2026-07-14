@@ -17,11 +17,6 @@ public class WroughtIronBlock extends Block {
 	}
 
 	@Override
-	public int getLightBlock(BlockState state) {
-		return 15;
-	}
-
-	@Override
 	public void randomTick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
 		super.randomTick(blockstate, world, pos, random);
 		WroughtIronOnTickUpdateProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), blockstate);

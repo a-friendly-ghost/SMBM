@@ -1,33 +1,18 @@
 {
   "variants": {
-    "facing=north,open=false": {
+    "facing=north": {
       "model": "extra_building_blocks:block/iron_gate"
     },
-    "facing=east,open=false": {
+    "facing=east": {
       "model": "extra_building_blocks:block/iron_gate",
       "y": 90
     },
-    "facing=south,open=false": {
+    "facing=south": {
       "model": "extra_building_blocks:block/iron_gate",
       "y": 180
     },
-    "facing=west,open=false": {
+    "facing=west": {
       "model": "extra_building_blocks:block/iron_gate",
-      "y": 270
-    },
-    "facing=north,open=true": {
-      "model": "extra_building_blocks:block/iron_gate_open"
-    },
-    "facing=east,open=true": {
-      "model": "extra_building_blocks:block/iron_gate_open",
-      "y": 90
-    },
-    "facing=south,open=true": {
-      "model": "extra_building_blocks:block/iron_gate_open",
-      "y": 180
-    },
-    "facing=west,open=true": {
-      "model": "extra_building_blocks:block/iron_gate_open",
       "y": 270
     }
   }

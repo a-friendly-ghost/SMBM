@@ -1,10 +1,10 @@
 {
   "variants": {
-    "blockstate=0": {
-      "model": "extra_building_blocks:block/green_desert_bush"
+    "blend=true": {
+      "model": "extra_building_blocks:block/green_desert_bush_0"
     },
-    "blockstate=1": {
-      "model": "extra_building_blocks:block/green_desert_bush_blockstates_blockstate_0"
+    "blend=false": {
+      "model": "extra_building_blocks:block/green_desert_bush"
     }
   }
 }

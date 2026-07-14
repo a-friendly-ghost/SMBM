@@ -1,7 +1,5 @@
 package net.mcreator.extrabuildingblocks.block;
 
-import org.checkerframework.checker.units.qual.s;
-
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
@@ -30,19 +28,34 @@ import net.mcreator.extrabuildingblocks.procedures.SaltGrowthBlockValidPlacement
 
 import javax.annotation.Nullable;
 
+import java.util.function.Function;
+
 public class SaltGrowthBlock extends Block implements SimpleWaterloggedBlock {
 	public static final EnumProperty<Direction> FACING = DirectionalBlock.FACING;
 	public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
-	private static final VoxelShape SHAPE_NORTH = box(5, 5, 9, 11, 11, 16);
-	private static final VoxelShape SHAPE_SOUTH = box(5, 5, 0, 11, 11, 7);
-	private static final VoxelShape SHAPE_EAST = box(0, 5, 5, 7, 11, 11);
-	private static final VoxelShape SHAPE_WEST = box(9, 5, 5, 16, 11, 11);
-	private static final VoxelShape SHAPE_UP = box(5, 0, 5, 11, 7, 11);
-	private static final VoxelShape SHAPE_DOWN = box(5, 9, 5, 11, 16, 11);
+	private final Function<BlockState, VoxelShape> shapes = this.makeShapes();
 
 	public SaltGrowthBlock(BlockBehaviour.Properties properties) {
-		super(properties.sound(SoundType.AMETHYST).strength(1f, 10f).lightLevel(s -> 1).noOcclusion().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true).isRedstoneConductor((bs, br, bp) -> false));
+		super(properties.sound(SoundType.AMETHYST).strength(1f, 10f).lightLevel(blockstate -> 1).noOcclusion().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true).isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, false));
+	}
+
+	private Function<BlockState, VoxelShape> makeShapes() {
+		return this.getShapeForEachState(state -> {
+			return switch (state.getValue(FACING)) {
+				default -> box(5, 5, 0, 11, 11, 7);
+				case NORTH -> box(5, 5, 9, 11, 11, 16);
+				case EAST -> box(0, 5, 5, 7, 11, 11);
+				case WEST -> box(9, 5, 5, 16, 11, 11);
+				case UP -> box(5, 0, 5, 11, 7, 11);
+				case DOWN -> box(5, 9, 5, 11, 16, 11);
+			};
+		}, WATERLOGGED);
+	}
+
+	@Override
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return shapes.apply(state);
 	}
 
 	@Override
@@ -52,25 +65,12 @@ public class SaltGrowthBlock extends Block implements SimpleWaterloggedBlock {
 
 	@Override
 	public int getLightBlock(BlockState state) {
-		return 0;
+		return propagatesSkylightDown(state) ? 0 : 1;
 	}
 
 	@Override
 	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return Shapes.empty();
-	}
-
-	@Override
-	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		return (switch (state.getValue(FACING)) {
-			case NORTH -> SHAPE_NORTH;
-			case SOUTH -> SHAPE_SOUTH;
-			case EAST -> SHAPE_EAST;
-			case WEST -> SHAPE_WEST;
-			case UP -> SHAPE_UP;
-			case DOWN -> SHAPE_DOWN;
-			default -> SHAPE_NORTH;
-		});
 	}
 
 	@Override

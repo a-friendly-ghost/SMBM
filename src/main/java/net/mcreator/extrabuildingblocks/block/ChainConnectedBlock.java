@@ -16,46 +16,38 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
+import java.util.function.Function;
+
 public class ChainConnectedBlock extends Block {
 	public static final EnumProperty<Direction> FACING = DirectionalBlock.FACING;
-	private static final VoxelShape SHAPE_NORTH = box(0, 0, 7, 16, 11, 9);
-	private static final VoxelShape SHAPE_SOUTH = box(0, 0, 7, 16, 11, 9);
-	private static final VoxelShape SHAPE_EAST = box(7, 0, 0, 9, 11, 16);
-	private static final VoxelShape SHAPE_WEST = box(7, 0, 0, 9, 11, 16);
-	private static final VoxelShape SHAPE_UP = box(0, 7, 0, 16, 9, 11);
-	private static final VoxelShape SHAPE_DOWN = box(0, 7, 5, 16, 9, 16);
+	private final Function<BlockState, VoxelShape> shapes = this.makeShapes();
 
 	public ChainConnectedBlock(BlockBehaviour.Properties properties) {
 		super(properties.sound(SoundType.CHAIN).strength(5f, 6f).requiresCorrectToolForDrops().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 
-	@Override
-	public boolean propagatesSkylightDown(BlockState state) {
-		return true;
+	private Function<BlockState, VoxelShape> makeShapes() {
+		return this.getShapeForEachState(state -> {
+			return switch (state.getValue(FACING)) {
+				default -> box(0, 0, 7, 16, 11, 9);
+				case NORTH -> box(0, 0, 7, 16, 11, 9);
+				case EAST -> box(7, 0, 0, 9, 11, 16);
+				case WEST -> box(7, 0, 0, 9, 11, 16);
+				case UP -> box(0, 7, 0, 16, 9, 11);
+				case DOWN -> box(0, 7, 5, 16, 9, 16);
+			};
+		});
 	}
 
 	@Override
-	public int getLightBlock(BlockState state) {
-		return 0;
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return shapes.apply(state);
 	}
 
 	@Override
 	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return Shapes.empty();
-	}
-
-	@Override
-	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		return (switch (state.getValue(FACING)) {
-			case NORTH -> SHAPE_NORTH;
-			case SOUTH -> SHAPE_SOUTH;
-			case EAST -> SHAPE_EAST;
-			case WEST -> SHAPE_WEST;
-			case UP -> SHAPE_UP;
-			case DOWN -> SHAPE_DOWN;
-			default -> SHAPE_NORTH;
-		});
 	}
 
 	@Override

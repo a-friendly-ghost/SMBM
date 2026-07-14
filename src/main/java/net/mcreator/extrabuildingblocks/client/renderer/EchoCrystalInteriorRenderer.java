@@ -10,6 +10,7 @@ import net.mcreator.extrabuildingblocks.client.model.ModelEchoCrystalJava;
 
 public class EchoCrystalInteriorRenderer extends MobRenderer<EchoCrystalInteriorEntity, LivingEntityRenderState, ModelEchoCrystalJava> {
 	private EchoCrystalInteriorEntity entity = null;
+	private final ResourceLocation entityTexture = ResourceLocation.parse("extra_building_blocks:textures/entities/texture_23.png");
 
 	public EchoCrystalInteriorRenderer(EntityRendererProvider.Context context) {
 		super(context, new ModelEchoCrystalJava(context.bakeLayer(ModelEchoCrystalJava.LAYER_LOCATION)), 1f);
@@ -28,6 +29,6 @@ public class EchoCrystalInteriorRenderer extends MobRenderer<EchoCrystalInterior
 
 	@Override
 	public ResourceLocation getTextureLocation(LivingEntityRenderState state) {
-		return ResourceLocation.parse("extra_building_blocks:textures/entities/texture_23.png");
+		return entityTexture;
 	}
 }

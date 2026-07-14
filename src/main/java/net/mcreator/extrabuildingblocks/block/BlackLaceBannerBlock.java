@@ -28,17 +28,32 @@ import net.mcreator.extrabuildingblocks.procedures.LaceBannerBlockValidPlacement
 
 import javax.annotation.Nullable;
 
+import java.util.function.Function;
+
 public class BlackLaceBannerBlock extends Block implements SimpleWaterloggedBlock {
 	public static final EnumProperty<Direction> FACING = HorizontalDirectionalBlock.FACING;
 	public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
-	private static final VoxelShape SHAPE_NORTH = box(1, -15, 13, 15, 14, 16);
-	private static final VoxelShape SHAPE_SOUTH = box(1, -15, 0, 15, 14, 3);
-	private static final VoxelShape SHAPE_EAST = box(0, -15, 1, 3, 14, 15);
-	private static final VoxelShape SHAPE_WEST = box(13, -15, 1, 16, 14, 15);
+	private final Function<BlockState, VoxelShape> shapes = this.makeShapes();
 
 	public BlackLaceBannerBlock(BlockBehaviour.Properties properties) {
-		super(properties.sound(SoundType.WOOD).instabreak().noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false).ignitedByLava());
+		super(properties.sound(SoundType.WOOD).instabreak().noCollission().isRedstoneConductor((bs, br, bp) -> false).ignitedByLava());
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, false));
+	}
+
+	private Function<BlockState, VoxelShape> makeShapes() {
+		return this.getShapeForEachState(state -> {
+			return switch (state.getValue(FACING)) {
+				default -> box(1, -15, 0, 15, 14, 3);
+				case NORTH -> box(1, -15, 13, 15, 14, 16);
+				case EAST -> box(0, -15, 1, 3, 14, 15);
+				case WEST -> box(13, -15, 1, 16, 14, 15);
+			};
+		}, WATERLOGGED);
+	}
+
+	@Override
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return shapes.apply(state);
 	}
 
 	@Override
@@ -48,23 +63,12 @@ public class BlackLaceBannerBlock extends Block implements SimpleWaterloggedBloc
 
 	@Override
 	public int getLightBlock(BlockState state) {
-		return 0;
+		return propagatesSkylightDown(state) ? 0 : 1;
 	}
 
 	@Override
 	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return Shapes.empty();
-	}
-
-	@Override
-	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		return (switch (state.getValue(FACING)) {
-			case NORTH -> SHAPE_NORTH;
-			case SOUTH -> SHAPE_SOUTH;
-			case EAST -> SHAPE_EAST;
-			case WEST -> SHAPE_WEST;
-			default -> SHAPE_NORTH;
-		});
 	}
 
 	@Override

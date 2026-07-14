@@ -26,9 +26,4 @@ public class RawSaltBlock extends FallingBlock {
 	public RawSaltBlock(BlockBehaviour.Properties properties) {
 		super(properties.sound(SoundType.SAND).strength(0.7f, 0.5f).instrument(NoteBlockInstrument.SNARE));
 	}
-
-	@Override
-	public int getLightBlock(BlockState state) {
-		return 15;
-	}
 }
