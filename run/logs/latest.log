@@ -1,177 +1,183 @@
-[14Jul2026 19:58:18.515] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, neoforgeclientdev, --version, 21.8.31, --assetIndex, 26, --assetsDir, C:\\Users\\Asus\\.mcreator\\gradle\\caches\\neoformruntime\\assets, --fml.fmlVersion, 9.0.16, --fml.mcVersion, 1.21.8, --fml.neoForgeVersion, 21.8.31, --fml.neoFormVersion, 20250717.133445]
-[14Jul2026 19:58:18.523] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as JetBrains s.r.o. OpenJDK 64-Bit Server VM 21.0.10+1-b1163.105
-[14Jul2026 19:58:18.524] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 9.0 starting: java version 21.0.10 by JetBrains s.r.o.; OS Windows 10 arch amd64 version 10.0
-[14Jul2026 19:58:18.685] [main/INFO] [net.neoforged.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
-[14Jul2026 19:58:20.473] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=union:/C:/Users/Asus/.mcreator/gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.2+mixin.0.8.7/2af2f021d8e02a0220dc27a7a72b4666d66d44ca/sponge-mixin-0.15.2+mixin.0.8.7.jar%23157!/ Service=ModLauncher Env=CLIENT
-[14Jul2026 19:58:20.565] [fml-loadingscreen/INFO] [net.neoforged.fml.earlydisplay.render.LoadingScreenRenderer/]: GL info: AMD Radeon(TM) Graphics GL version 3.2.13596 Core Profile Forward-Compatible Context 20.10.32.06 27.20.11032.6002, ATI Technologies Inc.
-[14Jul2026 19:58:21.163] [main/INFO] [net.neoforged.fml.loading.moddiscovery.locators.JarInJarDependencyLocator/]: Found 2 dependencies adding them to mods collection
-[14Jul2026 19:58:21.165] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/]: 
+[17Jul2026 18:31:46.326] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, neoforgeclientdev, --version, 21.8.31, --assetIndex, 26, --assetsDir, C:\\Users\\Asus\\.mcreator\\gradle\\caches\\neoformruntime\\assets, --fml.fmlVersion, 9.0.16, --fml.mcVersion, 1.21.8, --fml.neoForgeVersion, 21.8.31, --fml.neoFormVersion, 20250717.133445]
+[17Jul2026 18:31:46.331] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as JetBrains s.r.o. OpenJDK 64-Bit Server VM 21.0.10+1-b1163.105
+[17Jul2026 18:31:46.332] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 9.0 starting: java version 21.0.10 by JetBrains s.r.o.; OS Windows 10 arch amd64 version 10.0
+[17Jul2026 18:31:46.519] [main/INFO] [net.neoforged.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
+[17Jul2026 18:31:48.288] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=union:/C:/Users/Asus/.mcreator/gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.2+mixin.0.8.7/2af2f021d8e02a0220dc27a7a72b4666d66d44ca/sponge-mixin-0.15.2+mixin.0.8.7.jar%23157!/ Service=ModLauncher Env=CLIENT
+[17Jul2026 18:31:48.400] [fml-loadingscreen/INFO] [net.neoforged.fml.earlydisplay.render.LoadingScreenRenderer/]: GL info: AMD Radeon(TM) Graphics GL version 3.2.13596 Core Profile Forward-Compatible Context 20.10.32.06 27.20.11032.6002, ATI Technologies Inc.
+[17Jul2026 18:31:48.974] [main/INFO] [net.neoforged.fml.loading.moddiscovery.locators.JarInJarDependencyLocator/]: Found 2 dependencies adding them to mods collection
+[17Jul2026 18:31:48.977] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/]: 
      Mod List:
 		Name Version (Mod Id)
 
 		Minecraft 1.21.8 (minecraft)
 		Mishmash 0.3.3 (extra_building_blocks)
 		NeoForge 21.8.31 (neoforge)
-[14Jul2026 19:58:22.379] [main/INFO] [mixin/]: Compatibility level set to JAVA_21
-[14Jul2026 19:58:22.390] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'neoforgeclientdev' with arguments [--version, 21.8.31, --assetsDir, C:\Users\Asus\.mcreator\gradle\caches\neoformruntime\assets, --assetIndex, 26]
-[14Jul2026 19:58:24.250] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 272 Datafixer optimizations took 374 milliseconds
-[14Jul2026 19:58:24.372] [pool-6-thread-1/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.0).
-[14Jul2026 19:58:30.435] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[14Jul2026 19:58:30.437] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
-[14Jul2026 19:58:30.440] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[14Jul2026 19:58:30.441] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[14Jul2026 19:58:30.444] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[14Jul2026 19:58:30.446] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [waypoint, modify, waypoint, color, reset] and [waypoint, modify, waypoint, color, color] with inputs: [reset]
-[14Jul2026 19:58:30.533] [modloading-worker-0/INFO] [net.neoforged.neoforge.common.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 21.8.31, for MC 1.21.8
-[14Jul2026 19:58:32.028] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Asus/MCreatorWorkspaces/mishmashbackup/build/moddev/artifacts/neoforge-21.8.31.jar%23212!/assets/.mcassetsroot' uses unexpected schema
-[14Jul2026 19:58:32.029] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Asus/MCreatorWorkspaces/mishmashbackup/build/moddev/artifacts/neoforge-21.8.31.jar%23212!/data/.mcassetsroot' uses unexpected schema
-[14Jul2026 19:58:32.071] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[14Jul2026 19:58:32.084] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
-[14Jul2026 19:58:32.246] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.3+5
-[14Jul2026 19:58:32.374] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Using optional rendering extensions: GL_ARB_buffer_storage, GL_KHR_debug, GL_ARB_vertex_attrib_binding, GL_ARB_direct_state_access
-[14Jul2026 19:58:33.735] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources, mod/neoforge, mod/extra_building_blocks
-[14Jul2026 19:58:33.804] [resourceLoad/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-16.0.03.hex, loading
-[14Jul2026 19:58:33.804] [resourceLoad/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_pua-16.0.03.hex, loading
-[14Jul2026 19:58:34.008] [resourceLoad/ERROR] [net.minecraft.Util/]: Invalid path in pack: extra_building_blocks:models/custom/cactuswoodNEW.json, ignoring
-[14Jul2026 19:58:34.011] [resourceLoad/ERROR] [net.minecraft.Util/]: Invalid path in pack: extra_building_blocks:models/custom/model_(15).json, ignoring
-[14Jul2026 19:58:34.011] [resourceLoad/ERROR] [net.minecraft.Util/]: Invalid path in pack: extra_building_blocks:models/custom/model_(16).json, ignoring
-[14Jul2026 19:58:34.012] [resourceLoad/ERROR] [net.minecraft.Util/]: Invalid path in pack: extra_building_blocks:models/custom/model_(17).json, ignoring
-[14Jul2026 19:58:34.012] [resourceLoad/ERROR] [net.minecraft.Util/]: Invalid path in pack: extra_building_blocks:models/custom/model_(7).json, ignoring
-[14Jul2026 19:58:34.013] [resourceLoad/ERROR] [net.minecraft.Util/]: Invalid path in pack: extra_building_blocks:models/custom/oil_lamp_(8).json, ignoring
-[14Jul2026 19:58:34.211] [resourceLoad/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_jp_patch-16.0.03.hex, loading
-[14Jul2026 19:58:34.578] [resourceLoad/WARN] [net.minecraft.client.renderer.texture.SpriteLoader/]: Texture extra_building_blocks:block/new_piskel_63 with size 2x16 limits mip level from 2 to 1
-[14Jul2026 19:58:35.064] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelDiscovery/]: Missing block model: extra_building_blocks:item/echo_crystal_interior_spawn_egg
-[14Jul2026 19:58:35.072] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelDiscovery/]: Missing block model: extra_building_blocks:block/waxed_rusted_wrought_iron_gate
-[14Jul2026 19:58:35.072] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelDiscovery/]: Missing block model: extra_building_blocks:block/waxed_weathered_wrought_iron_gate
-[14Jul2026 19:58:35.073] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelDiscovery/]: Missing block model: extra_building_blocks:block/waxed_exposed_wrought_iron_gate
-[14Jul2026 19:58:35.073] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelDiscovery/]: Missing block model: extra_building_blocks:block/waxed_wrought_iron_gate
-[14Jul2026 19:58:35.074] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelDiscovery/]: Missing block model: minecraft:blocks/stone
-[14Jul2026 19:58:35.809] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:item/green_lace_carpet:
+[17Jul2026 18:31:50.094] [main/INFO] [mixin/]: Compatibility level set to JAVA_21
+[17Jul2026 18:31:50.121] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'neoforgeclientdev' with arguments [--version, 21.8.31, --assetsDir, C:\Users\Asus\.mcreator\gradle\caches\neoformruntime\assets, --assetIndex, 26]
+[17Jul2026 18:31:53.295] [pool-6-thread-1/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.0).
+[17Jul2026 18:31:53.296] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 272 Datafixer optimizations took 803 milliseconds
+[17Jul2026 18:31:59.780] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[17Jul2026 18:31:59.782] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[17Jul2026 18:31:59.787] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[17Jul2026 18:31:59.790] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[17Jul2026 18:31:59.791] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[17Jul2026 18:31:59.794] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [waypoint, modify, waypoint, color, reset] and [waypoint, modify, waypoint, color, color] with inputs: [reset]
+[17Jul2026 18:31:59.920] [modloading-worker-0/INFO] [net.neoforged.neoforge.common.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 21.8.31, for MC 1.21.8
+[17Jul2026 18:32:01.430] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Asus/MCreatorWorkspaces/mishmashbackup/build/moddev/artifacts/neoforge-21.8.31.jar%23212!/assets/.mcassetsroot' uses unexpected schema
+[17Jul2026 18:32:01.432] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Asus/MCreatorWorkspaces/mishmashbackup/build/moddev/artifacts/neoforge-21.8.31.jar%23212!/data/.mcassetsroot' uses unexpected schema
+[17Jul2026 18:32:01.467] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[17Jul2026 18:32:01.479] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[17Jul2026 18:32:01.627] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.3+5
+[17Jul2026 18:32:01.768] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Using optional rendering extensions: GL_ARB_buffer_storage, GL_KHR_debug, GL_ARB_vertex_attrib_binding, GL_ARB_direct_state_access
+[17Jul2026 18:32:03.191] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources, mod/neoforge, mod/extra_building_blocks
+[17Jul2026 18:32:03.288] [resourceLoad/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-16.0.03.hex, loading
+[17Jul2026 18:32:03.288] [resourceLoad/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_pua-16.0.03.hex, loading
+[17Jul2026 18:32:03.438] [resourceLoad/ERROR] [net.minecraft.Util/]: Invalid path in pack: extra_building_blocks:models/custom/cactuswoodNEW.json, ignoring
+[17Jul2026 18:32:03.443] [resourceLoad/ERROR] [net.minecraft.Util/]: Invalid path in pack: extra_building_blocks:models/custom/model_(15).json, ignoring
+[17Jul2026 18:32:03.444] [resourceLoad/ERROR] [net.minecraft.Util/]: Invalid path in pack: extra_building_blocks:models/custom/model_(16).json, ignoring
+[17Jul2026 18:32:03.444] [resourceLoad/ERROR] [net.minecraft.Util/]: Invalid path in pack: extra_building_blocks:models/custom/model_(17).json, ignoring
+[17Jul2026 18:32:03.445] [resourceLoad/ERROR] [net.minecraft.Util/]: Invalid path in pack: extra_building_blocks:models/custom/model_(7).json, ignoring
+[17Jul2026 18:32:03.445] [resourceLoad/ERROR] [net.minecraft.Util/]: Invalid path in pack: extra_building_blocks:models/custom/oil_lamp_(8).json, ignoring
+[17Jul2026 18:32:03.491] [resourceLoad/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_jp_patch-16.0.03.hex, loading
+[17Jul2026 18:32:04.121] [resourceLoad/WARN] [net.minecraft.client.renderer.texture.SpriteLoader/]: Texture extra_building_blocks:block/new_piskel_63 with size 2x16 limits mip level from 2 to 1
+[17Jul2026 18:32:04.330] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelDiscovery/]: Missing block model: extra_building_blocks:item/echo_crystal_interior_spawn_egg
+[17Jul2026 18:32:04.335] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelDiscovery/]: Missing block model: minecraft:blocks/stone
+[17Jul2026 18:32:05.369] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:item/green_lace_carpet:
     minecraft:textures/atlas/blocks.png:extra_building_blocks:block/
-[14Jul2026 19:58:35.811] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:block/cyan_lace_carpet:
+[17Jul2026 18:32:05.370] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:block/cyan_lace_carpet:
     minecraft:textures/atlas/blocks.png:extra_building_blocks:block/
-[14Jul2026 19:58:35.812] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:item/grey_lace_carpet:
+[17Jul2026 18:32:05.370] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:item/grey_lace_carpet:
     minecraft:textures/atlas/blocks.png:extra_building_blocks:block/
-[14Jul2026 19:58:35.812] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:block/lime_lace_carpet:
+[17Jul2026 18:32:05.370] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:block/lime_lace_carpet:
     minecraft:textures/atlas/blocks.png:extra_building_blocks:block/
-[14Jul2026 19:58:35.812] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:block/yellow_lace_carpet:
+[17Jul2026 18:32:05.370] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:block/yellow_lace_carpet:
     minecraft:textures/atlas/blocks.png:extra_building_blocks:block/
-[14Jul2026 19:58:35.812] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:block/green_lace_carpet:
+[17Jul2026 18:32:05.370] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:block/green_lace_carpet:
     minecraft:textures/atlas/blocks.png:extra_building_blocks:block/
-[14Jul2026 19:58:35.812] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:block/white_lace_carpet:
+[17Jul2026 18:32:05.370] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:block/white_lace_carpet:
     minecraft:textures/atlas/blocks.png:extra_building_blocks:block/
-[14Jul2026 19:58:35.812] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:block/light_grey_lace_carpet:
+[17Jul2026 18:32:05.370] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:block/light_grey_lace_carpet:
     minecraft:textures/atlas/blocks.png:extra_building_blocks:block/
-[14Jul2026 19:58:35.812] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:item/magenta_lace_carpet:
+[17Jul2026 18:32:05.370] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:item/magenta_lace_carpet:
     minecraft:textures/atlas/blocks.png:extra_building_blocks:block/
-[14Jul2026 19:58:35.812] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:block/magenta_lace_carpet:
+[17Jul2026 18:32:05.370] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:block/magenta_lace_carpet:
     minecraft:textures/atlas/blocks.png:extra_building_blocks:block/
-[14Jul2026 19:58:35.812] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:block/train_lace_carpet:
+[17Jul2026 18:32:05.371] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:block/train_lace_carpet:
     minecraft:textures/atlas/blocks.png:extra_building_blocks:block/
-[14Jul2026 19:58:35.812] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:item/light_blue_lace_carpet:
+[17Jul2026 18:32:05.371] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:item/light_blue_lace_carpet:
     minecraft:textures/atlas/blocks.png:extra_building_blocks:block/
-[14Jul2026 19:58:35.812] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:block/purple_lace_carpet:
+[17Jul2026 18:32:05.371] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:block/purple_lace_carpet:
     minecraft:textures/atlas/blocks.png:extra_building_blocks:block/
-[14Jul2026 19:58:35.812] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:block/blue_lace_carpet:
+[17Jul2026 18:32:05.371] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:block/blue_lace_carpet:
     minecraft:textures/atlas/blocks.png:extra_building_blocks:block/
-[14Jul2026 19:58:35.812] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:item/train_lace_carpet:
+[17Jul2026 18:32:05.371] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:item/train_lace_carpet:
     minecraft:textures/atlas/blocks.png:extra_building_blocks:block/
-[14Jul2026 19:58:35.812] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:block/pink_lace_carpet:
+[17Jul2026 18:32:05.371] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:block/pink_lace_carpet:
     minecraft:textures/atlas/blocks.png:extra_building_blocks:block/
-[14Jul2026 19:58:35.812] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:item/blue_lace_carpet:
+[17Jul2026 18:32:05.371] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:item/blue_lace_carpet:
     minecraft:textures/atlas/blocks.png:extra_building_blocks:block/
-[14Jul2026 19:58:35.812] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:item/purple_lace_carpet:
+[17Jul2026 18:32:05.371] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:item/purple_lace_carpet:
     minecraft:textures/atlas/blocks.png:extra_building_blocks:block/
-[14Jul2026 19:58:35.813] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:item/cyan_lace_carpet:
+[17Jul2026 18:32:05.371] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:item/cyan_lace_carpet:
     minecraft:textures/atlas/blocks.png:extra_building_blocks:block/
-[14Jul2026 19:58:35.813] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:item/lime_lace_carpet:
+[17Jul2026 18:32:05.371] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:item/lime_lace_carpet:
     minecraft:textures/atlas/blocks.png:extra_building_blocks:block/
-[14Jul2026 19:58:35.813] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:item/brown_lace_carpet:
+[17Jul2026 18:32:05.371] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:item/brown_lace_carpet:
     minecraft:textures/atlas/blocks.png:extra_building_blocks:block/
-[14Jul2026 19:58:35.813] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:item/black_lace_carpet:
+[17Jul2026 18:32:05.372] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:item/black_lace_carpet:
     minecraft:textures/atlas/blocks.png:extra_building_blocks:block/
-[14Jul2026 19:58:35.813] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:item/pink_lace_carpet:
+[17Jul2026 18:32:05.372] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:item/pink_lace_carpet:
     minecraft:textures/atlas/blocks.png:extra_building_blocks:block/
-[14Jul2026 19:58:35.813] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:item/red_lace_carpet:
+[17Jul2026 18:32:05.372] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:item/red_lace_carpet:
     minecraft:textures/atlas/blocks.png:extra_building_blocks:block/
-[14Jul2026 19:58:35.813] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:block/light_blue_lace_carpet:
+[17Jul2026 18:32:05.372] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:block/light_blue_lace_carpet:
     minecraft:textures/atlas/blocks.png:extra_building_blocks:block/
-[14Jul2026 19:58:35.813] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:item/white_lace_carpet:
+[17Jul2026 18:32:05.372] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:item/white_lace_carpet:
     minecraft:textures/atlas/blocks.png:extra_building_blocks:block/
-[14Jul2026 19:58:35.813] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:block/orange_lace_carpet:
+[17Jul2026 18:32:05.372] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:block/orange_lace_carpet:
     minecraft:textures/atlas/blocks.png:extra_building_blocks:block/
-[14Jul2026 19:58:35.813] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:item/orange_lace_carpet:
+[17Jul2026 18:32:05.372] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:item/orange_lace_carpet:
     minecraft:textures/atlas/blocks.png:extra_building_blocks:block/
-[14Jul2026 19:58:35.813] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:block/grey_lace_carpet:
+[17Jul2026 18:32:05.372] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:block/grey_lace_carpet:
     minecraft:textures/atlas/blocks.png:extra_building_blocks:block/
-[14Jul2026 19:58:35.813] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:block/red_lace_carpet:
+[17Jul2026 18:32:05.372] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:block/red_lace_carpet:
     minecraft:textures/atlas/blocks.png:extra_building_blocks:block/
-[14Jul2026 19:58:35.813] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:block/brown_lace_carpet:
+[17Jul2026 18:32:05.372] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:block/black_lace_carpet:
     minecraft:textures/atlas/blocks.png:extra_building_blocks:block/
-[14Jul2026 19:58:35.813] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:block/black_lace_carpet:
+[17Jul2026 18:32:05.372] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:block/brown_lace_carpet:
     minecraft:textures/atlas/blocks.png:extra_building_blocks:block/
-[14Jul2026 19:58:35.813] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:item/yellow_lace_carpet:
+[17Jul2026 18:32:05.372] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:item/yellow_lace_carpet:
     minecraft:textures/atlas/blocks.png:extra_building_blocks:block/
-[14Jul2026 19:58:35.814] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:item/light_grey_lace_carpet:
+[17Jul2026 18:32:05.372] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model extra_building_blocks:item/light_grey_lace_carpet:
     minecraft:textures/atlas/blocks.png:extra_building_blocks:block/
-[14Jul2026 19:58:36.467] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on Speakers (Realtek(R) Audio)
-[14Jul2026 19:58:36.469] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
-[14Jul2026 19:58:36.640] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x2 minecraft:textures/atlas/blocks.png-atlas
-[14Jul2026 19:58:36.761] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x2 minecraft:textures/atlas/signs.png-atlas
-[14Jul2026 19:58:36.762] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x2 minecraft:textures/atlas/shield_patterns.png-atlas
-[14Jul2026 19:58:36.764] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x2 minecraft:textures/atlas/banner_patterns.png-atlas
-[14Jul2026 19:58:36.767] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 2048x1024x2 minecraft:textures/atlas/armor_trims.png-atlas
-[14Jul2026 19:58:36.788] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x2 minecraft:textures/atlas/chest.png-atlas
-[14Jul2026 19:58:36.789] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x2 minecraft:textures/atlas/decorated_pot.png-atlas
-[14Jul2026 19:58:36.791] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x2 minecraft:textures/atlas/shulker_boxes.png-atlas
-[14Jul2026 19:58:36.794] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x2 minecraft:textures/atlas/beds.png-atlas
-[14Jul2026 19:58:36.811] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
-[14Jul2026 19:58:36.899] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
-[14Jul2026 19:58:36.904] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
-[14Jul2026 19:58:36.905] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
-[14Jul2026 19:58:36.928] [Render thread/INFO] [net.neoforged.neoforge.client.entity.animation.json.AnimationLoader/]: Loaded 0 entity animations
-[14Jul2026 19:58:56.792] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 1791 recipes
-[14Jul2026 19:58:56.804] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 1905 advancements
-[14Jul2026 19:58:56.806] [Render thread/INFO] [net.neoforged.neoforge.common.crafting.RecipePriorityManager/]: Loaded 0 recipe priority overrides
-[14Jul2026 19:58:57.218] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.21.8
-[14Jul2026 19:58:57.218] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
-[14Jul2026 19:58:57.861] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
-[14Jul2026 19:58:58.561] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[14Jul2026 19:58:58.562] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[14Jul2026 19:58:58.800] [Server thread/INFO] [net.neoforged.neoforge.server.permission.PermissionAPI/]: Successfully initialized permission handler neoforge:default_handler
-[14Jul2026 19:58:58.802] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 926 ms
-[14Jul2026 19:58:58.917] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 5, from 10
-[14Jul2026 19:58:58.918] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 12, from 0
-[14Jul2026 19:59:01.284] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:d28989f5] logged in with entity id 43 at (369.32069282501436, 103.0, 406.0154571703529)
-[14Jul2026 19:59:01.371] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
-[14Jul2026 19:59:01.667] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 2 reached during a single frame. New capacity will be 4.
-[14Jul2026 19:59:01.676] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 157 advancements
-[14Jul2026 19:59:01.880] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 4 reached during a single frame. New capacity will be 8.
-[14Jul2026 19:59:02.080] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 8 reached during a single frame. New capacity will be 16.
-[14Jul2026 19:59:02.191] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 16 reached during a single frame. New capacity will be 32.
-[14Jul2026 19:59:02.347] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 32 reached during a single frame. New capacity will be 64.
-[14Jul2026 19:59:02.524] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 64 reached during a single frame. New capacity will be 128.
-[14Jul2026 19:59:02.795] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 128 reached during a single frame. New capacity will be 256.
-[14Jul2026 19:59:03.137] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 256 reached during a single frame. New capacity will be 512.
-[14Jul2026 19:59:20.013] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[14Jul2026 19:59:20.062] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[the testerrrrr]'/minecraft:overworld
-[14Jul2026 19:59:20.114] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[the testerrrrr]'/minecraft:the_nether
-[14Jul2026 19:59:20.116] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[the testerrrrr]'/minecraft:the_end
-[14Jul2026 19:59:23.662] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[14Jul2026 19:59:23.902] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[the testerrrrr]'/minecraft:overworld
-[14Jul2026 19:59:23.933] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[the testerrrrr]'/minecraft:the_nether
-[14Jul2026 19:59:23.934] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[the testerrrrr]'/minecraft:the_end
-[14Jul2026 19:59:24.636] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
-[14Jul2026 19:59:24.636] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
-[14Jul2026 19:59:25.071] [Server thread/INFO] [net.minecraft.server.network.ServerCommonPacketListenerImpl/]: Stopping singleplayer server as player logged out
-[14Jul2026 19:59:25.114] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
-[14Jul2026 19:59:25.116] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
-[14Jul2026 19:59:25.116] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
-[14Jul2026 19:59:25.259] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[the testerrrrr]'/minecraft:overworld
-[14Jul2026 19:59:26.603] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[the testerrrrr]'/minecraft:the_nether
-[14Jul2026 19:59:26.609] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[the testerrrrr]'/minecraft:the_end
-[14Jul2026 19:59:26.729] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (the testerrrrr): All chunks are saved
-[14Jul2026 19:59:26.730] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[14Jul2026 19:59:26.730] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[14Jul2026 19:59:26.730] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
-[14Jul2026 20:00:27.505] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
+[17Jul2026 18:32:05.885] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on Speakers (Realtek(R) Audio)
+[17Jul2026 18:32:05.886] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
+[17Jul2026 18:32:06.034] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x2 minecraft:textures/atlas/blocks.png-atlas
+[17Jul2026 18:32:06.123] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x2 minecraft:textures/atlas/signs.png-atlas
+[17Jul2026 18:32:06.125] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x2 minecraft:textures/atlas/shield_patterns.png-atlas
+[17Jul2026 18:32:06.127] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x2 minecraft:textures/atlas/banner_patterns.png-atlas
+[17Jul2026 18:32:06.129] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 2048x1024x2 minecraft:textures/atlas/armor_trims.png-atlas
+[17Jul2026 18:32:06.149] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x2 minecraft:textures/atlas/decorated_pot.png-atlas
+[17Jul2026 18:32:06.150] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x2 minecraft:textures/atlas/chest.png-atlas
+[17Jul2026 18:32:06.151] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x2 minecraft:textures/atlas/shulker_boxes.png-atlas
+[17Jul2026 18:32:06.152] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x2 minecraft:textures/atlas/beds.png-atlas
+[17Jul2026 18:32:06.154] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
+[17Jul2026 18:32:06.232] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[17Jul2026 18:32:06.237] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
+[17Jul2026 18:32:06.237] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
+[17Jul2026 18:32:06.247] [Render thread/INFO] [net.neoforged.neoforge.client.entity.animation.json.AnimationLoader/]: Loaded 0 entity animations
+[17Jul2026 18:32:26.720] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 1791 recipes
+[17Jul2026 18:32:26.732] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 1905 advancements
+[17Jul2026 18:32:26.735] [Render thread/INFO] [net.neoforged.neoforge.common.crafting.RecipePriorityManager/]: Loaded 0 recipe priority overrides
+[17Jul2026 18:32:27.095] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.21.8
+[17Jul2026 18:32:27.095] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[17Jul2026 18:32:27.589] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[17Jul2026 18:32:28.347] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[17Jul2026 18:32:28.347] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[17Jul2026 18:32:28.497] [Server thread/INFO] [net.neoforged.neoforge.server.permission.PermissionAPI/]: Successfully initialized permission handler neoforge:default_handler
+[17Jul2026 18:32:28.501] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 903 ms
+[17Jul2026 18:32:28.609] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 5, from 10
+[17Jul2026 18:32:28.610] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 12, from 0
+[17Jul2026 18:32:29.765] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:0e7d49fa] logged in with entity id 46 at (432.70470027559026, 107.0, 447.0188860852514)
+[17Jul2026 18:32:29.825] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
+[17Jul2026 18:32:30.012] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 2 reached during a single frame. New capacity will be 4.
+[17Jul2026 18:32:30.044] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 162 advancements
+[17Jul2026 18:32:30.139] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 4 reached during a single frame. New capacity will be 8.
+[17Jul2026 18:32:30.275] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 8 reached during a single frame. New capacity will be 16.
+[17Jul2026 18:32:30.317] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 16 reached during a single frame. New capacity will be 32.
+[17Jul2026 18:32:30.341] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 32 reached during a single frame. New capacity will be 64.
+[17Jul2026 18:32:30.466] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 64 reached during a single frame. New capacity will be 128.
+[17Jul2026 18:32:30.618] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 128 reached during a single frame. New capacity will be 256.
+[17Jul2026 18:32:30.902] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 256 reached during a single frame. New capacity will be 512.
+[17Jul2026 18:32:41.300] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[17Jul2026 18:32:41.347] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[the testerrrrr]'/minecraft:overworld
+[17Jul2026 18:32:41.395] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[the testerrrrr]'/minecraft:the_end
+[17Jul2026 18:32:41.395] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[the testerrrrr]'/minecraft:the_nether
+[17Jul2026 18:33:09.839] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 512 reached during a single frame. New capacity will be 1024.
+[17Jul2026 18:34:39.962] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 163 advancements
+[17Jul2026 18:35:12.750] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[17Jul2026 18:35:12.778] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[the testerrrrr]'/minecraft:overworld
+[17Jul2026 18:35:12.827] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[the testerrrrr]'/minecraft:the_end
+[17Jul2026 18:35:12.829] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[the testerrrrr]'/minecraft:the_nether
+[17Jul2026 18:37:56.951] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[17Jul2026 18:37:56.969] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[the testerrrrr]'/minecraft:overworld
+[17Jul2026 18:37:56.986] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[the testerrrrr]'/minecraft:the_end
+[17Jul2026 18:37:56.987] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[the testerrrrr]'/minecraft:the_nether
+[17Jul2026 18:39:19.700] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[17Jul2026 18:39:19.716] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[the testerrrrr]'/minecraft:overworld
+[17Jul2026 18:39:19.762] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[the testerrrrr]'/minecraft:the_end
+[17Jul2026 18:39:19.764] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[the testerrrrr]'/minecraft:the_nether
+[17Jul2026 18:39:20.461] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
+[17Jul2026 18:39:20.462] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
+[17Jul2026 18:39:20.499] [Server thread/INFO] [net.minecraft.server.network.ServerCommonPacketListenerImpl/]: Stopping singleplayer server as player logged out
+[17Jul2026 18:39:20.519] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[17Jul2026 18:39:20.521] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[17Jul2026 18:39:20.521] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[17Jul2026 18:39:20.612] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[the testerrrrr]'/minecraft:overworld
+[17Jul2026 18:39:20.742] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[the testerrrrr]'/minecraft:the_end
+[17Jul2026 18:39:20.749] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[the testerrrrr]'/minecraft:the_nether
+[17Jul2026 18:39:20.889] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (the testerrrrr): All chunks are saved
+[17Jul2026 18:39:20.889] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[17Jul2026 18:39:20.889] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[17Jul2026 18:39:20.889] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+[17Jul2026 18:39:21.847] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!

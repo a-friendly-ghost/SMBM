@@ -927,5 +927,41 @@
     },
     "done": true
   },
+  "extra_building_blocks:recipes/cactus_wood_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-14 20:36:54 +0200"
+    },
+    "done": true
+  },
+  "extra_building_blocks:recipes/waxed_wrought_iron_gate_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-14 20:37:56 +0200"
+    },
+    "done": true
+  },
+  "extra_building_blocks:recipes/waxed_exposed_wrought_iron_gate_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-14 20:38:12 +0200"
+    },
+    "done": true
+  },
+  "extra_building_blocks:recipes/waxed_weathered_wrought_iron_gate_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-14 20:38:13 +0200"
+    },
+    "done": true
+  },
+  "extra_building_blocks:recipes/waxed_rusted_wrought_iron_gate_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-14 20:38:14 +0200"
+    },
+    "done": true
+  },
+  "extra_building_blocks:recipes/iron_gate_recipe": {
+    "criteria": {
+      "has_ingredient_1": "2026-07-17 18:34:39 +0200"
+    },
+    "done": true
+  },
   "DataVersion": 4440
 }

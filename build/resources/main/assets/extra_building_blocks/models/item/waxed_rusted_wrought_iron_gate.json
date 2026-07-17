@@ -1,5 +1,5 @@
 {
-  "parent": "extra_building_blocks:block/waxed_rusted_wrought_iron_gate",
+  "parent": "extra_building_blocks:block/rusted_wrought_iron_gate",
   "display": {
     "thirdperson": {
       "rotation": [

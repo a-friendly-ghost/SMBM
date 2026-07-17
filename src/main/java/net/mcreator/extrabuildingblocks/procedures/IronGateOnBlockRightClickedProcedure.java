@@ -8,6 +8,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.InteractionResult;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
@@ -16,13 +17,13 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 public class IronGateOnBlockRightClickedProcedure {
-	public static boolean execute(LevelAccessor world, double x, double y, double z, Entity entity) {
+	public static InteractionResult execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
-			return false;
+			return InteractionResult.PASS;
 		double checkY = 0;
 		double aboveCount = 0;
 		if (entity.isShiftKeyDown()) {
-			return false;
+			return InteractionResult.CONSUME;
 		}
 		checkY = y;
 		aboveCount = -1;
@@ -33,7 +34,7 @@ public class IronGateOnBlockRightClickedProcedure {
 			if (!((getBlockDirection(world, BlockPos.containing(x, checkY, z))).getAxis() == (getBlockDirection(world, BlockPos.containing(x, y, z))).getAxis())) {
 				break;
 			}
-			if ((getPropertyByName((world.getBlockState(BlockPos.containing(x, checkY, z))), "open") instanceof BooleanProperty _getbp7 && (world.getBlockState(BlockPos.containing(x, checkY, z))).getValue(_getbp7)) == false) {
+			if ((getPropertyByName((world.getBlockState(BlockPos.containing(x, checkY, z))), "open") instanceof BooleanProperty _getbp8 && (world.getBlockState(BlockPos.containing(x, checkY, z))).getValue(_getbp8)) == false) {
 				if ((getBlockDirection(world, BlockPos.containing(x, checkY, z))).getAxis() == Direction.Axis.Z) {
 					if (entity.getZ() > z) {
 						{
@@ -128,7 +129,7 @@ public class IronGateOnBlockRightClickedProcedure {
 			if (!((getBlockDirection(world, BlockPos.containing(x, checkY, z))).getAxis() == (getBlockDirection(world, BlockPos.containing(x, y, z))).getAxis())) {
 				break;
 			}
-			if ((getPropertyByName((world.getBlockState(BlockPos.containing(x, checkY, z))), "open") instanceof BooleanProperty _getbp27 && (world.getBlockState(BlockPos.containing(x, checkY, z))).getValue(_getbp27)) == false) {
+			if ((getPropertyByName((world.getBlockState(BlockPos.containing(x, checkY, z))), "open") instanceof BooleanProperty _getbp28 && (world.getBlockState(BlockPos.containing(x, checkY, z))).getValue(_getbp28)) == false) {
 				if ((getBlockDirection(world, BlockPos.containing(x, checkY, z))).getAxis() == Direction.Axis.Z) {
 					if (entity.getZ() > z) {
 						{
@@ -215,7 +216,7 @@ public class IronGateOnBlockRightClickedProcedure {
 			checkY = checkY - 1;
 		}
 		IronGateBlockAddedProcedure.execute(world, x, y, z);
-		return true;
+		return InteractionResult.SUCCESS;
 	}
 
 	private static Direction getBlockDirection(LevelAccessor world, BlockPos pos) {

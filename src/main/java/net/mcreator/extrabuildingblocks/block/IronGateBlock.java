@@ -1,5 +1,6 @@
 package net.mcreator.extrabuildingblocks.block;
 
+
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
@@ -23,14 +24,22 @@ import net.minecraft.world.item.component.TooltipDisplay;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
+
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
+
 import net.mcreator.extrabuildingblocks.procedures.IronGatePlacedProcedure;
 import net.mcreator.extrabuildingblocks.procedures.IronGateBlockAddedProcedure;
 import net.mcreator.extrabuildingblocks.init.ExtraBuildingBlocksModBlocks;
+
+import net.minecraft.world.phys.BlockHitResult;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.entity.player.Player;
+import net.mcreator.extrabuildingblocks.procedures.IronGateOnBlockRightClickedProcedure;
 
 import javax.annotation.Nullable;
 
@@ -66,6 +75,24 @@ public class IronGateBlock extends Block {
 	@Override
 	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return Shapes.empty();
+	}
+
+	@Override
+    public VoxelShape getCollisionShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
+        if (state.getValue(OPEN)) {
+            return Shapes.empty();
+        }
+        return shapes.apply(state); 
+    }
+
+    @Override
+    public InteractionResult useItemOn(ItemStack stack, BlockState blockstate, Level world, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult) {
+        return InteractionResult.TRY_WITH_EMPTY_HAND;
+    }
+
+	@Override
+	public InteractionResult useWithoutItem(BlockState blockstate, Level world, BlockPos pos, Player player, BlockHitResult hitResult) {
+		return IronGateOnBlockRightClickedProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), player);
 	}
 
 	@Override
@@ -115,4 +142,5 @@ public class IronGateBlock extends Block {
 			componentConsumer.accept(Component.translatable("block.extra_building_blocks.iron_gate.description_0"));
 		}
 	}
+    
 }
