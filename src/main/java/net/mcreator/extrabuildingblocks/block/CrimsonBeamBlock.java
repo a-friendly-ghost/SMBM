@@ -16,6 +16,8 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
+import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 
 public class CrimsonBeamBlock extends Block {
 	public static final EnumProperty<Direction.Axis> AXIS = BlockStateProperties.AXIS;
@@ -24,7 +26,7 @@ public class CrimsonBeamBlock extends Block {
 	private static final VoxelShape SHAPE_Z = box(2, 2, 0, 14, 14, 16);
 
 	public CrimsonBeamBlock(BlockBehaviour.Properties properties) {
-		super(properties.sound(SoundType.NETHER_WOOD).strength(2f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		super(properties.mapColor(MapColor.CRIMSON_STEM).sound(SoundType.NETHER_WOOD).strength(2f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false).instrument(NoteBlockInstrument.BASS));
 		this.registerDefaultState(this.stateDefinition.any().setValue(AXIS, Direction.Axis.Y));
 	}
 

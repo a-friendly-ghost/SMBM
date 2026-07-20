@@ -6,10 +6,10 @@
     "aaa"
   ],
   "key": {
-    "a": "extra_building_blocks:chorus_planks"
+    "a": "extra_building_blocks:chorus_wood_planks"
   },
   "result": {
-    "id": "extra_building_blocks:chorus_trapdoor",
+    "id": "extra_building_blocks:chorus_wood_trapdoor",
     "count": 2
   }
 }

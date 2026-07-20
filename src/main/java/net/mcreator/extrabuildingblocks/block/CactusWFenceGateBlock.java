@@ -1,5 +1,6 @@
 package net.mcreator.extrabuildingblocks.block;
 
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.BlockState;
@@ -12,7 +13,7 @@ import net.minecraft.core.BlockPos;
 
 public class CactusWFenceGateBlock extends FenceGateBlock {
 	public CactusWFenceGateBlock(BlockBehaviour.Properties properties) {
-		super(WoodType.OAK, properties.sound(SoundType.WOOD).strength(2f, 3f).ignitedByLava().instrument(NoteBlockInstrument.BASS).forceSolidOn());
+		super(WoodType.OAK, properties.mapColor(MapColor.SAND).sound(SoundType.WOOD).strength(2f, 3f).ignitedByLava().instrument(NoteBlockInstrument.BASS).forceSolidOn());
 	}
 
 	@Override

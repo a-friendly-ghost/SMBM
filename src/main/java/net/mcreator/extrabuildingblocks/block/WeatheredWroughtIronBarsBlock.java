@@ -8,10 +8,14 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.IronBarsBlock;
 import net.minecraft.world.level.BlockAndTintGetter;
 import net.minecraft.core.BlockPos;
+import net.minecraft.util.RandomSource;
+import net.minecraft.server.level.ServerLevel;
+
+import net.mcreator.extrabuildingblocks.procedures.WeatheredWroughtIronBarsOnTickUpdateProcedure;
 
 public class WeatheredWroughtIronBarsBlock extends IronBarsBlock {
 	public WeatheredWroughtIronBarsBlock(BlockBehaviour.Properties properties) {
-		super(properties.sound(SoundType.NETHERITE_BLOCK).strength(5f, 10f).requiresCorrectToolForDrops().noOcclusion().isRedstoneConductor((bs, br, bp) -> false).instrument(NoteBlockInstrument.BASEDRUM));
+		super(properties.sound(SoundType.NETHERITE_BLOCK).strength(5f, 10f).requiresCorrectToolForDrops().randomTicks().noOcclusion().isRedstoneConductor((bs, br, bp) -> false).instrument(NoteBlockInstrument.HARP));
 	}
 
 	@Override
@@ -23,4 +27,11 @@ public class WeatheredWroughtIronBarsBlock extends IronBarsBlock {
 	public int getLightBlock(BlockState state) {
 		return 0;
 	}
+
+	@Override
+	public void randomTick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
+		super.randomTick(blockstate, world, pos, random);
+		WeatheredWroughtIronBarsOnTickUpdateProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), blockstate);
+	}
+
 }

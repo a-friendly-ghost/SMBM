@@ -4,7 +4,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.level.material.PushReaction;
-import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.BlockState;
@@ -30,7 +30,7 @@ public class SoulSconceBlock extends Block {
 	private final Function<BlockState, VoxelShape> shapes = this.makeShapes();
 
 	public SoulSconceBlock(BlockBehaviour.Properties properties) {
-		super(properties.sound(SoundType.METAL).strength(0f, 2f).lightLevel(blockstate -> 15).noCollission().pushReaction(PushReaction.DESTROY).isRedstoneConductor((bs, br, bp) -> false).instrument(NoteBlockInstrument.BASEDRUM));
+		super(properties.mapColor(MapColor.NONE).sound(SoundType.METAL).strength(0f, 2f).lightLevel(blockstate -> 15).noCollission().pushReaction(PushReaction.DESTROY).isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 

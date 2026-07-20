@@ -1,16 +1,16 @@
 {
   "type": "minecraft:ore",
   "config": {
-    "size": 9,
+    "size": 33,
     "discard_chance_on_air_exposure": 0,
     "targets": [
       {
         "target": {
-          "predicate_type": "block_match",
-          "block": "minecraft:soul_sand"
+          "predicate_type": "tag_match",
+          "tag": "extra_building_blocks:soul_magma_and_slate_replaceable"
         },
         "state": {
-          "Name": "extra_building_blocks:soul_slate"
+          "Name": "extra_building_blocks:soul_magma"
         }
       }
     ]

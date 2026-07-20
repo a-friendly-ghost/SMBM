@@ -1,5 +1,6 @@
 package net.mcreator.extrabuildingblocks.block;
 
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.StairBlock;
@@ -7,7 +8,7 @@ import net.minecraft.world.level.block.Blocks;
 
 public class EndStoneStairsBlock extends StairBlock {
 	public EndStoneStairsBlock(BlockBehaviour.Properties properties) {
-		super(Blocks.AIR.defaultBlockState(), properties.strength(3f, 9f).requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM));
+		super(Blocks.AIR.defaultBlockState(), properties.mapColor(MapColor.SAND).strength(3f, 9f).requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM));
 	}
 
 	@Override

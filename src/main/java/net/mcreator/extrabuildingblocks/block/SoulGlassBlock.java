@@ -3,6 +3,7 @@ package net.mcreator.extrabuildingblocks.block;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.BlockState;
@@ -16,7 +17,7 @@ import net.minecraft.core.BlockPos;
 
 public class SoulGlassBlock extends Block {
 	public SoulGlassBlock(BlockBehaviour.Properties properties) {
-		super(properties.sound(SoundType.GLASS).strength(0.3f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false).instrument(NoteBlockInstrument.HAT));
+		super(properties.mapColor(MapColor.TERRACOTTA_BROWN).sound(SoundType.GLASS).strength(0.3f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false).instrument(NoteBlockInstrument.HAT));
 	}
 
 	@Override

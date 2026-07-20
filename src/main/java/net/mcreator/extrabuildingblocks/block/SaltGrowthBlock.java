@@ -4,8 +4,10 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.level.redstone.Orientation;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.material.FluidState;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
@@ -36,7 +38,8 @@ public class SaltGrowthBlock extends Block implements SimpleWaterloggedBlock {
 	private final Function<BlockState, VoxelShape> shapes = this.makeShapes();
 
 	public SaltGrowthBlock(BlockBehaviour.Properties properties) {
-		super(properties.sound(SoundType.AMETHYST).strength(1f, 10f).lightLevel(blockstate -> 1).noOcclusion().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true).isRedstoneConductor((bs, br, bp) -> false));
+		super(properties.mapColor(MapColor.COLOR_PINK).sound(SoundType.AMETHYST).strength(1f, 10f).lightLevel(blockstate -> 1).noOcclusion().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true)
+				.isRedstoneConductor((bs, br, bp) -> false).instrument(NoteBlockInstrument.BASEDRUM));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, false));
 	}
 

@@ -1,5 +1,6 @@
 package net.mcreator.extrabuildingblocks.block;
 
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -11,7 +12,7 @@ import net.minecraft.core.BlockPos;
 
 public class CactusWFenceBlock extends FenceBlock {
 	public CactusWFenceBlock(BlockBehaviour.Properties properties) {
-		super(properties.sound(SoundType.WOOD).strength(2f, 3f).ignitedByLava().instrument(NoteBlockInstrument.BASS).forceSolidOn());
+		super(properties.mapColor(MapColor.SAND).sound(SoundType.WOOD).strength(2f, 3f).ignitedByLava().instrument(NoteBlockInstrument.BASS).forceSolidOn());
 	}
 
 	@Override

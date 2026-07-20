@@ -8,7 +8,6 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.level.levelgen.placement.CaveSurface;
-import net.minecraft.world.level.levelgen.VerticalAnchor;
 import net.minecraft.world.level.levelgen.SurfaceRules;
 import net.minecraft.world.level.levelgen.NoiseBasedChunkGenerator;
 import net.minecraft.world.level.dimension.LevelStem;
@@ -73,31 +72,12 @@ public class ExtraBuildingBlocksModBiomes {
 					((ExtraBuildingBlocksModNoiseGeneratorSettings) (Object) noiseGenerator.settings.value()).setextra_building_blocksDimensionTypeReference(dimensionType);
 				}
 			}
-			if (dimensionType.is(BuiltinDimensionTypes.NETHER)) {
-				ChunkGenerator chunkGenerator = levelStem.generator();
-				// Inject biomes to biome source
-				if (chunkGenerator.getBiomeSource() instanceof MultiNoiseBiomeSource noiseSource) {
-					List<Pair<Climate.ParameterPoint, Holder<Biome>>> parameters = new ArrayList<>(noiseSource.parameters().values());
-					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0.55f, 1f), Climate.Parameter.span(-1f, 0f), Climate.Parameter.span(-0.11f, 1f), Climate.Parameter.span(0.1f, 1f),
-							Climate.Parameter.point(0.0f), Climate.Parameter.span(0.2f, 0.4f), 0), biomeRegistry.getOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("extra_building_blocks", "salt_outcrops")))));
-					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0.55f, 1f), Climate.Parameter.span(-1f, 0f), Climate.Parameter.span(-0.11f, 1f), Climate.Parameter.span(0.1f, 1f),
-							Climate.Parameter.point(1.0f), Climate.Parameter.span(0.2f, 0.4f), 0), biomeRegistry.getOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("extra_building_blocks", "salt_outcrops")))));
-					chunkGenerator.biomeSource = MultiNoiseBiomeSource.createFromList(new Climate.ParameterList<>(parameters));
-					chunkGenerator.featuresPerStep = Suppliers
-							.memoize(() -> FeatureSorter.buildFeaturesPerStep(List.copyOf(chunkGenerator.biomeSource.possibleBiomes()), biome -> chunkGenerator.generationSettingsGetter.apply(biome).features(), true));
-				}
-				if (chunkGenerator instanceof NoiseBasedChunkGenerator noiseGenerator) {
-					((ExtraBuildingBlocksModNoiseGeneratorSettings) (Object) noiseGenerator.settings.value()).setextra_building_blocksDimensionTypeReference(dimensionType);
-				}
-			}
 		}
 	}
 
 	public static SurfaceRules.RuleSource adaptSurfaceRule(SurfaceRules.RuleSource currentRuleSource, Holder<DimensionType> dimensionType) {
 		if (dimensionType.is(BuiltinDimensionTypes.OVERWORLD))
 			return injectOverworldSurfaceRules(currentRuleSource);
-		if (dimensionType.is(BuiltinDimensionTypes.NETHER))
-			return injectNetherSurfaceRules(currentRuleSource);
 		return currentRuleSource;
 	}
 
@@ -120,19 +100,6 @@ public class ExtraBuildingBlocksModBiomes {
 		}
 	}
 
-	private static SurfaceRules.RuleSource injectNetherSurfaceRules(SurfaceRules.RuleSource currentRuleSource) {
-		List<SurfaceRules.RuleSource> customSurfaceRules = new ArrayList<>();
-		customSurfaceRules.add(anySurfaceRule(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("extra_building_blocks", "salt_outcrops")), ExtraBuildingBlocksModBlocks.RAW_SALT.get().defaultBlockState(),
-				Blocks.SANDSTONE.defaultBlockState(), Blocks.SANDSTONE.defaultBlockState()));
-		if (currentRuleSource instanceof SurfaceRules.SequenceRuleSource sequenceRuleSource) {
-			customSurfaceRules.addAll(sequenceRuleSource.sequence());
-			return SurfaceRules.sequence(customSurfaceRules.toArray(SurfaceRules.RuleSource[]::new));
-		} else {
-			customSurfaceRules.add(currentRuleSource);
-			return SurfaceRules.sequence(customSurfaceRules.toArray(SurfaceRules.RuleSource[]::new));
-		}
-	}
-
 	private static SurfaceRules.RuleSource preliminarySurfaceRule(ResourceKey<Biome> biomeKey, BlockState groundBlock, BlockState undergroundBlock, BlockState underwaterBlock) {
 		return SurfaceRules.ifTrue(SurfaceRules.isBiome(biomeKey),
 				SurfaceRules.ifTrue(SurfaceRules.abovePreliminarySurface(),
@@ -140,16 +107,6 @@ public class ExtraBuildingBlocksModBiomes {
 								SurfaceRules.ifTrue(SurfaceRules.stoneDepthCheck(0, false, 0, CaveSurface.FLOOR),
 										SurfaceRules.sequence(SurfaceRules.ifTrue(SurfaceRules.waterBlockCheck(-1, 0), SurfaceRules.state(groundBlock)), SurfaceRules.state(underwaterBlock))),
 								SurfaceRules.ifTrue(SurfaceRules.stoneDepthCheck(0, true, 0, CaveSurface.FLOOR), SurfaceRules.state(undergroundBlock)))));
-	}
-
-	private static SurfaceRules.RuleSource anySurfaceRule(ResourceKey<Biome> biomeKey, BlockState groundBlock, BlockState undergroundBlock, BlockState underwaterBlock) {
-		return SurfaceRules.ifTrue(SurfaceRules.isBiome(biomeKey),
-				SurfaceRules.ifTrue(SurfaceRules.yBlockCheck(VerticalAnchor.aboveBottom(5), 0),
-						SurfaceRules.ifTrue(SurfaceRules.not(SurfaceRules.yBlockCheck(VerticalAnchor.belowTop(5), 0)),
-								SurfaceRules.sequence(
-										SurfaceRules.ifTrue(SurfaceRules.stoneDepthCheck(0, false, 0, CaveSurface.FLOOR),
-												SurfaceRules.sequence(SurfaceRules.ifTrue(SurfaceRules.waterBlockCheck(-1, 0), SurfaceRules.state(groundBlock)), SurfaceRules.state(underwaterBlock))),
-										SurfaceRules.ifTrue(SurfaceRules.stoneDepthCheck(0, true, 0, CaveSurface.FLOOR), SurfaceRules.state(undergroundBlock))))));
 	}
 
 	private static void addParameterPoint(List<Pair<Climate.ParameterPoint, Holder<Biome>>> parameters, Pair<Climate.ParameterPoint, Holder<Biome>> point) {

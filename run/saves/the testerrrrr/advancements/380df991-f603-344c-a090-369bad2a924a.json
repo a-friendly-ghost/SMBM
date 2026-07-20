@@ -963,5 +963,119 @@
     },
     "done": true
   },
+  "extra_building_blocks:recipes/polished_dripstone_slab_stonecutter": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-18 01:25:09 +0200"
+    },
+    "done": true
+  },
+  "extra_building_blocks:recipes/dripstone_bricks_stonecutter_polished": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-18 01:25:09 +0200"
+    },
+    "done": true
+  },
+  "extra_building_blocks:recipes/polished_dripstone_stairs_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-18 01:25:09 +0200"
+    },
+    "done": true
+  },
+  "extra_building_blocks:recipes/polished_dripstone_stairs_stonecutter": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-18 01:25:09 +0200"
+    },
+    "done": true
+  },
+  "extra_building_blocks:recipes/polished_dripstone_slab_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-18 01:25:09 +0200"
+    },
+    "done": true
+  },
+  "extra_building_blocks:recipes/dripstone_bricks_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-18 01:25:09 +0200"
+    },
+    "done": true
+  },
+  "extra_building_blocks:recipes/dripstone_brick_stairs_stonecutter_polished": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-18 01:25:09 +0200"
+    },
+    "done": true
+  },
+  "extra_building_blocks:recipes/dripstone_brick_slab_stonecutter_polished": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-18 01:25:09 +0200"
+    },
+    "done": true
+  },
+  "extra_building_blocks:recipes/dripstone_brick_wall_stonecutter_polished": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-18 01:25:09 +0200"
+    },
+    "done": true
+  },
+  "extra_building_blocks:recipes/polished_dripstone_wall_stonecutter": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-18 01:25:09 +0200"
+    },
+    "done": true
+  },
+  "extra_building_blocks:recipes/polished_dripstone_wall_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-18 01:25:09 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/redstone_torch": {
+    "criteria": {
+      "has_redstone": "2026-07-18 15:53:39 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/clock": {
+    "criteria": {
+      "has_redstone": "2026-07-18 15:53:39 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/note_block": {
+    "criteria": {
+      "has_redstone": "2026-07-18 15:53:39 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/target": {
+    "criteria": {
+      "has_redstone": "2026-07-18 15:53:39 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/compass": {
+    "criteria": {
+      "has_redstone": "2026-07-18 15:53:39 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/dropper": {
+    "criteria": {
+      "has_redstone": "2026-07-18 15:53:39 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/redstone_block": {
+    "criteria": {
+      "has_redstone": "2026-07-18 15:53:39 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/piston": {
+    "criteria": {
+      "has_redstone": "2026-07-18 15:53:39 +0200"
+    },
+    "done": true
+  },
   "DataVersion": 4440
 }

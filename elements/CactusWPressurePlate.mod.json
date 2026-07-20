@@ -20,9 +20,6 @@
     "particleTexture": "",
     "blockBase": "PressurePlate",
     "blockSetType": "OAK",
-    "pottedPlant": {
-      "value": ""
-    },
     "leavesParticleChance": 0.0,
     "tintType": "No tint",
     "isItemTinted": false,
@@ -83,7 +80,7 @@
     "emittedRedstonePower": {
       "fixedValue": 15.0
     },
-    "colorOnMap": "DEFAULT",
+    "colorOnMap": "SAND",
     "noteBlockInstrument": "bass",
     "creativePickItem": {
       "value": ""

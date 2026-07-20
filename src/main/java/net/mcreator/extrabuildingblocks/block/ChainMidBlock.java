@@ -3,7 +3,7 @@ package net.mcreator.extrabuildingblocks.block;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
-import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.BlockState;
@@ -24,7 +24,7 @@ public class ChainMidBlock extends Block {
 	private final Function<BlockState, VoxelShape> shapes = this.makeShapes();
 
 	public ChainMidBlock(BlockBehaviour.Properties properties) {
-		super(properties.sound(SoundType.CHAIN).strength(5f, 6f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false).instrument(NoteBlockInstrument.BASEDRUM));
+		super(properties.mapColor(MapColor.NONE).sound(SoundType.CHAIN).strength(5f, 6f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 

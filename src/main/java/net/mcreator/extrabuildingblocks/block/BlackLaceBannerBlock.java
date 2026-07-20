@@ -4,6 +4,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.level.redstone.Orientation;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
@@ -36,7 +37,7 @@ public class BlackLaceBannerBlock extends Block implements SimpleWaterloggedBloc
 	private final Function<BlockState, VoxelShape> shapes = this.makeShapes();
 
 	public BlackLaceBannerBlock(BlockBehaviour.Properties properties) {
-		super(properties.sound(SoundType.WOOD).instabreak().noCollission().isRedstoneConductor((bs, br, bp) -> false).ignitedByLava());
+		super(properties.mapColor(MapColor.NONE).sound(SoundType.WOOD).instabreak().noCollission().isRedstoneConductor((bs, br, bp) -> false).ignitedByLava());
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, false));
 	}
 

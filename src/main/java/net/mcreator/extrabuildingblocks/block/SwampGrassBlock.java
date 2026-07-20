@@ -3,6 +3,7 @@ package net.mcreator.extrabuildingblocks.block;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
@@ -31,7 +32,7 @@ public class SwampGrassBlock extends Block {
 	private static final VoxelShape SHAPE = box(4, -2, 4, 12, 12, 12);
 
 	public SwampGrassBlock(BlockBehaviour.Properties properties) {
-		super(properties.sound(SoundType.GRASS).strength(0.1f).noCollission().isRedstoneConductor((bs, br, bp) -> false).offsetType(Block.OffsetType.XZ));
+		super(properties.mapColor(MapColor.PLANT).sound(SoundType.GRASS).strength(0.1f).noCollission().isRedstoneConductor((bs, br, bp) -> false).offsetType(Block.OffsetType.XZ));
 	}
 
 	@Override

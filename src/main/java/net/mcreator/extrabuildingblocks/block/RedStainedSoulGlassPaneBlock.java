@@ -1,5 +1,6 @@
 package net.mcreator.extrabuildingblocks.block;
 
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -8,7 +9,7 @@ import net.minecraft.world.level.block.IronBarsBlock;
 
 public class RedStainedSoulGlassPaneBlock extends IronBarsBlock {
 	public RedStainedSoulGlassPaneBlock(BlockBehaviour.Properties properties) {
-		super(properties.sound(SoundType.GLASS).strength(0.5f).instrument(NoteBlockInstrument.HAT));
+		super(properties.mapColor(MapColor.NONE).sound(SoundType.GLASS).strength(0.5f).instrument(NoteBlockInstrument.HAT));
 	}
 
 	@Override

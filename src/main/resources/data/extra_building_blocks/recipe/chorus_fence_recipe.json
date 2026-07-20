@@ -7,11 +7,11 @@
     "aba"
   ],
   "key": {
-    "a": "extra_building_blocks:chorus_planks",
+    "a": "extra_building_blocks:chorus_wood_planks",
     "b": "minecraft:stick"
   },
   "result": {
-    "id": "extra_building_blocks:chorus_fence",
+    "id": "extra_building_blocks:chorus_wood_fence",
     "count": 3
   }
 }

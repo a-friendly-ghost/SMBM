@@ -4,6 +4,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.level.redstone.Orientation;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.BlockState;
@@ -23,7 +24,7 @@ public class GreenDesertBushBlock extends Block {
 	public static final BooleanProperty BLEND = BooleanProperty.create("blend");
 
 	public GreenDesertBushBlock(BlockBehaviour.Properties properties) {
-		super(properties.sound(SoundType.GRASS).strength(0.2f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false).ignitedByLava());
+		super(properties.mapColor(MapColor.GRASS).sound(SoundType.GRASS).strength(0.2f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false).ignitedByLava());
 		this.registerDefaultState(this.stateDefinition.any().setValue(BLEND, false));
 	}
 

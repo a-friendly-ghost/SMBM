@@ -1,1 +1,22 @@
 /give @s minecraft:debug_stick
+/gamerule randomTickSpeed 1000
+/gamerule randomTickSpeed 5000
+/gamerule randomTickSpeed 50000
+/gamerule randomTickSpeed
+/gamerule randomTickSpeed 100000
+/gamerule randomTickSpeed 500
+/gamerule randomTickSpeed 1000
+/gamerule randomTickSpeed
+/gamerule randomTickSpeed 5
+/effect give @s minecraft:night_vision
+/locate biome minecraft:soul_sand_valley
+/tp @s -111 81 218
+/tp @s 81 79 30
+/locate biome minecraft:soul_sand_valley
+/tp @s 31 67 -177
+/locate biome minecraft:soul_sand_valley
+/tp @s 140 66 160
+/locate biome minecraft:soul_sand_valley
+/tp @s -238 66 -210
+/locate biome minecraft:soul_sand_valley
+/tp @s 92 79 51

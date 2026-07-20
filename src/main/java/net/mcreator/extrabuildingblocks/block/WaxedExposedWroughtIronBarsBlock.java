@@ -11,7 +11,7 @@ import net.minecraft.core.BlockPos;
 
 public class WaxedExposedWroughtIronBarsBlock extends IronBarsBlock {
 	public WaxedExposedWroughtIronBarsBlock(BlockBehaviour.Properties properties) {
-		super(properties.sound(SoundType.NETHERITE_BLOCK).strength(5f, 10f).requiresCorrectToolForDrops().noOcclusion().isRedstoneConductor((bs, br, bp) -> false).instrument(NoteBlockInstrument.BASEDRUM));
+		super(properties.sound(SoundType.NETHERITE_BLOCK).strength(5f, 10f).requiresCorrectToolForDrops().noOcclusion().isRedstoneConductor((bs, br, bp) -> false).instrument(NoteBlockInstrument.HARP));
 	}
 
 	@Override

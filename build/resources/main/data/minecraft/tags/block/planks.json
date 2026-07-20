@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "extra_building_blocks:chorus_planks",
+    "extra_building_blocks:chorus_wood_planks",
     "extra_building_blocks:cactus_wood_planks"
   ]
 }

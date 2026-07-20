@@ -5,7 +5,7 @@ import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.material.PushReaction;
-import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.Blocks;
@@ -29,7 +29,7 @@ public class PottedChorusBlock extends Block {
 	private static final VoxelShape SHAPE = Shapes.or(box(5, 0, 5, 6, 6, 11), box(10, 0, 5, 11, 6, 11), box(6, 0, 5, 10, 6, 6), box(6, 0, 10, 10, 6, 11), box(6, 0, 6, 10, 4, 10));
 
 	public PottedChorusBlock(BlockBehaviour.Properties properties) {
-		super(properties.instabreak().noOcclusion().pushReaction(PushReaction.DESTROY).isRedstoneConductor((bs, br, bp) -> false).instrument(NoteBlockInstrument.BASEDRUM));
+		super(properties.mapColor(MapColor.NONE).instabreak().noOcclusion().pushReaction(PushReaction.DESTROY).isRedstoneConductor((bs, br, bp) -> false));
 	}
 
 	@Override

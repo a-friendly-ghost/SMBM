@@ -7,6 +7,7 @@ import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.material.FluidState;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
@@ -39,8 +40,8 @@ public class SoulLampBlock extends Block implements SimpleWaterloggedBlock {
 	private static final VoxelShape SHAPE_WEST = box(4, 0, 3, 12, 15, 13);
 
 	public SoulLampBlock(BlockBehaviour.Properties properties) {
-		super(properties.sound(SoundType.LANTERN).strength(3f, 5f).lightLevel(s -> 12).noOcclusion().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true).isRedstoneConductor((bs, br, bp) -> false)
-				.instrument(NoteBlockInstrument.BASEDRUM));
+		super(properties.mapColor(MapColor.METAL).sound(SoundType.LANTERN).strength(3f, 5f).lightLevel(s -> 12).noOcclusion().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true).isRedstoneConductor((bs, br, bp) -> false)
+				.instrument(NoteBlockInstrument.HARP));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(ATTACHED, false).setValue(WATERLOGGED, false));
 	}
 

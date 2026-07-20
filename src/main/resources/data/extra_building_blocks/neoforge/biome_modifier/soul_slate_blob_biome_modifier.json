@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "soul_sand_valley",
+  "features": "extra_building_blocks:soul_slate_blob",
+  "step": "underground_ores"
+}

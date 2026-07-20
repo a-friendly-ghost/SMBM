@@ -9,6 +9,8 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.core.BlockPos;
+import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 
 import net.mcreator.extrabuildingblocks.procedures.SaltCrystalNeighbourBlockChangesProcedure;
 
@@ -19,11 +21,13 @@ public class SaltCrystalBlock extends Block {
 
 	public SaltCrystalBlock(BlockBehaviour.Properties properties) {
 		super(properties
+			.mapColor(MapColor.COLOR_PINK)
 			.strength(1f, 1.5f)
 			.requiresCorrectToolForDrops()
 			.lightLevel(s -> s.getValue(ILLUMINATED) ? 1 : 0)
 			.hasPostProcess((bs, br, bp) -> bs.getValue(ILLUMINATED))
 			.emissiveRendering((bs, br, bp) -> bs.getValue(ILLUMINATED))
+			.instrument(NoteBlockInstrument.BASEDRUM)
 		);
 		this.registerDefaultState(this.stateDefinition.any().setValue(ILLUMINATED, false));
 	}

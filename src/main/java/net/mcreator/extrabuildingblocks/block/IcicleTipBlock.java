@@ -5,6 +5,7 @@ import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.level.redstone.Orientation;
 import net.minecraft.world.level.material.PushReaction;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.level.block.state.StateDefinition;
@@ -36,7 +37,7 @@ public class IcicleTipBlock extends Block {
 	private static final VoxelShape SHAPE = box(5, 6, 5, 11, 16, 11);
 
 	public IcicleTipBlock(BlockBehaviour.Properties properties) {
-		super(properties.sound(SoundType.GLASS).strength(0.5f).noOcclusion().randomTicks().pushReaction(PushReaction.DESTROY).isRedstoneConductor((bs, br, bp) -> false).instrument(NoteBlockInstrument.BASEDRUM));
+		super(properties.mapColor(MapColor.ICE).sound(SoundType.GLASS).strength(0.5f).noOcclusion().randomTicks().pushReaction(PushReaction.DESTROY).isRedstoneConductor((bs, br, bp) -> false).instrument(NoteBlockInstrument.BASEDRUM));
 		this.registerDefaultState(this.stateDefinition.any().setValue(THICKNESS, ThicknessProperty.TIP));
 	}
 

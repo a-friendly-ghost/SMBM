@@ -8,10 +8,10 @@
   ],
   "key": {
     "a": "minecraft:stick",
-    "b": "extra_building_blocks:chorus_planks"
+    "b": "extra_building_blocks:chorus_wood_planks"
   },
   "result": {
-    "id": "extra_building_blocks:chorus_fence_gate",
+    "id": "extra_building_blocks:chorus_wood_fence_gate",
     "count": 1
   }
 }

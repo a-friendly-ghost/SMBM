@@ -1,5 +1,7 @@
 package net.mcreator.extrabuildingblocks.block;
 
+import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
@@ -12,7 +14,7 @@ import net.mcreator.extrabuildingblocks.procedures.ExposedWroughtIronOnTickUpdat
 
 public class ExposedWroughtIronBlock extends Block {
 	public ExposedWroughtIronBlock(BlockBehaviour.Properties properties) {
-		super(properties.sound(SoundType.NETHERITE_BLOCK).strength(5f, 10f).requiresCorrectToolForDrops().randomTicks());
+		super(properties.mapColor(MapColor.DIRT).sound(SoundType.NETHERITE_BLOCK).strength(5f, 10f).requiresCorrectToolForDrops().randomTicks().instrument(NoteBlockInstrument.IRON_XYLOPHONE));
 	}
 
 	@Override

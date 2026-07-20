@@ -3,10 +3,10 @@
   "group": "wooden_button",
   "category": "redstone",
   "ingredients": [
-    "extra_building_blocks:chorus_planks"
+    "extra_building_blocks:chorus_wood_planks"
   ],
   "result": {
-    "id": "extra_building_blocks:chorus_button",
+    "id": "extra_building_blocks:chorus_wood_button",
     "count": 1
   }
 }

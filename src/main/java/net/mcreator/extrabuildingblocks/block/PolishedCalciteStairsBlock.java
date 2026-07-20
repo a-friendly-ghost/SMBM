@@ -1,5 +1,6 @@
 package net.mcreator.extrabuildingblocks.block;
 
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.StairBlock;
@@ -8,7 +9,7 @@ import net.minecraft.world.level.block.Blocks;
 
 public class PolishedCalciteStairsBlock extends StairBlock {
 	public PolishedCalciteStairsBlock(BlockBehaviour.Properties properties) {
-		super(Blocks.AIR.defaultBlockState(), properties.sound(SoundType.CALCITE).strength(0.75f).requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM));
+		super(Blocks.AIR.defaultBlockState(), properties.mapColor(MapColor.TERRACOTTA_WHITE).sound(SoundType.CALCITE).strength(0.75f).requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM));
 	}
 
 	@Override

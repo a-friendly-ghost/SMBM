@@ -5,12 +5,11 @@ import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
-
-import net.mcreator.extrabuildingblocks.init.ExtraBuildingBlocksModBlocks;
 
 public class IronGateToggleNoEntityProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
@@ -19,7 +18,7 @@ public class IronGateToggleNoEntityProcedure {
 		checkY = y;
 		aboveCount = -1;
 		for (int index0 = 0; index0 < 15; index0++) {
-			if (!((world.getBlockState(BlockPos.containing(x, checkY, z))).getBlock() == ExtraBuildingBlocksModBlocks.IRON_GATE.get())) {
+			if (!(world.getBlockState(BlockPos.containing(x, checkY, z))).is(BlockTags.create(ResourceLocation.parse("extra_building_blocks:metal_gates")))) {
 				break;
 			}
 			if ((getPropertyByName((world.getBlockState(BlockPos.containing(x, checkY, z))), "open") instanceof BooleanProperty _getbp3 && (world.getBlockState(BlockPos.containing(x, checkY, z))).getValue(_getbp3)) == false) {
@@ -56,7 +55,7 @@ public class IronGateToggleNoEntityProcedure {
 		}
 		checkY = y - 1;
 		for (int index1 = 0; index1 < (int) (16 - aboveCount); index1++) {
-			if (!((world.getBlockState(BlockPos.containing(x, checkY, z))).getBlock() == ExtraBuildingBlocksModBlocks.IRON_GATE.get())) {
+			if (!(world.getBlockState(BlockPos.containing(x, checkY, z))).is(BlockTags.create(ResourceLocation.parse("extra_building_blocks:metal_gates")))) {
 				break;
 			}
 			if ((getPropertyByName((world.getBlockState(BlockPos.containing(x, checkY, z))), "open") instanceof BooleanProperty _getbp11 && (world.getBlockState(BlockPos.containing(x, checkY, z))).getValue(_getbp11)) == false) {
@@ -90,7 +89,6 @@ public class IronGateToggleNoEntityProcedure {
 			}
 			checkY = checkY - 1;
 		}
-		IronGateBlockAddedProcedure.execute(world, x, y, z);
 	}
 
 	private static Property<?> getPropertyByName(BlockState state, String name) {

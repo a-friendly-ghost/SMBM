@@ -1,5 +1,6 @@
 package net.mcreator.extrabuildingblocks.block;
 
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.BlockState;
@@ -12,7 +13,7 @@ import net.minecraft.core.BlockPos;
 
 public class CactusWPressurePlateBlock extends PressurePlateBlock {
 	public CactusWPressurePlateBlock(BlockBehaviour.Properties properties) {
-		super(BlockSetType.OAK, properties.sound(SoundType.WOOD).strength(0.5f).ignitedByLava().instrument(NoteBlockInstrument.BASS).forceSolidOn());
+		super(BlockSetType.OAK, properties.mapColor(MapColor.SAND).sound(SoundType.WOOD).strength(0.5f).ignitedByLava().instrument(NoteBlockInstrument.BASS).forceSolidOn());
 	}
 
 	@Override

@@ -215,7 +215,6 @@ public class IronGateOnBlockRightClickedProcedure {
 			}
 			checkY = checkY - 1;
 		}
-		IronGateBlockAddedProcedure.execute(world, x, y, z);
 		return InteractionResult.SUCCESS;
 	}
 

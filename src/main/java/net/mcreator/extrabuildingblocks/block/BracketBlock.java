@@ -22,6 +22,8 @@ import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.util.RandomSource;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
+import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 
 import net.mcreator.extrabuildingblocks.procedures.BracketBlockValidPlacementConditionProcedure;
 import net.mcreator.extrabuildingblocks.procedures.BracketBlockAddedProcedure;
@@ -38,7 +40,7 @@ public class BracketBlock extends Block implements SimpleWaterloggedBlock {
 	private static final VoxelShape SHAPE_WEST = box(5, 5, 5, 16, 16, 11);
 
 	public BracketBlock(BlockBehaviour.Properties properties) {
-		super(properties.sound(SoundType.METAL).strength(5f, 6f).requiresCorrectToolForDrops().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		super(properties.mapColor(MapColor.METAL).sound(SoundType.METAL).strength(5f, 6f).requiresCorrectToolForDrops().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(ATTACHED, false).setValue(WATERLOGGED, false));
 	}
 

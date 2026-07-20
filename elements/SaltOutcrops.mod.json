@@ -38,7 +38,7 @@
     "temperature": 2.0,
     "spawnBiome": true,
     "spawnInCaves": false,
-    "spawnBiomeNether": true,
+    "spawnBiomeNether": false,
     "genTemperature": {
       "min": 0.55,
       "max": 1.0

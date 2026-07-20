@@ -1,5 +1,6 @@
 package net.mcreator.extrabuildingblocks.block;
 
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -24,6 +25,6 @@ public class RawSaltBlock extends FallingBlock {
 	}
 
 	public RawSaltBlock(BlockBehaviour.Properties properties) {
-		super(properties.sound(SoundType.SAND).strength(0.7f, 0.5f).instrument(NoteBlockInstrument.SNARE));
+		super(properties.mapColor(MapColor.TERRACOTTA_WHITE).sound(SoundType.SAND).strength(0.7f, 0.5f).instrument(NoteBlockInstrument.SNARE));
 	}
 }

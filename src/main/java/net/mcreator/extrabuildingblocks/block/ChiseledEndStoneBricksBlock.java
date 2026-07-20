@@ -1,5 +1,6 @@
 package net.mcreator.extrabuildingblocks.block;
 
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.level.block.state.StateDefinition;
@@ -16,7 +17,7 @@ public class ChiseledEndStoneBricksBlock extends Block {
 	public static final EnumProperty<Direction> FACING = HorizontalDirectionalBlock.FACING;
 
 	public ChiseledEndStoneBricksBlock(BlockBehaviour.Properties properties) {
-		super(properties.strength(3f, 9f).requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM));
+		super(properties.mapColor(MapColor.SAND).strength(3f, 9f).requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 

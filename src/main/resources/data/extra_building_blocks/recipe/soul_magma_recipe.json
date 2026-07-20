@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab",
+    "ba"
+  ],
+  "key": {
+    "a": "minecraft:magma_cream",
+    "b": "minecraft:soul_sand"
+  },
+  "result": {
+    "id": "extra_building_blocks:soul_magma",
+    "count": 1
+  }
+}

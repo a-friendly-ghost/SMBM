@@ -81,13 +81,16 @@
     "emittedRedstonePower": {
       "fixedValue": 15.0
     },
-    "colorOnMap": "DEFAULT",
+    "colorOnMap": "BROWN",
     "noteBlockInstrument": "basedrum",
     "creativePickItem": {
       "value": ""
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
+    "strippingResult": {
+      "value": ""
+    },
     "ignitedByLava": false,
     "flammability": 0,
     "fireSpreadSpeed": 0,
@@ -124,6 +127,9 @@
     "isBonemealable": false,
     "sensitiveToVibration": false,
     "vibrationalEvents": [],
+    "vibrationSensitivityRadius": {
+      "fixedValue": 7.0
+    },
     "hasInventory": false,
     "openGUIOnRightClick": false,
     "inventorySize": 9,

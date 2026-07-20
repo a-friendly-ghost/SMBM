@@ -548,11 +548,11 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/extra_building_blocks/models/item/storm_lantern.json",
-          "src/main/resources/assets/extra_building_blocks/items/storm_lantern.json",
+          "src/main/resources/data/extra_building_blocks/loot_table/blocks/storm_lantern.json",
           "src/main/resources/assets/extra_building_blocks/blockstates/storm_lantern.json",
           "src/main/resources/assets/extra_building_blocks/models/block/storm_lantern.json",
-          "src/main/resources/data/extra_building_blocks/loot_table/blocks/storm_lantern.json",
-          "src/main/java/net/mcreator/extrabuildingblocks/block/LampBlock.java"
+          "src/main/java/net/mcreator/extrabuildingblocks/block/LampBlock.java",
+          "src/main/resources/assets/extra_building_blocks/items/storm_lantern.json"
         ]
       },
       "path": "~/Storm Lanterns/Regular"
@@ -1568,15 +1568,15 @@
       "type": "block",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "cracked_end_bricks",
+      "registry_name": "cracked_end_stone_bricks",
       "metadata": {
         "files": [
-          "src/main/resources/assets/extra_building_blocks/items/cracked_end_bricks.json",
+          "src/main/resources/assets/extra_building_blocks/models/item/cracked_end_stone_bricks.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/cracked_end_stone_bricks.json",
           "src/main/java/net/mcreator/extrabuildingblocks/block/CrackedEndBricksBlock.java",
-          "src/main/resources/data/extra_building_blocks/loot_table/blocks/cracked_end_bricks.json",
-          "src/main/resources/assets/extra_building_blocks/models/block/cracked_end_bricks.json",
-          "src/main/resources/assets/extra_building_blocks/blockstates/cracked_end_bricks.json",
-          "src/main/resources/assets/extra_building_blocks/models/item/cracked_end_bricks.json"
+          "src/main/resources/assets/extra_building_blocks/items/cracked_end_stone_bricks.json",
+          "src/main/resources/data/extra_building_blocks/loot_table/blocks/cracked_end_stone_bricks.json",
+          "src/main/resources/assets/extra_building_blocks/blockstates/cracked_end_stone_bricks.json"
         ]
       },
       "path": "~/CrackedBricks"
@@ -3540,15 +3540,15 @@
       "type": "block",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "chorus_planks",
+      "registry_name": "chorus_wood_planks",
       "metadata": {
         "files": [
+          "src/main/resources/assets/extra_building_blocks/models/item/chorus_wood_planks.json",
+          "src/main/resources/data/extra_building_blocks/loot_table/blocks/chorus_wood_planks.json",
           "src/main/java/net/mcreator/extrabuildingblocks/block/ChorusPlanksBlock.java",
-          "src/main/resources/data/extra_building_blocks/loot_table/blocks/chorus_planks.json",
-          "src/main/resources/assets/extra_building_blocks/models/block/chorus_planks.json",
-          "src/main/resources/assets/extra_building_blocks/items/chorus_planks.json",
-          "src/main/resources/assets/extra_building_blocks/models/item/chorus_planks.json",
-          "src/main/resources/assets/extra_building_blocks/blockstates/chorus_planks.json"
+          "src/main/resources/assets/extra_building_blocks/models/block/chorus_wood_planks.json",
+          "src/main/resources/assets/extra_building_blocks/items/chorus_wood_planks.json",
+          "src/main/resources/assets/extra_building_blocks/blockstates/chorus_wood_planks.json"
         ]
       },
       "path": "~/ChorusWood"
@@ -3558,16 +3558,16 @@
       "type": "block",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "chorus_stairs",
+      "registry_name": "chorus_wood_stairs",
       "metadata": {
         "files": [
-          "src/main/resources/assets/extra_building_blocks/models/block/chorus_stairs.json",
-          "src/main/resources/assets/extra_building_blocks/items/chorus_stairs.json",
-          "src/main/resources/assets/extra_building_blocks/models/block/chorus_stairs_inner.json",
-          "src/main/resources/assets/extra_building_blocks/blockstates/chorus_stairs.json",
-          "src/main/resources/data/extra_building_blocks/loot_table/blocks/chorus_stairs.json",
-          "src/main/resources/assets/extra_building_blocks/models/item/chorus_stairs.json",
-          "src/main/resources/assets/extra_building_blocks/models/block/chorus_stairs_outer.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/chorus_wood_stairs.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/chorus_wood_stairs_inner.json",
+          "src/main/resources/assets/extra_building_blocks/blockstates/chorus_wood_stairs.json",
+          "src/main/resources/assets/extra_building_blocks/items/chorus_wood_stairs.json",
+          "src/main/resources/assets/extra_building_blocks/models/item/chorus_wood_stairs.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/chorus_wood_stairs_outer.json",
+          "src/main/resources/data/extra_building_blocks/loot_table/blocks/chorus_wood_stairs.json",
           "src/main/java/net/mcreator/extrabuildingblocks/block/ChorusStairsBlock.java"
         ]
       },
@@ -3578,17 +3578,17 @@
       "type": "block",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "chorus_slab",
+      "registry_name": "chorus_wood_slab",
       "metadata": {
         "files": [
-          "src/main/resources/assets/extra_building_blocks/items/chorus_slab.json",
-          "src/main/resources/assets/extra_building_blocks/models/block/chorus_slab.json",
-          "src/main/resources/assets/extra_building_blocks/blockstates/chorus_slab.json",
-          "src/main/resources/assets/extra_building_blocks/models/block/chorus_slab_top.json",
-          "src/main/resources/data/extra_building_blocks/loot_table/blocks/chorus_slab.json",
+          "src/main/resources/data/extra_building_blocks/loot_table/blocks/chorus_wood_slab.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/chorus_wood_slab_full.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/chorus_wood_slab_top.json",
+          "src/main/resources/assets/extra_building_blocks/models/item/chorus_wood_slab.json",
           "src/main/java/net/mcreator/extrabuildingblocks/block/ChorusSlabBlock.java",
-          "src/main/resources/assets/extra_building_blocks/models/block/chorus_slab_full.json",
-          "src/main/resources/assets/extra_building_blocks/models/item/chorus_slab.json"
+          "src/main/resources/assets/extra_building_blocks/items/chorus_wood_slab.json",
+          "src/main/resources/assets/extra_building_blocks/blockstates/chorus_wood_slab.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/chorus_wood_slab.json"
         ]
       },
       "path": "~/ChorusWood"
@@ -3598,17 +3598,17 @@
       "type": "block",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "chorus_fence",
+      "registry_name": "chorus_wood_fence",
       "metadata": {
         "files": [
-          "src/main/resources/assets/extra_building_blocks/models/block/chorus_fence.json",
+          "src/main/resources/data/extra_building_blocks/loot_table/blocks/chorus_wood_fence.json",
+          "src/main/resources/assets/extra_building_blocks/models/item/chorus_wood_fence.json",
           "src/main/java/net/mcreator/extrabuildingblocks/block/ChorusFenceBlock.java",
-          "src/main/resources/assets/extra_building_blocks/items/chorus_fence.json",
-          "src/main/resources/assets/extra_building_blocks/models/item/chorus_fence.json",
-          "src/main/resources/data/extra_building_blocks/loot_table/blocks/chorus_fence.json",
-          "src/main/resources/assets/extra_building_blocks/blockstates/chorus_fence.json",
-          "src/main/resources/assets/extra_building_blocks/models/block/chorus_fence_post.json",
-          "src/main/resources/assets/extra_building_blocks/models/block/chorus_fence_inventory.json"
+          "src/main/resources/assets/extra_building_blocks/blockstates/chorus_wood_fence.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/chorus_wood_fence.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/chorus_wood_fence_post.json",
+          "src/main/resources/assets/extra_building_blocks/items/chorus_wood_fence.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/chorus_wood_fence_inventory.json"
         ]
       },
       "path": "~/ChorusWood"
@@ -3618,18 +3618,18 @@
       "type": "block",
       "compiles": true,
       "locked_code": true,
-      "registry_name": "chorus_fence_gate",
+      "registry_name": "chorus_wood_fence_gate",
       "metadata": {
         "files": [
+          "src/main/resources/assets/extra_building_blocks/models/block/chorus_wood_fence_gate.json",
+          "src/main/resources/assets/extra_building_blocks/blockstates/chorus_wood_fence_gate.json",
           "src/main/java/net/mcreator/extrabuildingblocks/block/ChorusFenceGateBlock.java",
-          "src/main/resources/assets/extra_building_blocks/models/item/chorus_fence_gate.json",
-          "src/main/resources/assets/extra_building_blocks/blockstates/chorus_fence_gate.json",
-          "src/main/resources/data/extra_building_blocks/loot_table/blocks/chorus_fence_gate.json",
-          "src/main/resources/assets/extra_building_blocks/models/block/chorus_fence_gate.json",
-          "src/main/resources/assets/extra_building_blocks/models/block/chorus_fence_gate_wall_open.json",
-          "src/main/resources/assets/extra_building_blocks/models/block/chorus_fence_gate_wall.json",
-          "src/main/resources/assets/extra_building_blocks/items/chorus_fence_gate.json",
-          "src/main/resources/assets/extra_building_blocks/models/block/chorus_fence_gate_open.json"
+          "src/main/resources/assets/extra_building_blocks/items/chorus_wood_fence_gate.json",
+          "src/main/resources/assets/extra_building_blocks/models/item/chorus_wood_fence_gate.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/chorus_wood_fence_gate_open.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/chorus_wood_fence_gate_wall.json",
+          "src/main/resources/data/extra_building_blocks/loot_table/blocks/chorus_wood_fence_gate.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/chorus_wood_fence_gate_wall_open.json"
         ]
       },
       "path": "~/ChorusWood"
@@ -3639,16 +3639,16 @@
       "type": "block",
       "compiles": true,
       "locked_code": true,
-      "registry_name": "chorus_pressure_plate",
+      "registry_name": "chorus_wood_pressure_plate",
       "metadata": {
         "files": [
-          "src/main/resources/data/extra_building_blocks/loot_table/blocks/chorus_pressure_plate.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/chorus_wood_pressure_plate_down.json",
+          "src/main/resources/data/extra_building_blocks/loot_table/blocks/chorus_wood_pressure_plate.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/chorus_wood_pressure_plate.json",
+          "src/main/resources/assets/extra_building_blocks/models/item/chorus_wood_pressure_plate.json",
+          "src/main/resources/assets/extra_building_blocks/blockstates/chorus_wood_pressure_plate.json",
           "src/main/java/net/mcreator/extrabuildingblocks/block/ChorusPressurePlateBlock.java",
-          "src/main/resources/assets/extra_building_blocks/models/item/chorus_pressure_plate.json",
-          "src/main/resources/assets/extra_building_blocks/blockstates/chorus_pressure_plate.json",
-          "src/main/resources/assets/extra_building_blocks/models/block/chorus_pressure_plate.json",
-          "src/main/resources/assets/extra_building_blocks/models/block/chorus_pressure_plate_down.json",
-          "src/main/resources/assets/extra_building_blocks/items/chorus_pressure_plate.json"
+          "src/main/resources/assets/extra_building_blocks/items/chorus_wood_pressure_plate.json"
         ]
       },
       "path": "~/ChorusWood"
@@ -3658,17 +3658,17 @@
       "type": "block",
       "compiles": true,
       "locked_code": true,
-      "registry_name": "chorus_button",
+      "registry_name": "chorus_wood_button",
       "metadata": {
         "files": [
-          "src/main/resources/assets/extra_building_blocks/models/block/chorus_button_inventory.json",
-          "src/main/resources/assets/extra_building_blocks/models/item/chorus_button.json",
-          "src/main/resources/assets/extra_building_blocks/models/block/chorus_button.json",
-          "src/main/resources/assets/extra_building_blocks/models/block/chorus_button_pressed.json",
-          "src/main/resources/data/extra_building_blocks/loot_table/blocks/chorus_button.json",
-          "src/main/resources/assets/extra_building_blocks/items/chorus_button.json",
+          "src/main/resources/data/extra_building_blocks/loot_table/blocks/chorus_wood_button.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/chorus_wood_button_inventory.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/chorus_wood_button_pressed.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/chorus_wood_button.json",
+          "src/main/resources/assets/extra_building_blocks/blockstates/chorus_wood_button.json",
           "src/main/java/net/mcreator/extrabuildingblocks/block/ChorusButtonBlock.java",
-          "src/main/resources/assets/extra_building_blocks/blockstates/chorus_button.json"
+          "src/main/resources/assets/extra_building_blocks/items/chorus_wood_button.json",
+          "src/main/resources/assets/extra_building_blocks/models/item/chorus_wood_button.json"
         ]
       },
       "path": "~/ChorusWood"
@@ -3790,22 +3790,22 @@
       "type": "block",
       "compiles": true,
       "locked_code": true,
-      "registry_name": "chorus_door",
+      "registry_name": "chorus_wood_door",
       "metadata": {
         "files": [
-          "src/main/resources/assets/extra_building_blocks/models/block/chorus_door_bottom_left_open.json",
-          "src/main/resources/assets/extra_building_blocks/models/block/chorus_door_top_left.json",
-          "src/main/resources/assets/extra_building_blocks/models/block/chorus_door_bottom_right_open.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/chorus_wood_door_top_right.json",
+          "src/main/resources/data/extra_building_blocks/loot_table/blocks/chorus_wood_door.json",
+          "src/main/resources/assets/extra_building_blocks/items/chorus_wood_door.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/chorus_wood_door_bottom_right.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/chorus_wood_door_bottom_right_open.json",
           "src/main/java/net/mcreator/extrabuildingblocks/block/ChorusDoorBlock.java",
-          "src/main/resources/data/extra_building_blocks/loot_table/blocks/chorus_door.json",
-          "src/main/resources/assets/extra_building_blocks/models/block/chorus_door_top_right.json",
-          "src/main/resources/assets/extra_building_blocks/items/chorus_door.json",
-          "src/main/resources/assets/extra_building_blocks/models/block/chorus_door_bottom_left.json",
-          "src/main/resources/assets/extra_building_blocks/blockstates/chorus_door.json",
-          "src/main/resources/assets/extra_building_blocks/models/block/chorus_door_top_right_open.json",
-          "src/main/resources/assets/extra_building_blocks/models/item/chorus_door.json",
-          "src/main/resources/assets/extra_building_blocks/models/block/chorus_door_top_left_open.json",
-          "src/main/resources/assets/extra_building_blocks/models/block/chorus_door_bottom_right.json"
+          "src/main/resources/assets/extra_building_blocks/models/block/chorus_wood_door_top_left_open.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/chorus_wood_door_top_left.json",
+          "src/main/resources/assets/extra_building_blocks/models/item/chorus_wood_door.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/chorus_wood_door_top_right_open.json",
+          "src/main/resources/assets/extra_building_blocks/blockstates/chorus_wood_door.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/chorus_wood_door_bottom_left.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/chorus_wood_door_bottom_left_open.json"
         ]
       },
       "path": "~/ChorusWood"
@@ -3815,17 +3815,17 @@
       "type": "block",
       "compiles": true,
       "locked_code": true,
-      "registry_name": "chorus_trapdoor",
+      "registry_name": "chorus_wood_trapdoor",
       "metadata": {
         "files": [
-          "src/main/resources/assets/extra_building_blocks/models/block/chorus_trapdoor_open.json",
-          "src/main/resources/assets/extra_building_blocks/items/chorus_trapdoor.json",
-          "src/main/resources/assets/extra_building_blocks/models/block/chorus_trapdoor.json",
-          "src/main/resources/assets/extra_building_blocks/models/block/chorus_trapdoor_top.json",
           "src/main/java/net/mcreator/extrabuildingblocks/block/ChorusTrapdoorBlock.java",
-          "src/main/resources/assets/extra_building_blocks/models/item/chorus_trapdoor.json",
-          "src/main/resources/assets/extra_building_blocks/blockstates/chorus_trapdoor.json",
-          "src/main/resources/data/extra_building_blocks/loot_table/blocks/chorus_trapdoor.json"
+          "src/main/resources/assets/extra_building_blocks/items/chorus_wood_trapdoor.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/chorus_wood_trapdoor_top.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/chorus_wood_trapdoor_open.json",
+          "src/main/resources/assets/extra_building_blocks/models/item/chorus_wood_trapdoor.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/chorus_wood_trapdoor.json",
+          "src/main/resources/data/extra_building_blocks/loot_table/blocks/chorus_wood_trapdoor.json",
+          "src/main/resources/assets/extra_building_blocks/blockstates/chorus_wood_trapdoor.json"
         ]
       },
       "path": "~/ChorusWood"
@@ -4661,14 +4661,14 @@
       "type": "block",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "grey_stained_soul_glass",
+      "registry_name": "light_gray_stained_soul_glass",
       "metadata": {
         "files": [
-          "src/main/resources/assets/extra_building_blocks/models/item/grey_stained_soul_glass.json",
+          "src/main/resources/assets/extra_building_blocks/items/light_gray_stained_soul_glass.json",
           "src/main/java/net/mcreator/extrabuildingblocks/block/GreyStainedSoulGlassBlock.java",
-          "src/main/resources/assets/extra_building_blocks/blockstates/grey_stained_soul_glass.json",
-          "src/main/resources/assets/extra_building_blocks/items/grey_stained_soul_glass.json",
-          "src/main/resources/assets/extra_building_blocks/models/block/grey_stained_soul_glass.json"
+          "src/main/resources/assets/extra_building_blocks/models/item/light_gray_stained_soul_glass.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/light_gray_stained_soul_glass.json",
+          "src/main/resources/assets/extra_building_blocks/blockstates/light_gray_stained_soul_glass.json"
         ]
       },
       "path": "~/SoulGlass/Blocks/LightGrey"
@@ -4678,18 +4678,18 @@
       "type": "block",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "grey_stained_soul_glass_pane",
+      "registry_name": "light_gray_stained_soul_glass_pane",
       "metadata": {
         "files": [
-          "src/main/resources/assets/extra_building_blocks/blockstates/grey_stained_soul_glass_pane.json",
-          "src/main/resources/assets/extra_building_blocks/models/block/grey_stained_soul_glass_pane_noside.json",
-          "src/main/resources/assets/extra_building_blocks/items/grey_stained_soul_glass_pane.json",
-          "src/main/resources/assets/extra_building_blocks/models/item/grey_stained_soul_glass_pane.json",
-          "src/main/resources/assets/extra_building_blocks/models/block/grey_stained_soul_glass_pane_noside_alt.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/light_gray_stained_soul_glass_pane_side.json",
+          "src/main/resources/assets/extra_building_blocks/blockstates/light_gray_stained_soul_glass_pane.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/light_gray_stained_soul_glass_pane_noside.json",
           "src/main/java/net/mcreator/extrabuildingblocks/block/GreyStainedSoulGlassPaneBlock.java",
-          "src/main/resources/assets/extra_building_blocks/models/block/grey_stained_soul_glass_pane_side.json",
-          "src/main/resources/assets/extra_building_blocks/models/block/grey_stained_soul_glass_pane_post.json",
-          "src/main/resources/assets/extra_building_blocks/models/block/grey_stained_soul_glass_pane_side_alt.json"
+          "src/main/resources/assets/extra_building_blocks/models/item/light_gray_stained_soul_glass_pane.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/light_gray_stained_soul_glass_pane_post.json",
+          "src/main/resources/assets/extra_building_blocks/items/light_gray_stained_soul_glass_pane.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/light_gray_stained_soul_glass_pane_noside_alt.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/light_gray_stained_soul_glass_pane_side_alt.json"
         ]
       },
       "path": "~/SoulGlass/Panes/LightGrey"
@@ -5155,14 +5155,14 @@
       "type": "block",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "dark_grey_stained_soul_glass",
+      "registry_name": "gray_stained_soul_glass",
       "metadata": {
         "files": [
-          "src/main/resources/assets/extra_building_blocks/blockstates/dark_grey_stained_soul_glass.json",
-          "src/main/resources/assets/extra_building_blocks/models/item/dark_grey_stained_soul_glass.json",
+          "src/main/resources/assets/extra_building_blocks/models/item/gray_stained_soul_glass.json",
+          "src/main/resources/assets/extra_building_blocks/items/gray_stained_soul_glass.json",
+          "src/main/resources/assets/extra_building_blocks/blockstates/gray_stained_soul_glass.json",
           "src/main/java/net/mcreator/extrabuildingblocks/block/DarkGreyStainedSoulGlassBlock.java",
-          "src/main/resources/assets/extra_building_blocks/models/block/dark_grey_stained_soul_glass.json",
-          "src/main/resources/assets/extra_building_blocks/items/dark_grey_stained_soul_glass.json"
+          "src/main/resources/assets/extra_building_blocks/models/block/gray_stained_soul_glass.json"
         ]
       },
       "path": "~/SoulGlass/Blocks/Grey"
@@ -5172,18 +5172,18 @@
       "type": "block",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "dark_grey_stained_soul_glass_pane",
+      "registry_name": "gray_stained_soul_glass_pane",
       "metadata": {
         "files": [
-          "src/main/resources/assets/extra_building_blocks/models/block/dark_grey_stained_soul_glass_pane_side_alt.json",
-          "src/main/resources/assets/extra_building_blocks/models/block/dark_grey_stained_soul_glass_pane_post.json",
-          "src/main/resources/assets/extra_building_blocks/blockstates/dark_grey_stained_soul_glass_pane.json",
-          "src/main/resources/assets/extra_building_blocks/models/block/dark_grey_stained_soul_glass_pane_noside.json",
-          "src/main/resources/assets/extra_building_blocks/models/block/dark_grey_stained_soul_glass_pane_noside_alt.json",
-          "src/main/resources/assets/extra_building_blocks/items/dark_grey_stained_soul_glass_pane.json",
-          "src/main/java/net/mcreator/extrabuildingblocks/block/DarkGreyStainedSoulGlassPaneBlock.java",
-          "src/main/resources/assets/extra_building_blocks/models/block/dark_grey_stained_soul_glass_pane_side.json",
-          "src/main/resources/assets/extra_building_blocks/models/item/dark_grey_stained_soul_glass_pane.json"
+          "src/main/resources/assets/extra_building_blocks/items/gray_stained_soul_glass_pane.json",
+          "src/main/resources/assets/extra_building_blocks/blockstates/gray_stained_soul_glass_pane.json",
+          "src/main/resources/assets/extra_building_blocks/models/item/gray_stained_soul_glass_pane.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/gray_stained_soul_glass_pane_noside_alt.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/gray_stained_soul_glass_pane_post.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/gray_stained_soul_glass_pane_noside.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/gray_stained_soul_glass_pane_side.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/gray_stained_soul_glass_pane_side_alt.json",
+          "src/main/java/net/mcreator/extrabuildingblocks/block/DarkGreyStainedSoulGlassPaneBlock.java"
         ]
       },
       "path": "~/SoulGlass/Panes/Grey"
@@ -8379,15 +8379,15 @@
       "type": "block",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "light_grey_lace_banner",
+      "registry_name": "light_gray_lace_banner",
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/extrabuildingblocks/block/LightGreyLaceBannerBlock.java",
-          "src/main/resources/assets/extra_building_blocks/models/item/light_grey_lace_banner.json",
-          "src/main/resources/assets/extra_building_blocks/blockstates/light_grey_lace_banner.json",
-          "src/main/resources/assets/extra_building_blocks/models/block/light_grey_lace_banner.json",
-          "src/main/resources/data/extra_building_blocks/loot_table/blocks/light_grey_lace_banner.json",
-          "src/main/resources/assets/extra_building_blocks/items/light_grey_lace_banner.json"
+          "src/main/resources/assets/extra_building_blocks/models/block/light_gray_lace_banner.json",
+          "src/main/resources/assets/extra_building_blocks/blockstates/light_gray_lace_banner.json",
+          "src/main/resources/assets/extra_building_blocks/items/light_gray_lace_banner.json",
+          "src/main/resources/data/extra_building_blocks/loot_table/blocks/light_gray_lace_banner.json",
+          "src/main/resources/assets/extra_building_blocks/models/item/light_gray_lace_banner.json"
         ]
       },
       "path": "~/Lace/LaceBanners"
@@ -8397,15 +8397,15 @@
       "type": "block",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "grey_lace_banner",
+      "registry_name": "gray_lace_banner",
       "metadata": {
         "files": [
+          "src/main/resources/assets/extra_building_blocks/blockstates/gray_lace_banner.json",
           "src/main/java/net/mcreator/extrabuildingblocks/block/GreyLaceBannerBlock.java",
-          "src/main/resources/data/extra_building_blocks/loot_table/blocks/grey_lace_banner.json",
-          "src/main/resources/assets/extra_building_blocks/models/block/grey_lace_banner.json",
-          "src/main/resources/assets/extra_building_blocks/items/grey_lace_banner.json",
-          "src/main/resources/assets/extra_building_blocks/models/item/grey_lace_banner.json",
-          "src/main/resources/assets/extra_building_blocks/blockstates/grey_lace_banner.json"
+          "src/main/resources/assets/extra_building_blocks/items/gray_lace_banner.json",
+          "src/main/resources/data/extra_building_blocks/loot_table/blocks/gray_lace_banner.json",
+          "src/main/resources/assets/extra_building_blocks/models/item/gray_lace_banner.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/gray_lace_banner.json"
         ]
       },
       "path": "~/Lace/LaceBanners"
@@ -9650,15 +9650,15 @@
       "type": "block",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "grey_lace_carpet",
+      "registry_name": "gray_lace_carpet",
       "metadata": {
         "files": [
-          "src/main/resources/data/extra_building_blocks/loot_table/blocks/grey_lace_carpet.json",
-          "src/main/resources/assets/extra_building_blocks/models/item/grey_lace_carpet.json",
-          "src/main/resources/assets/extra_building_blocks/items/grey_lace_carpet.json",
-          "src/main/resources/assets/extra_building_blocks/blockstates/grey_lace_carpet.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/gray_lace_carpet.json",
+          "src/main/resources/assets/extra_building_blocks/items/gray_lace_carpet.json",
+          "src/main/resources/assets/extra_building_blocks/models/item/gray_lace_carpet.json",
+          "src/main/resources/data/extra_building_blocks/loot_table/blocks/gray_lace_carpet.json",
           "src/main/java/net/mcreator/extrabuildingblocks/block/GreyLaceCarpetBlock.java",
-          "src/main/resources/assets/extra_building_blocks/models/block/grey_lace_carpet.json"
+          "src/main/resources/assets/extra_building_blocks/blockstates/gray_lace_carpet.json"
         ]
       },
       "path": "~/Lace/LaceCarpet"
@@ -9668,15 +9668,15 @@
       "type": "block",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "light_grey_lace_carpet",
+      "registry_name": "light_gray_lace_carpet",
       "metadata": {
         "files": [
-          "src/main/resources/assets/extra_building_blocks/models/block/light_grey_lace_carpet.json",
-          "src/main/resources/assets/extra_building_blocks/blockstates/light_grey_lace_carpet.json",
+          "src/main/resources/assets/extra_building_blocks/items/light_gray_lace_carpet.json",
+          "src/main/resources/assets/extra_building_blocks/models/block/light_gray_lace_carpet.json",
           "src/main/java/net/mcreator/extrabuildingblocks/block/LightGreyLaceCarpetBlock.java",
-          "src/main/resources/assets/extra_building_blocks/models/item/light_grey_lace_carpet.json",
-          "src/main/resources/assets/extra_building_blocks/items/light_grey_lace_carpet.json",
-          "src/main/resources/data/extra_building_blocks/loot_table/blocks/light_grey_lace_carpet.json"
+          "src/main/resources/data/extra_building_blocks/loot_table/blocks/light_gray_lace_carpet.json",
+          "src/main/resources/assets/extra_building_blocks/blockstates/light_gray_lace_carpet.json",
+          "src/main/resources/assets/extra_building_blocks/models/item/light_gray_lace_carpet.json"
         ]
       },
       "path": "~/Lace/LaceCarpet"
@@ -13384,6 +13384,49 @@
         ]
       },
       "path": "~/DesertPlants/DesertBushes"
+    },
+    {
+      "name": "SoulSlateBlob",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul_slate_blob",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/extra_building_blocks/neoforge/biome_modifier/soul_slate_blob_biome_modifier.json",
+          "src/main/resources/data/extra_building_blocks/worldgen/configured_feature/soul_slate_blob.json",
+          "src/main/resources/data/extra_building_blocks/worldgen/placed_feature/soul_slate_blob.json"
+        ]
+      },
+      "path": "~/WorldGen"
+    },
+    {
+      "name": "SoulMagmaRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul_magma_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/extra_building_blocks/advancement/recipes/soul_magma_recipe.json",
+          "src/main/resources/data/extra_building_blocks/recipe/soul_magma_recipe.json"
+        ]
+      },
+      "path": "~/SoulMagma"
+    },
+    {
+      "name": "SoulMagmaRecipeSoil",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul_magma_recipe_soil",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/extra_building_blocks/advancement/recipes/soul_magma_recipe_soil.json",
+          "src/main/resources/data/extra_building_blocks/recipe/soul_magma_recipe_soil.json"
+        ]
+      },
+      "path": "~/SoulMagma"
     }
   ],
   "variable_elements": [],
@@ -13693,7 +13736,6 @@
       "CUSTOM:SoulMagma"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
-      "~CUSTOM:IronGate",
       "~CUSTOM:WaxedRustedWroughtIron",
       "~CUSTOM:WaxedExposedWroughtIron",
       "~CUSTOM:WaxedWeatheredWroughtIron",
@@ -13837,9 +13879,6 @@
       "CUSTOM:CrimsonBeam",
       "CUSTOM:WarpedBeam"
     ],
-    "BLOCKS:minecraft:fences": [
-      "~CUSTOM:ChorusFence"
-    ],
     "BLOCKS:minecraft:wooden_buttons": [
       "CUSTOM:ChorusButton",
       "CUSTOM:CactusWButton"
@@ -13861,7 +13900,8 @@
       "CUSTOM:EndStoneWall",
       "CUSTOM:SandstoneBrickWall",
       "CUSTOM:RedSandstoneBrickWall",
-      "CUSTOM:PurpurWall"
+      "CUSTOM:PurpurWall",
+      "TAG:mod:metal_gates"
     ],
     "BLOCKS:minecraft:mineable/shovel": [
       "~CUSTOM:RawSalt"
@@ -13902,7 +13942,8 @@
       "CUSTOM:WaxedRustedWroughtIronBars"
     ],
     "BLOCKS:minecraft:wooden_trapdoors": [
-      "~CUSTOM:CactusWoodTrapdoor"
+      "~CUSTOM:CactusWoodTrapdoor",
+      "~CUSTOM:ChorusTrapdoor"
     ],
     "BLOCKS:minecraft:bars": [
       "TAG:mod:bars"
@@ -13910,6 +13951,14 @@
     "BLOCKS:minecraft:planks": [
       "CUSTOM:CactusWPlanks",
       "CUSTOM:ChorusPlanks"
+    ],
+    "BLOCKS:minecraft:fences": [
+      "~CUSTOM:ChorusFence"
+    ],
+    "BLOCKS:mod:soul_magma_and_slate_replaceable": [
+      "Blocks.SOUL_SAND",
+      "Blocks.SOUL_SOIL",
+      "Blocks.NETHERRACK"
     ]
   },
   "tab_element_order": {
@@ -13968,6 +14017,15 @@
       "SoulSlateBrickStairs",
       "SoulSlateBrickSlab",
       "SoulSlateBrickWall",
+      "CactusWPlanks",
+      "CactusWStairs",
+      "CactusWSlab",
+      "CactusWFence",
+      "CactusWFenceGate",
+      "CactusWoodDoor",
+      "CactusWoodTrapdoor",
+      "CactusWPressurePlate",
+      "CactusWButton",
       "ChorusPlanks",
       "ChorusStairs",
       "ChorusSlab",
@@ -13977,8 +14035,6 @@
       "ChorusTrapdoor",
       "ChorusPressurePlate",
       "ChorusButton",
-      "CactusWoodDoor",
-      "CactusWoodTrapdoor",
       "OakBeam",
       "SpruceBeam",
       "BirchBeam",
@@ -14027,12 +14083,13 @@
       "PrismarinePillar",
       "DarkPrismarinePillar",
       "DarkSeaLantern",
+      "Lamp",
+      "SoulLamp",
       "Sconce",
       "SoulSconce",
       "Brace",
       "Bracket",
       "Hook",
-      "FrostedGlass",
       "VeryCrackedStoneBricks",
       "DestroyedStoneBricks",
       "CrackedBricks",
@@ -14047,14 +14104,15 @@
       "ChiseledPrismarine",
       "EchoCrystal",
       "CutAmethyst",
+      "FrostedGlass",
       "QuartzBrickStairs",
       "QuartzBrickSlab",
       "QuartzBrickWall",
       "EndStoneStairs",
       "EndStoneSlab",
       "EndStoneWall",
-      "CrackedMudBricks",
       "CrackedEndBricks",
+      "CrackedMudBricks",
       "CrackedQuartzBricks",
       "CrackedRedNetherBrick",
       "PrismarineBrickWall",
@@ -14062,16 +14120,7 @@
       "StoneWall",
       "SmoothStoneWall",
       "SmoothStoneStairs",
-      "PurpurWall",
-      "Lamp",
-      "SoulLamp",
-      "CactusWButton",
-      "CactusWFence",
-      "CactusWFenceGate",
-      "CactusWPlanks",
-      "CactusWPressurePlate",
-      "CactusWSlab",
-      "CactusWStairs"
+      "PurpurWall"
     ],
     "BREWING": [
       "SoulGlass",
@@ -14155,8 +14204,8 @@
       "PurpleFountainGrass",
       "GreenDesertBush",
       "PurpleDesertBush",
-      "Swampvine",
-      "IcicleTip"
+      "IcicleTip",
+      "Swampvine"
     ],
     "CUSTOM:Mishmash": [
       "CutAndesite",
@@ -14213,6 +14262,15 @@
       "SoulSlateBrickStairs",
       "SoulSlateBrickSlab",
       "SoulSlateBrickWall",
+      "CactusWPlanks",
+      "CactusWStairs",
+      "CactusWSlab",
+      "CactusWFence",
+      "CactusWFenceGate",
+      "CactusWoodDoor",
+      "CactusWoodTrapdoor",
+      "CactusWPressurePlate",
+      "CactusWButton",
       "ChorusPlanks",
       "ChorusStairs",
       "ChorusSlab",
@@ -14222,8 +14280,6 @@
       "ChorusTrapdoor",
       "ChorusPressurePlate",
       "ChorusButton",
-      "CactusWoodDoor",
-      "CactusWoodTrapdoor",
       "OakBeam",
       "SpruceBeam",
       "BirchBeam",
@@ -14272,12 +14328,13 @@
       "PrismarinePillar",
       "DarkPrismarinePillar",
       "DarkSeaLantern",
+      "Lamp",
+      "SoulLamp",
       "Sconce",
       "SoulSconce",
       "Brace",
       "Bracket",
       "Hook",
-      "FrostedGlass",
       "VeryCrackedStoneBricks",
       "DestroyedStoneBricks",
       "CrackedBricks",
@@ -14292,14 +14349,15 @@
       "ChiseledPrismarine",
       "EchoCrystal",
       "CutAmethyst",
+      "FrostedGlass",
       "QuartzBrickStairs",
       "QuartzBrickSlab",
       "QuartzBrickWall",
       "EndStoneStairs",
       "EndStoneSlab",
       "EndStoneWall",
-      "CrackedMudBricks",
       "CrackedEndBricks",
+      "CrackedMudBricks",
       "CrackedQuartzBricks",
       "CrackedRedNetherBrick",
       "PrismarineBrickWall",
@@ -14387,18 +14445,9 @@
       "PurpleFountainGrass",
       "GreenDesertBush",
       "PurpleDesertBush",
-      "Swampvine",
-      "Lace",
-      "Lamp",
-      "SoulLamp",
-      "CactusWButton",
-      "CactusWFence",
-      "CactusWFenceGate",
-      "CactusWPlanks",
-      "CactusWPressurePlate",
-      "CactusWSlab",
       "IcicleTip",
-      "CactusWStairs"
+      "Swampvine",
+      "Lace"
     ]
   },
   "language_map": {
@@ -14702,7 +14751,6 @@
       "item.extra_building_blocks.cut_diorite_stairs": "Cut Diorite Stairs",
       "item.extra_building_blocks.cut_diorite_slab": "Cut Diorite Slab",
       "item.extra_building_blocks.cracked_mud_bricks": "Cracked Mud Bricks",
-      "item.extra_building_blocks.cracked_end_bricks": "Cracked End Stone Bricks",
       "item.extra_building_blocks.cracked_quartz_bricks": "Cracked Quartz Bricks",
       "item.extra_building_blocks.quartz_brick_stairs": "Quartz Brick Stairs",
       "item.extra_building_blocks.quartz_brick_slab": "Quartz Brick Slab",
@@ -14735,11 +14783,6 @@
       "item.extra_building_blocks.cut_smooth_stone_stairs": "Cut Smooth Stone Stairs",
       "item.extra_building_blocks.cut_smooth_stone_slab": "Cut Smooth Stone Slab",
       "item.extra_building_blocks.smooth_stone_wall": "Smooth Stone Wall",
-      "item.extra_building_blocks.chorus_planks": "Chorus Wood Planks",
-      "item.extra_building_blocks.chorus_stairs": "Chorus Wood Stairs",
-      "item.extra_building_blocks.chorus_slab": "Chorus Wood Slab",
-      "item.extra_building_blocks.chorus_fence": "Chorus Wood Fence",
-      "item.extra_building_blocks.chorus_fence_gate": "Chorus Wood Fence Gate",
       "item.extra_building_blocks.soul_sconce": "Soul Sconce",
       "item.extra_building_blocks.cut_amethyst": "Cut Amethyst",
       "item.extra_building_blocks.end_stone_stairs": "End Stone Stairs",
@@ -14749,8 +14792,6 @@
       "item.extra_building_blocks.soul_glass_pane": "Soul Glass Pane",
       "item.extra_building_blocks.white_stained_soul_glass": "White Stained Soul Glass",
       "item.extra_building_blocks.white_stained_soul_glass_pane": "White Stained Soul Glass Pane",
-      "item.extra_building_blocks.grey_stained_soul_glass": "Grey Stained Soul Glass",
-      "item.extra_building_blocks.grey_stained_soul_glass_pane": "Grey Stained Soul Glass Pane",
       "item.extra_building_blocks.black_stained_soul_glass": "Black Stained Soul Glass",
       "item.extra_building_blocks.black_stained_soul_glass_pane": "Black Stained Soul Glass Pane",
       "item.extra_building_blocks.red_stained_soul_glass": "Red Stained Soul Glass",
@@ -14775,8 +14816,6 @@
       "item.extra_building_blocks.magenta_stained_soul_glass_pane": "Magenta Stained Soul Glass Pane",
       "item.extra_building_blocks.pink_stained_soul_glass": "Pink Stained Soul Glass",
       "item.extra_building_blocks.pink_stained_soul_glass_pane": "Pink Stained Soul Glass Pane",
-      "item.extra_building_blocks.dark_grey_stained_soul_glass": "Dark Grey Stained Soul Glass",
-      "item.extra_building_blocks.dark_grey_stained_soul_glass_pane": "Dark Grey Stained Soul Glass Pane",
       "item.extra_building_blocks.brown_stained_soul_glass": "Brown Stained Soul Glass",
       "item.extra_building_blocks.brown_stained_soul_glass_pane": "Brown Stained Soul Glass Pane",
       "item.extra_building_blocks.sandstone_bricks": "Sandstone Bricks",
@@ -14852,10 +14891,6 @@
       "item.extra_building_blocks.brown_lace_carpet": "Brown Lace Carpet",
       "item.extra_building_blocks.cherry_beam": "Cherry Beam",
       "item.extra_building_blocks.chiseled_end_stone_bricks": "Chiseled End Stone Bricks",
-      "item.extra_building_blocks.chorus_button": "Chorus Wood Button",
-      "item.extra_building_blocks.chorus_door": "Chorus Wood Door",
-      "item.extra_building_blocks.chorus_pressure_plate": "Chorus Wood Pressure Plate",
-      "item.extra_building_blocks.chorus_trapdoor": "Chorus Wood Trapdoor",
       "item.extra_building_blocks.copper_bars": "Copper Bars",
       "item.extra_building_blocks.crimson_beam": "Crimson Beam",
       "item.extra_building_blocks.cyan_lace_banner": "Cyan Lace Banner",
@@ -14867,14 +14902,10 @@
       "item.extra_building_blocks.frosted_glass": "Frosted Glass",
       "item.extra_building_blocks.green_lace_banner": "Green Lace Banner",
       "item.extra_building_blocks.green_lace_carpet": "Green Lace Carpet",
-      "item.extra_building_blocks.grey_lace_banner": "Grey Lace Banner",
-      "item.extra_building_blocks.grey_lace_carpet": "Grey Lace Carpet",
       "item.extra_building_blocks.jungle_beam": "Jungle Beam",
       "item.extra_building_blocks.lace_carpet": "Lace Carpet",
       "item.extra_building_blocks.light_blue_lace_banner": "Light Blue Lace Banner",
       "item.extra_building_blocks.light_blue_lace_carpet": "Light Blue Lace Carpet",
-      "item.extra_building_blocks.light_grey_lace_banner": "Light Grey Lace Banner",
-      "item.extra_building_blocks.light_grey_lace_carpet": "Light Grey Lace Carpet",
       "item.extra_building_blocks.lime_lace_banner": "Lime Lace Banner",
       "item.extra_building_blocks.lime_lace_carpet": "Lime Lace Carpet",
       "item.extra_building_blocks.magenta_lace_banner": "Magenta Lace Banner",
@@ -14924,7 +14955,25 @@
       "item.extra_building_blocks.cactus_wood_pressure_plate": "Cactus Wood Pressure Plate",
       "item.extra_building_blocks.cactus_wood_slab": "Cactus Wood Slab",
       "item.extra_building_blocks.icicle": "Icicle",
-      "item.extra_building_blocks.cactus_wood_stairs": "Cactus Wood Stairs"
+      "item.extra_building_blocks.cactus_wood_stairs": "Cactus Wood Stairs",
+      "item.extra_building_blocks.cracked_end_stone_bricks": "Cracked End Stone Bricks",
+      "item.extra_building_blocks.gray_stained_soul_glass": "Dark Grey Stained Soul Glass",
+      "item.extra_building_blocks.gray_stained_soul_glass_pane": "Dark Grey Stained Soul Glass Pane",
+      "item.extra_building_blocks.light_gray_stained_soul_glass": "Grey Stained Soul Glass",
+      "item.extra_building_blocks.light_gray_stained_soul_glass_pane": "Grey Stained Soul Glass Pane",
+      "item.extra_building_blocks.light_gray_lace_banner": "Light Grey Lace Banner",
+      "item.extra_building_blocks.gray_lace_banner": "Grey Lace Banner",
+      "item.extra_building_blocks.light_gray_lace_carpet": "Light Grey Lace Carpet",
+      "item.extra_building_blocks.gray_lace_carpet": "Grey Lace Carpet",
+      "item.extra_building_blocks.chorus_wood_planks": "Chorus Wood Planks",
+      "item.extra_building_blocks.chorus_wood_stairs": "Chorus Wood Stairs",
+      "item.extra_building_blocks.chorus_wood_slab": "Chorus Wood Slab",
+      "item.extra_building_blocks.chorus_wood_fence": "Chorus Wood Fence",
+      "item.extra_building_blocks.chorus_wood_fence_gate": "Chorus Wood Fence Gate",
+      "item.extra_building_blocks.chorus_wood_pressure_plate": "Chorus Wood Pressure Plate",
+      "item.extra_building_blocks.chorus_wood_button": "Chorus Wood Button",
+      "item.extra_building_blocks.chorus_wood_door": "Chorus Wood Door",
+      "item.extra_building_blocks.chorus_wood_trapdoor": "Chorus Wood Trapdoor"
     },
     "fr_fr": {
       "block.extra_building_blocks.smooth_stone_stairs": "Escaliers en roche lisse",
@@ -14950,7 +14999,7 @@
       "block.extra_building_blocks.ice_brick_wall": "Muret de briques de glace",
       "block.extra_building_blocks.light_blue_lace_carpet": "Tapis de dentelle blue clair",
       "block.extra_building_blocks.cactus_wood": "Bois de cactus",
-      "block.extra_building_blocks.chorus_door": "Porte en chorus",
+      "block.extra_building_blocks.chorus_door": "Porte en bois de chorus",
       "block.extra_building_blocks.mossy_bricks": "Briques moussues",
       "block.extra_building_blocks.wrought_iron_bars": "Barreaux de fer forgé",
       "block.extra_building_blocks.cut_andesite": "Andésite taillée",
@@ -14966,7 +15015,7 @@
       "block.extra_building_blocks.acacia_beam": "Poutre en acacia",
       "block.extra_building_blocks.cactus_w_fence_gate": "Portillon en bois de cactus",
       "block.extra_building_blocks.orange_stained_soul_glass_pane": "Vitre orange des âmes",
-      "block.extra_building_blocks.chorus_fence": "Barrière en chorus",
+      "block.extra_building_blocks.chorus_fence": "Barrière en bois de chorus",
       "block.extra_building_blocks.soul_glass_pane": "Vitre des âmes",
       "block.extra_building_blocks.prismarine_pillar": "Pilier de prismarine",
       "block.extra_building_blocks.yellow_stained_soul_glass_pane": "Vitre jaune des âmes",
@@ -14996,9 +15045,9 @@
       "advancements.bus_carpet_advancement.title": "Mind The Gap!",
       "block.extra_building_blocks.rusted_wrought_iron_gate": "Portillon en fer forgé rouillé",
       "block.extra_building_blocks.grey_stained_soul_glass": "Verre gris clair des âmes",
-      "block.extra_building_blocks.chorus_slab": "Dalle en chorus",
-      "advancements.lace_head_advancement.title": "I do!",
-      "block.extra_building_blocks.chorus_trapdoor": "Trappe en chorus",
+      "block.extra_building_blocks.chorus_slab": "Dalle en bois de chorus",
+      "advancements.lace_head_advancement.title": "Voile-à !",
+      "block.extra_building_blocks.chorus_trapdoor": "Trappe en bois de chorus",
       "block.extra_building_blocks.purple_desert_bush": "Buisson de désert violet",
       "block.extra_building_blocks.dripstone_slab": "Dalle de spéléothème",
       "block.extra_building_blocks.pink_stained_soul_glass_pane": "Vitre rose des âmes",
@@ -15006,7 +15055,7 @@
       "block.extra_building_blocks.grey_lace_carpet": "Tapis de dentelle grise",
       "block.extra_building_blocks.lime_stained_soul_glass_pane": "Vitre vert clair des âmes",
       "block.extra_building_blocks.chiseled_soul_slate": "Ardoise sculptée des âmes",
-      "advancements.ice_bricks_funny_advancement.descr": "Try to create Cracked Ice Bricks",
+      "advancements.ice_bricks_funny_advancement.descr": "Essayer de créer des Briques de glace craquelées",
       "block.extra_building_blocks.bracket": "Support",
       "block.extra_building_blocks.smooth_stone_wall": "Muret de roche lisse",
       "block.extra_building_blocks.quartz_brick_slab": "Dalle de briques de quartz",
@@ -15022,7 +15071,7 @@
       "block.extra_building_blocks.cracked_quartz_bricks": "Briques de quartz craquelées",
       "block.extra_building_blocks.polished_dripstone_slab": "Dalle de spéléothème poli",
       "block.extra_building_blocks.chain_connected": "Chain Connected",
-      "block.extra_building_blocks.chorus_button": "Bouton en chorus",
+      "block.extra_building_blocks.chorus_button": "Bouton en bois de chorus",
       "block.extra_building_blocks.wrought_iron": "Fer forgé",
       "block.extra_building_blocks.cut_granite_slab": "Dalle de granite taillé",
       "block.extra_building_blocks.polished_calcite_slab": "Dalle de calcite polie",
@@ -15048,7 +15097,7 @@
       "block.extra_building_blocks.calcite_brick_wall": "Muret de briques de calcite",
       "block.extra_building_blocks.cracked_dripstone_bricks": "Spéléothème taillé craquelé",
       "block.extra_building_blocks.sandstone_brick_stairs": "Escaliers en briques de grès",
-      "block.extra_building_blocks.chorus_stairs": "Escaliers en chorus",
+      "block.extra_building_blocks.chorus_stairs": "Escaliers en bois de chorus",
       "block.extra_building_blocks.soul_sconce": "Applique des âmes",
       "block.extra_building_blocks.chiseled_blackstone_bricks": "Pierre noire taillée sculptée",
       "block.extra_building_blocks.dripstone_bricks": "Spéléothème taillé",
@@ -15125,7 +15174,7 @@
       "block.extra_building_blocks.weathered_wrought_iron": "Fer forgé érodé",
       "block.extra_building_blocks.cyan_lace_carpet": "Tapis de dentelle cyan",
       "block.extra_building_blocks.dripstone_brick_stairs": "Escaliers en spéléothème taillé",
-      "block.extra_building_blocks.chorus_planks": "Planches de chorus",
+      "block.extra_building_blocks.chorus_planks": "Planches de bois de chorus",
       "block.extra_building_blocks.waxed_wrought_iron": "Fer forgé ciré",
       "block.extra_building_blocks.chiseled_end_stone_bricks": "Pierre sculptée de l\u0027End",
       "block.extra_building_blocks.chiseled_red_nether_brick": "Briques rouges du Nether craquelées",
@@ -15152,7 +15201,7 @@
       "block.extra_building_blocks.chiseled_stone": "Pierre taillée sculptée",
       "block.extra_building_blocks.prismarine_pillar.description_0": "texture inspirée par _Fungus sur planet minecraft ^-^",
       "block.extra_building_blocks.cactus_w_planks": "Planches de bois de cactus",
-      "block.extra_building_blocks.chorus_pressure_plate": "Plaque de pression en chorus",
+      "block.extra_building_blocks.chorus_pressure_plate": "Plaque de pression en bois de chorus",
       "block.extra_building_blocks.end_stone_slab": "Dalle de pierre de l\u0027End",
       "biome.extra_building_blocks.salt_flats": "Lac salé",
       "block.extra_building_blocks.tempbeam": "TEMPBEAM",
@@ -15196,7 +15245,7 @@
       "block.extra_building_blocks.waxed_wrought_iron_bars": "Barreaux de fer forgé ciré",
       "block.extra_building_blocks.exposed_wrought_iron_bars": "Barreaux de fer forgé exposé",
       "block.extra_building_blocks.soul_slate_bricks": "Briques d\u0027ardoise des âmes",
-      "block.extra_building_blocks.chorus_fence_gate": "Portillon en chorus",
+      "block.extra_building_blocks.chorus_fence_gate": "Portillon en bois de chorus",
       "block.extra_building_blocks.black_lace_banner": "Bannière de dentelle noire",
       "block.extra_building_blocks.red_sandstone_brick_wall": "Muret de briques de grès rouge",
       "block.extra_building_blocks.waxed_wrought_iron_gate": "Portillon en fer forgé ciré",
@@ -15226,7 +15275,6 @@
       "item.extra_building_blocks.cut_diorite_stairs": "Escaliers en diorite taillée",
       "item.extra_building_blocks.cut_diorite_slab": "Dalle de diorite taillée",
       "item.extra_building_blocks.cracked_mud_bricks": "Briques de terre crue craquelées",
-      "item.extra_building_blocks.cracked_end_bricks": "Pierre taillée de l\u0027End craquelée",
       "item.extra_building_blocks.cracked_quartz_bricks": "Briques de quartz craquelées",
       "item.extra_building_blocks.quartz_brick_stairs": "Escaliers en briques de quartz",
       "item.extra_building_blocks.quartz_brick_slab": "Dalle de briques de quartz",
@@ -15259,11 +15307,6 @@
       "item.extra_building_blocks.cut_smooth_stone_stairs": "Escaliers en roche lisse taillée",
       "item.extra_building_blocks.cut_smooth_stone_slab": "Dalle de roche lisse taillée",
       "item.extra_building_blocks.smooth_stone_wall": "Muret de roche lisse",
-      "item.extra_building_blocks.chorus_planks": "Planches de chorus",
-      "item.extra_building_blocks.chorus_stairs": "Escaliers en chorus",
-      "item.extra_building_blocks.chorus_slab": "Dalle en chorus",
-      "item.extra_building_blocks.chorus_fence": "Barrière en chorus",
-      "item.extra_building_blocks.chorus_fence_gate": "Portillon en chorus",
       "item.extra_building_blocks.soul_sconce": "Applique des âmes",
       "item.extra_building_blocks.cut_amethyst": "Améthyste taillée",
       "item.extra_building_blocks.end_stone_stairs": "Escaliers en pierre de l\u0027End",
@@ -15273,8 +15316,6 @@
       "item.extra_building_blocks.soul_glass_pane": "Vitre des âmes",
       "item.extra_building_blocks.white_stained_soul_glass": "Verre blanc des âmes",
       "item.extra_building_blocks.white_stained_soul_glass_pane": "Vitre blanche des âmes",
-      "item.extra_building_blocks.grey_stained_soul_glass": "Verre gris clair des âmes",
-      "item.extra_building_blocks.grey_stained_soul_glass_pane": "Vitre gris clair des âmes",
       "item.extra_building_blocks.black_stained_soul_glass": "Verre noir des âmes",
       "item.extra_building_blocks.black_stained_soul_glass_pane": "Vitre noire des âmes",
       "item.extra_building_blocks.red_stained_soul_glass": "Verre rouge des âmes",
@@ -15299,8 +15340,6 @@
       "item.extra_building_blocks.magenta_stained_soul_glass_pane": "Vitre magenta des âmes",
       "item.extra_building_blocks.pink_stained_soul_glass": "Verre rose des âmes",
       "item.extra_building_blocks.pink_stained_soul_glass_pane": "Vitre rose des âmes",
-      "item.extra_building_blocks.dark_grey_stained_soul_glass": "Verre gris des âmes",
-      "item.extra_building_blocks.dark_grey_stained_soul_glass_pane": "Vitre grise des âmes",
       "item.extra_building_blocks.brown_stained_soul_glass": "Verre marron des âmes",
       "item.extra_building_blocks.brown_stained_soul_glass_pane": "Vitre marron des âmes",
       "item.extra_building_blocks.sandstone_bricks": "Briques de grès",
@@ -15376,10 +15415,6 @@
       "item.extra_building_blocks.brown_lace_carpet": "Tapis de dentelle marron",
       "item.extra_building_blocks.cherry_beam": "Poutre en cerisier",
       "item.extra_building_blocks.chiseled_end_stone_bricks": "Pierre sculptée de l\u0027End",
-      "item.extra_building_blocks.chorus_button": "Bouton en chorus",
-      "item.extra_building_blocks.chorus_door": "Porte en chorus",
-      "item.extra_building_blocks.chorus_pressure_plate": "Plaque de pression en chorus",
-      "item.extra_building_blocks.chorus_trapdoor": "Trappe en chorus",
       "item.extra_building_blocks.copper_bars": "Barreaux de cuivre",
       "item.extra_building_blocks.crimson_beam": "Poutre carmin",
       "item.extra_building_blocks.cyan_lace_banner": "Bannière de dentelle cyan",
@@ -15391,14 +15426,10 @@
       "item.extra_building_blocks.frosted_glass": "Verre dépoli",
       "item.extra_building_blocks.green_lace_banner": "Bannière de dentelle verte",
       "item.extra_building_blocks.green_lace_carpet": "Tapis de dentelle verte",
-      "item.extra_building_blocks.grey_lace_banner": "Bannière de dentelle grise",
-      "item.extra_building_blocks.grey_lace_carpet": "Tapis de dentelle grise",
       "item.extra_building_blocks.jungle_beam": "Poutre en acajou",
       "item.extra_building_blocks.lace_carpet": "Tapis de dentelle",
       "item.extra_building_blocks.light_blue_lace_banner": "Bannière de dentelle bleu clair",
       "item.extra_building_blocks.light_blue_lace_carpet": "Tapis de dentelle blue clair",
-      "item.extra_building_blocks.light_grey_lace_banner": "Bannière de dentelle gris clair",
-      "item.extra_building_blocks.light_grey_lace_carpet": "Tapis de dentelle gris clair",
       "item.extra_building_blocks.lime_lace_banner": "Bannière de dentelle vert clair",
       "item.extra_building_blocks.lime_lace_carpet": "Tapis de dentelle vert clair",
       "item.extra_building_blocks.magenta_lace_banner": "Bannière de dentelle magenta",
@@ -15448,7 +15479,25 @@
       "item.extra_building_blocks.cactus_wood_pressure_plate": "Plaque de pression en bois de cactus",
       "item.extra_building_blocks.cactus_wood_slab": "Dalle de bois de cactus",
       "item.extra_building_blocks.cactus_wood_stairs": "Escaliers en bois de cactus",
-      "item.extra_building_blocks.icicle": "Stalactite de glace"
+      "item.extra_building_blocks.icicle": "Stalactite de glace",
+      "item.extra_building_blocks.cracked_end_stone_bricks": "Pierre taillée de l\u0027End craquelée",
+      "item.extra_building_blocks.gray_stained_soul_glass": "Verre gris des âmes",
+      "item.extra_building_blocks.gray_stained_soul_glass_pane": "Vitre grise des âmes",
+      "item.extra_building_blocks.light_gray_stained_soul_glass": "Verre gris clair des âmes",
+      "item.extra_building_blocks.light_gray_stained_soul_glass_pane": "Vitre gris clair des âmes",
+      "item.extra_building_blocks.light_gray_lace_banner": "Bannière de dentelle gris clair",
+      "item.extra_building_blocks.gray_lace_banner": "Bannière de dentelle grise",
+      "item.extra_building_blocks.light_gray_lace_carpet": "Tapis de dentelle gris clair",
+      "item.extra_building_blocks.gray_lace_carpet": "Tapis de dentelle grise",
+      "item.extra_building_blocks.chorus_wood_planks": "Planches de bois de chorus",
+      "item.extra_building_blocks.chorus_wood_stairs": "Escaliers en bois de chorus",
+      "item.extra_building_blocks.chorus_wood_slab": "Dalle en bois de chorus",
+      "item.extra_building_blocks.chorus_wood_fence": "Barrière en bois de chorus",
+      "item.extra_building_blocks.chorus_wood_fence_gate": "Portillon en bois de chorus",
+      "item.extra_building_blocks.chorus_wood_pressure_plate": "Plaque de pression en bois de chorus",
+      "item.extra_building_blocks.chorus_wood_button": "Bouton en bois de chorus",
+      "item.extra_building_blocks.chorus_wood_door": "Porte en bois de chorus",
+      "item.extra_building_blocks.chorus_wood_trapdoor": "Trappe en bois de chorus"
     },
     "ja_jp": {
       "block.extra_building_blocks.smooth_stone_stairs": "滑らかな石の階段",
@@ -15750,7 +15799,6 @@
       "item.extra_building_blocks.cut_diorite_stairs": "研がれた閃緑岩の階段",
       "item.extra_building_blocks.cut_diorite_slab": "研がれた閃緑岩のハーフブロック",
       "item.extra_building_blocks.cracked_mud_bricks": "ひび割れた泥レンガ",
-      "item.extra_building_blocks.cracked_end_bricks": "ひび割れたエンドストーンレンガ",
       "item.extra_building_blocks.cracked_quartz_bricks": "ひび割れたクォーツレンガ",
       "item.extra_building_blocks.quartz_brick_stairs": "クォーツレンガの階段",
       "item.extra_building_blocks.quartz_brick_slab": "クォーツレンガのハーフブロック",
@@ -15783,11 +15831,6 @@
       "item.extra_building_blocks.cut_smooth_stone_stairs": "研がれた滑らかな石の階段",
       "item.extra_building_blocks.cut_smooth_stone_slab": "研がれた滑らかな石のハーフブロック",
       "item.extra_building_blocks.smooth_stone_wall": "滑らかな石の塀",
-      "item.extra_building_blocks.chorus_planks": "コーラスの板材",
-      "item.extra_building_blocks.chorus_stairs": "コーラスの階段",
-      "item.extra_building_blocks.chorus_slab": "コーラスのハーフブロック",
-      "item.extra_building_blocks.chorus_fence": "コーラスのフェンス",
-      "item.extra_building_blocks.chorus_fence_gate": "コーラスのフェンスゲート",
       "item.extra_building_blocks.soul_sconce": "Soul Sconce",
       "item.extra_building_blocks.cut_amethyst": "切り込み入りのアメジスト",
       "item.extra_building_blocks.end_stone_stairs": "エンドストーンの階段",
@@ -15797,8 +15840,6 @@
       "item.extra_building_blocks.soul_glass_pane": "Soul Glass Pane",
       "item.extra_building_blocks.white_stained_soul_glass": "White Stained Soul Glass",
       "item.extra_building_blocks.white_stained_soul_glass_pane": "White Stained Soul Glass Pane",
-      "item.extra_building_blocks.grey_stained_soul_glass": "Grey Stained Soul Glass",
-      "item.extra_building_blocks.grey_stained_soul_glass_pane": "Grey Stained Soul Glass Pane",
       "item.extra_building_blocks.black_stained_soul_glass": "Black Stained Soul Glass",
       "item.extra_building_blocks.black_stained_soul_glass_pane": "Black Stained Soul Glass Pane",
       "item.extra_building_blocks.red_stained_soul_glass": "Red Stained Soul Glass",
@@ -15823,8 +15864,6 @@
       "item.extra_building_blocks.magenta_stained_soul_glass_pane": "Magenta Stained Soul Glass Pane",
       "item.extra_building_blocks.pink_stained_soul_glass": "Pink Stained Soul Glass",
       "item.extra_building_blocks.pink_stained_soul_glass_pane": "Pink Stained Soul Glass Pane",
-      "item.extra_building_blocks.dark_grey_stained_soul_glass": "Dark Grey Stained Soul Glass",
-      "item.extra_building_blocks.dark_grey_stained_soul_glass_pane": "Dark Grey Stained Soul Glass Pane",
       "item.extra_building_blocks.brown_stained_soul_glass": "Brown Stained Soul Glass",
       "item.extra_building_blocks.brown_stained_soul_glass_pane": "Brown Stained Soul Glass Pane",
       "item.extra_building_blocks.sandstone_bricks": "砂岩レンガ",
@@ -15900,10 +15939,6 @@
       "item.extra_building_blocks.brown_lace_carpet": "Brown Lace Carpet",
       "item.extra_building_blocks.cherry_beam": "サクラの梁",
       "item.extra_building_blocks.chiseled_end_stone_bricks": "模様入りのエンドストーンレンガ",
-      "item.extra_building_blocks.chorus_button": "コーラスのボタン",
-      "item.extra_building_blocks.chorus_door": "コーラスのドア",
-      "item.extra_building_blocks.chorus_pressure_plate": "コーラスの感圧板",
-      "item.extra_building_blocks.chorus_trapdoor": "コーラスのトラップドア",
       "item.extra_building_blocks.copper_bars": "銅格子",
       "item.extra_building_blocks.crimson_beam": "真紅の梁",
       "item.extra_building_blocks.cyan_lace_banner": "Cyan Lace Banner",
@@ -15915,14 +15950,10 @@
       "item.extra_building_blocks.frosted_glass": "艶消しガラス",
       "item.extra_building_blocks.green_lace_banner": "Green Lace Banner",
       "item.extra_building_blocks.green_lace_carpet": "Green Lace Carpet",
-      "item.extra_building_blocks.grey_lace_banner": "Grey Lace Banner",
-      "item.extra_building_blocks.grey_lace_carpet": "Grey Lace Carpet",
       "item.extra_building_blocks.jungle_beam": "ジャングルの梁",
       "item.extra_building_blocks.lace_carpet": "Lace Carpet",
       "item.extra_building_blocks.light_blue_lace_banner": "Light Blue Lace Banner",
       "item.extra_building_blocks.light_blue_lace_carpet": "Light Blue Lace Carpet",
-      "item.extra_building_blocks.light_grey_lace_banner": "Light Grey Lace Banner",
-      "item.extra_building_blocks.light_grey_lace_carpet": "Light Grey Lace Carpet",
       "item.extra_building_blocks.lime_lace_banner": "Lime Lace Banner",
       "item.extra_building_blocks.lime_lace_carpet": "Lime Lace Carpet",
       "item.extra_building_blocks.magenta_lace_banner": "Magenta Lace Banner",
@@ -15972,7 +16003,25 @@
       "item.extra_building_blocks.cactus_wood_pressure_plate": "Cactus Wood Pressure Plate",
       "item.extra_building_blocks.cactus_wood_slab": "Cactus Wood Slab",
       "item.extra_building_blocks.icicle": "Icicle",
-      "item.extra_building_blocks.cactus_wood_stairs": "Cactus Wood Stairs"
+      "item.extra_building_blocks.cactus_wood_stairs": "Cactus Wood Stairs",
+      "item.extra_building_blocks.cracked_end_stone_bricks": "Cracked End Stone Bricks",
+      "item.extra_building_blocks.gray_stained_soul_glass": "Dark Grey Stained Soul Glass",
+      "item.extra_building_blocks.gray_stained_soul_glass_pane": "Dark Grey Stained Soul Glass Pane",
+      "item.extra_building_blocks.light_gray_stained_soul_glass": "Grey Stained Soul Glass",
+      "item.extra_building_blocks.light_gray_stained_soul_glass_pane": "Grey Stained Soul Glass Pane",
+      "item.extra_building_blocks.light_gray_lace_banner": "Light Grey Lace Banner",
+      "item.extra_building_blocks.gray_lace_banner": "Grey Lace Banner",
+      "item.extra_building_blocks.light_gray_lace_carpet": "Light Grey Lace Carpet",
+      "item.extra_building_blocks.gray_lace_carpet": "Grey Lace Carpet",
+      "item.extra_building_blocks.chorus_wood_planks": "Chorus Wood Planks",
+      "item.extra_building_blocks.chorus_wood_stairs": "Chorus Wood Stairs",
+      "item.extra_building_blocks.chorus_wood_slab": "Chorus Wood Slab",
+      "item.extra_building_blocks.chorus_wood_fence": "Chorus Wood Fence",
+      "item.extra_building_blocks.chorus_wood_fence_gate": "Chorus Wood Fence Gate",
+      "item.extra_building_blocks.chorus_wood_pressure_plate": "Chorus Wood Pressure Plate",
+      "item.extra_building_blocks.chorus_wood_button": "Chorus Wood Button",
+      "item.extra_building_blocks.chorus_wood_door": "Chorus Wood Door",
+      "item.extra_building_blocks.chorus_wood_trapdoor": "Chorus Wood Trapdoor"
     }
   },
   "metadata": {
@@ -16532,7 +16581,7 @@
   "workspaceSettings": {
     "modid": "extra_building_blocks",
     "modName": "Mishmash",
-    "version": "0.3.3",
+    "version": "0.3.4",
     "author": "Asus, MCreator",
     "websiteURL": "https://mcreator.net",
     "license": "Academic Free License v3.0",
@@ -16542,7 +16591,7 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "neoforge-1.21.8",
-    "credits": "created using mcreator https://mcreator.net/about, some textures courtesy of my friend lord , prismarine pillar patterns by fungus , chiseled stone patterns by pixel goblin",
+    "credits": "created using mcreator https://mcreator.net/about, some textures courtesy of my friend lord , prismarine pillar patterns by fungus , chiseled stone patterns by pixel goblin. some java code made with the help of chatgpt, all ideas and all art human made.",
     "modElementsPackage": "net.mcreator.extrabuildingblocks"
   },
   "mcreatorVersion": 202600114619

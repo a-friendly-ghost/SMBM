@@ -14,6 +14,10 @@
     "extra_building_blocks:calcite_wall",
     "extra_building_blocks:polished_dripstone_wall",
     "extra_building_blocks:soul_slate_brick_wall",
+    {
+      "id": "#extra_building_blocks:metal_gates",
+      "required": false
+    },
     "extra_building_blocks:red_sandstone_brick_wall",
     "extra_building_blocks:prismarine_brick_wall",
     "extra_building_blocks:end_stone_wall",

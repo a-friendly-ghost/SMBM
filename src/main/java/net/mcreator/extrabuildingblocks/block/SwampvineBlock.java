@@ -5,6 +5,7 @@ import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.level.redstone.Orientation;
 import net.minecraft.world.level.material.PushReaction;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -40,7 +41,8 @@ import java.util.function.Consumer;
 
 public class SwampvineBlock extends Block {
 	public SwampvineBlock(BlockBehaviour.Properties properties) {
-		super(properties.sound(SoundType.GRASS).instabreak().requiresCorrectToolForDrops().noCollission().randomTicks().pushReaction(PushReaction.DESTROY).isRedstoneConductor((bs, br, bp) -> false).offsetType(Block.OffsetType.XZ));
+		super(properties.mapColor(MapColor.PLANT).sound(SoundType.GRASS).instabreak().requiresCorrectToolForDrops().noCollission().randomTicks().pushReaction(PushReaction.DESTROY).isRedstoneConductor((bs, br, bp) -> false)
+				.offsetType(Block.OffsetType.XZ));
 	}
 
 	@Override
