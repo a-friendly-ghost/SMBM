@@ -96,7 +96,7 @@
     "slipperiness": 0.6,
     "speedFactor": 0.8,
     "jumpFactor": 1.0,
-    "reactionToPushing": "NORMAL",
+    "reactionToPushing": "DESTROY",
     "isNotColidable": true,
     "isCustomSoundType": false,
     "soundOnStep": {
@@ -121,7 +121,7 @@
       "fixedValue": 0.0
     },
     "unbreakable": false,
-    "vanillaToolTier": "STONE",
+    "vanillaToolTier": "NONE",
     "placingCondition": {
       "name": "DuckWeedBlockValidPlacementCondition"
     },

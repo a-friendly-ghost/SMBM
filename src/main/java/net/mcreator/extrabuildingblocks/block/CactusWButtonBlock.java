@@ -1,5 +1,6 @@
 package net.mcreator.extrabuildingblocks.block;
 
+import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
@@ -13,7 +14,7 @@ import net.minecraft.core.BlockPos;
 
 public class CactusWButtonBlock extends ButtonBlock {
 	public CactusWButtonBlock(BlockBehaviour.Properties properties) {
-		super(BlockSetType.OAK, 30, properties.mapColor(MapColor.NONE).sound(SoundType.WOOD).strength(0.5f).ignitedByLava().instrument(NoteBlockInstrument.BASS));
+		super(BlockSetType.OAK, 30, properties.mapColor(MapColor.NONE).sound(SoundType.WOOD).strength(0.5f).pushReaction(PushReaction.DESTROY).ignitedByLava().instrument(NoteBlockInstrument.BASS));
 	}
 
 	@Override

@@ -10254,41 +10254,6 @@
       "path": "~/SwampGrass"
     },
     {
-      "name": "SwampGrassPlacing",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "swamp_grass_placing",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/extrabuildingblocks/procedures/SwampGrassPlacingProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/SwampGrass"
-    },
-    {
       "name": "SwampGrassFeature",
       "type": "feature",
       "compiles": true,
@@ -16591,7 +16556,7 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "neoforge-1.21.8",
-    "credits": "created using mcreator https://mcreator.net/about, some textures courtesy of my friend lord , prismarine pillar patterns by fungus , chiseled stone patterns by pixel goblin. some java code made with the help of chatgpt, all art human made.",
+    "credits": "created using mcreator https://mcreator.net/about, some textures courtesy of my friend lord , prismarine pillar patterns by fungus , chiseled stone patterns by pixel goblin. some java code made with the help of chatgpt, all ideas and all art human made.",
     "modElementsPackage": "net.mcreator.extrabuildingblocks"
   },
   "mcreatorVersion": 202600114619

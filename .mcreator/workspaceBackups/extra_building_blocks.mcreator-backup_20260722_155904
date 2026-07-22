@@ -13413,6 +13413,20 @@
         ]
       },
       "path": "~/SoulMagma"
+    },
+    {
+      "name": "SoulMagmaRecipeSoil",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul_magma_recipe_soil",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/extra_building_blocks/advancement/recipes/soul_magma_recipe_soil.json",
+          "src/main/resources/data/extra_building_blocks/recipe/soul_magma_recipe_soil.json"
+        ]
+      },
+      "path": "~/SoulMagma"
     }
   ],
   "variable_elements": [],
@@ -13941,9 +13955,10 @@
     "BLOCKS:minecraft:fences": [
       "~CUSTOM:ChorusFence"
     ],
-    "BLOCKS:mod:soul_soil_and_sand": [
+    "BLOCKS:mod:soul_magma_and_slate_replaceable": [
+      "Blocks.SOUL_SAND",
       "Blocks.SOUL_SOIL",
-      "Blocks.SOUL_SAND"
+      "Blocks.NETHERRACK"
     ]
   },
   "tab_element_order": {
@@ -16576,7 +16591,7 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "neoforge-1.21.8",
-    "credits": "created using mcreator https://mcreator.net/about, some textures courtesy of my friend lord , prismarine pillar patterns by fungus , chiseled stone patterns by pixel goblin. some java code made with the help of chatgpt, all art human made.",
+    "credits": "created using mcreator https://mcreator.net/about, some textures courtesy of my friend lord , prismarine pillar patterns by fungus , chiseled stone patterns by pixel goblin. some java code made with the help of chatgpt, all ideas and all art human made.",
     "modElementsPackage": "net.mcreator.extrabuildingblocks"
   },
   "mcreatorVersion": 202600114619

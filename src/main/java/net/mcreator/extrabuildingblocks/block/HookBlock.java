@@ -4,6 +4,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.level.redstone.Orientation;
+import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.material.FluidState;
@@ -41,7 +42,7 @@ public class HookBlock extends Block implements SimpleWaterloggedBlock {
 	private final Function<BlockState, VoxelShape> shapes = this.makeShapes();
 
 	public HookBlock(BlockBehaviour.Properties properties) {
-		super(properties.mapColor(MapColor.NONE).sound(SoundType.LANTERN).strength(0.1f).noCollission().isRedstoneConductor((bs, br, bp) -> false));
+		super(properties.mapColor(MapColor.NONE).sound(SoundType.LANTERN).strength(0.1f).noCollission().pushReaction(PushReaction.DESTROY).isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, false));
 	}
 

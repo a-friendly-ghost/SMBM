@@ -3,6 +3,7 @@ package net.mcreator.extrabuildingblocks.block;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -23,7 +24,7 @@ public class DuckWeedBlock extends Block {
 	private static final VoxelShape SHAPE = box(0, 0, 0, 16, 1, 16);
 
 	public DuckWeedBlock(BlockBehaviour.Properties properties) {
-		super(properties.mapColor(MapColor.GRASS).sound(SoundType.LILY_PAD).strength(0.1f).noCollission().speedFactor(0.8f).isRedstoneConductor((bs, br, bp) -> false).replaceable());
+		super(properties.mapColor(MapColor.GRASS).sound(SoundType.LILY_PAD).strength(0.1f).noCollission().speedFactor(0.8f).pushReaction(PushReaction.DESTROY).isRedstoneConductor((bs, br, bp) -> false).replaceable());
 	}
 
 	@Override

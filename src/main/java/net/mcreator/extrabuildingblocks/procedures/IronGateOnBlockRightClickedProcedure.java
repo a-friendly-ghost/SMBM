@@ -22,11 +22,13 @@ public class IronGateOnBlockRightClickedProcedure {
 			return InteractionResult.PASS;
 		double checkY = 0;
 		double aboveCount = 0;
+		boolean openorclose = false;
 		if (entity.isShiftKeyDown()) {
 			return InteractionResult.CONSUME;
 		}
 		checkY = y;
 		aboveCount = -1;
+		openorclose = !(getPropertyByName((world.getBlockState(BlockPos.containing(x, y, z))), "open") instanceof BooleanProperty _getbp3 && (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getbp3));
 		for (int index0 = 0; index0 < 15; index0++) {
 			if (!(world.getBlockState(BlockPos.containing(x, checkY, z))).is(BlockTags.create(ResourceLocation.parse("extra_building_blocks:metal_gates")))) {
 				break;
@@ -34,7 +36,10 @@ public class IronGateOnBlockRightClickedProcedure {
 			if (!((getBlockDirection(world, BlockPos.containing(x, checkY, z))).getAxis() == (getBlockDirection(world, BlockPos.containing(x, y, z))).getAxis())) {
 				break;
 			}
-			if ((getPropertyByName((world.getBlockState(BlockPos.containing(x, checkY, z))), "open") instanceof BooleanProperty _getbp8 && (world.getBlockState(BlockPos.containing(x, checkY, z))).getValue(_getbp8)) == false) {
+			if ((getPropertyByName((world.getBlockState(BlockPos.containing(x, checkY, z))), "open") instanceof BooleanProperty _getbp10 && (world.getBlockState(BlockPos.containing(x, checkY, z))).getValue(_getbp10)) == openorclose) {
+				break;
+			}
+			if ((getPropertyByName((world.getBlockState(BlockPos.containing(x, checkY, z))), "open") instanceof BooleanProperty _getbp12 && (world.getBlockState(BlockPos.containing(x, checkY, z))).getValue(_getbp12)) == false) {
 				if ((getBlockDirection(world, BlockPos.containing(x, checkY, z))).getAxis() == Direction.Axis.Z) {
 					if (entity.getZ() > z) {
 						{
@@ -129,7 +134,10 @@ public class IronGateOnBlockRightClickedProcedure {
 			if (!((getBlockDirection(world, BlockPos.containing(x, checkY, z))).getAxis() == (getBlockDirection(world, BlockPos.containing(x, y, z))).getAxis())) {
 				break;
 			}
-			if ((getPropertyByName((world.getBlockState(BlockPos.containing(x, checkY, z))), "open") instanceof BooleanProperty _getbp28 && (world.getBlockState(BlockPos.containing(x, checkY, z))).getValue(_getbp28)) == false) {
+			if ((getPropertyByName((world.getBlockState(BlockPos.containing(x, checkY, z))), "open") instanceof BooleanProperty _getbp32 && (world.getBlockState(BlockPos.containing(x, checkY, z))).getValue(_getbp32)) == openorclose) {
+				break;
+			}
+			if ((getPropertyByName((world.getBlockState(BlockPos.containing(x, checkY, z))), "open") instanceof BooleanProperty _getbp34 && (world.getBlockState(BlockPos.containing(x, checkY, z))).getValue(_getbp34)) == false) {
 				if ((getBlockDirection(world, BlockPos.containing(x, checkY, z))).getAxis() == Direction.Axis.Z) {
 					if (entity.getZ() > z) {
 						{
@@ -218,6 +226,15 @@ public class IronGateOnBlockRightClickedProcedure {
 		return InteractionResult.SUCCESS;
 	}
 
+	private static Property<?> getPropertyByName(BlockState state, String name) {
+		for (Property<?> property : state.getProperties()) {
+			if (property.getName().equals(name)) {
+				return property;
+			}
+		}
+		return null;
+	}
+
 	private static Direction getBlockDirection(LevelAccessor world, BlockPos pos) {
 		BlockState blockState = world.getBlockState(pos);
 		Property<?> property = blockState.getBlock().getStateDefinition().getProperty("facing");
@@ -228,14 +245,5 @@ public class IronGateOnBlockRightClickedProcedure {
 		else if (blockState.hasProperty(BlockStateProperties.HORIZONTAL_AXIS))
 			return Direction.fromAxisAndDirection(blockState.getValue(BlockStateProperties.HORIZONTAL_AXIS), Direction.AxisDirection.POSITIVE);
 		return Direction.NORTH;
-	}
-
-	private static Property<?> getPropertyByName(BlockState state, String name) {
-		for (Property<?> property : state.getProperties()) {
-			if (property.getName().equals(name)) {
-				return property;
-			}
-		}
-		return null;
 	}
 }

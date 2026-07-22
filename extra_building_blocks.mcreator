@@ -10135,41 +10135,6 @@
       "path": "~/DuckWeed"
     },
     {
-      "name": "DuckWeedPlacing",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "duck_weed_placing",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/extrabuildingblocks/procedures/DuckWeedPlacingProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/DuckWeed"
-    },
-    {
       "name": "FountainGrass",
       "type": "block",
       "compiles": true,
@@ -10249,41 +10214,6 @@
           "src/main/resources/assets/extra_building_blocks/models/item/swamp_grass.json",
           "src/main/java/net/mcreator/extrabuildingblocks/block/SwampGrassBlock.java",
           "src/main/resources/data/extra_building_blocks/loot_table/blocks/swamp_grass.json"
-        ]
-      },
-      "path": "~/SwampGrass"
-    },
-    {
-      "name": "SwampGrassPlacing",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "swamp_grass_placing",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/extrabuildingblocks/procedures/SwampGrassPlacingProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
         ]
       },
       "path": "~/SwampGrass"

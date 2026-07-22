@@ -3637,7 +3637,7 @@
     {
       "name": "ChorusPressurePlate",
       "type": "block",
-      "compiles": true,
+      "compiles": false,
       "locked_code": true,
       "registry_name": "chorus_wood_pressure_plate",
       "metadata": {
@@ -3656,7 +3656,7 @@
     {
       "name": "ChorusButton",
       "type": "block",
-      "compiles": true,
+      "compiles": false,
       "locked_code": true,
       "registry_name": "chorus_wood_button",
       "metadata": {
@@ -16591,7 +16591,7 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "neoforge-1.21.8",
-    "credits": "created using mcreator https://mcreator.net/about, some textures courtesy of my friend lord , prismarine pillar patterns by fungus , chiseled stone patterns by pixel goblin. some java code made with the help of chatgpt, all art human made.",
+    "credits": "created using mcreator https://mcreator.net/about, some textures courtesy of my friend lord , prismarine pillar patterns by fungus , chiseled stone patterns by pixel goblin. some java code made with the help of chatgpt, all ideas and all art human made.",
     "modElementsPackage": "net.mcreator.extrabuildingblocks"
   },
   "mcreatorVersion": 202600114619

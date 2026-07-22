@@ -3,7 +3,7 @@
   "textures": {
     "particle": "extra_building_blocks:block/yellowstained",
     "pane": "extra_building_blocks:block/yellowstained",
-    "edge": "extra_building_blocks:block/yellowstained"
+    "edge": "extra_building_blocks:block/new_piskel_63"
   },
   "render_type": "translucent"
 }

@@ -2,6 +2,7 @@ package net.mcreator.extrabuildingblocks.procedures;
 
 import net.minecraft.world.level.block.state.properties.Property;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
@@ -9,19 +10,28 @@ import net.minecraft.tags.BlockTags;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 public class IronGateToggleNoEntityProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		double checkY = 0;
 		double aboveCount = 0;
+		boolean openorclose = false;
 		checkY = y;
 		aboveCount = -1;
+		openorclose = !(getPropertyByName((world.getBlockState(BlockPos.containing(x, y, z))), "open") instanceof BooleanProperty _getbp1 && (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getbp1));
 		for (int index0 = 0; index0 < 15; index0++) {
 			if (!(world.getBlockState(BlockPos.containing(x, checkY, z))).is(BlockTags.create(ResourceLocation.parse("extra_building_blocks:metal_gates")))) {
 				break;
 			}
-			if ((getPropertyByName((world.getBlockState(BlockPos.containing(x, checkY, z))), "open") instanceof BooleanProperty _getbp3 && (world.getBlockState(BlockPos.containing(x, checkY, z))).getValue(_getbp3)) == false) {
+			if (!((getBlockDirection(world, BlockPos.containing(x, checkY, z))).getAxis() == (getBlockDirection(world, BlockPos.containing(x, y, z))).getAxis())) {
+				break;
+			}
+			if ((getPropertyByName((world.getBlockState(BlockPos.containing(x, checkY, z))), "open") instanceof BooleanProperty _getbp8 && (world.getBlockState(BlockPos.containing(x, checkY, z))).getValue(_getbp8)) == openorclose) {
+				break;
+			}
+			if ((getPropertyByName((world.getBlockState(BlockPos.containing(x, checkY, z))), "open") instanceof BooleanProperty _getbp10 && (world.getBlockState(BlockPos.containing(x, checkY, z))).getValue(_getbp10)) == false) {
 				{
 					BlockPos _pos = BlockPos.containing(x, checkY, z);
 					BlockState _bs = world.getBlockState(_pos);
@@ -58,7 +68,13 @@ public class IronGateToggleNoEntityProcedure {
 			if (!(world.getBlockState(BlockPos.containing(x, checkY, z))).is(BlockTags.create(ResourceLocation.parse("extra_building_blocks:metal_gates")))) {
 				break;
 			}
-			if ((getPropertyByName((world.getBlockState(BlockPos.containing(x, checkY, z))), "open") instanceof BooleanProperty _getbp11 && (world.getBlockState(BlockPos.containing(x, checkY, z))).getValue(_getbp11)) == false) {
+			if (!((getBlockDirection(world, BlockPos.containing(x, checkY, z))).getAxis() == (getBlockDirection(world, BlockPos.containing(x, y, z))).getAxis())) {
+				break;
+			}
+			if ((getPropertyByName((world.getBlockState(BlockPos.containing(x, checkY, z))), "open") instanceof BooleanProperty _getbp21 && (world.getBlockState(BlockPos.containing(x, checkY, z))).getValue(_getbp21)) == openorclose) {
+				break;
+			}
+			if ((getPropertyByName((world.getBlockState(BlockPos.containing(x, checkY, z))), "open") instanceof BooleanProperty _getbp23 && (world.getBlockState(BlockPos.containing(x, checkY, z))).getValue(_getbp23)) == false) {
 				{
 					BlockPos _pos = BlockPos.containing(x, checkY, z);
 					BlockState _bs = world.getBlockState(_pos);
@@ -98,5 +114,17 @@ public class IronGateToggleNoEntityProcedure {
 			}
 		}
 		return null;
+	}
+
+	private static Direction getBlockDirection(LevelAccessor world, BlockPos pos) {
+		BlockState blockState = world.getBlockState(pos);
+		Property<?> property = blockState.getBlock().getStateDefinition().getProperty("facing");
+		if (property != null && blockState.getValue(property) instanceof Direction direction)
+			return direction;
+		else if (blockState.hasProperty(BlockStateProperties.AXIS))
+			return Direction.fromAxisAndDirection(blockState.getValue(BlockStateProperties.AXIS), Direction.AxisDirection.POSITIVE);
+		else if (blockState.hasProperty(BlockStateProperties.HORIZONTAL_AXIS))
+			return Direction.fromAxisAndDirection(blockState.getValue(BlockStateProperties.HORIZONTAL_AXIS), Direction.AxisDirection.POSITIVE);
+		return Direction.NORTH;
 	}
 }

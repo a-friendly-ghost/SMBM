@@ -3,6 +3,7 @@ package net.mcreator.extrabuildingblocks.block;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -23,7 +24,7 @@ public class PurpleFountainGrassBlock extends Block {
 	private static final VoxelShape SHAPE = box(2, 0, 2, 14, 13, 14);
 
 	public PurpleFountainGrassBlock(BlockBehaviour.Properties properties) {
-		super(properties.mapColor(MapColor.TERRACOTTA_BLUE).sound(SoundType.GRASS).strength(0.1f).noCollission().isRedstoneConductor((bs, br, bp) -> false).offsetType(Block.OffsetType.XZ));
+		super(properties.mapColor(MapColor.TERRACOTTA_BLUE).sound(SoundType.GRASS).strength(0.1f).noCollission().pushReaction(PushReaction.DESTROY).isRedstoneConductor((bs, br, bp) -> false).offsetType(Block.OffsetType.XZ));
 	}
 
 	@Override
